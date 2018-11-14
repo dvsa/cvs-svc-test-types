@@ -1,0 +1,19 @@
+[
+  {
+    "testCategoryNumber": 0,
+    "testType": "Type One",
+    "forVehicleType": [
+      "psv"
+    ],
+    "testCodeSelectionAttr": {
+      "testCodeSelectionAttrName": "CODE123",
+      "testCodeSelectionAttrValues": [
+        {
+          "testCodeSelectionAttrValue": "VALUE321",
+          "defaultTestCode": "defaultCODE",
+          "linkedTestCode": "linkedCODE"
+        }
+      ]
+    }
+  }
+]
