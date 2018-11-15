@@ -1,0 +1,52 @@
+service: cvs-svc-test-type
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+
+plugins:
+  - serverless-dynamodb-local
+  - serverless-offline
+
+functions:
+  getDefects:
+    handler: handler.getTestTypes
+    events:
+    - http:
+        path: test-types
+        method: get
+
+resources:
+  Resources:
+    Users:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: TestTypes
+        AttributeDefinitions:
+        - AttributeName: testCategoryNumber
+          AttributeType: N
+        - AttributeName: testType
+          AttributeType: S
+        KeySchema:
+        - AttributeName: testCategoryNumber
+          KeyType: HASH
+        - AttributeName: testType
+          KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+custom:
+  serverless-offline:
+    port: ${env:SERVERLESS_PORT}
+  dynamodb:
+    start:
+      port: ${env:DYNAMO_PORT}
+      inMemory: true
+      migrate: true
+      seed: true
+    seed:
+      test-types:
+        sources:
+        - table: TestTypes
+          sources: [./offline/migrations/test-types.json]
