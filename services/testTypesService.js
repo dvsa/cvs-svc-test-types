@@ -24,7 +24,7 @@ const getTestTypeList = () => {
       }
 
       if (result.Count === 0 || result.Items === undefined) {
-        throw new HTTPResponseStatus(404, { error: 'No resources match the search criteria.' })
+        throw new HTTPResponseStatus(404, { error: 'Test types not found' })
       }
 
       return result.Items
