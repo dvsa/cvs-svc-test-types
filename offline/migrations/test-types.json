@@ -1,19 +1,217 @@
 [
   {
-    "testCategoryNumber": 0,
-    "testType": "Type One",
+    "testCategoryNumber": 3,
+    "testType": "RETEST",
     "forVehicleType": [
       "psv"
     ],
     "testCodeSelectionAttr": {
-      "testCodeSelectionAttrName": "CODE123",
-      "testCodeSelectionAttrValues": [
+      "testCodeSelectionAttrName": "Test type name/sub category",
+      "testCodeSelectionAttrValues": 
+      [
         {
-          "testCodeSelectionAttrValue": "VALUE321",
-          "defaultTestCode": "defaultCODE",
-          "linkedTestCode": "linkedCODE"
+          "testCodeSelectionAttrValue": "PAID",
+          "defaultTestCode": null,
+          "linkedTestCode": null,
+          "nextTestCodeSelectionAttr": {
+              "testCodeSelectionAttrName": "Any PSV/Class 6A",
+              "testCodeSelectionAttrValues": 
+              [
+                {
+                  "testCodeSelectionAttrValue": "Any PSV",
+                  "defaultTestCode": null,
+                  "linkedTestCode": null,
+                  "nextTestCodeSelectionAttr": {
+                    "testCodeSelectionAttrName": "GOV.UK Product",
+                    "testCodeSelectionAttrValues":
+                    [
+                      {
+                        "testCodeSelectionAttrValue": "Public Service Vehicle Annual Testing",
+                        "defaultTestCode": null,
+                        "linkedTestCode": null,
+                        "nextTestCodeSelectionAttr":{
+                          "testCodeSelectionAttrName": "Vehicle Size",
+                          "testCodeSelectionAttrValues":
+                          [
+                            {
+                              "testCodeSelectionAttrValue": "LARGE",
+                              "defaultTestCode": null,
+                              "linkedTestCode": null,
+                              "nextTestCodeSelectionAttr":{
+                                "testCodeSelectionAttrName": "Vehicle Configuration",
+                                "testCodeSelectionAttrValues":
+                                [
+                                  {
+                                    "testCodeSelectionAttrValue": "Articulated",
+                                    "defaultTestCode": "RHL",
+                                    "linkedTestCode": null,
+                                    "nextTestCodeSelectionAttr":{}
+                                  },
+                                  {
+                                    "testCodeSelectionAttrValue": "Rigid",
+                                    "defaultTestCode": "RPL",
+                                    "linkedTestCode": null,
+                                    "nextTestCodeSelectionAttr":{}
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "testCodeSelectionAttrValue": "SMALL",
+                              "defaultTestCode": null,
+                              "linkedTestCode": null,
+                              "nextTestCodeSelectionAttr":{
+                                "testCodeSelectionAttrName": "Vehicle Configuration",
+                                "testCodeSelectionAttrValues":
+                                [
+                                  {
+                                    "testCodeSelectionAttrValue": "Rigid",
+                                    "defaultTestCode": "WHL",
+                                    "linkedTestCode": null,
+                                    "nextTestCodeSelectionAttr":{}
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ] 
+                  }
+                },
+                {
+                  "testCodeSelectionAttrValue": "Class 6A (Seatbelt Installation Check)",
+                  "defaultTestCode": null,
+                  "linkedTestCode": null,
+                  "nextTestCodeSelectionAttr": {
+                    "testCodeSelectionAttrName": "GOV.UK Product",
+                    "testCodeSelectionAttrValues": 
+                    [
+                      {
+                        "testCodeSelectionAttrValue": "Public Service Vehicle Anual Testing",
+                        "defaultTestCode": null,
+                        "linkedTestCode": null,
+                        "nextTestCodeSelectionAttr": {
+                          "testCodeSelectionAttrName": "Vehicle Size",
+                          "testCodeSelectionAttrValues": 
+                          [
+                            {
+                              "testCodeSelectionAttrValue": "LARGE",
+                              "defaultTestCode": null,
+                              "linkedTestCode": null,
+                              "nextTestCodeSelectionAttr": {
+                                "testCodeSelectionAttrName": "Vehicle Configuration",
+                                "testCodeSelectionAttrValues":
+                                [
+                                  {
+                                    "testCodeSelectionAttrValue": "Rigid",
+                                    "defaultTestCode": "WHL",
+                                    "linkedTestCode": null,
+                                    "nextTestCodeSelectionAttr":{}
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "testCodeSelectionAttrValue": "SMALL",
+                              "defaultTestCode": null,
+                              "linkedTestCode": null,
+                              "nextTestCodeSelectionAttr": {
+                                "testCodeSelectionAttrName": "Vehicle Configuration",
+                                "testCodeSelectionAttrValues":
+                                [
+                                   {
+                                    "testCodeSelectionAttrValue": "Rigid",
+                                    "defaultTestCode": "WHS",
+                                    "linkedTestCode": null,
+                                    "nextTestCodeSelectionAttr":{}
+                                   }
+                                ]
+                        
+                              }
+                            }
+                          ]
+
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "testCodeSelectionAttrValue": "Class 6A (No Seatbelt Installation Check)",
+                  "defaultTestCode": "WKL",
+                  "linkedTestCode": null,
+                  "nextTestCodeSelectionAttr":{}
+    
+                }
+              ]
+          }
+        },
+        {
+          "testCodeSelectionAttrValue": "PART PAID",
+          "defaultTestCode": null,
+          "linkedTestCode": null,
+          "nextTestCodeSelectionAttr": {
+            "testCodeSelectionAttrName": "GOV.UK Product",
+            "testCodeSelectionAttrValues":
+            [
+              {
+                "testCodeSelectionAttrValue": "Public Service Vehicle Annual Testing",
+                "defaultTestCode": null,
+                "linkedTestCode": null,
+                "nextTestCodeSelectionAttr": {
+                  "testCodeSelectionAttrName": "Vehicle Size",
+                  "testCodeSelectionAttrValues":
+                  [
+                    {
+                      "testCodeSelectionAttrValue": "LARGE",
+                      "defaultTestCode": null,
+                      "linkedTestCode": null,
+                      "nextTestCodeSelectionAttr": {
+                        "testCodeSelectionAttrName": "Vehicle Configuration",
+                        "testCodeSelectionAttrValues":
+                        [
+                          {
+                            "testCodeSelectionAttrValue": "Articulated",
+                            "defaultTestCode": "RGL",
+                            "linkedTestCode": null,
+                            "nextTestCodeSelectionAttr": {}
+                          },
+                          {
+                            "testCodeSelectionAttrValue": "Rigid",
+                            "defaultTestCode": "RSL",
+                            "linkedTestCode": null,
+                            "nextTestCodeSelectionAttr": {}
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "testCodeSelectionAttrValue": "SMALL",
+                      "defaultTestCode": null,
+                      "linkedTestCode": null,
+                      "nextTestCodeSelectionAttr": {
+                        "testCodeSelectionAttrName": "Vehicle Configuration",
+                        "testCodeSelectionAttrValues":
+                        [
+                          {
+                            "testCodeSelectionAttrValue": "Rigid",
+                            "defaultTestCode": "RSS",
+                            "linkedTestCode": null,
+                            "nextTestCodeSelectionAttr": {}
+                          }
+                        ]
+                      }
+                    }
+                  ]
+
+                }
+              }
+            ]
+          }
         }
       ]
     }
   }
 ]
+
