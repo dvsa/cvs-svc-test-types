@@ -1,5 +1,5 @@
 const assert = require('assert')
-const testTypesService = require('../../services/testTypesService')
+const testTypesService = require('../../src/services/testTypesService')
 
 describe('testTypesService', () => {
   it('should fetch all test types from the database', () => {

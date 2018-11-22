@@ -1,7 +1,7 @@
 const supertest = require('supertest')
 const expect = require('expect')
 
-const url = `http://localhost:${process.env.SERVERLESS_PORT}/`
+const url = `http://localhost:3002/`
 const request = supertest(url)
 
 describe('test types', () => {

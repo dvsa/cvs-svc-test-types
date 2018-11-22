@@ -10,8 +10,8 @@ plugins:
   - serverless-offline
 
 functions:
-  getDefects:
-    handler: handler.getTestTypes
+  getTestTypes:
+    handler: src/handler.getTestTypes
     events:
     - http:
         path: test-types
@@ -22,7 +22,7 @@ resources:
     Users:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: TestTypes
+        TableName: cvs-${env:ENV}-dft-TestTypes
         AttributeDefinitions:
         - AttributeName: testCategoryNumber
           AttributeType: N
@@ -38,15 +38,15 @@ resources:
           WriteCapacityUnits: 1
 custom:
   serverless-offline:
-    port: ${env:SERVERLESS_PORT}
+    port: 3002
   dynamodb:
     start:
-      port: ${env:DYNAMO_PORT}
+      port: 8001
       inMemory: true
       migrate: true
       seed: true
     seed:
       test-types:
         sources:
-        - table: TestTypes
-          sources: [./offline/migrations/test-types.json]
+        - table: cvs-${env:ENV}-dft-TestTypes
+          sources: [./tests/resources/test-types.json]
