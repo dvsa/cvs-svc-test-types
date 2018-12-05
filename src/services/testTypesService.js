@@ -1,37 +1,57 @@
 'use strict'
 
-const AWS = require('aws-sdk')
 const HTTPResponseStatus = require('../models/HTTPResponseStatus')
-const config = require('../config/config')
 
-const dbClient = new AWS.DynamoDB.DocumentClient(
-  (config.ENV === 'local') ? { region: config.OFFLINE.DYNAMODB_REGION, endpoint: config.OFFLINE.DYNAMODB_ENDPOINT } : {}
-)
-
-/**
- * Fetches the entire list of test types from the database.
- * @returns Promise
- */
-const getTestTypeList = () => {
-  let TableName;
-  (config.ENV === 'local') ? (TableName = `cvs-${config.ENV}-${config.OFFLINE.COMPONENT}-TestTypes`) : (TableName = `cvs-${config.ENV}-${config.COMPONENT}-TestTypes`)
-  const params = {
-    TableName: TableName
+class TestTypesService {
+  constructor (testTypesDto) {
+    this.testTypesDto = testTypesDto
   }
 
-  return dbClient.scan(params)
-    .promise()
-    .then((result) => {
-      if (result.$response.error) {
-        throw new HTTPResponseStatus(result.$response.error.statusCode, result.$response.error.message)
-      }
+  getTestTypesList () {
+    return this.testTypesDto.getAll()
+      .then(data => {
+        if (data.Count === 0) {
+          throw new HTTPResponseStatus(404, 'No resources match the search criteria.')
+        }
+        return data.Items
+      })
+      .catch(error => {
+        if (!error.statusCode) {
+          error.statusCode = 500
+          error.body = 'Internal Server Error'
+        }
 
-      if (result.Count === 0 || result.Items === undefined) {
-        throw new HTTPResponseStatus(404, { error: 'Test types not found' })
-      }
+        throw new HTTPResponseStatus(error.statusCode, error.body)
+      })
+  }
 
-      return result.Items
-    })
+  insertTestTypesList (testTypesItems) {
+    return this.testTypesDto.createMultiple(testTypesItems)
+      .then(data => {
+        if (data.UnprocessedItems) {
+          return data.UnprocessedItems
+        }
+      })
+      .catch((error) => {
+        if (error) {
+          throw new HTTPResponseStatus(500, 'Internal Server Error')
+        }
+      })
+  }
+
+  deleteTestTypesList (testTypesItemKeys) {
+    return this.testTypesDto.deleteMultiple(testTypesItemKeys)
+      .then((data) => {
+        if (data.UnprocessedItems) {
+          return data.UnprocessedItems
+        }
+      })
+      .catch((error) => {
+        if (error) {
+          throw new HTTPResponseStatus(500, 'Internal ServerError')
+        }
+      })
+  }
 }
 
-module.exports = getTestTypeList
+module.exports = TestTypesService
