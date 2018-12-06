@@ -11,7 +11,7 @@ plugins:
 
 functions:
   getTestTypes:
-    handler: src/handler.getTestTypes
+    handler: src/handler.handler
     events:
     - http:
         path: test-types

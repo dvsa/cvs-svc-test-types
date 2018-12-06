@@ -34,10 +34,10 @@
     "serverless-dynamodb-local": "^0.2.35",
     "serverless-offline": "^3.27.0",
     "standard": "^12.0.1",
-    "supertest": "^3.3.0"
+    "supertest": "^3.3.0",
+    "chai": "^4.2.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.332.0",
-    "chai": "^4.2.0"
+    "aws-sdk": "^2.332.0"
   }
 }

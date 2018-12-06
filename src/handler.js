@@ -2,4 +2,4 @@
 
 const getTestTypes = require('./functions/getTestTypes')
 
-module.exports.getTestTypes = getTestTypes
+module.exports.handler = getTestTypes
