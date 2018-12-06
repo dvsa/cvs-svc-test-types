@@ -1,18 +1,18 @@
 const expect = require('chai').expect
-const TestTypesDtoMock = require('../models/TestTypesDtoMock')
+const TestTypesDAOMock = require('../models/TestTypesDAOMock')
 const TestTypesService = require('../../src/services/TestTypesService')
 const HTTPResponseStatus = require('../../src/models/HTTPResponseStatus')
 
 describe('getTestTypesList', () => {
-  var testTypesDtoMock = new TestTypesDtoMock()
+  var testTypesDAOMock = new TestTypesDAOMock()
 
   describe('when database is on', () => {
     context('database call returns valid data', () => {
       it('should return the expected data', () => {
-        testTypesDtoMock.testTypesRecordsMock = { item: 'testItem' }
-        testTypesDtoMock.numberOfrecords = 1
-        testTypesDtoMock.numberOfScannedRecords = 1
-        var testTypesService = new TestTypesService(testTypesDtoMock)
+        testTypesDAOMock.testTypesRecordsMock = { item: 'testItem' }
+        testTypesDAOMock.numberOfrecords = 1
+        testTypesDAOMock.numberOfScannedRecords = 1
+        var testTypesService = new TestTypesService(testTypesDAOMock)
 
         return testTypesService.getTestTypesList()
           .then((returnedRecords) => {
@@ -22,10 +22,10 @@ describe('getTestTypesList', () => {
     })
     context('database call returns empty data', () => {
       it('should return error 404', () => {
-        testTypesDtoMock.testTypesRecordsMock = []
-        testTypesDtoMock.numberOfrecords = 0
-        testTypesDtoMock.numberOfScannedRecords = 0
-        var testTypesService = new TestTypesService(testTypesDtoMock)
+        testTypesDAOMock.testTypesRecordsMock = []
+        testTypesDAOMock.numberOfrecords = 0
+        testTypesDAOMock.numberOfScannedRecords = 0
+        var testTypesService = new TestTypesService(testTypesDAOMock)
 
         return testTypesService.getTestTypesList()
           .then(() => {
@@ -41,14 +41,15 @@ describe('getTestTypesList', () => {
 
   describe('when database is off', () => {
     it('should return error 500', () => {
-      testTypesDtoMock.testTypesRecordsMock = []
-      testTypesDtoMock.numberOfrecords = 0
-      testTypesDtoMock.numberOfScannedRecords = 0
-      testTypesDtoMock.isDatabaseOn = false
-      var testTypesService = new TestTypesService(testTypesDtoMock)
+      testTypesDAOMock.testTypesRecordsMock = []
+      testTypesDAOMock.numberOfrecords = 0
+      testTypesDAOMock.numberOfScannedRecords = 0
+      testTypesDAOMock.isDatabaseOn = false
+      var testTypesService = new TestTypesService(testTypesDAOMock)
 
       return testTypesService.getTestTypesList()
-        .then(() => {})
+        .then(() => {
+        })
         .catch((errorResponse) => {
           expect(errorResponse).to.be.instanceOf(HTTPResponseStatus)
           expect(errorResponse.statusCode).to.be.equal(500)

@@ -3,7 +3,7 @@ const expect = require('chai').expect
 const url = 'http://localhost:3002/'
 const request = supertest(url)
 const TestTypesService = require('../../src/services/TestTypesService')
-const TestTypesDto = require('../../src/models/TestTypesDto')
+const TestTypesDAO = require('../../src/models/TestTypesDAO')
 var _ = require('lodash/core')
 
 describe('test types', () => {
@@ -11,11 +11,11 @@ describe('test types', () => {
     context('when database is populated', () => {
       var testTypesService = null
       var mockData = null
-      var testTypesDto = null
+      var testTypesDAO = null
 
       before((done) => {
-        testTypesDto = new TestTypesDto()
-        testTypesService = new TestTypesService(testTypesDto)
+        testTypesDAO = new TestTypesDAO()
+        testTypesService = new TestTypesService(testTypesDAO)
         mockData = require('../resources/test-types.json')
         testTypesService.insertTestTypesList(mockData)
         done()

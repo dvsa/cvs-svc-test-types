@@ -1,10 +1,10 @@
 'use strict'
 
-const TestTypesDto = require('../models/TestTypesDto')
+const TestTypesDAO = require('../models/TestTypesDAO')
 const TestTypesService = require('../services/TestTypesService')
 
 const getTestTypes = () => {
-  const testTypes = new TestTypesDto()
+  const testTypes = new TestTypesDAO()
   const testTypesService = new TestTypesService(testTypes)
 
   return testTypesService.getTestTypesList()
@@ -15,6 +15,7 @@ const getTestTypes = () => {
       }
     })
     .catch((error) => {
+      console.log(error)
       return {
         statusCode: error.statusCode,
         headers: error.headers,
