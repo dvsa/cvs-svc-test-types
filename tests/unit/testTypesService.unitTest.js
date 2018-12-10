@@ -2,8 +2,8 @@
 const expect = require('chai').expect
 const TestTypesDAOMock = require('../models/TestTypesDAOMock')
 const TestTypesService = require('../../src/services/TestTypesService')
-const HTTPErrorResponse = require('../../src/models/HTTPErrorResponse')
-const HTTPStatusResponse = require('../../src/models/HTTPStatusResponse')
+const HTTPErrorResponse = require('../../src/models/HTTPError')
+const HTTPStatusResponse = require('../../src/models/HTTPResponse')
 
 describe('getTestTypesList', () => {
   var testTypesDAOMock = new TestTypesDAOMock()

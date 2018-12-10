@@ -2,27 +2,20 @@
 
 const TestTypesDAO = require('../models/TestTypesDAO')
 const TestTypesService = require('../services/TestTypesService')
+const HTTPResponse = require('../models/HTTPResponse')
 
 const getTestTypes = () => {
   const testTypes = new TestTypesDAO()
   const testTypesService = new TestTypesService(testTypes)
 
   return testTypesService.getTestTypesList()
-    .then((response) => {
-      return {
-        statusCode: response.statusCode,
-        headers: response.headers,
-        body: JSON.stringify(response.body)
-      }
+    .then((data) => {
+      return new HTTPResponse(200, JSON.stringify(data))
     })
     .catch((error) => {
       console.log(error)
 
-      return {
-        statusCode: error.statusCode,
-        headers: error.headers,
-        body: JSON.stringify(error.body)
-      }
+      return new HTTPResponse(error.statusCode, JSON.stringify(error.body))
     })
 }
 
