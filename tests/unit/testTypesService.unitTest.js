@@ -1,7 +1,9 @@
+/* global describe it context */
 const expect = require('chai').expect
 const TestTypesDAOMock = require('../models/TestTypesDAOMock')
 const TestTypesService = require('../../src/services/TestTypesService')
-const HTTPResponseStatus = require('../../src/models/HTTPResponseStatus')
+const HTTPErrorResponse = require('../../src/models/HTTPErrorResponse')
+const HTTPStatusResponse = require('../../src/models/HTTPStatusResponse')
 
 describe('getTestTypesList', () => {
   var testTypesDAOMock = new TestTypesDAOMock()
@@ -16,7 +18,8 @@ describe('getTestTypesList', () => {
 
         return testTypesService.getTestTypesList()
           .then((returnedRecords) => {
-            expect(returnedRecords).to.eql({ item: 'testItem' })
+            expect(returnedRecords).to.be.instanceOf(HTTPStatusResponse)
+            expect(returnedRecords.body).to.eql({ item: 'testItem' })
           })
       })
     })
@@ -31,7 +34,7 @@ describe('getTestTypesList', () => {
           .then(() => {
             expect.fail()
           }).catch((errorResponse) => {
-            expect(errorResponse).to.be.instanceOf(HTTPResponseStatus)
+            expect(errorResponse).to.be.instanceOf(HTTPErrorResponse)
             expect(errorResponse.statusCode).to.equal(404)
             expect(errorResponse.body).to.equal('No resources match the search criteria.')
           })
@@ -51,7 +54,7 @@ describe('getTestTypesList', () => {
         .then(() => {
         })
         .catch((errorResponse) => {
-          expect(errorResponse).to.be.instanceOf(HTTPResponseStatus)
+          expect(errorResponse).to.be.instanceOf(HTTPErrorResponse)
           expect(errorResponse.statusCode).to.be.equal(500)
           expect(errorResponse.body).to.equal('Internal Server Error')
         })

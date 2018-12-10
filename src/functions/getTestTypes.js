@@ -8,14 +8,16 @@ const getTestTypes = () => {
   const testTypesService = new TestTypesService(testTypes)
 
   return testTypesService.getTestTypesList()
-    .then((data) => {
+    .then((response) => {
       return {
-        statusCode: 200,
-        body: JSON.stringify(data)
+        statusCode: response.statusCode,
+        headers: response.headers,
+        body: JSON.stringify(response.body)
       }
     })
     .catch((error) => {
       console.log(error)
+
       return {
         statusCode: error.statusCode,
         headers: error.headers,

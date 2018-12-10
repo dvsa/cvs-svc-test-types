@@ -1,4 +1,5 @@
-/* global describe context before it after beforeEach afterEach */
+/* global describe it context before after beforeEach afterEach */
+
 const supertest = require('supertest')
 const expect = require('chai').expect
 const url = 'http://localhost:3002/'
@@ -29,6 +30,21 @@ describe('test types', () => {
               expect.fail()
             }
             expect(res.statusCode).to.equal(200)
+            expect(_.isEqual(mockData, res.body)).to.equal(true)
+            done()
+          })
+      })
+
+      it('should provide CORS headers', (done) => {
+        request.get('test-types')
+          .expect('access-control-allow-origin', '*')
+          .expect('access-control-allow-credentials', 'true')
+          .expect(200)
+          .end((err, res) => {
+            if (err) {
+              expect.fail()
+            }
+
             expect(_.isEqual(mockData, res.body)).to.equal(true)
             done()
           })
