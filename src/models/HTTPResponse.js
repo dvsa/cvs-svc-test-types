@@ -1,9 +1,9 @@
 /**
  * Defines a class used for signaling a successful HTTP status code.
  */
-class HTTPStatusResponse {
+class HTTPResponse {
   /**
-   * Constructor for the HTTPStatusResponse class
+   * Constructor for the HTTPResponse class
    * @param statusCode the HTTP status code
    * @param body the response body
    * @param headers the response headers
@@ -20,4 +20,4 @@ class HTTPStatusResponse {
   }
 }
 
-module.exports = HTTPStatusResponse
+module.exports = HTTPResponse
