@@ -1,6 +1,7 @@
 'use strict'
 
-const HTTPResponseStatus = require('../models/HTTPResponseStatus')
+const HTTPErrorResponse = require('../models/HTTPErrorResponse')
+const HTTPStatusResponse = require('../models/HTTPStatusResponse')
 
 class TestTypesService {
   constructor (testTypesDAO) {
@@ -11,18 +12,20 @@ class TestTypesService {
     return this.testTypesDAO.getAll()
       .then((data) => {
         if (data.Count === 0) {
-          throw new HTTPResponseStatus(404, 'No resources match the search criteria.')
+          throw new HTTPErrorResponse(404, 'No resources match the search criteria.')
         }
-        return data.Items
+
+        return new HTTPStatusResponse(200, data.Items)
       })
       .catch((error) => {
         console.log(error)
+
         if (!error.statusCode) {
           error.statusCode = 500
           error.body = 'Internal Server Error'
         }
 
-        throw new HTTPResponseStatus(error.statusCode, error.body)
+        throw new HTTPErrorResponse(error.statusCode, error.body)
       })
   }
 
@@ -35,8 +38,9 @@ class TestTypesService {
       })
       .catch((error) => {
         console.log(error)
+
         if (error) {
-          throw new HTTPResponseStatus(500, 'Internal Server Error')
+          throw new HTTPErrorResponse(500, 'Internal Server Error')
         }
       })
   }
@@ -50,8 +54,9 @@ class TestTypesService {
       })
       .catch((error) => {
         console.log(error)
+
         if (error) {
-          throw new HTTPResponseStatus(500, 'Internal ServerError')
+          throw new HTTPErrorResponse(500, 'Internal ServerError')
         }
       })
   }
