@@ -2,8 +2,6 @@
 const expect = require('chai').expect
 const TestTypesDAOMock = require('../models/TestTypesDAOMock')
 const TestTypesService = require('../../src/services/TestTypesService')
-const HTTPErrorResponse = require('../../src/models/HTTPError')
-const HTTPStatusResponse = require('../../src/models/HTTPResponse')
 
 describe('getTestTypesList', () => {
   var testTypesDAOMock = new TestTypesDAOMock()
@@ -18,8 +16,7 @@ describe('getTestTypesList', () => {
 
         return testTypesService.getTestTypesList()
           .then((returnedRecords) => {
-            expect(returnedRecords).to.be.instanceOf(HTTPStatusResponse)
-            expect(returnedRecords.body).to.eql({ item: 'testItem' })
+            expect(returnedRecords).to.eql({ item: 'testItem' })
           })
       })
     })
@@ -34,7 +31,6 @@ describe('getTestTypesList', () => {
           .then(() => {
             expect.fail()
           }).catch((errorResponse) => {
-            expect(errorResponse).to.be.instanceOf(HTTPErrorResponse)
             expect(errorResponse.statusCode).to.equal(404)
             expect(errorResponse.body).to.equal('No resources match the search criteria.')
           })
@@ -54,7 +50,6 @@ describe('getTestTypesList', () => {
         .then(() => {
         })
         .catch((errorResponse) => {
-          expect(errorResponse).to.be.instanceOf(HTTPErrorResponse)
           expect(errorResponse.statusCode).to.be.equal(500)
           expect(errorResponse.body).to.equal('Internal Server Error')
         })
