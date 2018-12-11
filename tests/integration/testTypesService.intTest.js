@@ -1,3 +1,4 @@
+/* global describe context before it after beforeEach afterEach */
 const supertest = require('supertest')
 const expect = require('chai').expect
 const url = 'http://localhost:3002/'
@@ -34,7 +35,7 @@ describe('test types', () => {
       })
 
       after((done) => {
-        const mockDataKeys = [[3, 'RETEST']]
+        const mockDataKeys = [['1', 'ANNUAL TEST'], ['5', 'Class 6A (Seatbelt Installation Check)'], ['11', 'RETEST']]
         testTypesService.deleteTestTypesList(mockDataKeys)
         done()
       })

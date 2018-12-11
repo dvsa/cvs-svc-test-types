@@ -24,14 +24,14 @@ resources:
       Properties:
         TableName: cvs-${env:ENV}-dft-TestTypes
         AttributeDefinitions:
-        - AttributeName: testCategoryNumber
-          AttributeType: N
-        - AttributeName: testType
+        - AttributeName: id
+          AttributeType: S
+        - AttributeName: name
           AttributeType: S
         KeySchema:
-        - AttributeName: testCategoryNumber
+        - AttributeName: id
           KeyType: HASH
-        - AttributeName: testType
+        - AttributeName: name
           KeyType: RANGE
         ProvisionedThroughput:
           ReadCapacityUnits: 1
