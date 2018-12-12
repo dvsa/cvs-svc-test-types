@@ -10,12 +10,10 @@ const getTestTypes = () => {
 
   return testTypesService.getTestTypesList()
     .then((data) => {
-      return new HTTPResponse(200, JSON.stringify(data))
+      return new HTTPResponse(200, data)
     })
     .catch((error) => {
-      console.log(error)
-
-      return new HTTPResponse(error.statusCode, JSON.stringify(error.body))
+      return new HTTPResponse(error.statusCode, error.body)
     })
 }
 

@@ -1,22 +1,18 @@
-/**
- * Defines a class used for signaling a successful HTTP status code.
- */
+'use strict'
+
 class HTTPResponse {
   /**
-   * Constructor for the HTTPResponse class
-   * @param statusCode the HTTP status code
-   * @param body the response body
-   * @param headers the response headers
-   */
-  constructor (statusCode, body, headers) {
+       * Constructor for the HTTPResponse class
+       * @param statusCode the HTTP status code
+       * @param body - the response body
+       * @param headers - optional - the response headers
+       */
+  constructor (statusCode, body, headers = {}) {
+    if (headers) this.headers = headers
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Allow-Credentials'] = true
     this.statusCode = statusCode
-    this.headers = {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Credentials': true
-    }
-    this.body = body
-
-    if (headers) Object.assign(this.headers, headers)
+    this.body = JSON.stringify(body)
   }
 }
 

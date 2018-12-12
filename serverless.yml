@@ -1,4 +1,4 @@
-service: cvs-svc-test-type
+service: cvs-svc-test-types
 
 provider:
   name: aws
@@ -22,7 +22,7 @@ resources:
     Users:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: cvs-${env:ENV}-dft-TestTypes
+        TableName: cvs-local-test-types
         AttributeDefinitions:
         - AttributeName: testCategoryNumber
           AttributeType: N
@@ -41,12 +41,12 @@ custom:
     port: 3002
   dynamodb:
     start:
-      port: 8001
+      port: 8002
       inMemory: true
       migrate: true
       seed: false
     seed:
       test-types:
         sources:
-        - table: cvs-${env:ENV}-dft-TestTypes
+        - table: cvs-local-test-types
           sources: [./tests/resources/test-types.json]
