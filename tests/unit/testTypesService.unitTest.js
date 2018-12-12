@@ -1,7 +1,7 @@
+/* global describe it context */
 const expect = require('chai').expect
 const TestTypesDAOMock = require('../models/TestTypesDAOMock')
 const TestTypesService = require('../../src/services/TestTypesService')
-const HTTPResponseStatus = require('../../src/models/HTTPResponseStatus')
 
 describe('getTestTypesList', () => {
   var testTypesDAOMock = new TestTypesDAOMock()
@@ -31,7 +31,6 @@ describe('getTestTypesList', () => {
           .then(() => {
             expect.fail()
           }).catch((errorResponse) => {
-            expect(errorResponse).to.be.instanceOf(HTTPResponseStatus)
             expect(errorResponse.statusCode).to.equal(404)
             expect(errorResponse.body).to.equal('No resources match the search criteria.')
           })
@@ -51,7 +50,6 @@ describe('getTestTypesList', () => {
         .then(() => {
         })
         .catch((errorResponse) => {
-          expect(errorResponse).to.be.instanceOf(HTTPResponseStatus)
           expect(errorResponse.statusCode).to.be.equal(500)
           expect(errorResponse.body).to.equal('Internal Server Error')
         })
