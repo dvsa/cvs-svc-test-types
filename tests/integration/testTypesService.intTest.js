@@ -1,5 +1,4 @@
 /* global describe it context before after beforeEach afterEach */
-
 const supertest = require('supertest')
 const expect = require('chai').expect
 const url = 'http://localhost:3002/'
