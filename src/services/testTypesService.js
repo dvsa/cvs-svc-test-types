@@ -17,9 +17,8 @@ class TestTypesService {
         return data.Items
       })
       .catch((error) => {
-        console.log(error)
-
-        if (!error.statusCode) {
+        if (!(error instanceof HTTPError)) {
+          console.error(error)
           error.statusCode = 500
           error.body = 'Internal Server Error'
         }
@@ -36,9 +35,8 @@ class TestTypesService {
         }
       })
       .catch((error) => {
-        console.log(error)
-
         if (error) {
+          console.error(error)
           throw new HTTPError(500, 'Internal Server Error')
         }
       })
@@ -52,9 +50,8 @@ class TestTypesService {
         }
       })
       .catch((error) => {
-        console.log(error)
-
         if (error) {
+          console.error(error)
           throw new HTTPError(500, 'Internal ServerError')
         }
       })
