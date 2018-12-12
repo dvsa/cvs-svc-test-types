@@ -34,8 +34,8 @@ class TestTypesDAO {
       params.RequestItems[this.tableName].push({
         DeleteRequest: {
           Key: {
-            testCategoryNumber: compositeKey[0],
-            testType: compositeKey[1]
+            id: compositeKey[0],
+            name: compositeKey[1]
           }
         }
       })

@@ -1,218 +1,349 @@
 [
   {
-    "testCategoryNumber": 3,
-    "testType": "RETEST",
+    "id": "1",
+    "name": "ANNUAL TEST",
     "forVehicleType": [
       "psv"
     ],
-    "testCodeSelectionAttr": {
-      "testCodeSelectionAttrName": "Test type name/sub category",
-      "testCodeSelectionAttrValues": 
-      [
-        {
-          "testCodeSelectionAttrValue": "PAID",
-          "defaultTestCode": null,
-          "linkedTestCode": null,
-          "nextTestCodeSelectionAttr": {
-              "testCodeSelectionAttrName": "Any PSV/Class 6A",
-              "testCodeSelectionAttrValues": 
-              [
-                {
-                  "testCodeSelectionAttrValue": "Any PSV",
-                  "defaultTestCode": null,
-                  "linkedTestCode": null,
-                  "nextTestCodeSelectionAttr": {
-                    "testCodeSelectionAttrName": "GOV.UK Product",
-                    "testCodeSelectionAttrValues":
-                    [
-                      {
-                        "testCodeSelectionAttrValue": "Public Service Vehicle Annual Testing",
-                        "defaultTestCode": null,
-                        "linkedTestCode": null,
-                        "nextTestCodeSelectionAttr":{
-                          "testCodeSelectionAttrName": "Vehicle Size",
-                          "testCodeSelectionAttrValues":
-                          [
-                            {
-                              "testCodeSelectionAttrValue": "LARGE",
-                              "defaultTestCode": null,
-                              "linkedTestCode": null,
-                              "nextTestCodeSelectionAttr":{
-                                "testCodeSelectionAttrName": "Vehicle Configuration",
-                                "testCodeSelectionAttrValues":
-                                [
-                                  {
-                                    "testCodeSelectionAttrValue": "Articulated",
-                                    "defaultTestCode": "RHL",
-                                    "linkedTestCode": null,
-                                    "nextTestCodeSelectionAttr":{}
-                                  },
-                                  {
-                                    "testCodeSelectionAttrValue": "Rigid",
-                                    "defaultTestCode": "RPL",
-                                    "linkedTestCode": null,
-                                    "nextTestCodeSelectionAttr":{}
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "testCodeSelectionAttrValue": "SMALL",
-                              "defaultTestCode": null,
-                              "linkedTestCode": null,
-                              "nextTestCodeSelectionAttr":{
-                                "testCodeSelectionAttrName": "Vehicle Configuration",
-                                "testCodeSelectionAttrValues":
-                                [
-                                  {
-                                    "testCodeSelectionAttrValue": "Rigid",
-                                    "defaultTestCode": "WHL",
-                                    "linkedTestCode": null,
-                                    "nextTestCodeSelectionAttr":{}
-                                  }
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ] 
-                  }
-                },
-                {
-                  "testCodeSelectionAttrValue": "Class 6A (Seatbelt Installation Check)",
-                  "defaultTestCode": null,
-                  "linkedTestCode": null,
-                  "nextTestCodeSelectionAttr": {
-                    "testCodeSelectionAttrName": "GOV.UK Product",
-                    "testCodeSelectionAttrValues": 
-                    [
-                      {
-                        "testCodeSelectionAttrValue": "Public Service Vehicle Anual Testing",
-                        "defaultTestCode": null,
-                        "linkedTestCode": null,
-                        "nextTestCodeSelectionAttr": {
-                          "testCodeSelectionAttrName": "Vehicle Size",
-                          "testCodeSelectionAttrValues": 
-                          [
-                            {
-                              "testCodeSelectionAttrValue": "LARGE",
-                              "defaultTestCode": null,
-                              "linkedTestCode": null,
-                              "nextTestCodeSelectionAttr": {
-                                "testCodeSelectionAttrName": "Vehicle Configuration",
-                                "testCodeSelectionAttrValues":
-                                [
-                                  {
-                                    "testCodeSelectionAttrValue": "Rigid",
-                                    "defaultTestCode": "WHL",
-                                    "linkedTestCode": null,
-                                    "nextTestCodeSelectionAttr":{}
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "testCodeSelectionAttrValue": "SMALL",
-                              "defaultTestCode": null,
-                              "linkedTestCode": null,
-                              "nextTestCodeSelectionAttr": {
-                                "testCodeSelectionAttrName": "Vehicle Configuration",
-                                "testCodeSelectionAttrValues":
-                                [
-                                   {
-                                    "testCodeSelectionAttrValue": "Rigid",
-                                    "defaultTestCode": "WHS",
-                                    "linkedTestCode": null,
-                                    "nextTestCodeSelectionAttr":{}
-                                   }
-                                ]
-                        
-                              }
-                            }
-                          ]
-
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "testCodeSelectionAttrValue": "Class 6A (No Seatbelt Installation Check)",
-                  "defaultTestCode": "WKL",
-                  "linkedTestCode": null,
-                  "nextTestCodeSelectionAttr":{}
-    
-                }
-              ]
+    "forVehicleSize": [
+      "small",
+      "large"
+    ],
+    "forVehicleConfiguration": [
+      "articulated",
+      "rigid"
+    ],
+    "nextTestTypesOrCategories": [
+      {
+        "id": "2",
+        "name": "Public Service Vehicle Annual Testing",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "large"
+        ],
+        "forVehicleConfiguration": [
+          "rigid"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Public Service Vehicle Annual Testing",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "small"
+        ],
+        "forVehicleConfiguration": [
+          "rigid"
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Public Service Vehicle Annual Testing",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "large"
+        ],
+        "forVehicleConfiguration": [
+          "articulated"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Class 6A (Seatbelt Installation Check)",
+    "forVehicleType": [
+      "psv"
+    ],
+    "forVehicleSize": [
+      "small",
+      "large"
+    ],
+    "forVehicleConfiguration": [
+      "rigid"
+    ],
+    "nextTestTypesOrCategories": [
+      {
+        "id": "6",
+        "name": "ANNUAL",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "small",
+          "large"
+        ],
+        "forVehicleConfiguration": [
+          "rigid"
+        ],
+        "nextTestTypesOrCategories": [
+          {
+            "id": "7",
+            "name": "Public Service Vehicle Annual Testing",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVehicleSize": [
+              "large"
+            ],
+            "forVehicleConfiguration": [
+              "rigid"
+            ]
+          },
+          {
+            "id": "8",
+            "name": "Public Service Vehicle Annual Testing",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVehicleSize": [
+              "small"
+            ],
+            "forVehicleConfiguration": [
+              "rigid"
+            ]
           }
-        },
-        {
-          "testCodeSelectionAttrValue": "PART PAID",
-          "defaultTestCode": null,
-          "linkedTestCode": null,
-          "nextTestCodeSelectionAttr": {
-            "testCodeSelectionAttrName": "GOV.UK Product",
-            "testCodeSelectionAttrValues":
-            [
+        ]
+      },
+      {
+        "id": "9",
+        "name": "FIRST TEST",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "large"
+        ],
+        "forVehicleConfiguration": [
+          "rigid"
+        ],
+        "nextTestTypesOrCategories": [
+          {
+            "id": "10",
+            "name": "Public Service Vehicle Annual Testing",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVehicleSize": [
+              "large"
+            ],
+            "forVehicleConfiguration": [
+              "rigid"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "RETEST",
+    "forVehicleType": [
+      "psv"
+    ],
+    "forVehicleSize": [
+      "large",
+      "small"
+    ],
+    "forVehicleConfiguration": [
+      "rigid",
+      "articulated"
+    ],
+    "nextTestTypesOrCategories": [
+      {
+        "id": "12",
+        "name": "PAID",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "large",
+          "small"
+        ],
+        "forVehicleConfiguration": [
+          "rigid",
+          "articulated"
+        ],
+        "nextTestTypesOrCategories": [
+          {
+            "id": "14",
+            "name": "Any PSV",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVehicleSize": [
+              "large",
+              "small"
+            ],
+            "forVehicleConfiguration": [
+              "rigid",
+              "articulated"
+            ],
+            "nextTestTypesOrCategories": [
               {
-                "testCodeSelectionAttrValue": "Public Service Vehicle Annual Testing",
-                "defaultTestCode": null,
-                "linkedTestCode": null,
-                "nextTestCodeSelectionAttr": {
-                  "testCodeSelectionAttrName": "Vehicle Size",
-                  "testCodeSelectionAttrValues":
-                  [
-                    {
-                      "testCodeSelectionAttrValue": "LARGE",
-                      "defaultTestCode": null,
-                      "linkedTestCode": null,
-                      "nextTestCodeSelectionAttr": {
-                        "testCodeSelectionAttrName": "Vehicle Configuration",
-                        "testCodeSelectionAttrValues":
-                        [
-                          {
-                            "testCodeSelectionAttrValue": "Articulated",
-                            "defaultTestCode": "RGL",
-                            "linkedTestCode": null,
-                            "nextTestCodeSelectionAttr": {}
-                          },
-                          {
-                            "testCodeSelectionAttrValue": "Rigid",
-                            "defaultTestCode": "RSL",
-                            "linkedTestCode": null,
-                            "nextTestCodeSelectionAttr": {}
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "testCodeSelectionAttrValue": "SMALL",
-                      "defaultTestCode": null,
-                      "linkedTestCode": null,
-                      "nextTestCodeSelectionAttr": {
-                        "testCodeSelectionAttrName": "Vehicle Configuration",
-                        "testCodeSelectionAttrValues":
-                        [
-                          {
-                            "testCodeSelectionAttrValue": "Rigid",
-                            "defaultTestCode": "RSS",
-                            "linkedTestCode": null,
-                            "nextTestCodeSelectionAttr": {}
-                          }
-                        ]
-                      }
-                    }
-                  ]
-
-                }
+                "id": "15",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "large"
+                ],
+                "forVehicleConfiguration": [
+                  "articulated"
+                ]
+              },
+              {
+                "id": "16",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "large"
+                ],
+                "forVehicleConfiguration": [
+                  "rigid"
+                ]
+              },
+              {
+                "id": "17",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "small"
+                ],
+                "forVehicleConfiguration": [
+                  "rigid"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "18",
+            "name": "CLASS 6A (Seatbelt Installation Check)",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVehicleSize": [
+              "small",
+              "large"
+            ],
+            "forVehicleConfiguration": [
+              "rigid"
+            ],
+            "nextTestTypesOrCategories": [
+              {
+                "id": "19",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "large"
+                ],
+                "forVehicleConfiguration": [
+                  "rigid"
+                ]
+              },
+              {
+                "id": "20",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "small"
+                ],
+                "forVehicleConfiguration": [
+                  "rigid"
+                ]
               }
             ]
           }
-        }
-      ]
-    }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "PART PAID",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "large",
+          "small"
+        ],
+        "forVehicleConfiguration": [
+          "rigid",
+          "articulated"
+        ],
+        "nextTestTypesOrCategories": [
+          {
+            "id": "21",
+            "name": "Any PSV",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVehicleSize": [
+              "large",
+              "small"
+            ],
+            "forVehicleConfiguration": [
+              "rigid",
+              "articulated"
+            ],
+            "nextTestTypesOrCategories": [
+              {
+                "id": "22",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "large"
+                ],
+                "forVehicleConfiguration": [
+                  "articulated"
+                ]
+              },
+              {
+                "id": "23",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "large"
+                ],
+                "forVehicleConfiguration": [
+                  "rigid"
+                ]
+              },
+              {
+                "id": "24",
+                "name": "Public Service Vehicle Annual Testing",
+                "forVehicleType": [
+                  "psv"
+                ],
+                "forVehicleSize": [
+                  "small"
+                ],
+                "forVehicleConfiguration": [
+                  "rigid"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
-
-
