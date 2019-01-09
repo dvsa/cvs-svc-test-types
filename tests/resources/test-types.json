@@ -2,6 +2,7 @@
   {
     "id": "1",
     "name": "ANNUAL TEST",
+    "testTypeName": "Annual test",
     "forVehicleType": [
       "psv"
     ],
@@ -13,50 +14,10 @@
       "articulated",
       "rigid"
     ],
-    "nextTestTypesOrCategories": [
-      {
-        "id": "2",
-        "name": "Public Service Vehicle Annual Testing",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "rigid"
-        ]
-      },
-      {
-        "id": "3",
-        "name": "Public Service Vehicle Annual Testing",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small"
-        ],
-        "forVehicleConfiguration": [
-          "rigid"
-        ]
-      },
-      {
-        "id": "4",
-        "name": "Public Service Vehicle Annual Testing",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated"
-        ]
-      }
-    ]
+    "forVehicleAxles": null
   },
   {
-    "id": "5",
+    "id": "2",
     "name": "Class 6A (Seatbelt Installation Check)",
     "forVehicleType": [
       "psv"
@@ -68,10 +29,12 @@
     "forVehicleConfiguration": [
       "rigid"
     ],
+    "forVehicleAxles": null,
     "nextTestTypesOrCategories": [
       {
-        "id": "6",
+        "id": "3",
         "name": "ANNUAL",
+        "testTypeName": "Class 6A seatbelt installation check (annual test)",
         "forVehicleType": [
           "psv"
         ],
@@ -82,38 +45,12 @@
         "forVehicleConfiguration": [
           "rigid"
         ],
-        "nextTestTypesOrCategories": [
-          {
-            "id": "7",
-            "name": "Public Service Vehicle Annual Testing",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large"
-            ],
-            "forVehicleConfiguration": [
-              "rigid"
-            ]
-          },
-          {
-            "id": "8",
-            "name": "Public Service Vehicle Annual Testing",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small"
-            ],
-            "forVehicleConfiguration": [
-              "rigid"
-            ]
-          }
-        ]
+        "forVehicleAxles": null
       },
       {
-        "id": "9",
+        "id": "4",
         "name": "FIRST TEST",
+        "testTypeName": "Class 6A seatbelt installation check (first test)",
         "forVehicleType": [
           "psv"
         ],
@@ -123,26 +60,12 @@
         "forVehicleConfiguration": [
           "rigid"
         ],
-        "nextTestTypesOrCategories": [
-          {
-            "id": "10",
-            "name": "Public Service Vehicle Annual Testing",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large"
-            ],
-            "forVehicleConfiguration": [
-              "rigid"
-            ]
-          }
-        ]
+        "forVehicleAxles": null
       }
     ]
   },
   {
-    "id": "11",
+    "id": "5",
     "name": "RETEST",
     "forVehicleType": [
       "psv"
@@ -155,9 +78,10 @@
       "rigid",
       "articulated"
     ],
+    "forVehicleAxles": null,
     "nextTestTypesOrCategories": [
       {
-        "id": "12",
+        "id": "6",
         "name": "PAID",
         "forVehicleType": [
           "psv"
@@ -170,10 +94,12 @@
           "rigid",
           "articulated"
         ],
+        "forVehicleAxles": null,
         "nextTestTypesOrCategories": [
           {
-            "id": "14",
+            "id": "7",
             "name": "Any PSV",
+            "testTypeName": "Paid retest",
             "forVehicleType": [
               "psv"
             ],
@@ -185,51 +111,12 @@
               "rigid",
               "articulated"
             ],
-            "nextTestTypesOrCategories": [
-              {
-                "id": "15",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large"
-                ],
-                "forVehicleConfiguration": [
-                  "articulated"
-                ]
-              },
-              {
-                "id": "16",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large"
-                ],
-                "forVehicleConfiguration": [
-                  "rigid"
-                ]
-              },
-              {
-                "id": "17",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small"
-                ],
-                "forVehicleConfiguration": [
-                  "rigid"
-                ]
-              }
-            ]
+            "forVehicleAxles": null
           },
           {
-            "id": "18",
+            "id": "8",
             "name": "CLASS 6A (Seatbelt Installation Check)",
+            "testTypeName": "Paid retest with Class 6A seatbelt installation check",
             "forVehicleType": [
               "psv"
             ],
@@ -240,39 +127,12 @@
             "forVehicleConfiguration": [
               "rigid"
             ],
-            "nextTestTypesOrCategories": [
-              {
-                "id": "19",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large"
-                ],
-                "forVehicleConfiguration": [
-                  "rigid"
-                ]
-              },
-              {
-                "id": "20",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small"
-                ],
-                "forVehicleConfiguration": [
-                  "rigid"
-                ]
-              }
-            ]
+            "forVehicleAxles": null
           }
         ]
       },
       {
-        "id": "13",
+        "id": "9",
         "name": "PART PAID",
         "forVehicleType": [
           "psv"
@@ -285,10 +145,12 @@
           "rigid",
           "articulated"
         ],
+        "forVehicleAxles": null,
         "nextTestTypesOrCategories": [
           {
             "id": "21",
             "name": "Any PSV",
+            "testTypeName": "Part-paid retest",
             "forVehicleType": [
               "psv"
             ],
@@ -300,47 +162,7 @@
               "rigid",
               "articulated"
             ],
-            "nextTestTypesOrCategories": [
-              {
-                "id": "22",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large"
-                ],
-                "forVehicleConfiguration": [
-                  "articulated"
-                ]
-              },
-              {
-                "id": "23",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large"
-                ],
-                "forVehicleConfiguration": [
-                  "rigid"
-                ]
-              },
-              {
-                "id": "24",
-                "name": "Public Service Vehicle Annual Testing",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small"
-                ],
-                "forVehicleConfiguration": [
-                  "rigid"
-                ]
-              }
-            ]
+            "forVehicleAxles": null
           }
         ]
       }
