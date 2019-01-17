@@ -14,7 +14,34 @@
       "articulated",
       "rigid"
     ],
-    "forVehicleAxles": null
+    "forVehicleAxles": null,
+    "testTypeClassification": "Annual With Certificate",
+    "testCodes": [
+      {
+        "forVehicleType": "psv",
+        "forVehicleSize": "large",
+        "forVehicleConfiguration": "rigid",
+        "forVehicleAxles": null,
+        "defaultTestCode": "AAL",
+        "linkedTestCode": null
+      },
+      {
+        "forVehicleType": "psv",
+        "forVehicleSize": "small",
+        "forVehicleConfiguration": "rigid",
+        "forVehicleAxles": null,
+        "defaultTestCode": "AAS",
+        "linkedTestCode": null
+      },
+      {
+        "forVehicleType": "psv",
+        "forVehicleSize": "large",
+        "forVehicleConfiguration": "articulated",
+        "forVehicleAxles": null,
+        "defaultTestCode": "ADL",
+        "linkedTestCode": null
+      }
+    ]
   },
   {
     "id": "2",
@@ -45,7 +72,34 @@
         "forVehicleConfiguration": [
           "rigid"
         ],
-        "forVehicleAxles": null
+        "forVehicleAxles": null,
+        "testTypeClassification": "Annual With Certificate",
+        "testCodes": [
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "large",
+            "forVehicleConfiguration": "rigid",
+            "forVehicleAxles": null,
+            "defaultTestCode": "WDL",
+            "linkedTestCode": null
+          },
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "small",
+            "forVehicleConfiguration": "rigid",
+            "forVehicleAxles": null,
+            "defaultTestCode": "WDS",
+            "linkedTestCode": null
+          },
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "large",
+            "forVehicleConfiguration": "rigid",
+            "forVehicleAxles": null,
+            "defaultTestCode": "WBL",
+            "linkedTestCode": null
+          }
+        ]
       },
       {
         "id": "4",
@@ -60,7 +114,18 @@
         "forVehicleConfiguration": [
           "rigid"
         ],
-        "forVehicleAxles": null
+        "forVehicleAxles": null,
+        "testTypeClassification": "Annual With Certificate",
+        "testCodes": [
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "large",
+            "forVehicleConfiguration": "rigid",
+            "forVehicleAxles": null,
+            "defaultTestCode": "WBL",
+            "linkedTestCode": null
+          }
+        ]
       }
     ]
   },
@@ -111,7 +176,34 @@
               "rigid",
               "articulated"
             ],
-            "forVehicleAxles": null
+            "forVehicleAxles": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": "articulated",
+                "forVehicleAxles": null,
+                "defaultTestCode": "RHL",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "RPL",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "RPS",
+                "linkedTestCode": null
+              }
+            ]
           },
           {
             "id": "8",
@@ -127,7 +219,26 @@
             "forVehicleConfiguration": [
               "rigid"
             ],
-            "forVehicleAxles": null
+            "forVehicleAxles": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "WHL",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "WHS",
+                "linkedTestCode": null
+              }
+            ]
           }
         ]
       },
@@ -148,7 +259,7 @@
         "forVehicleAxles": null,
         "nextTestTypesOrCategories": [
           {
-            "id": "21",
+            "id": "10",
             "name": "Any PSV",
             "testTypeName": "Part-paid retest",
             "forVehicleType": [
@@ -162,7 +273,34 @@
               "rigid",
               "articulated"
             ],
-            "forVehicleAxles": null
+            "forVehicleAxles": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": "articulated",
+                "forVehicleAxles": null,
+                "defaultTestCode": "RGL",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "RSL",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "RSS",
+                "linkedTestCode": null
+              }
+            ]
           }
         ]
       }

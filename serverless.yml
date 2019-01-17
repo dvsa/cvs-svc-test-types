@@ -16,6 +16,19 @@ functions:
     - http:
         path: test-types
         method: get
+    - http:
+        path: test-types/{id}
+        method: get
+        request:
+          parameters:
+            paths:
+              id: true
+            query:
+              fields: true
+              vehicleType: true
+              vehicleSize: true
+              vehicleConfiguration: true
+              vehicleAxles: false
 
 resources:
   Resources:
