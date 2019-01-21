@@ -10,10 +10,10 @@ const testTypes = (event) => {
   const testTypesDAO = new TestTypesDAO()
   const testTypesService = new TestTypesService(testTypesDAO)
 
-  const path = (process.env.BRANCH === 'local') ? event.path : event.pathParameters.proxy
+  const path = (process.env.BRANCH === 'local') ? event.path.substr(1) : event.pathParameters.proxy
 
-  const getAllTestTypes = new Path('/test-types')
-  const getTestTypesById = new Path('/test-types/:id')
+  const getAllTestTypes = new Path('test-types')
+  const getTestTypesById = new Path('test-types/:id')
 
   // GET /test-types
   if (getAllTestTypes.test(path)) {
