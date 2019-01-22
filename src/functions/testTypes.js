@@ -10,10 +10,17 @@ const testTypes = (event) => {
   const testTypesDAO = new TestTypesDAO()
   const testTypesService = new TestTypesService(testTypesDAO)
 
-  const path = (process.env.BRANCH === 'local') ? event.path : event.pathParameters.proxy
+  const basePath = '/test-types'
+  const proxy = (event.pathParameters && event.pathParameters.proxy) ? `/${event.pathParameters.proxy}` : ''
+  const path = (process.env.BRANCH === 'local') ? event.path : `${basePath}${proxy}`
 
   const getAllTestTypes = new Path('/test-types')
   const getTestTypesById = new Path('/test-types/:id')
+
+  console.log(basePath)
+  console.log(proxy)
+  console.log(path)
+  console.log(event)
 
   // GET /test-types
   if (getAllTestTypes.test(path)) {
@@ -57,6 +64,7 @@ const testTypes = (event) => {
   }
 
   // If you get to this point, your URL is bad
+  console.error(`Error: Route ${event.httpMethod} ${event.path} was not found. \nDumping event:\n\n${JSON.stringify(event)}`)
   return Promise.resolve(new HTTPResponse(400, `Cannot GET ${path}`))
 }
 

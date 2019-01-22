@@ -37,7 +37,7 @@ describe('getTestTypesList', () => {
 
           return testTypesService.getTestTypesById('1', { fields: ['testTypeClassification', 'defaultTestCode', 'linkedTestCode'], vehicleType: 'psv', vehicleSize: 'small', vehicleConfiguration: 'rigid' })
             .then((returnedRecords) => {
-              expect(returnedRecords).to.eql({ id: '1', testTypeClassification: 'Annual With Certificate', defaultTestCode: 'AAS', linkedTestCode: null })
+              expect(returnedRecords).to.eql({ id: '1', testTypeClassification: 'Annual With Certificate', defaultTestCode: 'aas', linkedTestCode: null })
             })
         })
       })
