@@ -17,11 +17,6 @@ const testTypes = (event) => {
   const getAllTestTypes = new Path('/test-types')
   const getTestTypesById = new Path('/test-types/:id')
 
-  console.log(basePath)
-  console.log(proxy)
-  console.log(path)
-  console.log(event)
-
   // GET /test-types
   if (getAllTestTypes.test(path)) {
     return testTypesService.getTestTypesList()
