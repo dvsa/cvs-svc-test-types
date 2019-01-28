@@ -90,7 +90,7 @@ describe('test types', () => {
                   expect.fail()
                 }
                 expect(res.statusCode).to.equal(200)
-                expect(res.body).to.eql({ id: '1', testTypeClassification: 'Annual With Certificate', defaultTestCode: 'AAS', linkedTestCode: null })
+                expect(res.body).to.eql({ id: '1', testTypeClassification: 'Annual With Certificate', defaultTestCode: 'aas', linkedTestCode: null })
 
                 done()
               })
@@ -137,7 +137,7 @@ describe('test types', () => {
       })
 
       after((done) => {
-        const mockDataKeys = [['1', 'ANNUAL TEST'], ['2', 'Class 6A (Seatbelt Installation Check)'], ['5', 'RETEST']]
+        const mockDataKeys = [['1', 'annual test'], ['2', 'class 6a (seatbelt installation check)'], ['5', 'retest'], ['11', 'prohibition clearence'], ['29', 'voluntary test'], ['37', 'technical test']]
         testTypesService.deleteTestTypesList(mockDataKeys)
         done()
       })
