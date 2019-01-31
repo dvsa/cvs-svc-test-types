@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "npm run eslint && BRANCH=local ./node_modules/serverless/bin/serverless offline start",
-    "start:local": "BRANCH=local ./node_modules/serverless/bin/serverless invoke local -f getTestTypes",
+    "start:test": "npm run eslint && SLS_DEBUG=* BRANCH=local node_modules/gulp/bin/gulp.js start-serverless",
+    "end:test": "node_modules/gulp/bin/gulp.js kill-serverless",
     "debug": "export SLS_DEBUG=* && BRANCH=local node --inspect ./node_modules/serverless/bin/serverless offline start",
     "test": "node_modules/.bin/mocha tests/**/*.unitTest.js",
     "test-i": "BRANCH=local node_modules/.bin/mocha tests/**/*.intTest.js",
@@ -17,7 +18,8 @@
     "prepush": "BRANCH=local npm test && npm run eslint",
     "predeploy": "npm install && npm run prepush",
     "security-checks": "git secrets --scan && git log -p | scanrepo",
-    "eslint": "eslint . --config=.eslintrc.json --fix"
+    "eslint": "eslint . --config=.eslintrc.json --fix",
+    "sonar-scanner": "echo 'TODO'"
   },
   "author": "",
   "license": "MIT",
@@ -31,6 +33,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "expect": "^23.6.0",
+    "gulp": "^4.0.0",
     "mocha": "^5.2.0",
     "serverless": "^1.36.1",
     "serverless-dynamodb-local": "^0.2.35",
