@@ -9,8 +9,8 @@ podTemplate(label: label, containers: [
 
         container('node'){
             
-                    withFolderProperties{
-                        LBRANCH="${env.BRANCH}".toLowerCase()
+            withFolderProperties{
+                LBRANCH="${env.BRANCH}".toLowerCase()
             }
             
             stage ("npm deps") {
