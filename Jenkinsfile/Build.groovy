@@ -36,7 +36,7 @@ podTemplate(label: label, containers: [
 
                 sh '''
                 aws dynamodb create-table \
-                --table-name cvs-local-test-results \
+                --table-name cvs-local-test-types \
                 --attribute-definitions \
                     AttributeName=id,AttributeType=S AttributeName=name,AttributeType=S \
                 --key-schema AttributeName=id,KeyType=HASH AttributeName=name,KeyType=RANGE\
