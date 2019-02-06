@@ -16,7 +16,7 @@ class TestTypesService {
 
         this.purgeTestTypes(data.Items)
 
-        return data.Items
+        return this.sort(data.Items)
       })
       .catch((error) => {
         if (!(error instanceof HTTPError)) {
@@ -97,6 +97,21 @@ class TestTypesService {
     }
 
     return null
+  }
+
+  sort (testTypes) {
+    // Pass by value
+    let testTypeArray = testTypes
+
+    for (let i = 0; i < testTypeArray.length; i++) {
+      let testType = testTypeArray[i]
+
+      if (testType.hasOwnProperty('nextTestTypesOrCategories')) {
+        Object.assign(testTypeArray, { nextTestTypesOrCategories: this.sort(testType.nextTestTypesOrCategories) })
+      }
+    }
+
+    return testTypeArray.sort((a, b) => parseInt(a.id) - parseInt(b.id))
   }
 
   purgeTestTypes (testTypes) {

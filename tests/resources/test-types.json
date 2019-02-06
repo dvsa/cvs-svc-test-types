@@ -308,7 +308,7 @@
   },
   {
     "id": "11",
-    "name": "prohibition clearence",
+    "name": "prohibition clearance",
     "forVehicleType": [
       "psv"
     ],
@@ -607,6 +607,14 @@
                         "forVehicleAxles": null,
                         "defaultTestCode": "p2s",
                         "linkedTestCode": null
+                      },
+                      {
+                        "forVehicleType": "psv",
+                        "forVehicleSize": "small",
+                        "forVehicleConfiguration": "rigid",
+                        "forVehicleAxles": null,
+                        "defaultTestCode": "p3s",
+                        "linkedTestCode": null
                       }
                     ]
                   }
@@ -866,6 +874,14 @@
             "forVehicleConfiguration": "rigid",
             "forVehicleAxles": 3,
             "defaultTestCode": "qgl",
+            "linkedTestCode": null
+          },
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "small",
+            "forVehicleConfiguration": "rigid",
+            "forVehicleAxles": 3,
+            "defaultTestCode": "qgs",
             "linkedTestCode": null
           }
         ]
