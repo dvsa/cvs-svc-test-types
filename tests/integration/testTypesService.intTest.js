@@ -137,7 +137,7 @@ describe('test types', () => {
       })
 
       after((done) => {
-        const mockDataKeys = [['1', 'annual test'], ['2', 'class 6a (seatbelt installation check)'], ['5', 'retest'], ['11', 'prohibition clearance'], ['29', 'voluntary test'], ['37', 'technical test']]
+        const mockDataKeys = mockData.map((testType) => [testType.id, testType.name])
         testTypesService.deleteTestTypesList(mockDataKeys)
         done()
       })
