@@ -57,7 +57,7 @@ class TestTypesService {
             return testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration
           })
           .filter((testCode) => { // filter by vehicleAxles if present, otherwise filter by null
-            return testCode.forVehicleAxles === ((filterExpression.vehicleAxles) ? filterExpression.vehicleAxles : null)
+            return testCode.forVehicleAxles === ((filterExpression.vehicleAxles) ? parseInt(filterExpression.vehicleAxles) : null)
           })
 
         if (testCode.length === 0) {
