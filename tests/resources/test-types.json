@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "annual test",
+    "name": "Annual test",
     "testTypeName": "Annual test",
     "forVehicleType": [
       "psv"
@@ -45,7 +45,7 @@
   },
   {
     "id": "2",
-    "name": "class 6a (seatbelt installation check)",
+    "name": "Class 6A (seatbelt installation check)",
     "forVehicleType": [
       "psv"
     ],
@@ -60,7 +60,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "3",
-        "name": "annual",
+        "name": "Annual test",
         "testTypeName": "Class 6A seatbelt installation check (annual test)",
         "forVehicleType": [
           "psv"
@@ -103,7 +103,7 @@
       },
       {
         "id": "4",
-        "name": "first test",
+        "name": "First test",
         "testTypeName": "Class 6A seatbelt installation check (first test)",
         "forVehicleType": [
           "psv"
@@ -131,7 +131,7 @@
   },
   {
     "id": "5",
-    "name": "retest",
+    "name": "Retest",
     "forVehicleType": [
       "psv"
     ],
@@ -147,7 +147,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "6",
-        "name": "paid",
+        "name": "Paid",
         "forVehicleType": [
           "psv"
         ],
@@ -163,7 +163,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "7",
-            "name": "any psv",
+            "name": "Any PSV",
             "testTypeName": "Paid retest",
             "forVehicleType": [
               "psv"
@@ -207,7 +207,7 @@
           },
           {
             "id": "8",
-            "name": "class 6a (seatbelt installation check)",
+            "name": "Class 6A (seatbelt installation check)",
             "testTypeName": "Paid retest with Class 6A seatbelt installation check",
             "forVehicleType": [
               "psv"
@@ -244,7 +244,7 @@
       },
       {
         "id": "9",
-        "name": "part paid",
+        "name": "Part paid",
         "forVehicleType": [
           "psv"
         ],
@@ -260,7 +260,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "10",
-            "name": "any psv",
+            "name": "Any PSV",
             "testTypeName": "Part-paid retest",
             "forVehicleType": [
               "psv"
@@ -308,7 +308,7 @@
   },
   {
     "id": "11",
-    "name": "prohibition clearance",
+    "name": "Prohibition Clearance",
     "forVehicleType": [
       "psv"
     ],
@@ -323,7 +323,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "12",
-        "name": "any psv",
+        "name": "Any PSV",
         "forVehicleType": [
           "psv"
         ],
@@ -338,7 +338,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "13",
-            "name": "full insp & fee",
+            "name": "Full inspection/ full fee",
             "forVehicleType": [
               "psv"
             ],
@@ -353,7 +353,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "14",
-                "name": "no certificate",
+                "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (full inspection without certificate)",
                 "forVehicleType": [
                   "psv"
@@ -388,7 +388,7 @@
               },
               {
                 "id": "15",
-                "name": "certificate",
+                "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (full inspection with certificate)",
                 "forVehicleType": [
                   "psv"
@@ -425,7 +425,7 @@
           },
           {
             "id": "16",
-            "name": "pg9 retest",
+            "name": "PG9 retest",
             "forVehicleType": [
               "psv"
             ],
@@ -440,7 +440,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "17",
-                "name": "paid",
+                "name": "Paid",
                 "forVehicleType": [
                   "psv"
                 ],
@@ -455,7 +455,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "18",
-                    "name": "certificate",
+                    "name": "With certification",
                     "testTypeName": "Paid prohibition clearance (retest with certificate)",
                     "forVehicleType": [
                       "psv"
@@ -490,7 +490,7 @@
                   },
                   {
                     "id": "19",
-                    "name": "no certificate",
+                    "name": "Without certification",
                     "testTypeName": "Paid prohibition clearance (retest without certificate)",
                     "forVehicleType": [
                       "psv"
@@ -527,7 +527,7 @@
               },
               {
                 "id": "20",
-                "name": "part paid",
+                "name": "Part paid",
                 "forVehicleType": [
                   "psv"
                 ],
@@ -542,7 +542,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "21",
-                    "name": "certificate",
+                    "name": "With certification",
                     "testTypeName": "Part-paid prohibition clearance (retest with certificate)",
                     "forVehicleType": [
                       "psv"
@@ -577,7 +577,7 @@
                   },
                   {
                     "id": "22",
-                    "name": "no certificate",
+                    "name": "Without certification",
                     "testTypeName": "Part-paid prohibition clearance (retest without certificate)",
                     "forVehicleType": [
                       "psv"
@@ -624,7 +624,7 @@
           },
           {
             "id": "23",
-            "name": "part inspection & fee",
+            "name": "Part inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (partial inspection)",
             "forVehicleType": [
               "psv"
@@ -659,7 +659,7 @@
           },
           {
             "id": "24",
-            "name": "full inspection part fee",
+            "name": "Full inspection / full fee",
             "testTypeName": "Part-paid prohibition clearance (full inspection)",
             "forVehicleType": [
               "psv"
@@ -728,7 +728,7 @@
       },
       {
         "id": "26",
-        "name": "class 6a (seatbelt installation check)",
+        "name": "Class 6A (seatbelt installation check)",
         "forVehicleType": [
           "psv"
         ],
@@ -743,7 +743,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "27",
-            "name": "pg9 retest",
+            "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest with Class 6A seatbelt installation check)",
             "forVehicleType": [
               "psv"
@@ -764,20 +764,12 @@
                 "forVehicleAxles": null,
                 "defaultTestCode": "wis",
                 "linkedTestCode": null
-              },
-              {
-                "forVehicleType": "psv",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": "rigid",
-                "forVehicleAxles": null,
-                "defaultTestCode": "wil",
-                "linkedTestCode": null
               }
             ]
           },
           {
             "id": "28",
-            "name": "full insp & fee",
+            "name": "Full inspection / full fee",
             "testTypeName": "Paid prohibition clearance with Class 6A seatbelt installation check (full inspection)",
             "forVehicleType": [
               "psv"
@@ -816,7 +808,7 @@
   },
   {
     "id": "29",
-    "name": "voluntary test",
+    "name": "Voluntary Test",
     "forVehicleType": [
       "psv"
     ],
@@ -834,7 +826,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "30",
-        "name": "brake test",
+        "name": "Brake test",
         "testTypeName": "Voluntary brake test",
         "forVehicleType": [
           "psv"
@@ -888,7 +880,7 @@
       },
       {
         "id": "31",
-        "name": "headlamp test",
+        "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim check",
         "forVehicleType": [
           "psv"
@@ -923,7 +915,7 @@
       },
       {
         "id": "32",
-        "name": "\"smoke test\" or \"emmissions test\"",
+        "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
         "forVehicleType": [
           "psv"
@@ -958,7 +950,7 @@
       },
       {
         "id": "33",
-        "name": "multi-check",
+        "name": "Multi-check",
         "testTypeName": "Voluntary multi check (headlamp aim, smoke and brake test)",
         "forVehicleType": [
           "psv"
@@ -993,7 +985,7 @@
       },
       {
         "id": "34",
-        "name": "speed limiter check",
+        "name": "Speed limiter check",
         "testTypeName": "Voluntary speed limiter check",
         "forVehicleType": [
           "psv"
@@ -1017,7 +1009,7 @@
       },
       {
         "id": "35",
-        "name": "vitesse 100",
+        "name": "Vitesse 100",
         "testTypeName": "Voluntary Vitesse 100",
         "forVehicleType": [
           "psv"
@@ -1049,7 +1041,7 @@
       },
       {
         "id": "36",
-        "name": "tempo 100",
+        "name": "Tempo 100",
         "testTypeName": "Voluntary Tempo 100",
         "forVehicleType": [
           "psv"
@@ -1086,7 +1078,7 @@
   },
   {
     "id": "37",
-    "name": "technical test",
+    "name": "Technical Test",
     "forVehicleType": [
       "psv"
     ],
@@ -1101,7 +1093,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "38",
-        "name": "notifable alteration",
+        "name": "Notifable alteration",
         "testTypeName": "Notifiable alteration check",
         "forVehicleType": [
           "psv"
@@ -1136,7 +1128,7 @@
       },
       {
         "id": "39",
-        "name": "lec",
+        "name": "LEC",
         "testTypeName": "Low Emissions Certificate (LEC) with annual test",
         "forVehicleType": [
           "psv"
