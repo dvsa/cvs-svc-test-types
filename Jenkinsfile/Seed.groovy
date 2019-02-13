@@ -8,9 +8,10 @@ podTemplate(label: label, containers: [
         }
         
         container('node'){
-                withFolderProperties{
-                     LBRANCH="${env.BRANCH}".toLowerCase()
-                } 
+                
+            withFolderProperties{
+                LBRANCH="${env.BRANCH}".toLowerCase()
+            } 
             
             sh "cp -r /tmp/seed ."
             
@@ -27,14 +28,13 @@ podTemplate(label: label, containers: [
                 }
                 
                 stage ("delete-table") {
-    
-                        sh "aws dynamodb delete-table --table-name cvs-${LBRANCH}-test-types --region=eu-west-1 || true"
+                    sh "aws dynamodb delete-table --table-name cvs-${LBRANCH}-test-types --region=eu-west-1 || true"
                     sh "aws dynamodb wait table-not-exists --table-name cvs-${LBRANCH}-test-types --region=eu-west-1"
 
                 }
                 
                 stage ("create-table") {
-                    sh '''
+                    sh """
                         aws dynamodb create-table \
                         --table-name cvs-${BRANCH}-test-types \
                         --attribute-definitions \
@@ -42,7 +42,7 @@ podTemplate(label: label, containers: [
                         --key-schema AttributeName=id,KeyType=HASH AttributeName=name,KeyType=RANGE\
                         --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
                         --region=eu-west-1 
-                        '''
+                        """
                     sh "aws dynamodb wait table-exists --table-name cvs-${LBRANCH}-test-types --region=eu-west-1"
 
                 }
