@@ -36,7 +36,7 @@ podTemplate(label: label, containers: [
                 stage ("create-table") {
                     sh """
                         aws dynamodb create-table \
-                        --table-name cvs-${BRANCH}-test-types \
+                        --table-name cvs-${LBRANCH}-test-types \
                         --attribute-definitions \
                             AttributeName=id,AttributeType=S AttributeName=name,AttributeType=S \
                         --key-schema AttributeName=id,KeyType=HASH AttributeName=name,KeyType=RANGE\
