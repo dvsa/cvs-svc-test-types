@@ -1065,8 +1065,8 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": "rigid",
             "forVehicleAxles": null,
-            "defaultTestCode": "lcp",
-            "linkedTestCode": "lbp"
+            "defaultTestCode": "lbp",
+            "linkedTestCode": "lcp"
           }
         ]
       }
