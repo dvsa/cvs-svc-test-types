@@ -37,11 +37,12 @@ podTemplate(label: label, containers: [
                     sh """
                         aws dynamodb create-table \
                         --table-name cvs-${LBRANCH}-test-types \
+                        --region=eu-west-1 \
                         --attribute-definitions \
                             AttributeName=id,AttributeType=S AttributeName=name,AttributeType=S \
                         --key-schema AttributeName=id,KeyType=HASH AttributeName=name,KeyType=RANGE\
-                        --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
-                        --region=eu-west-1
+                        --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1
+                        
                         """
                         sh "sleep 10"
                     sh """ aws dynamodb tag-resource \
