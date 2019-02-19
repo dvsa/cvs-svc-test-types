@@ -31,15 +31,20 @@ podTemplate(label: label, containers: [
                 }
                 
                 stage ("create-table") {
-                    sh '''
+                    sh """
                         aws dynamodb create-table \
                         --table-name cvs-${BRANCH}-test-types \
                         --attribute-definitions \
                             AttributeName=id,AttributeType=S AttributeName=name,AttributeType=S \
                         --key-schema AttributeName=id,KeyType=HASH AttributeName=name,KeyType=RANGE\
-                        --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
-                        --region=eu-west-1 
-                        '''
+                        --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1
+                        """
+                        sh "sleep 10"
+                    sh """ aws dynamodb tag-resource \
+                        --resource-arn arn:aws:dynamodb:eu-west-1:006106226016:table/cvs-${LBRANCH}-test-types \
+                        --tags Key=is_managed,Value=true \
+                        --region=eu-west-1
+                      """
                     sh "aws dynamodb wait table-exists --table-name cvs-${BRANCH}-test-types --region=eu-west-1"
 
                 }
