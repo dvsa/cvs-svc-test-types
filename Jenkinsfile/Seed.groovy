@@ -40,7 +40,8 @@ podTemplate(label: label, containers: [
                         --attribute-definitions \
                             AttributeName=id,AttributeType=S AttributeName=name,AttributeType=S \
                         --key-schema AttributeName=id,KeyType=HASH AttributeName=name,KeyType=RANGE\
-                        --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1
+                        --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
+                        --region=eu-west-1
                         """
                         sh "sleep 10"
                     sh """ aws dynamodb tag-resource \
