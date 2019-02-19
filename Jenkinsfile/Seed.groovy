@@ -50,7 +50,7 @@ podTemplate(label: label, containers: [
                         --tags Key=is_managed,Value=true \
                         --region=eu-west-1
                       """
-                    sh "aws dynamodb wait table-exists --table-name cvs-${BRANCH}-test-types --region=eu-west-1"
+                    sh "aws dynamodb wait table-exists --table-name cvs-${LBRANCH}-test-types --region=eu-west-1"
 
                 }
                 
