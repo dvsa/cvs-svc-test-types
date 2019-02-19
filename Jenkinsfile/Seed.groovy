@@ -7,7 +7,11 @@ podTemplate(label: label, containers: [
             checkout scm
         }
         
-        container('node'){    
+        container('node'){
+                
+            withFolderProperties{
+                LBRANCH="${env.BRANCH}".toLowerCase()
+            } 
             
             sh "cp -r /tmp/seed ."
             
@@ -24,16 +28,15 @@ podTemplate(label: label, containers: [
                 }
                 
                 stage ("delete-table") {
-    
-                    sh "aws dynamodb delete-table --table-name cvs-${BRANCH}-test-types --region=eu-west-1 || true"
-                    sh "aws dynamodb wait table-not-exists --table-name cvs-${BRANCH}-test-types --region=eu-west-1"
+                    sh "aws dynamodb delete-table --table-name cvs-${LBRANCH}-test-types --region=eu-west-1 || true"
+                    sh "aws dynamodb wait table-not-exists --table-name cvs-${LBRANCH}-test-types --region=eu-west-1"
 
                 }
                 
                 stage ("create-table") {
                     sh """
                         aws dynamodb create-table \
-                        --table-name cvs-${BRANCH}-test-types \
+                        --table-name cvs-${LBRANCH}-test-types \
                         --attribute-definitions \
                             AttributeName=id,AttributeType=S AttributeName=name,AttributeType=S \
                         --key-schema AttributeName=id,KeyType=HASH AttributeName=name,KeyType=RANGE\
@@ -50,7 +53,7 @@ podTemplate(label: label, containers: [
                 }
                 
                 stage ("seed-table") {
-                        sh "./seed.js cvs-${BRANCH}-test-types ../tests/resources/test-types.json"
+                        sh "./seed.js cvs-${LBRANCH}-test-types ../tests/resources/test-types.json"
                 }
             }
         }

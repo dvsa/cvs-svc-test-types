@@ -1,10 +1,10 @@
 def label = "jenkins-node-${UUID.randomUUID().toString()}"
 podTemplate(label: label, containers: [
-        containerTemplate(name: 'dynamodb',
-                image: 'amazon/dynamodb-local',
-                command: 'java -jar /home/dynamodblocal/DynamoDBLocal.jar -inMemory -sharedDb -port 8002',
-                ports: [portMapping(name: 'dynamoport', containerPort: 8002, hostPort: 8002)]),
-        containerTemplate(name: 'node', image: '086658912680.dkr.ecr.eu-west-1.amazonaws.com/cvs/nodejs-builder:latest', ttyEnabled: true, alwaysPullImage: true, command: 'cat'),]){
+    containerTemplate(name: 'dynamodb',
+                      image: '086658912680.dkr.ecr.eu-west-1.amazonaws.com/cvs/dynamodb-local:latest',
+                      command: 'java -jar /home/dynamodblocal/DynamoDBLocal.jar -inMemory -sharedDb -port 8002',
+                      ports: [portMapping(name: 'dynamoport', containerPort: 8002, hostPort: 8002)]),
+    containerTemplate(name: 'node', image: '086658912680.dkr.ecr.eu-west-1.amazonaws.com/cvs/nodejs-builder:latest', ttyEnabled: true, alwaysPullImage: true, command: 'cat'),]){
     node(label) {
 
         stage('checkout') {
@@ -64,7 +64,7 @@ podTemplate(label: label, containers: [
                 sh "mkdir ${LBRANCH}"
                 sh "cp -r src/* ${LBRANCH}/"
                 sh "cp -r node_modules ${LBRANCH}/node_modules"
-                sh "zip -qr ${LBRANCH}.zip ${LBRANCH}"
+                sh "cd ${LBRANCH} && zip -qr ../${LBRANCH}.zip *"
             }
 
             stage("upload to s3") {
@@ -73,7 +73,8 @@ podTemplate(label: label, containers: [
                                   credentialsId: 'jenkins-iam',
                                   secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
 
-                    sh "aws s3 cp ${LBRANCH}.zip s3://cvs-services/test-types/${LBRANCH}.zip"
+                sh "aws s3 cp ${LBRANCH}.zip s3://cvs-services/test-types/${LBRANCH}.zip --metadata sha256sum=\"\$(openssl dgst -sha256 -binary ${LBRANCH}.zip | openssl enc -base64)\""
+
                 }
             }
         }
