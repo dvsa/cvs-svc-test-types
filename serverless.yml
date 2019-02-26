@@ -56,7 +56,7 @@ custom:
     start:
       port: 8002
       inMemory: true
-      migrate: true
+      migrate: false
       seed: false
       noStart: true
     seed:
