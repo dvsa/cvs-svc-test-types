@@ -15,7 +15,6 @@ class TestTypesService {
         }
 
         this.purgeTestTypes(data.Items)
-
         return this.sort(data.Items)
       })
       .catch((error) => {
@@ -45,8 +44,6 @@ class TestTypesService {
         if (testType === null) {
           throw new HTTPError(404, 'No resources match the search criteria.')
         }
-        console.log('BEFORE THE FILTER->>>>>', filterExpression)
-        console.log('BEFORE THE FILTER VEHICLE AXLES->>>>>', filterExpression.vehicleAxles)
         let testCode = testType.testCodes
           .filter((testCode) => { // filter by vehicleType
             return testCode.forVehicleType === filterExpression.vehicleType
@@ -58,8 +55,6 @@ class TestTypesService {
             return testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration
           })
           .filter((testCode) => { // filter by vehicleAxles if present, otherwise filter by null
-            console.log('DOES THE VEHICLE AXLES EXISTS? ->>>>>', filterExpression.vehicleAxles)
-            console.log('PARSEINT ->>>>>', parseInt(filterExpression.vehicleAxles))
             return testCode.forVehicleAxles === ((filterExpression.vehicleAxles) ? parseInt(filterExpression.vehicleAxles) : null)
           })
 

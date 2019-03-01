@@ -1,0 +1,30 @@
+functions:
+- getTestTypes:
+    method: GET
+    path: /test-types
+    proxy: null
+    function: getTestTypes
+    event: apigateway
+- getTestTypesById:
+    method: GET
+    path: /test-types/{+proxy}
+    proxy: :id
+    function: getTestTypesById
+    event: lambda
+dynamodb:
+  local:
+    params:
+      region: localhost
+      endpoint: http://localhost:8002
+    table: cvs-local-test-types
+  local-global:
+    params:
+      region: localhost
+      endpoint: http://localhost:8000
+    table: cvs-local-global-test-types
+  remote:
+    params: {}
+    table: cvs-${BRANCH}-test-types
+serverless:
+  basePath: /${BRANCH}
+  port: 3002

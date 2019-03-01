@@ -4,32 +4,11 @@ const TestTypesDAO = require('../models/TestTypesDAO')
 const TestTypesService = require('../services/TestTypesService')
 const HTTPResponse = require('../models/HTTPResponse')
 const Joi = require('joi')
-const Path = require('path-parser').default
 
-const testTypes = (event) => {
-  const testTypesDAO = new TestTypesDAO()
-  const testTypesService = new TestTypesService(testTypesDAO)
-
-  const basePath = '/test-types'
-  const proxy = (event.pathParameters && event.pathParameters.proxy) ? `/${event.pathParameters.proxy}` : ''
-  const path = (process.env.BRANCH === 'local') ? event.path : `${basePath}${proxy}`
-
-  const getAllTestTypes = new Path('/test-types')
-  const getTestTypesById = new Path('/test-types/:id')
-
-  // GET /test-types
-  if (getAllTestTypes.test(path)) {
-    return testTypesService.getTestTypesList()
-      .then((data) => {
-        return new HTTPResponse(200, data)
-      })
-      .catch((error) => {
-        return new HTTPResponse(error.statusCode, error.body)
-      })
-  }
-
-  // GET /test-types/{id}
-  if (getTestTypesById.test(path)) {
+const getTestTypesById = (event, context, callback) => {
+    const testTypesDAO = new TestTypesDAO()
+    const testTypesService = new TestTypesService(testTypesDAO)
+  
     // Validate query parameters
     const queryParamSchema = Joi.object().keys({
       fields: Joi.string().regex(/^(testTypeClassification|defaultTestCode|linkedTestCode),?\s*((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?$/).required(),
@@ -49,18 +28,19 @@ const testTypes = (event) => {
     // Splitting fields into an array and cleaning up unwanted whitespace
     Object.assign(queryParams, { fields: queryParams.fields.replace(/\s/g, '').split(',') })
 
-    return testTypesService.getTestTypesById(getTestTypesById.test(path).id, queryParams)
+    return testTypesService.getTestTypesById(event.pathParameters.id, queryParams)
       .then((data) => {
-        return new HTTPResponse(200, data)
+        return {
+          statusCode: 200,
+          body: data
+        }
       })
       .catch((error) => {
-        return new HTTPResponse(error.statusCode, error.body)
-      })
+        return {
+          statusCode: error.statusCode,
+          body: error.body
+        }
+    })
   }
-
-  // If you get to this point, your URL is bad
-  console.error(`Error: Route ${event.httpMethod} ${event.path} was not found. \nDumping event:\n\n${JSON.stringify(event)}`)
-  return Promise.resolve(new HTTPResponse(400, `Cannot GET ${path}`))
-}
-
-module.exports = testTypes
+  
+  module.exports.getTestTypesById = getTestTypesById
