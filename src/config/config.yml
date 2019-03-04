@@ -22,7 +22,7 @@ dynamodb:
       region: localhost
       endpoint: http://localhost:8000
     table: cvs-local-global-test-types
-  remote:
+  develop:
     params: {}
     table: cvs-${BRANCH}-test-types
 serverless:

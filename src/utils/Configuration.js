@@ -83,8 +83,8 @@ class Configuration {
       case 'local-global':
         env = 'local-global'
         break
-      case 'remote':
-        env = 'remote'
+      case 'develop':
+        env = 'develop'
         break
       default:
         env = 'local'
