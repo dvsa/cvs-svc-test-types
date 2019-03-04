@@ -3,7 +3,6 @@
 const TestTypesDAO = require('../models/TestTypesDAO')
 const TestTypesService = require('../services/TestTypesService')
 const HTTPResponse = require('../models/HTTPResponse')
-const Path = require('path-parser').default
 
 const getTestTypes = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO()
