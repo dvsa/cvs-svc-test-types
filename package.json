@@ -19,7 +19,7 @@
     "predeploy": "npm install && npm run prepush",
     "security-checks": "git secrets --scan && git log -p | scanrepo",
     "eslint": "eslint . --config=.eslintrc.json --fix  -f json -o report.json",
-    "sonar-scanner": "npm run eslint && npm run coverage", // TO ADD sonar-scanner
+    "sonar-scanner": "npm run eslint && npm run coverage",
     "coverage": "nyc mocha tests/unit/*.unitTest.js && nyc report --reporter=lcov"
   },
   "author": "",
