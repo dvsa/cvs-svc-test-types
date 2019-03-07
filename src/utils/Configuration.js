@@ -83,11 +83,8 @@ class Configuration {
       case 'local-global':
         env = 'local-global'
         break
-      case 'develop':
-        env = 'develop'
-        break
       default:
-        env = 'local'
+        env = 'remote'
     }
 
     return this.config.dynamodb[env]
