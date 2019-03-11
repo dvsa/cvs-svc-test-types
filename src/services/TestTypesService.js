@@ -149,7 +149,7 @@ class TestTypesService {
       .catch((error) => {
         if (error) {
           console.error(error)
-          throw new HTTPError(500, 'Internal ServerError')
+          throw new HTTPError(500, 'Internal Server Error')
         }
       })
   }
