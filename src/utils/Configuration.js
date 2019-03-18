@@ -74,7 +74,7 @@ class Configuration {
       throw new Error('DynamoDB config is not defined in the config file.')
     }
 
-    // Not defining BRANCH will default to local
+    // Not defining BRANCH will default to remote
     var env
     switch (process.env.BRANCH) {
       case 'local':
