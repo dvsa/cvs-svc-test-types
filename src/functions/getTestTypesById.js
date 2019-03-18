@@ -30,16 +30,10 @@ const getTestTypesById = (event, context, callback) => {
 
   return testTypesService.getTestTypesById(event.pathParameters.id, queryParams)
     .then((data) => {
-      return {
-        statusCode: 200,
-        body: data
-      }
+      return new HTTPResponse(200, data)
     })
     .catch((error) => {
-      return {
-        statusCode: error.statusCode,
-        body: error.body
-      }
+      return new HTTPResponse(error.statusCode, error.body)
     })
 }
 
