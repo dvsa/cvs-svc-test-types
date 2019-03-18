@@ -15,7 +15,7 @@ describe('deleteTestTypesList', () => {
 
       return testTypesService.deleteTestTypesList(testTypesDAOMock.testTypesRecordsMock)
         .then(data => {
-          expect(data).to.be.undefined
+          expect(data).to.equal(undefined)
         })
     })
 

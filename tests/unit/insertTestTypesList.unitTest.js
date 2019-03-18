@@ -15,7 +15,7 @@ describe('insertTestTypesList', () => {
 
       return testTypesService.insertTestTypesList(testTypesDAOMock.testTypesRecordsMock)
         .then(data => {
-          expect(data).to.be.undefined
+          expect(data).to.equal(undefined)
         })
     })
 
