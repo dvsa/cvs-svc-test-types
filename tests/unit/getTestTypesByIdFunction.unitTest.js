@@ -39,8 +39,8 @@ describe('getTestTypesById', () => {
           })
           .expectResolve((result) => {
             expect(result.statusCode).to.equal(200)
-            expect(result.body.id).to.equal('1')
-            expect(result.body.testTypeClassification).to.equal('Annual With Certificate')
+            expect(JSON.parse(result.body).id).to.equal('1')
+            expect(JSON.parse(result.body).testTypeClassification).to.equal('Annual With Certificate')
           })
       })
     })
@@ -61,7 +61,7 @@ describe('getTestTypesById', () => {
           })
           .expectResolve((result) => {
             expect(result.statusCode).to.equal(404)
-            expect(result.body).to.equal('No resources match the search criteria.')
+            expect(result.body).to.equal('"No resources match the search criteria."')
           })
       })
     })
