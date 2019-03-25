@@ -15,7 +15,7 @@ const getTestTypesById = (event, context, callback) => {
     vehicleType: Joi.any().only([ 'psv', 'hgv', 'trl' ]).required(),
     vehicleSize: Joi.any().only([ 'small', 'large' ]).required(),
     vehicleConfiguration: Joi.any().only([ 'rigid', 'articulated' ]).required(),
-    vehicleAxles: Joi.any().only([ '2', '3' ]).optional()
+    vehicleAxles: Joi.any().only([ 2, 3 ]).optional()
   })
 
   let queryParams = Object.assign({}, event.queryStringParameters)
