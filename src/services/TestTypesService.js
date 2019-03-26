@@ -45,17 +45,17 @@ class TestTypesService {
           throw new HTTPError(404, 'No resources match the search criteria.')
         }
         let testCode = testType.testCodes
-          .filter((testCode) => { // filter by vehicleType
-            return testCode.forVehicleType === filterExpression.vehicleType
+          .filter((testCode) => { // filter by vehicleType if present in DB, otherwise skip
+            return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true
           })
-          .filter((testCode) => { // filter by vehicleSize
-            return testCode.forVehicleSize === filterExpression.vehicleSize
+          .filter((testCode) => { // filter by vehicleSize if present in DB, otherwise skip
+            return testCode.forVehicleSize ? testCode.forVehicleSize === filterExpression.vehicleSize : true
           })
-          .filter((testCode) => { // filter by vehicleConfiguration
-            return testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration
+          .filter((testCode) => { // filter by vehicleConfiguration if present in DB, otherwise skip
+            return testCode.forVehicleConfiguration ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true
           })
-          .filter((testCode) => { // filter by vehicleAxles if present, otherwise filter by null
-            return testCode.forVehicleAxles === ((filterExpression.vehicleAxles) ? parseInt(filterExpression.vehicleAxles) : null)
+          .filter((testCode) => { // filter by vehicleAxles if present in DB & and in request, otherwise skip
+            return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? testCode.forVehicleAxles === filterExpression.vehicleAxles : true
           })
 
         if (testCode.length === 0) {
