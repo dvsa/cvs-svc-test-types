@@ -49,7 +49,7 @@ class TestTypesService {
             return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true
           })
           .filter((testCode) => { // filter by vehicleSize if present in DB, otherwise skip
-            return testCode.forVehicleSize ? testCode.forVehicleSize === filterExpression.vehicleSize : true
+            return (testCode.forVehicleSize && filterExpression.vehicleSize) ? testCode.forVehicleSize === filterExpression.vehicleSize : true
           })
           .filter((testCode) => { // filter by vehicleConfiguration if present in DB, otherwise skip
             return testCode.forVehicleConfiguration ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true

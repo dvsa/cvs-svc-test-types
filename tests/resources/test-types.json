@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "linkedIds": ["38", "39"],
     "name": "Annual test",
     "testTypeName": "Annual test",
     "forVehicleType": [
@@ -60,6 +61,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "3",
+        "linkedIds": ["38", "39"],
         "name": "Annual test",
         "testTypeName": "Class 6A seatbelt installation check (annual test)",
         "forVehicleType": [
@@ -95,6 +97,7 @@
       },
       {
         "id": "4",
+        "linkedIds": ["38", "39"],
         "name": "First test",
         "testTypeName": "Class 6A seatbelt installation check (first test)",
         "forVehicleType": [
@@ -155,6 +158,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "7",
+            "linkedIds": ["38", "39"],
             "name": "Any PSV",
             "testTypeName": "Paid retest",
             "forVehicleType": [
@@ -199,6 +203,7 @@
           },
           {
             "id": "8",
+            "linkedIds": ["38", "39"],
             "name": "Class 6A (seatbelt installation check)",
             "testTypeName": "Paid retest with Class 6A seatbelt installation check",
             "forVehicleType": [
@@ -252,6 +257,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "10",
+            "linkedIds": ["38", "39"],
             "name": "Any PSV",
             "testTypeName": "Part-paid retest",
             "forVehicleType": [
@@ -345,6 +351,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "14",
+                "linkedIds": ["38", "39"],
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (full inspection with certificate)",
                 "forVehicleType": [
@@ -518,6 +525,7 @@
                   {
                     "id": "18",
                     "name": "With certification",
+                    "linkedIds": ["38", "39"],
                     "testTypeName": "Paid prohibition clearance (retest with certificate)",
                     "forVehicleType": [
                       "psv"
@@ -605,6 +613,7 @@
                   {
                     "id": "21",
                     "name": "With certification",
+                    "linkedIds": ["38", "39"],
                     "testTypeName": "Part-paid prohibition clearance (retest with certificate)",
                     "forVehicleType": [
                       "psv"
@@ -778,6 +787,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "30",
+        "linkedIds": ["31", "32", "33", "34"],
         "name": "Brake test",
         "testTypeName": "Voluntary brake test",
         "forVehicleType": [
@@ -832,6 +842,7 @@
       },
       {
         "id": "31",
+        "linkedIds": ["30", "32", "33", "34"],
         "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim check",
         "forVehicleType": [
@@ -867,6 +878,7 @@
       },
       {
         "id": "32",
+        "linkedIds": ["30", "31", "33", "34"],
         "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
         "forVehicleType": [
@@ -902,6 +914,7 @@
       },
       {
         "id": "33",
+        "linkedIds": ["30", "31", "32", "34"],
         "name": "Multi - check",
         "testTypeName": "Voluntary multi check (headlamp aim, smoke and brake test)",
         "forVehicleType": [
@@ -937,6 +950,7 @@
       },
       {
         "id": "34",
+        "linkedIds": ["30", "31", "32", "33"],
         "name": "Speed limiter check",
         "testTypeName": "Voluntary speed limiter check",
         "forVehicleType": [

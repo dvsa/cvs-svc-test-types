@@ -13,7 +13,7 @@ const getTestTypesById = (event, context, callback) => {
   const queryParamSchema = Joi.object().keys({
     fields: Joi.string().regex(/^(testTypeClassification|defaultTestCode|linkedTestCode),?\s*((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?$/).required(),
     vehicleType: Joi.any().only([ 'psv', 'hgv', 'trl' ]).required(),
-    vehicleSize: Joi.any().only([ 'small', 'large' ]).required(),
+    vehicleSize: Joi.any().only([ 'small', 'large' ]),
     vehicleConfiguration: Joi.any().only([ 'rigid', 'articulated' ]).required(),
     vehicleAxles: Joi.any().only([ 2, 3 ]).optional()
   })
