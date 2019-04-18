@@ -387,6 +387,7 @@
               },
               {
                 "id": "15",
+                "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (full inspection without certificate)",
                 "forVehicleType": [
@@ -424,6 +425,7 @@
           },
           {
             "id": "16",
+            "linkedIds": null,
             "name": "Full inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (full inspection)",
             "forVehicleType": [
@@ -459,6 +461,7 @@
           },
           {
             "id": "23",
+            "linkedIds": null,
             "name": "Part inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (partial inspection)",
             "forVehicleType": [
@@ -560,6 +563,7 @@
                   },
                   {
                     "id": "19",
+                    "linkedIds": null,
                     "name": "Without certification",
                     "testTypeName": "Paid prohibition clearance (retest without certificate)",
                     "forVehicleType": [
@@ -648,6 +652,7 @@
                   },
                   {
                     "id": "22",
+                    "linkedIds": null,
                     "name": "Without certification",
                     "testTypeName": "Part-paid prohibition clearance (retest without certificate)",
                     "forVehicleType": [
@@ -704,6 +709,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "27",
+            "linkedIds": null,
             "name": "Full inspection / full fee",
             "testTypeName": "Paid prohibition clearance with Class 6A seatbelt installation check (full inspection)",
             "forVehicleType": [
@@ -739,6 +745,7 @@
           },
           {
             "id": "28",
+            "linkedIds": null,
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest with Class 6A seatbelt installation check)",
             "forVehicleType": [
@@ -1063,6 +1070,7 @@
       },
       {
         "id": "39",
+        "linkedIds": null,
         "name": "LEC",
         "testTypeName": "Low Emissions Certificate (LEC) with annual test",
         "forVehicleType": [
