@@ -387,7 +387,7 @@
               },
               {
                 "id": "15",
-                "linkedIds": null,
+                "linkedIds": ["38", "39"],
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (full inspection without certificate)",
                 "forVehicleType": [
@@ -425,7 +425,7 @@
           },
           {
             "id": "16",
-            "linkedIds": null,
+            "linkedIds": ["38", "39"],
             "name": "Full inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (full inspection)",
             "forVehicleType": [
@@ -461,7 +461,7 @@
           },
           {
             "id": "23",
-            "linkedIds": null,
+            "linkedIds": ["38", "39"],
             "name": "Part inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (partial inspection)",
             "forVehicleType": [
@@ -563,7 +563,7 @@
                   },
                   {
                     "id": "19",
-                    "linkedIds": null,
+                    "linkedIds": ["38", "39"],
                     "name": "Without certification",
                     "testTypeName": "Paid prohibition clearance (retest without certificate)",
                     "forVehicleType": [
@@ -652,7 +652,7 @@
                   },
                   {
                     "id": "22",
-                    "linkedIds": null,
+                    "linkedIds": ["38", "39"],
                     "name": "Without certification",
                     "testTypeName": "Part-paid prohibition clearance (retest without certificate)",
                     "forVehicleType": [
@@ -709,7 +709,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "27",
-            "linkedIds": null,
+            "linkedIds": ["38", "39"],
             "name": "Full inspection / full fee",
             "testTypeName": "Paid prohibition clearance with Class 6A seatbelt installation check (full inspection)",
             "forVehicleType": [
@@ -745,7 +745,7 @@
           },
           {
             "id": "28",
-            "linkedIds": null,
+            "linkedIds": ["38", "39"],
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest with Class 6A seatbelt installation check)",
             "forVehicleType": [
@@ -1035,7 +1035,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "38",
-        "linkedIds": null,
+        "linkedIds": [1,3,4,7,8,10,14,15,16,23,18,19,21,22,27,28,39],
         "name": "Notifiable alteration",
         "testTypeName": "Notifiable alteration check",
         "forVehicleType": [
@@ -1071,7 +1071,7 @@
       },
       {
         "id": "39",
-        "linkedIds": null,
+        "linkedIds": [1,3,4,7,8,10,14,15,16,23,18,19,21,22,27,28,39],
         "name": "LEC",
         "testTypeName": "Low Emissions Certificate (LEC) with annual test",
         "forVehicleType": [
