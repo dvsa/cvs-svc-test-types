@@ -44,21 +44,22 @@ class TestTypesService {
         if (testType === null) {
           throw new HTTPError(404, 'No resources match the search criteria.')
         }
-        let testCode = testType.testCodes
-          .filter((testCode) => { // filter by vehicleType if present in DB, otherwise skip
-            return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true
-          })
-          .filter((testCode) => { // filter by vehicleSize if present in DB, otherwise skip
-            return (testCode.forVehicleSize && filterExpression.vehicleSize) ? testCode.forVehicleSize === filterExpression.vehicleSize : true
-          })
-          .filter((testCode) => { // filter by vehicleConfiguration if present in DB, otherwise skip
-            return testCode.forVehicleConfiguration ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true
-          })
-          .filter((testCode) => { // filter by vehicleAxles if present in DB & and in request, otherwise skip
-            return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? testCode.forVehicleAxles === filterExpression.vehicleAxles : true
-          })
+        let testCodes = testType.testCodes
 
-        if (testCode.length === 0) {
+        testCodes = testCodes.filter((testCode) => { // filter by vehicleType if present in DB, otherwise skip
+          return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true
+        })
+        testCodes = testCodes.filter((testCode) => { // filter by vehicleSize if present in DB, otherwise skip
+          return (testCode.forVehicleSize && filterExpression.vehicleSize) ? testCode.forVehicleSize === filterExpression.vehicleSize : true
+        })
+        testCodes = testCodes.filter((testCode) => { // filter by vehicleConfiguration if present in DB, otherwise skip
+          return testCode.forVehicleConfiguration ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true
+        })
+        testCodes = testCodes.filter((testCode) => { // filter by vehicleAxles if present in DB & and in request, otherwise skip
+          return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? testCode.forVehicleAxles === filterExpression.vehicleAxles : true
+        })
+
+        if (testCodes.length === 0) {
           throw new HTTPError(404, 'No resources match the search criteria.')
         }
 
@@ -68,7 +69,7 @@ class TestTypesService {
 
         filterExpression.fields // Iterate through filterExpression's fields and populate them in the response
           .forEach((field) => {
-            response[field] = testCode[0][field]
+            response[field] = testCodes[0][field]
           })
 
         // Populating testTypeClassification that is found in testType, not testCode
