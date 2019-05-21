@@ -41,6 +41,25 @@ describe('getTestTypesById', () => {
     })
   })
 
+  context('when the queryStringParameter vehicleAxles is out of range from below', () => {
+    it('should return 400', () => {
+      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+        .event({
+          queryStringParameters: {
+            fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
+            vehicleType: 'psv',
+            vehicleSize: 'small',
+            vehicleConfiguration: 'rigid',
+            vehicleAxles: '-1'
+          }
+        })
+        .expectResolve((result) => {
+          expect(result.statusCode).to.equal(400)
+          expect(result.body).to.equal('"Query parameter \\"vehicleAxles\\" must be larger than or equal to 0"')
+        })
+    })
+  })
+
   context('when the queryStringParameter vehicleAxles is in range', () => {
     it('should return 200', () => {
       const expectedResult =
