@@ -116,6 +116,34 @@ describe('getTestTypesById', () => {
     })
   })
 
+  context('when the queryStringParameter vehicleAxles is sent null as String', () => {
+    it('should return 200', () => {
+      const expectedResult =
+          { 'id': '30',
+            'testTypeClassification': 'NON ANNUAL',
+            'defaultTestCode': 'qal',
+            'linkedTestCode': null
+          }
+      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+        .event({
+          queryStringParameters: {
+            fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
+            vehicleType: 'psv',
+            vehicleSize: 'large',
+            vehicleConfiguration: 'rigid',
+            vehicleAxles: 'null'
+          },
+          pathParameters: {
+            id: '30'
+          }
+        })
+        .expectResolve((result) => {
+          expect(result.statusCode).to.equal(200)
+          expect(JSON.parse(result.body)).to.eql(expectedResult)
+        })
+    })
+  })
+
   context('when the request is valid', () => {
     context('and the parameters match a test type in the database', () => {
       it('should return 200', () => {
