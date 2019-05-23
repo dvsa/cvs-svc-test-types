@@ -19,6 +19,9 @@ const getTestTypesById = (event, context, callback) => {
   })
 
   let queryParams = Object.assign({}, event.queryStringParameters)
+  if (queryParams.vehicleAxles) {
+    queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles)
+  }
   let validation = Joi.validate(queryParams, queryParamSchema)
 
   if (validation.error) {
