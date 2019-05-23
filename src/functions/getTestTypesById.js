@@ -15,12 +15,16 @@ const getTestTypesById = (event, context, callback) => {
     vehicleType: Joi.any().only([ 'psv', 'hgv', 'trl' ]).required(),
     vehicleSize: Joi.any().only([ 'small', 'large' ]),
     vehicleConfiguration: Joi.any().only([ 'rigid', 'articulated' ]).required(),
-    vehicleAxles: Joi.number().min(0).max(99).optional()
+    vehicleAxles: Joi.number().min(0).max(99).allow(null).optional()
   })
 
   let queryParams = Object.assign({}, event.queryStringParameters)
   if (queryParams.vehicleAxles) {
-    queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles)
+    if (queryParams.vehicleAxles === 'null') {
+      queryParams.vehicleAxles = null
+    } else {
+      queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles)
+    }
   }
   let validation = Joi.validate(queryParams, queryParamSchema)
 
