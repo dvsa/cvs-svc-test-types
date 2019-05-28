@@ -46,6 +46,7 @@
   },
   {
     "id": "2",
+    "linkedIds": ["38", "39"],
     "name": "Class 6A",
     "forVehicleType": [
       "psv"
@@ -126,6 +127,7 @@
   },
   {
     "id": "5",
+    "linkedIds": ["38", "39"],
     "name": "Retest",
     "forVehicleType": [
       "psv"
@@ -142,6 +144,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "6",
+        "linkedIds": ["38", "39"],
         "name": "Paid",
         "forVehicleType": [
           "psv"
@@ -241,6 +244,7 @@
       },
       {
         "id": "9",
+        "linkedIds": ["38", "39"],
         "name": "Part paid",
         "forVehicleType": [
           "psv"
@@ -306,6 +310,7 @@
   },
   {
     "id": "11",
+    "linkedIds": ["38", "39"],
     "name": "Prohibition clearance",
     "forVehicleType": [
       "psv"
@@ -321,6 +326,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "12",
+        "linkedIds": ["38", "39"],
         "name": "Any PSV",
         "forVehicleType": [
           "psv"
@@ -336,6 +342,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "13",
+            "linkedIds": ["38", "39"],
             "name": "Full inspection/ full fee",
             "forVehicleType": [
               "psv"
@@ -498,6 +505,7 @@
           {
             "id": "24",
             "name": "PG9 retest",
+            "linkedIds": ["38", "39"],
             "forVehicleType": [
               "psv"
             ],
@@ -512,6 +520,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "17",
+                "linkedIds": ["38", "39"],
                 "name": "Paid",
                 "forVehicleType": [
                   "psv"
@@ -601,6 +610,7 @@
               },
               {
                 "id": "20",
+                "linkedIds": ["38", "39"],
                 "name": "Part paid",
                 "forVehicleType": [
                   "psv"
@@ -694,6 +704,7 @@
       },
       {
         "id": "26",
+        "linkedIds": ["38", "39"],
         "name": "Class 6A (seatbelt installation check)",
         "forVehicleType": [
           "psv"
@@ -776,6 +787,7 @@
   },
   {
     "id": "29",
+    "linkedIds": ["30","31", "32", "33", "34"],
     "name": "Voluntary test",
     "forVehicleType": [
       "psv"
@@ -1020,6 +1032,7 @@
   },
   {
     "id": "37",
+    "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","38","39"],
     "name": "Technical test",
     "forVehicleType": [
       "psv"
@@ -1035,7 +1048,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "38",
-        "linkedIds": ["1","3","4","7","8","10","14","15","16","23","18","19","21","22","27","28","39"],
+        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","39"],
         "name": "Notifiable alteration",
         "testTypeName": "Notifiable alteration check",
         "forVehicleType": [
@@ -1071,7 +1084,7 @@
       },
       {
         "id": "39",
-        "linkedIds": ["1","3","4","7","8","10","14","15","16","23","18","19","21","22","27","28","38"],
+        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","38"],
         "name": "LEC",
         "testTypeName": "Low Emissions Certificate (LEC) with annual test",
         "forVehicleType": [
