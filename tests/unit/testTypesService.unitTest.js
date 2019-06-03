@@ -27,18 +27,55 @@ describe('getTestTypesList', () => {
       })
 
       context('getTestTypesById', () => {
-        it('should return the expected data', () => {
-          const mockData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../resources/test-types.json')))
+        context('when vehicleAxles filter is not present', () => {
+          it('should return the expected data', () => {
+            const mockData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../resources/test-types.json')))
 
-          testTypesDAOMock.testTypesRecordsMock = mockData
-          testTypesDAOMock.numberOfrecords = 1
-          testTypesDAOMock.numberOfScannedRecords = 1
-          var testTypesService = new TestTypesService(testTypesDAOMock)
+            testTypesDAOMock.testTypesRecordsMock = mockData
+            testTypesDAOMock.numberOfrecords = 1
+            testTypesDAOMock.numberOfScannedRecords = 1
+            var testTypesService = new TestTypesService(testTypesDAOMock)
 
-          return testTypesService.getTestTypesById('1', { fields: ['testTypeClassification', 'defaultTestCode', 'linkedTestCode'], vehicleType: 'psv', vehicleSize: 'small', vehicleConfiguration: 'rigid' })
-            .then((returnedRecords) => {
-              expect(returnedRecords).to.eql({ id: '1', testTypeClassification: 'Annual With Certificate', defaultTestCode: 'aas', linkedTestCode: null })
+            return testTypesService.getTestTypesById('1', {
+              fields: ['testTypeClassification', 'defaultTestCode', 'linkedTestCode'],
+              vehicleType: 'psv',
+              vehicleSize: 'small',
+              vehicleConfiguration: 'rigid'
             })
+              .then((returnedRecords) => {
+                expect(returnedRecords).to.eql({
+                  id: '1',
+                  testTypeClassification: 'Annual With Certificate',
+                  defaultTestCode: 'aas',
+                  linkedTestCode: null
+                })
+              })
+          })
+        })
+
+        context('when vehicleSize and vehicleAxles filters are not present', () => {
+          it('should return the expected data', () => {
+            const mockData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../resources/test-types.json')))
+
+            testTypesDAOMock.testTypesRecordsMock = mockData
+            testTypesDAOMock.numberOfrecords = 1
+            testTypesDAOMock.numberOfScannedRecords = 1
+            var testTypesService = new TestTypesService(testTypesDAOMock)
+
+            return testTypesService.getTestTypesById('1', {
+              fields: ['testTypeClassification', 'defaultTestCode', 'linkedTestCode'],
+              vehicleType: 'psv',
+              vehicleConfiguration: 'articulated'
+            })
+              .then((returnedRecords) => {
+                expect(returnedRecords).to.eql({
+                  id: '1',
+                  testTypeClassification: 'Annual With Certificate',
+                  defaultTestCode: 'adl',
+                  linkedTestCode: null
+                })
+              })
+          })
         })
       })
     })
