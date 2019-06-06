@@ -787,10 +787,7 @@
     "forVehicleConfiguration": [
       "rigid"
     ],
-    "forVehicleAxles": [
-      2,
-      3
-    ],
+    "forVehicleAxles": null,
     "nextTestTypesOrCategories": [
       {
         "id": "30",
