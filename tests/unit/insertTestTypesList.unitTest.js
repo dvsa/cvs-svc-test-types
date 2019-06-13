@@ -25,7 +25,7 @@ describe('insertTestTypesList', () => {
 
       return testTypesService.insertTestTypesList(testTypesDAOMock.testTypesRecordsMock)
         .then(data => {
-          expect(data.length).to.equal(6)
+          expect(data.length).to.equal(12)
         })
     })
   })
