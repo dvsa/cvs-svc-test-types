@@ -1207,7 +1207,7 @@
     "id": "41",
     "linkedIds": [],
     "name": "First test",
-    "testTypeName": "First Test With Certificate",
+    "testTypeName": "First Test",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -1292,6 +1292,7 @@
   {
     "id": "42",
     "name": "Technical test",
+    "testTypeName": "Technical Test",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -1414,6 +1415,7 @@
   {
     "id": "47",
     "name": "Retest",
+    "testTypeName": "Retest",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -1857,6 +1859,7 @@
   {
     "id": "62",
     "name": "Prohibition clearance",
+    "testTypeName": "Prohibition clearance",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -2388,6 +2391,7 @@
   {
     "id": "73",
     "name": "Voluntary test",
+    "testTypeName": "Voluntary test",
     "forVehicleType": [
       "hgv",
       "trl"
