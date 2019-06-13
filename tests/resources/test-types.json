@@ -1194,7 +1194,7 @@
     "id": "41",
     "linkedIds": [],
     "name": "First test",
-    "testTypeName": "First Test",
+    "testTypeName": "First test",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -1279,7 +1279,7 @@
   {
     "id": "42",
     "name": "Technical test",
-    "testTypeName": "Technical Test",
+    "testTypeName": "Technical test",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -1337,7 +1337,7 @@
         "id": "45",
         "linkedIds": [],
         "name": "TIR",
-        "testTypeName": "TIR Test",
+        "testTypeName": "TIR test",
         "forVehicleType": [
           "hgv",
           "trl"
@@ -1369,7 +1369,7 @@
         "id": "46",
         "linkedIds": [],
         "name": "ADR",
-        "testTypeName": "ADR Test",
+        "testTypeName": "ADR test",
         "forVehicleType": [
           "hgv",
           "trl"
