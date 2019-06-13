@@ -1114,7 +1114,7 @@
       4,
       5
     ],
-    "testTypeClassification": "",
+    "testTypeClassification": null,
     "testCodes": [
       {
         "forVehicleType": "hgv",
@@ -1208,7 +1208,7 @@
       4,
       5
     ],
-    "testTypeClassification": "",
+    "testTypeClassification": null,
     "testCodes": [
       {
         "forVehicleType": "hgv",
@@ -1310,7 +1310,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -1344,7 +1344,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -1376,7 +1376,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -1444,7 +1444,7 @@
               4,
               5
             ],
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -1543,7 +1543,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "trl",
@@ -1566,7 +1566,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "trl",
@@ -1601,7 +1601,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -1638,7 +1638,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -1670,7 +1670,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -1713,7 +1713,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "trl",
@@ -1761,7 +1761,7 @@
               4,
               5
             ],
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "trl",
@@ -1893,7 +1893,7 @@
               4,
               5
             ],
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -1985,7 +1985,7 @@
               4,
               5
             ],
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -2039,7 +2039,7 @@
           4,
           5
         ],
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -2093,7 +2093,7 @@
           4,
           5
         ],
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -2221,7 +2221,7 @@
                   4,
                   5
                 ],
-                "testTypeClassification": "",
+                "testTypeClassification": null,
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
@@ -2332,7 +2332,7 @@
               4,
               5
             ],
-            "testTypeClassification": "",
+            "testTypeClassification": null,
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -2401,7 +2401,7 @@
           4,
           5
         ],
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -2488,7 +2488,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -2511,7 +2511,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -2534,7 +2534,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -2563,7 +2563,7 @@
           4,
           5
         ],
-        "testTypeClassification": "",
+        "testTypeClassification": null,
         "testCodes": [
           {
             "forVehicleType": "trl",
