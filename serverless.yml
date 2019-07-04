@@ -10,6 +10,7 @@ provider:
       Action:
         - "xray:PutTraceSegments"
         - "xray:PutTelemetryRecords"
+        - "lambda:InvokeFunction"
       Resource:
         - "*"
 

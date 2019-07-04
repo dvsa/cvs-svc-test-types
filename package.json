@@ -40,10 +40,12 @@
     "lambda-tester": "^3.5.0",
     "mocha": "^5.2.0",
     "nyc": "^14.1.1",
+    "proxyquire": "^2.1.0",
     "serverless": "^1.42.3",
     "serverless-dynamodb-local": "^0.2.37",
     "serverless-offline": "^3.27.0",
     "serverless-plugin-tracing": "^2.0.0",
+    "sinon": "^7.3.2",
     "standard": "^12.0.1",
     "supertest": "^3.3.0"
   },
@@ -51,6 +53,7 @@
     "aws-sdk": "^2.332.0",
     "aws-xray-sdk": "^2.3.2",
     "joi": "^14.3.1",
+    "lambda-warmer": "^1.1.2",
     "node-yaml": "^3.2.0",
     "path-parser": "^4.2.0"
   }
