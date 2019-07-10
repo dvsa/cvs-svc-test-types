@@ -2363,7 +2363,8 @@
             "name": "Without certification",
             "testTypeName": "Paid prohibition clearance (full inspection without certification)",
             "forVehicleType": [
-              "hgv"
+              "hgv",
+              "trl"
             ],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
