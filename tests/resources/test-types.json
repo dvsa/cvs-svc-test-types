@@ -1180,7 +1180,7 @@
   },
   {
     "id": "40",
-    "linkedIds": [],
+    "linkedIds": null,
     "name": "Annual test",
     "testTypeName": "Annual test",
     "forVehicleType": [
@@ -1274,7 +1274,7 @@
   },
   {
     "id": "41",
-    "linkedIds": [],
+    "linkedIds": null,
     "name": "First test",
     "testTypeName": "First test",
     "forVehicleType": [
@@ -1368,8 +1368,8 @@
   },
   {
     "id": "42",
+    "linkedIds": null,
     "name": "Technical test",
-    "testTypeName": "Technical test",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -1380,6 +1380,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "43",
+        "linkedIds": null,
         "name": "LEC",
         "forVehicleType": [
           "hgv"
@@ -1390,7 +1391,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "44",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "With linked test",
             "testTypeName": "Low Emissions Certificate (LEC) with annual test",
             "forVehicleType": [
@@ -1413,7 +1414,7 @@
           },
           {
             "id": "45",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Without linked test",
             "testTypeName": "Low Emissions Certificate (LEC)",
             "forVehicleType": [
@@ -1438,6 +1439,7 @@
       },
       {
         "id": "46",
+        "linkedIds": null,
         "name": "Notifiable alteration",
         "forVehicleType": [
           "hgv",
@@ -1449,7 +1451,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "47",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Free",
             "testTypeName": "Free notifiable alteration",
             "forVehicleType": [
@@ -1481,7 +1483,7 @@
           },
           {
             "id": "48",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid notifiable alteration",
             "forVehicleType": [
@@ -1515,7 +1517,7 @@
       },
       {
         "id": "49",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "TIR",
         "testTypeName": "TIR test",
         "forVehicleType": [
@@ -1547,7 +1549,7 @@
       },
       {
         "id": "50",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "ADR",
         "testTypeName": "ADR test",
         "forVehicleType": [
@@ -1581,8 +1583,8 @@
   },
   {
     "id": "51",
+    "linkedIds": null,
     "name": "Retest",
-    "testTypeName": "Retest",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -1593,6 +1595,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "52",
+        "linkedIds": null,
         "name": "Annual test",
         "forVehicleType": [
           "hgv",
@@ -1610,7 +1613,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "53",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid annual test retest",
             "forVehicleType": [
@@ -1704,7 +1707,7 @@
           },
           {
             "id": "54",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Part paid",
             "testTypeName": "Part paid annual test retest",
             "forVehicleType": [
@@ -1800,6 +1803,7 @@
       },
       {
         "id": "55",
+        "linkedIds": null,
         "name": "TIR",
         "forVehicleType": [
           "hgv",
@@ -1811,7 +1815,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "56",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid TIR retest",
             "forVehicleType": [
@@ -1843,7 +1847,7 @@
           },
           {
             "id": "57",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Free",
             "testTypeName": "Free TIR retest",
             "forVehicleType": [
@@ -1868,6 +1872,7 @@
       },
       {
         "id": "58",
+        "linkedIds": null,
         "name": "ADR",
         "forVehicleType": [
           "hgv",
@@ -1879,7 +1884,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "59",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid ADR retest",
             "forVehicleType": [
@@ -1911,7 +1916,7 @@
           },
           {
             "id": "60",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Free",
             "testTypeName": "Free ADR retest",
             "forVehicleType": [
@@ -1945,6 +1950,7 @@
       },
       {
         "id": "61",
+        "linkedIds": null,
         "name": "Roadworthiness",
         "forVehicleType": [
           "hgv",
@@ -1956,7 +1962,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "62",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid roadworthiness retest",
             "forVehicleType": [
@@ -2033,7 +2039,7 @@
           },
           {
             "id": "63",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Part Paid",
             "testTypeName": "Part paid roadworthiness retest",
             "forVehicleType": [
@@ -2067,6 +2073,7 @@
       },
       {
         "id": "64",
+        "linkedIds": null,
         "name": "First test retest",
         "forVehicleType": [
           "hgv",
@@ -2084,7 +2091,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "65",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid first test retest",
             "forVehicleType": [
@@ -2178,7 +2185,7 @@
           },
           {
             "id": "66",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Part paid",
             "testTypeName": "Part paid first test retest",
             "forVehicleType": [
@@ -2272,7 +2279,7 @@
           },
           {
             "id": "67",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Free",
             "testTypeName": "Free first test retest",
             "forVehicleType": [
@@ -2299,8 +2306,8 @@
   },
   {
     "id": "68",
+    "linkedIds": null,
     "name": "Prohibition clearance",
-    "testTypeName": "Prohibition clearance",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -2317,6 +2324,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "69",
+        "linkedIds": null,
         "name": "Full inspection/ Fee",
         "forVehicleType": [
           "hgv",
@@ -2334,7 +2342,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "70",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "With certification",
             "testTypeName": "Paid prohibition clearance (full inspection with certification)",
             "forVehicleType": [
@@ -2428,7 +2436,7 @@
           },
           {
             "id": "71",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Without certification",
             "testTypeName": "Paid prohibition clearance (full inspection without certification)",
             "forVehicleType": [
@@ -2524,7 +2532,7 @@
       },
       {
         "id": "72",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Full inspection/ Part Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (full inspection without certification)",
         "forVehicleType": [
@@ -2618,7 +2626,7 @@
       },
       {
         "id": "73",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Part Inspection/ Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (part inspection without certification)",
         "forVehicleType": [
@@ -2712,6 +2720,7 @@
       },
       {
         "id": "74",
+        "linkedIds": null,
         "name": "Retest",
         "forVehicleType": [
           "hgv",
@@ -2729,6 +2738,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "75",
+            "linkedIds": null,
             "name": "Paid",
             "forVehicleType": [
               "hgv",
@@ -2746,7 +2756,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "76",
-                "linkedIds": [],
+                "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (retest with certification)",
                 "forVehicleType": [
@@ -2840,7 +2850,7 @@
               },
               {
                 "id": "77",
-                "linkedIds": [],
+                "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (retest without certification)",
                 "forVehicleType": [
@@ -2936,6 +2946,7 @@
           },
           {
             "id": "78",
+            "linkedIds": null,
             "name": "Part paid",
             "forVehicleType": [
               "hgv",
@@ -2953,7 +2964,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "79",
-                "linkedIds": [],
+                "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Part paid prohibition clearance (retest with certification)",
                 "forVehicleType": [
@@ -3047,7 +3058,7 @@
               },
               {
                 "id": "80",
-                "linkedIds": [],
+                "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Part paid prohibition clearance (retest without certification)",
                 "forVehicleType": [
@@ -3145,6 +3156,7 @@
       },
       {
         "id": "81",
+        "linkedIds": null,
         "name": "Prohibition clearance on first test",
         "forVehicleType": [
           "hgv",
@@ -3162,7 +3174,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "82",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Full Inspection/ Fee - With certification",
             "testTypeName": "Paid prohibition clearance on first test (full inspection with certification)",
             "forVehicleType": [
@@ -3256,7 +3268,7 @@
           },
           {
             "id": "83",
-            "linkedIds": [],
+            "linkedIds": null,
             "name": "Retest - Paid",
             "testTypeName": "Paid retest prohibition clearance on first test",
             "forVehicleType": [
@@ -3354,8 +3366,8 @@
   },
   {
     "id": "84",
+    "linkedIds": null,
     "name": "Voluntary test",
-    "testTypeName": "Voluntary test",
     "forVehicleType": [
       "hgv",
       "trl"
@@ -3366,7 +3378,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "85",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Brake test",
         "testTypeName": "Voluntary brake test",
         "forVehicleType": [
@@ -3460,7 +3472,7 @@
       },
       {
         "id": "86",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Multi - check",
         "testTypeName": "Voluntary multi-check",
         "forVehicleType": [
@@ -3483,7 +3495,7 @@
       },
       {
         "id": "87",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Shaker plate check",
         "testTypeName": "Voluntary Shaker plate check",
         "forVehicleType": [
@@ -3515,7 +3527,7 @@
       },
       {
         "id": "88",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Speed limiter check",
         "testTypeName": "Voluntary Speed limiter check",
         "forVehicleType": [
@@ -3538,7 +3550,7 @@
       },
       {
         "id": "89",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
         "forVehicleType": [
@@ -3561,7 +3573,7 @@
       },
       {
         "id": "90",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim test",
         "forVehicleType": [
@@ -3584,7 +3596,7 @@
       },
       {
         "id": "91",
-        "linkedIds": [],
+        "linkedIds": null,
         "name": "Roadworthiness test",
         "testTypeName": "Voluntary roadworthiness test",
         "forVehicleType": [
