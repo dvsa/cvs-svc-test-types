@@ -105,6 +105,7 @@
           "psv"
         ],
         "forVehicleSize": [
+          "small",
           "large"
         ],
         "forVehicleConfiguration": [
@@ -119,6 +120,14 @@
             "forVehicleConfiguration": "rigid",
             "forVehicleAxles": null,
             "defaultTestCode": "wbl",
+            "linkedTestCode": null
+          },
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "small",
+            "forVehicleConfiguration": "rigid",
+            "forVehicleAxles": null,
+            "defaultTestCode": "wbs",
             "linkedTestCode": null
           }
         ]
@@ -763,7 +772,8 @@
               "psv"
             ],
             "forVehicleSize": [
-              "small"
+              "small",
+              "large"
             ],
             "forVehicleConfiguration": [
               "rigid"
@@ -777,6 +787,68 @@
                 "forVehicleConfiguration": "rigid",
                 "forVehicleAxles": null,
                 "defaultTestCode": "wis",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "wil",
+                "linkedTestCode": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "40",
+        "linkedIds": ["38", "39"],
+        "name": "Class 6A (No seatbelt installation check)",
+        "forVehicleType": [
+          "psv"
+        ],
+        "forVehicleSize": [
+          "large",
+          "small"
+        ],
+        "forVehicleConfiguration": [
+          "rigid"
+        ],
+        "forVehicleAxles": null,
+        "nextTestTypesOrCategories": [
+          {
+            "id": "41",
+            "linkedIds": ["38", "39"],
+            "name": "PG9 retest",
+            "testTypeName": "Prohibition clearance (retest with Class 6A No seatbelt installation check)",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVehicleSize": [
+              "small",
+              "large"
+            ],
+            "forVehicleConfiguration": [
+              "rigid"
+            ],
+            "forVehicleAxles": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "wes",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": "rigid",
+                "forVehicleAxles": null,
+                "defaultTestCode": "wel",
                 "linkedTestCode": null
               }
             ]
@@ -1045,7 +1117,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "38",
-        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","39"],
+        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","39","41"],
         "name": "Notifiable alteration",
         "testTypeName": "Notifiable alteration check",
         "forVehicleType": [
@@ -1081,7 +1153,7 @@
       },
       {
         "id": "39",
-        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","38"],
+        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","38","41"],
         "name": "LEC",
         "testTypeName": "Low Emissions Certificate (LEC) with annual test",
         "forVehicleType": [
