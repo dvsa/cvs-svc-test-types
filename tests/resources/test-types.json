@@ -821,7 +821,7 @@
             "id": "41",
             "linkedIds": ["38", "39"],
             "name": "PG9 retest",
-            "testTypeName": "Prohibition clearance (retest with Class 6A No seatbelt installation check)",
+            "testTypeName": "Prohibition clearance (retest without Class 6A seatbelt installation check)",
             "forVehicleType": [
               "psv"
             ],
