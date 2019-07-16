@@ -803,7 +803,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "30",
-        "linkedIds": ["31", "32", "33", "34"],
+        "linkedIds": ["31", "32", "34"],
         "name": "Brake test",
         "testTypeName": "Voluntary brake test",
         "forVehicleType": [
@@ -858,7 +858,7 @@
       },
       {
         "id": "31",
-        "linkedIds": ["30", "32", "33", "34"],
+        "linkedIds": ["30", "32", "34"],
         "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim check",
         "forVehicleType": [
@@ -894,7 +894,7 @@
       },
       {
         "id": "32",
-        "linkedIds": ["30", "31", "33", "34"],
+        "linkedIds": ["30", "31", "34"],
         "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
         "forVehicleType": [
@@ -930,7 +930,7 @@
       },
       {
         "id": "33",
-        "linkedIds": ["30", "31", "32", "34"],
+        "linkedIds": ["34"],
         "name": "Multi - check",
         "testTypeName": "Voluntary multi check (headlamp aim, smoke and brake test)",
         "forVehicleType": [
