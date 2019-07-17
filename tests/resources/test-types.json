@@ -1855,7 +1855,9 @@
             ],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": 3,
+            "forVehicleAxles": [
+              3
+            ],
             "testTypeClassification": null,
             "testCodes": [
               {
@@ -2287,7 +2289,9 @@
             ],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": 3,
+            "forVehicleAxles": [
+              3
+            ],
             "testTypeClassification": null,
             "testCodes": [
               {
