@@ -3419,6 +3419,14 @@
             "forVehicleType": "hgv",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
+            "forVehicleAxles": 1,
+            "defaultTestCode": "bib",
+            "linkedTestCode": null
+          },
+          {
+            "forVehicleType": "hgv",
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
             "defaultTestCode": "qav2",
             "linkedTestCode": null
