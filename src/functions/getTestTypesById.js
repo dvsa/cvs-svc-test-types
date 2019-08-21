@@ -18,14 +18,8 @@ const getTestTypesById = (event, context, callback) => {
     vehicleAxles: Joi.number().min(0).max(99).allow(null).optional()
   })
 
-  let queryParams = Object.assign({}, event.queryStringParameters)
-  if (queryParams.vehicleAxles) {
-    if (queryParams.vehicleAxles === 'null') {
-      queryParams.vehicleAxles = null
-    } else {
-      queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles)
-    }
-  }
+  let queryParams = parseMissingQueryParams(event.queryStringParameters)
+
   let validation = Joi.validate(queryParams, queryParamSchema)
 
   if (validation.error) {
@@ -42,6 +36,21 @@ const getTestTypesById = (event, context, callback) => {
     .catch((error) => {
       return new HTTPResponse(error.statusCode, error.body)
     })
+}
+
+const parseMissingQueryParams = (queryStringParameters) => {
+  let queryParams = Object.assign({}, queryStringParameters)
+  if (queryParams.vehicleAxles) {
+    if (queryParams.vehicleAxles === 'null') {
+      queryParams.vehicleAxles = null
+    } else {
+      queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles)
+    }
+  }
+  if (queryParams.vehicleSize === 'undefined') {
+    queryParams.vehicleSize = null
+  }
+  return queryParams
 }
 
 module.exports.getTestTypesById = getTestTypesById
