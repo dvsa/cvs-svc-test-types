@@ -23,6 +23,10 @@ Temporary Items
 # Node specific files
 node_modules/**
 
+# Lint ,  reports
+.reports/**
+
+
 # Serverless specific files
 .dynamodb/**
 

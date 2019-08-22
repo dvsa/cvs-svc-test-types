@@ -1,18 +1,27 @@
-const yml = require('node-yaml')
+// @ts-ignore
+import * as yml from "node-yaml";
+import {ERRORS} from "../assets/Enums";
+import {IFunctionEvent} from "./IFunctionEvent"
+import { Handler } from "aws-lambda";
 
 class Configuration {
-  constructor (configPath) {
+
+  private static instance: Configuration;
+  private readonly config: any;
+
+  constructor (configPath: string) {
+    if (!process.env.BRANCH) {throw new Error(ERRORS.NoBranch); }
     this.config = yml.readSync(configPath)
 
     // Replace environment variable references
-    let stringifiedConfig = JSON.stringify(this.config)
-    const envRegex = /\${(\w+\b):?(\w+\b)?}/g
-    const matches = stringifiedConfig.match(envRegex)
+    let stringifiedConfig:string = JSON.stringify(this.config)
+    const envRegex:RegExp = /\${(\w+\b):?(\w+\b)?}/g
+    const matches: RegExpMatchArray | null = stringifiedConfig.match(envRegex)
 
     if (matches) {
       matches.forEach((match) => {
-        envRegex.lastIndex = 0
-        const captureGroups = envRegex.exec(match)
+        envRegex.lastIndex = 0;
+        const captureGroups: RegExpExecArray = envRegex.exec(match) as RegExpExecArray;
 
         // Insert the environment variable if available. If not, insert placeholder. If no placeholder, leave it as is.
         stringifiedConfig = stringifiedConfig.replace(match, (process.env[captureGroups[1]] || captureGroups[2] || captureGroups[1]))
@@ -26,7 +35,7 @@ class Configuration {
      * Retrieves the singleton instance of Configuration
      * @returns Configuration
      */
-  static getInstance () {
+  public static getInstance (): Configuration {
     if (!this.instance) {
       this.instance = new Configuration('../config/config.yml')
     }
@@ -38,7 +47,7 @@ class Configuration {
      * Retrieves the entire config as an object
      * @returns any
      */
-  getConfig () {
+  public getConfig (): any {
     return this.config
   }
 
@@ -46,12 +55,12 @@ class Configuration {
      * Retrieves the lambda functions declared in the config
      * @returns IFunctionEvent[]
      */
-  getFunctions () {
+  public getFunctions (): IFunctionEvent[]  {
     if (!this.config.functions) {
       throw new Error('Functions were not defined in the config file.')
     }
 
-    return this.config.functions.map((fn) => {
+    return this.config.functions.map((fn: Handler) => {
       const [name, params] = Object.entries(fn)[0]
       const path = (params.proxy) ? params.path.replace('{+proxy}', params.proxy) : params.path
 
@@ -69,13 +78,13 @@ class Configuration {
      * Retrieves the DynamoDB config
      * @returns any
      */
-  getDynamoDBConfig () {
+  public getDynamoDBConfig (): any {
     if (!this.config.dynamodb) {
       throw new Error('DynamoDB config is not defined in the config file.')
     }
 
     // Not defining BRANCH will default to remote
-    var env
+    let env
     switch (process.env.BRANCH) {
       case 'local':
         env = 'local'
@@ -91,4 +100,4 @@ class Configuration {
   }
 }
 
-module.exports = Configuration
+export { Configuration};
