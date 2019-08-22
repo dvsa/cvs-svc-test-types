@@ -11,5 +11,5 @@ export interface ITestType {
     forVehicleAxles: string | null;
     testTypeClassification: string;
     testCodes: ITestTypeCode[];
-    nextTestTypesOrCategories?: ITestType[] | undefined;
+    nextTestTypesOrCategories?: ITestType[] | undefined; 
 }
