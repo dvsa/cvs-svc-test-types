@@ -1,11 +1,11 @@
-const expect = require('chai').expect
-const LambdaTester = require('lambda-tester')
-const GetTestTypesByIdFunction = require('../../src/functions/getTestTypesById')
+import { expect } from "chai";
+import LambdaTester from "lambda-tester";
+import {getTestTypesById} from "../../src/functions/getTestTypesById";
 
 describe('getTestTypesById', () => {
   context('when the queryStringParameters are invalid', () => {
     it('should return 400', () => {
-      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+      return LambdaTester(getTestTypesById)
         .event({
           queryStringParameters: {
             fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
@@ -15,7 +15,7 @@ describe('getTestTypesById', () => {
             vehicleAxles: '2'
           }
         })
-        .expectResolve((result) => {
+        .expectResolve((result: { statusCode: any; body: any; }) => {
           expect(result.statusCode).to.equal(400)
           expect(result.body).to.equal('"Query parameter \\"vehicleSize\\" must be one of [small, large]"')
         })
@@ -24,7 +24,7 @@ describe('getTestTypesById', () => {
 
   context('when the queryStringParameter vehicleAxles is out of range', () => {
     it('should return 400', () => {
-      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+      return LambdaTester(getTestTypesById)
         .event({
           queryStringParameters: {
             fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
@@ -34,7 +34,7 @@ describe('getTestTypesById', () => {
             vehicleAxles: '101'
           }
         })
-        .expectResolve((result) => {
+        .expectResolve((result: { statusCode: any; body: any; }) => {
           expect(result.statusCode).to.equal(400)
           expect(result.body).to.equal('"Query parameter \\"vehicleAxles\\" must be less than or equal to 99"')
         })
@@ -43,7 +43,7 @@ describe('getTestTypesById', () => {
 
   context('when the queryStringParameter vehicleAxles is out of range from below', () => {
     it('should return 400', () => {
-      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+      return LambdaTester(getTestTypesById)
         .event({
           queryStringParameters: {
             fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
@@ -53,7 +53,7 @@ describe('getTestTypesById', () => {
             vehicleAxles: '-1'
           }
         })
-        .expectResolve((result) => {
+        .expectResolve((result: { statusCode: any; body: any; }) => {
           expect(result.statusCode).to.equal(400)
           expect(result.body).to.equal('"Query parameter \\"vehicleAxles\\" must be larger than or equal to 0"')
         })
@@ -68,7 +68,7 @@ describe('getTestTypesById', () => {
             'defaultTestCode': 'qal',
             'linkedTestCode': null
           }
-      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+      return LambdaTester(getTestTypesById)
         .event({
           queryStringParameters: {
             fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
@@ -81,7 +81,7 @@ describe('getTestTypesById', () => {
             id: '30'
           }
         })
-        .expectResolve((result) => {
+        .expectResolve((result: { statusCode: any; body: string; }) => {
           expect(result.statusCode).to.equal(200)
           expect(JSON.parse(result.body)).to.eql(expectedResult)
         })
@@ -96,7 +96,7 @@ describe('getTestTypesById', () => {
             'defaultTestCode': 'qal',
             'linkedTestCode': null
           }
-      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+      return LambdaTester(getTestTypesById)
         .event({
           queryStringParameters: {
             fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
@@ -109,7 +109,7 @@ describe('getTestTypesById', () => {
             id: '30'
           }
         })
-        .expectResolve((result) => {
+        .expectResolve((result: { statusCode: any; body: string; }) => {
           expect(result.statusCode).to.equal(200)
           expect(JSON.parse(result.body)).to.eql(expectedResult)
         })
@@ -124,7 +124,7 @@ describe('getTestTypesById', () => {
             'defaultTestCode': 'qal',
             'linkedTestCode': null
           }
-      return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+      return LambdaTester(getTestTypesById)
         .event({
           queryStringParameters: {
             fields: 'testTypeClassification, defaultTestCode, linkedTestCode',
@@ -137,7 +137,7 @@ describe('getTestTypesById', () => {
             id: '30'
           }
         })
-        .expectResolve((result) => {
+        .expectResolve((result: { statusCode: any; body: string; }) => {
           expect(result.statusCode).to.equal(200)
           expect(JSON.parse(result.body)).to.eql(expectedResult)
         })
@@ -147,7 +147,7 @@ describe('getTestTypesById', () => {
   context('when the request is valid', () => {
     context('and the parameters match a test type in the database', () => {
       it('should return 200', () => {
-        return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+        return LambdaTester(getTestTypesById)
           .event({
             queryStringParameters: {
               fields: 'testTypeClassification',
@@ -159,7 +159,7 @@ describe('getTestTypesById', () => {
               id: '1'
             }
           })
-          .expectResolve((result) => {
+          .expectResolve((result: { statusCode: any; body: string; }) => {
             expect(result.statusCode).to.equal(200)
             expect(JSON.parse(result.body).id).to.equal('1')
             expect(JSON.parse(result.body).testTypeClassification).to.equal('Annual With Certificate')
@@ -169,7 +169,7 @@ describe('getTestTypesById', () => {
 
     context('and the parameters match a test category in the database', () => {
       it('should return 404', () => {
-        return LambdaTester(GetTestTypesByIdFunction.getTestTypesById)
+        return LambdaTester(getTestTypesById)
           .event({
             queryStringParameters: {
               fields: 'testTypeClassification',
@@ -181,7 +181,7 @@ describe('getTestTypesById', () => {
               id: '2'
             }
           })
-          .expectResolve((result) => {
+          .expectResolve((result: { statusCode: any; body: any; }) => {
             expect(result.statusCode).to.equal(404)
             expect(result.body).to.equal('"No resources match the search criteria."')
           })

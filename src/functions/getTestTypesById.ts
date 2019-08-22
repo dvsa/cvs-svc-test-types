@@ -1,11 +1,10 @@
-'use strict'
+import {TestTypesDAO} from "../models/TestTypesDAO";
+import {TestTypesService} from "../services/TestTypesService";
+import { HTTPResponse } from "../models/HTTPResponse";
+import Joi  from "joi";
+import { Handler } from "aws-lambda";
 
-const TestTypesDAO = require('../models/TestTypesDAO')
-const TestTypesService = require('../services/TestTypesService')
-const HTTPResponse = require('../models/HTTPResponse')
-const Joi = require('joi')
-
-const getTestTypesById = (event, context, callback) => {
+export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO()
   const testTypesService = new TestTypesService(testTypesDAO)
 
@@ -43,5 +42,3 @@ const getTestTypesById = (event, context, callback) => {
       return new HTTPResponse(error.statusCode, error.body)
     })
 }
-
-module.exports.getTestTypesById = getTestTypesById
