@@ -20,8 +20,7 @@
     "prepush": "BRANCH=local npm test && npm run eslint",
     "predeploy": "npm install && npm run prepush",
     "security-checks": "git secrets --scan && git log -p | scanrepo",
-    "eslint": "eslint . --config=.eslintrc.json --fix  -f json -o report.json",
-    "tslint": "tslint src/**/*.ts tests/**/*.ts --out .reports/lint_issues.json",
+    "tslint": "./node_modules/tslint/bin/tslint src/**/*.ts tests/**/*.ts --out .reports/lint_issues.json",
     "sonar-scanner": "npm run tslint && npm run test && sonar-scanner",
     "coverage": "BRANCH=local SLS_DEBUG=* jest --testMatch=\"**/*.*Test.ts\" --coverage",
     "audit-dep": "npm audit --json | audit-filter --nsp-config=.nsprc --audit=-"
