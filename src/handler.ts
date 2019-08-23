@@ -1,5 +1,5 @@
 import { HTTPRESPONSE } from "./assets/Enums";
-import {APIGatewayProxyResult, Callback, Context, Handler} from "aws-lambda"
+import {APIGatewayProxyResult, Callback, Context, Handler} from "aws-lambda";
 import Path from "path-parser";
 import { Configuration } from "./utils/Configuration";
 import { IFunctionEvent } from "./utils/IFunctionEvent";
@@ -39,7 +39,7 @@ const handler: Handler = async (event: any, context: Context, callback: Callback
       const remotePath = new Path(`${serverlessConfig.basePath}${fn.path}`); // Remote paths also have environment
 
       return (localPath.test(event.path) || remotePath.test(event.path));
-    })
+    });
 
   // Exactly one λ should match the above filtering.
   if (matchingLambdaEvents.length === 1) {
