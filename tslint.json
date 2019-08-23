@@ -9,6 +9,7 @@
                 240
             ]
         },
+        "quotemark": [true, "double", "avoid-escape", "avoid-template"],
         "new-parens": false,
         "no-arg": true,
         "no-bitwise": false,
@@ -24,7 +25,7 @@
         ],
         "member-ordering": false,
         "ordered-imports": false,
-        "jsdoc-format": true,
+        "jsdoc-format": false,
         // "completed-docs": [
         //     true,
         //     "methods"
