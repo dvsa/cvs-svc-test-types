@@ -4127,7 +4127,9 @@
     ],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
-    "forVehicleAxles": null,
+    "forVehicleAxles": [
+      1
+    ],
     "nextTestTypesOrCategories": [
       {
         "id": "122",
