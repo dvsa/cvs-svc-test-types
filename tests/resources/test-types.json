@@ -3432,7 +3432,6 @@
     "linkedIds": null,
     "name": "Prohibition clearance",
     "forVehicleType": [
-      "hgv",
       "trl"
     ],
     "forVehicleSize": null,
