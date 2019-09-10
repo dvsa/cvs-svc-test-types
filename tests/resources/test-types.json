@@ -2489,7 +2489,6 @@
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": [
-      1,
       2,
       3,
       4,
@@ -3440,7 +3439,23 @@
             ]
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "linkedIds": null,
+    "name": "Prohibition clearance",
+    "forVehicleType": [
+      "hgv",
+      "trl"
+    ],
+    "forVehicleSize": null,
+    "forVehicleConfiguration": null,
+    "forVehicleAxles": [
+      1
+    ],
+    "nextTestTypesOrCategories": [
       {
         "id": "106",
         "linkedIds": null,
