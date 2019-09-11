@@ -2059,6 +2059,31 @@
             ]
           },
           {
+            "id": "101",
+            "linkedIds": null,
+            "name": "Paid",
+            "testTypeName": "Paid roadworthiness retest",
+            "forVehicleType": [
+              "trl"
+            ],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": [
+              1
+            ],
+            "testTypeClassification": null,
+            "testCodes": [
+              {
+                "forVehicleType": "trl",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": 1,
+                "defaultTestCode": "qkt",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
             "id": "63",
             "linkedIds": null,
             "name": "Part Paid",
@@ -2365,46 +2390,6 @@
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
                 "defaultTestCode": "rst1",
-                "linkedTestCode": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "100",
-        "linkedIds": null,
-        "name": "Roadworthiness",
-        "forVehicleType": [
-          "trl"
-        ],
-        "forVehicleSize": null,
-        "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
-        "nextTestTypesOrCategories": [
-          {
-            "id": "101",
-            "linkedIds": null,
-            "name": "Paid",
-            "testTypeName": "Paid roadworthiness retest",
-            "forVehicleType": [
-              "trl"
-            ],
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
-            "testTypeClassification": null,
-            "testCodes": [
-              {
-                "forVehicleType": "trl",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": 1,
-                "defaultTestCode": "qkt",
                 "linkedTestCode": null
               }
             ]
