@@ -1179,7 +1179,7 @@
     ]
   },
   {
-    "id": "40",
+    "id": "94",
     "linkedIds": null,
     "name": "Annual test",
     "testTypeName": "Annual test",
@@ -1289,7 +1289,7 @@
     ]
   },
   {
-    "id": "41",
+    "id": "95",
     "linkedIds": null,
     "name": "First test",
     "testTypeName": "First test",
@@ -2345,7 +2345,7 @@
         ],
         "nextTestTypesOrCategories": [
           {
-            "id": "53",
+            "id": "98",
             "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid annual test retest",
@@ -2370,7 +2370,7 @@
             ]
           },
           {
-            "id": "54",
+            "id": "99",
             "linkedIds": null,
             "name": "Part paid",
             "testTypeName": "Part paid annual test retest",
@@ -2410,7 +2410,7 @@
         ],
         "nextTestTypesOrCategories": [
           {
-            "id": "65",
+            "id": "103",
             "linkedIds": null,
             "name": "Paid",
             "testTypeName": "Paid first test retest",
@@ -2435,7 +2435,7 @@
             ]
           },
           {
-            "id": "66",
+            "id": "104",
             "linkedIds": null,
             "name": "Part paid",
             "testTypeName": "Part paid first test retest",
@@ -3454,7 +3454,7 @@
         ],
         "nextTestTypesOrCategories": [
           {
-            "id": "70",
+            "id": "107",
             "linkedIds": null,
             "name": "With certification",
             "testTypeName": "Paid prohibition clearance (full inspection with certification)",
@@ -3479,7 +3479,7 @@
             ]
           },
           {
-            "id": "71",
+            "id": "108",
             "linkedIds": null,
             "name": "Without certification",
             "testTypeName": "Paid prohibition clearance (full inspection without certification)",
@@ -3506,7 +3506,7 @@
         ]
       },
       {
-        "id": "72",
+        "id": "109",
         "linkedIds": null,
         "name": "Full inspection/ Part Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (full inspection without certification)",
@@ -3531,7 +3531,7 @@
         ]
       },
       {
-        "id": "73",
+        "id": "110",
         "linkedIds": null,
         "name": "Part Inspection/ Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (part inspection without certification)",
@@ -3582,7 +3582,7 @@
             ],
             "nextTestTypesOrCategories": [
               {
-                "id": "76",
+                "id": "113",
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (retest with certification)",
@@ -3607,7 +3607,7 @@
                 ]
               },
               {
-                "id": "77",
+                "id": "114",
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (retest without certification)",
@@ -3647,7 +3647,7 @@
             ],
             "nextTestTypesOrCategories": [
               {
-                "id": "79",
+                "id": "116",
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Part paid prohibition clearance (retest with certification)",
@@ -3672,7 +3672,7 @@
                 ]
               },
               {
-                "id": "80",
+                "id": "117",
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Part paid prohibition clearance (retest without certification)",
@@ -3714,7 +3714,7 @@
         ],
         "nextTestTypesOrCategories": [
           {
-            "id": "82",
+            "id": "119",
             "linkedIds": null,
             "name": "Full Inspection/ Fee - With certification",
             "testTypeName": "Paid prohibition clearance on first test (full inspection with certification)",
@@ -3739,7 +3739,7 @@
             ]
           },
           {
-            "id": "83",
+            "id": "120",
             "linkedIds": null,
             "name": "Retest - Paid",
             "testTypeName": "Paid retest prohibition clearance on first test",
@@ -4006,7 +4006,7 @@
         ]
       },
       {
-        "id": "91",
+        "id": "122",
         "linkedIds": null,
         "name": "Roadworthiness test",
         "testTypeName": "Voluntary roadworthiness test",
