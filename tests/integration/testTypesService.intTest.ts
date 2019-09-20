@@ -1,4 +1,4 @@
-it("Fake Test", () => { expect(true); })
+it("Fake Test", () => { expect(true); });
 
 // /* global describe it context before after beforeEach afterEach */
 // import supertest from "supertest";
