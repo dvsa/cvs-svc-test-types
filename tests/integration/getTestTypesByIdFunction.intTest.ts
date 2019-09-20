@@ -1,4 +1,4 @@
-it("Fake Test 2", () => { expect(true); })
+it("Fake Test 2", () => { expect(true); });
 
 // import { expect } from "chai";
 // import LambdaTester from "lambda-tester";

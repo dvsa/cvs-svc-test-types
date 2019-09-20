@@ -1,4 +1,4 @@
-it("Fake Test 3", () => { expect(true); })
+it("Fake Test 3", () => { expect(true); });
 
 // import LambdaTester from "lambda-tester";
 // import { handler } from "../../src/handler";
