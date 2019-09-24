@@ -51,18 +51,26 @@ export class TestTypesService {
         testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleType if present in DB, otherwise skip
           return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true;
         });
-        testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleSize if present in DB, otherwise skip
+        testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleSize if present in DB & and in request, otherwise skip
           return (testCode.forVehicleSize && filterExpression.vehicleSize) ? testCode.forVehicleSize === filterExpression.vehicleSize : true;
         });
-        testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB, otherwise skip
-          return testCode.forVehicleConfiguration ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true;
+        testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB & and in request, otherwise skip
+          return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true;
         });
+        // testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB, otherwise skip
+        //   return testCode.forVehicleConfiguration ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true;
+        // });
         testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleAxles if present in DB & and in request, otherwise skip
           return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? testCode.forVehicleAxles === filterExpression.vehicleAxles : true;
         });
 
         if (testCodes.length === 0) {
           throw new HTTPError(404, "No resources match the search criteria.");
+        }
+
+        if (testCodes.length > 1) {
+          throw new HTTPError(500, "Internal server error");
+          console.error("More than one testType was retrieved");
         }
 
         const response: any = {
