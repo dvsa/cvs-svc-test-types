@@ -112,9 +112,9 @@ describe("when database is on", () => {
               vehicleType: "hgv"
             })
                 .then((returnedRecords: any) => {
-                  expect(returnedRecords).to.deep.equal({
+                  expect(returnedRecords).toEqual({
                     id: "90",
-                    testTypeClassification: "NON ANNUAL",
+                    testTypeClassification: "Annual NO CERTIFICATE",
                     defaultTestCode: "qdv",
                     linkedTestCode: null
                   });

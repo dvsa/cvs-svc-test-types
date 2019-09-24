@@ -20,7 +20,7 @@ export class TestTypesService {
                 this.purgeTestTypes(data.Items);
                 return this.sort(data.Items);
             })
-            .catch((error) => {
+            .catch((error: { statusCode: number; body: string; }) => {
                 if (!(error instanceof HTTPError)) {
                     console.error(error);
                     error.statusCode = 500;
@@ -40,10 +40,10 @@ export class TestTypesService {
 
                 return data.Items;
             })
-            .then((testTypes) => {
+            .then((testTypes: any) => {
                 return this.findTestType({ id, testTypes });
             })
-            .then((testType) => {
+            .then((testType: { testCodes: any; id: any; testTypeClassification: any; } | null) => {
                 if (testType === null) {
                     throw new HTTPError(404, "No resources match the search criteria.");
                 }
@@ -162,7 +162,7 @@ export class TestTypesService {
     }
 
     public fieldInfilterExpressionMatchesTheOneInTestCode(testCode: any, filterExpression: any, field: string) {
-        let bool = false;
+        let bool: boolean = false;
         switch (field) {
             case "forVehicleSize":
                 if (Array.isArray(testCode.forVehicleSize)) {
