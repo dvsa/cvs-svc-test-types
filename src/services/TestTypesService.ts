@@ -57,9 +57,6 @@ export class TestTypesService {
         testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB & and in request, otherwise skip
           return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true;
         });
-        // testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB, otherwise skip
-        //   return testCode.forVehicleConfiguration ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true;
-        // });
         testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleAxles if present in DB & and in request, otherwise skip
           return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? testCode.forVehicleAxles === filterExpression.vehicleAxles : true;
         });
