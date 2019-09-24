@@ -104,6 +104,23 @@ describe("when database is on", () => {
               });
             });
         });
+
+        context("when vehicleSize, vehicleAxles and vehicleConfiguration filters are not present", () => {
+          it("should return the expected data", () => {
+            return testTypesService.getTestTypesById("90", {
+              fields: ["testTypeClassification", "defaultTestCode", "linkedTestCode"],
+              vehicleType: "hgv"
+            })
+                .then((returnedRecords: any) => {
+                  expect(returnedRecords).to.deep.equal({
+                    id: "90",
+                    testTypeClassification: "NON ANNUAL",
+                    defaultTestCode: "qdv",
+                    linkedTestCode: null
+                  });
+                });
+          });
+        });
       });
 
       context("when the testCode queried contains an array on vehicleAxles field", () => {
