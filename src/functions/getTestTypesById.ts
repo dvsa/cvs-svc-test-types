@@ -13,7 +13,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     fields: Joi.string().regex(/^(testTypeClassification|defaultTestCode|linkedTestCode),?\s*((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?$/).required(),
     vehicleType: Joi.any().only([ "psv", "hgv", "trl" ]).required(),
     vehicleSize: Joi.any().only([ "small", "large" ]),
-    vehicleConfiguration: Joi.any().only([ "rigid", "articulated" ]).required(),
+    vehicleConfiguration: Joi.string().allow(null).optional(),
     vehicleAxles: Joi.number().min(0).max(99).allow(null).optional()
   });
 
@@ -29,12 +29,12 @@ export const getTestTypesById: Handler = (event, context, callback) => {
   Object.assign(queryParams, { fields: queryParams.fields.replace(/\s/g, "").split(",") });
 
   return testTypesService.getTestTypesById(event.pathParameters.id, queryParams)
-      .then((data) => {
-        return new HTTPResponse(200, data);
-      })
-      .catch((error) => {
-        return new HTTPResponse(error.statusCode, error.body);
-      });
+    .then((data) => {
+      return new HTTPResponse(200, data);
+    })
+    .catch((error) => {
+      return new HTTPResponse(error.statusCode, error.body);
+    });
 };
 
 const parseMissingQueryParams = (queryStringParameters: any) => {
@@ -49,6 +49,11 @@ const parseMissingQueryParams = (queryStringParameters: any) => {
   if (queryParams.vehicleSize === "undefined") {
     queryParams.vehicleSize = null;
   }
+
+  if (queryParams.vehicleConfiguration) {
+    if (queryParams.vehicleConfiguration === "null") {
+      queryParams.vehicleConfiguration = null;
+    }
+  }
   return queryParams;
 };
-
