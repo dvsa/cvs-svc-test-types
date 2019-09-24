@@ -82,13 +82,30 @@ describe("getTestTypesList", () => {
               vehicleConfiguration: "articulated"
             })
               .then((returnedRecords: any) => {
-                expect(returnedRecords).to.eql({
+                expect(returnedRecords).to.deep.equal({
                   id: "1",
                   testTypeClassification: "Annual With Certificate",
                   defaultTestCode: "adl",
                   linkedTestCode: null
                 });
               });
+          });
+        });
+
+        context("when vehicleSize, vehicleAxles and vehicleConfiguration filters are not present", () => {
+          it("should return the expected data", () => {
+            return testTypesService.getTestTypesById("90", {
+              fields: ["testTypeClassification", "defaultTestCode", "linkedTestCode"],
+              vehicleType: "hgv"
+            })
+                .then((returnedRecords: any) => {
+                  expect(returnedRecords).to.deep.equal({
+                    id: "90",
+                    testTypeClassification: "NON ANNUAL",
+                    defaultTestCode: "qdv",
+                    linkedTestCode: null
+                  });
+                });
           });
         });
       });
