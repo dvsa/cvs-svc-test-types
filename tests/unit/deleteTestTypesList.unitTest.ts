@@ -35,7 +35,13 @@ describe("deleteTestTypesList", () => {
 
       return testTypesService.deleteTestTypesList(expectedUnprocessedTestTypesRecords)
         .then((data: any) => {
+<<<<<<< HEAD
           expect(data.length).toEqual(15);
+||||||| merged common ancestors
+          expect(data.length).to.equal(6);
+=======
+          expect(data.length).to.equal(15);
+>>>>>>> CVSB-6426: Removing unittest js file and updating tests
         });
     });
   });
