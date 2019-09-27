@@ -36,7 +36,7 @@ describe("insertTestTypesList", () => {
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
       return testTypesService.insertTestTypesList(expectedUnprocessedTestTypesRecords)
         .then((result: any) => {
-          expect(result.length).to.equal(6);
+          expect(result.length).to.equal(15);
         });
     });
   });
