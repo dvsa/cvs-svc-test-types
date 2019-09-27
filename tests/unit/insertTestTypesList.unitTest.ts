@@ -35,7 +35,13 @@ describe("insertTestTypesList", () => {
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
       return testTypesService.insertTestTypesList(expectedUnprocessedTestTypesRecords)
         .then((result: any) => {
+<<<<<<< HEAD
           expect(result.length).toEqual(15);
+||||||| merged common ancestors
+          expect(result.length).to.equal(6);
+=======
+          expect(result.length).to.equal(15);
+>>>>>>> CVSB-6426: Removing unittest js file and updating tests
         });
     });
   });
