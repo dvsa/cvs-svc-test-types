@@ -36,7 +36,7 @@ describe("deleteTestTypesList", () => {
 
       return testTypesService.deleteTestTypesList(expectedUnprocessedTestTypesRecords)
         .then((data: any) => {
-          expect(data.length).to.equal(6);
+          expect(data.length).to.equal(15);
         });
     });
   });
