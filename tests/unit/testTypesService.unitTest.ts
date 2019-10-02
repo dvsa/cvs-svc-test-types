@@ -108,6 +108,24 @@ describe("getTestTypesList", () => {
                 });
           });
         });
+
+        context("when the testCode queried contains an array on vehicleAxles field", () => {
+          it("should return the testCode", () => {
+            return testTypesService.getTestTypesById("62", {
+              fields: ["testTypeClassification", "defaultTestCode", "linkedTestCode"],
+              vehicleType: "hgv",
+              vehicleAxles: 5
+            })
+                .then((returnedRecords: any) => {
+                  expect(returnedRecords).to.deep.equal({
+                    id: "62",
+                    testTypeClassification: "Annual NO CERTIFICATE",
+                    defaultTestCode: "qqv",
+                    linkedTestCode: null
+                  });
+                });
+          });
+        });
       });
 
     });
@@ -184,6 +202,62 @@ describe("getTestTypesList", () => {
           expect(errorResponse.statusCode).to.be.equal(500);
           expect(errorResponse.body).to.equal("Internal Server Error");
         });
+    });
+  });
+});
+
+describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
+  context("when passing a testCode that contains an array on field forVehicleAxles and a filterExpression that has a value included in that array  ", () => {
+    it("should return true", () => {
+      const testCode = JSON.parse("{\n" +
+          "                \"forVehicleType\": \"hgv\",\n" +
+          "                \"forVehicleSize\": null,\n" +
+          "                \"forVehicleConfiguration\": null,\n" +
+          "                \"forVehicleAxles\": [\n" +
+          "                  4,\n" +
+          "                  5,\n" +
+          "                  6,\n" +
+          "                  7,\n" +
+          "                  8,\n" +
+          "                  9,\n" +
+          "                  10\n" +
+          "                ],\n" +
+          "                \"defaultTestCode\": \"qqv\",\n" +
+          "                \"linkedTestCode\": null\n" +
+          "              }");
+
+      const filterExpression = {
+        vehicleAxles: 5,
+      };
+      // tslint:disable-next-line:no-empty
+      const MockTestTypesDAO = jest.fn().mockImplementation(() => {});
+
+      const testTypesService = new TestTypesService(new MockTestTypesDAO());
+
+      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles")).to.eql(true);
+    });
+  });
+
+  context("when passing a testCode that contains an value on field forVehicleAxles and a filterExpression matches that value  ", () => {
+    it("should return true", () => {
+      const testCode = JSON.parse("{\n" +
+          "                \"forVehicleType\": \"hgv\",\n" +
+          "                \"forVehicleSize\": null,\n" +
+          "                \"forVehicleConfiguration\": null,\n" +
+          "                \"forVehicleAxles\": 5,\n" +
+          "                \"defaultTestCode\": \"qqv\",\n" +
+          "                \"linkedTestCode\": null\n" +
+          "              }");
+
+      const filterExpression = {
+        vehicleAxles: 5,
+      };
+      // tslint:disable-next-line:no-empty
+      const MockTestTypesDAO = jest.fn().mockImplementation(() => {});
+
+      const testTypesService = new TestTypesService(new MockTestTypesDAO());
+
+      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles")).to.eql(true);
     });
   });
 });
