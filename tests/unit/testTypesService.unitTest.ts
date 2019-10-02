@@ -121,6 +121,24 @@ describe("when database is on", () => {
                 });
           });
         });
+
+        context("when the testCode queried contains an array on vehicleAxles field", () => {
+          it("should return the testCode", () => {
+            return testTypesService.getTestTypesById("62", {
+              fields: ["testTypeClassification", "defaultTestCode", "linkedTestCode"],
+              vehicleType: "hgv",
+              vehicleAxles: 5
+            })
+                .then((returnedRecords: any) => {
+                  expect(returnedRecords).toEqual({
+                    id: "62",
+                    testTypeClassification: "Annual NO CERTIFICATE",
+                    defaultTestCode: "qqv",
+                    linkedTestCode: null
+                  });
+                });
+          });
+        });
       });
 
       context("when the testCode queried contains an array on vehicleAxles field", () => {
