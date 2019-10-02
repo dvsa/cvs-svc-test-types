@@ -64,8 +64,8 @@ export class TestTypesService {
         }
 
         if (testCodes.length > 1) {
-          throw new HTTPError(500, "Internal server error");
           console.error("More than one testType was retrieved");
+          throw new HTTPError(500, "Internal server error");
         }
 
         const response: any = {
