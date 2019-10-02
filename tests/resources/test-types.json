@@ -1276,7 +1276,7 @@
     "forVehicleAxles": [
       1
     ],
-    "testTypeClassification": null,
+    "testTypeClassification": "Annual With Certificate",
     "testCodes": [
       {
         "forVehicleType": "trl",
