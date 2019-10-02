@@ -1,6 +1,7 @@
 import { HTTPError } from "../models/HTTPError";
 import { TestTypesDAO } from "../models/TestTypesDAO";
 import { ITestType } from "../models/ITestType";
+import {ERRORS} from "../assets/Enums";
 
 export class TestTypesService {
   public readonly testTypesDAO: TestTypesDAO;
@@ -50,15 +51,12 @@ export class TestTypesService {
 
         testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleType if present in DB, otherwise skip
           return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true;
-        });
-        testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleSize if present in DB & in request, otherwise skip
-          return (testCode.forVehicleSize && filterExpression.vehicleSize) ? testCode.forVehicleSize === filterExpression.vehicleSize : true;
-        });
-        testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
-          return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration : true;
-        });
-        testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleAxles if present in DB & in request, otherwise skip
-          return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? testCode.forVehicleAxles === filterExpression.vehicleAxles : true;
+        }).filter((testCode: ITestType) => { // filter by vehicleSize if present in DB & in request, otherwise skip
+          return (testCode.forVehicleSize && filterExpression.vehicleSize) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSize") : true;
+        }).filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
+          return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleConfiguration") : true;
+        }).filter((testCode: ITestType) => { // filter by vehicleAxles if present in DB & in request, otherwise skip
+          return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles") : true;
         });
 
         if (testCodes.length === 0) {
@@ -162,4 +160,49 @@ export class TestTypesService {
         }
       });
   }
+
+  public fieldInfilterExpressionMatchesTheOneInTestCode(testCode: any, filterExpression: any, field: string) {
+    let bool = false;
+    switch (field) {
+      case "forVehicleSize":
+        if (Array.isArray(testCode.forVehicleSize)) {
+          testCode.forVehicleSize.map((sizeValue: number) => {
+            if (sizeValue === filterExpression.vehicleSize) {
+              bool = true;
+            }
+          });
+        } else {
+          bool = testCode.forVehicleSize === filterExpression.vehicleSize;
+        }
+        break;
+      case "forVehicleConfiguration":
+        if (Array.isArray(testCode.forVehicleConfiguration)) {
+          testCode.forVehicleConfiguration.map((configurationValue: number) => {
+            if (configurationValue === filterExpression.vehicleConfiguration) {
+              bool = true;
+            }
+          });
+        } else {
+          bool = testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration;
+        }
+        break;
+      case "forVehicleAxles":
+        if (Array.isArray(testCode.forVehicleAxles)) {
+          testCode.forVehicleAxles.map((axleValue: number) => {
+            if (axleValue === filterExpression.vehicleAxles) {
+              bool = true;
+            }
+          });
+        } else {
+          bool = testCode.forVehicleAxles === filterExpression.vehicleAxles;
+        }
+        break;
+      default:
+        console.error("Field you filtered by does not exist");
+        throw(new HTTPError(500, ERRORS.InternalServerError));
+    }
+
+    return bool;
+  }
+
 }
