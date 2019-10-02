@@ -101,7 +101,7 @@ describe("getTestTypesList", () => {
                 .then((returnedRecords: any) => {
                   expect(returnedRecords).to.deep.equal({
                     id: "90",
-                    testTypeClassification: "NON ANNUAL",
+                    testTypeClassification: "Annual NO CERTIFICATE",
                     defaultTestCode: "qdv",
                     linkedTestCode: null
                   });

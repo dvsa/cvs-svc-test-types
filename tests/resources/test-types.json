@@ -3797,7 +3797,7 @@
           4,
           5
         ],
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -3892,7 +3892,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -3916,7 +3916,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -3947,7 +3947,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -3970,7 +3970,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -3993,7 +3993,7 @@
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "hgv",
@@ -4022,7 +4022,7 @@
           4,
           5
         ],
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "trl",
@@ -4103,7 +4103,7 @@
         "forVehicleAxles": [
           1
         ],
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
             "forVehicleType": "trl",
