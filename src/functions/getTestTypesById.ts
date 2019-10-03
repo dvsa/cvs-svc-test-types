@@ -41,9 +41,9 @@ const parseMissingQueryParams = (queryStringParameters: any) => {
   const queryParams = Object.assign({}, queryStringParameters);
 
   if (queryParams.vehicleAxles === "null") {
-    queryParams.vehicleAxles = null;
-  } else {
-    queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles, 10);
+      queryParams.vehicleAxles = null;
+  } else if( queryParams.vehicleAxles !== undefined ) {
+      queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles, 10);
   }
 
   if (queryParams.vehicleSize === "undefined") {
