@@ -3,6 +3,7 @@ import {TestTypesService} from "../services/TestTypesService";
 import { HTTPResponse } from "../models/HTTPResponse";
 import Joi from "joi";
 import { Handler } from "aws-lambda";
+import {parseMissingQueryParams} from "../utils/parseMissingQueryParams";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
