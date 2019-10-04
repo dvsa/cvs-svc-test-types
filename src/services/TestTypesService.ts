@@ -1,5 +1,5 @@
 import { HTTPError } from "../models/HTTPError";
-import { TestTypesDAO } from "../models/TestTypesDAO";
+import TestTypesDAO from "../models/TestTypesDAO";
 import { ITestType } from "../models/ITestType";
 import {ERRORS} from "../assets/Enums";
 

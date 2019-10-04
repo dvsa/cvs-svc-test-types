@@ -1,4 +1,3 @@
-import { expect } from "chai";
 import { HTTPError } from "../../src/models/HTTPError";
 import { TestTypesService } from "../../src/services/TestTypesService";
 import TestTypes from "../resources/test-types.json";
@@ -18,7 +17,7 @@ describe("deleteTestTypesList", () => {
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
       return testTypesService.deleteTestTypesList(mockTestTypesRecords)
         .then((data) => {
-          expect(data).to.equal(undefined);
+          expect(data).toEqual(undefined);
         });
     });
 
@@ -36,7 +35,7 @@ describe("deleteTestTypesList", () => {
 
       return testTypesService.deleteTestTypesList(expectedUnprocessedTestTypesRecords)
         .then((data: any) => {
-          expect(data.length).to.equal(15);
+          expect(data.length).toEqual(15);
         });
     });
   });
@@ -57,9 +56,9 @@ describe("deleteTestTypesList", () => {
       return testTypesService.deleteTestTypesList(mockTestTypesRecords)
         .then(() => undefined )
         .catch((errorResponse: { statusCode: any; body: any; }) => {
-          expect(errorResponse).to.be.instanceOf(HTTPError);
-          expect(errorResponse.statusCode).to.be.equal(500);
-          expect(errorResponse.body).to.equal("Internal Server Error");
+          expect(errorResponse).toBeInstanceOf(HTTPError);
+          expect(errorResponse.statusCode).toEqual(500);
+          expect(errorResponse.body).toEqual("Internal Server Error");
         });
     });
   });

@@ -1,8 +1,9 @@
-import {TestTypesDAO} from "../models/TestTypesDAO";
+import TestTypesDAO from "../models/TestTypesDAO";
 import {TestTypesService} from "../services/TestTypesService";
 import { HTTPResponse } from "../models/HTTPResponse";
 import Joi from "joi";
 import { Handler } from "aws-lambda";
+import {parseMissingQueryParams} from "../utils/parseMissingQueryParams";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
@@ -37,21 +38,3 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     });
 };
 
-const parseMissingQueryParams = (queryStringParameters: any) => {
-  const queryParams = Object.assign({}, queryStringParameters);
-
-  if (queryParams.vehicleAxles === "null") {
-      queryParams.vehicleAxles = null;
-  } else if ( queryParams.vehicleAxles !== undefined ) {
-      queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles, 10);
-  }
-
-  if (queryParams.vehicleSize === "undefined") {
-    queryParams.vehicleSize = null;
-  }
-
-  if (queryParams.vehicleConfiguration === "null") {
-    queryParams.vehicleConfiguration = null;
-  }
-  return queryParams;
-};
