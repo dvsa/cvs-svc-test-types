@@ -1,5 +1,5 @@
 it("Fake Test 2", () => { expect(true); });
-
+//
 // import { expect } from "chai";
 // import LambdaTester from "lambda-tester";
 // import {getTestTypesById} from "../../src/functions/getTestTypesById";
@@ -91,22 +91,49 @@ it("Fake Test 2", () => { expect(true); });
 //
 //   context("when the queryStringParameter vehicleAxles is null", () => {
 //     it("should return 200", () => {
-//       const expectedResult = { id: "30",
-//             testTypeClassification: "NON ANNUAL",
-//             defaultTestCode: "qal",
+//       const expectedResult = { id: "48",
+//             testTypeClassification: "Annual NO CERTIFICATE",
+//             defaultTestCode: "nvv",
 //             linkedTestCode: null
 //           };
 //       return LambdaTester(getTestTypesById)
 //         .event({
 //           queryStringParameters: {
 //             fields: "testTypeClassification, defaultTestCode, linkedTestCode",
-//             vehicleType: "psv",
-//             vehicleSize: "large",
-//             vehicleConfiguration: "rigid",
-//             vehicleAxles: null
+//             vehicleType: "hgv",
+//               vehicleSize: "small",
+//             vehicleAxles: "null"
 //           },
 //           pathParameters: {
-//             id: "30"
+//             id: "48"
+//           }
+//         })
+//         .expectResolve((result: { statusCode: any; body: string; }) => {
+//             console.error(result.body);
+//             expect(result.statusCode).to.equal(200);
+//             expect(JSON.parse(result.body)).to.eql(expectedResult);
+//         });
+//     });
+//   });
+//
+//   context("when the queryStringParameter vehicleAxles is sent null as String", () => {
+//     it("should return 200", () => {
+//       const expectedResult = { id: "48",
+//             testTypeClassification: "Annual NO CERTIFICATE",
+//             defaultTestCode: "nvv",
+//             linkedTestCode: null
+//           };
+//       return LambdaTester(getTestTypesById)
+//         .event({
+//           queryStringParameters: {
+//             fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+//             vehicleType: "hgv",
+//             vehicleSize: "large",
+//             vehicleConfiguration: "rigid",
+//             vehicleAxles: "null"
+//           },
+//           pathParameters: {
+//             id: "48"
 //           }
 //         })
 //         .expectResolve((result: { statusCode: any; body: string; }) => {
@@ -116,32 +143,57 @@ it("Fake Test 2", () => { expect(true); });
 //     });
 //   });
 //
-//   context("when the queryStringParameter vehicleAxles is sent null as String", () => {
-//     it("should return 200", () => {
-//       const expectedResult = { id: "30",
-//             testTypeClassification: "NON ANNUAL",
-//             defaultTestCode: "qal",
-//             linkedTestCode: null
-//           };
-//       return LambdaTester(getTestTypesById)
-//         .event({
-//           queryStringParameters: {
-//             fields: "testTypeClassification, defaultTestCode, linkedTestCode",
-//             vehicleType: "psv",
-//             vehicleSize: "large",
-//             vehicleConfiguration: "rigid",
-//             vehicleAxles: "null"
-//           },
-//           pathParameters: {
-//             id: "30"
-//           }
-//         })
-//         .expectResolve((result: { statusCode: any; body: string; }) => {
-//           expect(result.statusCode).to.equal(200);
-//           expect(JSON.parse(result.body)).to.eql(expectedResult);
+//   context("when the queryStringParameter vehicleConfiguration is sent null as String", () => {
+//         it("should return 200", () => {
+//             const expectedResult = { id: "48",
+//                 testTypeClassification: "Annual NO CERTIFICATE",
+//                 defaultTestCode: "nvv",
+//                 linkedTestCode: null
+//             };
+//             return LambdaTester(getTestTypesById)
+//                 .event({
+//                     queryStringParameters: {
+//                         fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+//                         vehicleType: "hgv",
+//                         vehicleSize: "large",
+//                         vehicleConfiguration: "null",
+//                         vehicleAxles: "3"
+//                     },
+//                     pathParameters: {
+//                         id: "48"
+//                     }
+//                 })
+//                 .expectResolve((result: { statusCode: any; body: string; }) => {
+//                     expect(result.statusCode).to.equal(200);
+//                     expect(JSON.parse(result.body)).to.eql(expectedResult);
+//                 });
 //         });
 //     });
-//   });
+//
+//   context("when the queryStringParameter vehicleAxles is not present", () => {
+//         it("should return 200", () => {
+//             const expectedResult = { id: "48",
+//                 testTypeClassification: "Annual NO CERTIFICATE",
+//                 defaultTestCode: "nvv",
+//                 linkedTestCode: null
+//             };
+//             return LambdaTester(getTestTypesById)
+//                 .event({
+//                     queryStringParameters: {
+//                         fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+//                         vehicleType: "hgv",
+//                         vehicleSize: "large"
+//                     },
+//                     pathParameters: {
+//                         id: "48"
+//                     }
+//                 })
+//                 .expectResolve((result: { statusCode: any; body: string; }) => {
+//                     expect(result.statusCode).to.equal(200);
+//                     expect(JSON.parse(result.body)).to.eql(expectedResult);
+//                 });
+//         });
+//     });
 //
 //   context("when the request is valid", () => {
 //     context("and the parameters match a test type in the database", () => {
