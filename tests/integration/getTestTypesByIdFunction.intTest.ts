@@ -249,5 +249,54 @@ describe("getTestTypesById", () => {
           });
       });
     });
+
+    context("when searching for tests defined for vehicles with 5+ axles", () => {
+      it("should return the correct test (200) for a vehicle with 5+ axles", () => {
+        const expectedResult = {
+          id: "72",
+          testTypeClassification: "Annual NO CERTIFICATE",
+          defaultTestCode: "pov5",
+          linkedTestCode: null
+        };
+        return LambdaTester(getTestTypesById)
+          .event({
+            queryStringParameters: {
+              fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+              vehicleType: "hgv",
+              vehicleSize: "large",
+              vehicleConfiguration: null,
+              vehicleAxles: 7
+            },
+            pathParameters: {
+              id: "72"
+            }
+          })
+          .expectResolve((result: { statusCode: any; body: string; }) => {
+            expect(result.statusCode).toEqual(200);
+            console.log(result.body);
+            expect(JSON.parse(result.body)).toEqual(expectedResult);
+          });
+      });
+
+      it("should return 404 if the vehicle has less axles than the test has defined", () => {
+        return LambdaTester(getTestTypesById)
+          .event({
+            queryStringParameters: {
+              fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+              vehicleType: "hgv",
+              vehicleSize: "large",
+              vehicleConfiguration: null,
+              vehicleAxles: 1
+            },
+            pathParameters: {
+              id: "72"
+            }
+          })
+          .expectResolve((result: { statusCode: any; body: string; }) => {
+            expect(result.statusCode).toEqual(404);
+          });
+      });
+    });
   });
+
 });
