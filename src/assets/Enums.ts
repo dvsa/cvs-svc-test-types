@@ -10,6 +10,7 @@ export enum ERRORS {
 export enum HTTPRESPONSE {
     AWS_EVENT_EMPTY = "AWS event is empty. Check your test event.",
     NOT_VALID_JSON = "Body is not a valid JSON.",
+    RESOURCE_NOT_FOUND = "No resources match the search criteria."
 }
 
 export enum HTTPMethods {

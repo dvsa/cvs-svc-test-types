@@ -6,11 +6,16 @@ import { ITestType } from "./ITestType";
 import { IDBConfig } from "./IDBConfig";
 
 /* tslint:disable */
-const AWSXRay = require("aws-xray-sdk");
-const AWS = AWSXRay.captureAWS(unwrappedAWS);
+let AWS: { DynamoDB: { DocumentClient: new (arg0: any) => DocumentClient; }; };
+if (process.env._X_AMZN_TRACE_ID) {
+  AWS = require("aws-xray-sdk").captureAWS(require("aws-sdk"));
+} else {
+  console.log("Serverless Offline detected; skipping AWS X-Ray setup")
+  AWS = require("aws-sdk");
+}
 /* tslint:enable */
 
-export class TestTypesDAO {
+export default class TestTypesDAO {
   private readonly tableName: string;
   private static dbClient: DocumentClient;
 
@@ -21,7 +26,6 @@ export class TestTypesDAO {
       TestTypesDAO.dbClient = new AWS.DynamoDB.DocumentClient(config.params);
     }
   }
-
 
   /**
    * Get All test Types  in the DB
