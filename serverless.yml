@@ -66,9 +66,9 @@ custom:
     start:
       port: 8002
       inMemory: true
-      migrate: false
-      seed: false
-      noStart: true
+      migrate: true
+      seed: true
+      noStart: false
     seed:
       test-types:
         sources:
