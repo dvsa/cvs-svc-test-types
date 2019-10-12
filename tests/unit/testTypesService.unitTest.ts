@@ -31,7 +31,7 @@ describe("when database is on", () => {
     context("getTestTypesList", () => {
       const expectedTestTypesRecords: any = [...TestTypes];
       it("should return the expected data", () => {
-        const MockTestTypesDAO = jest.fn().mockImplementation(() => {
+        MockTestTypesDAO = jest.fn().mockImplementation(() => {
           return {
             getAll: () => {
               return Promise.resolve({
@@ -42,9 +42,9 @@ describe("when database is on", () => {
           };
         });
 
-        const testTypesService = new TestTypesService(new MockTestTypesDAO());
+        testTypesService = new TestTypesService(new MockTestTypesDAO());
         return testTypesService.getTestTypesList()
-          .then((returnedRecords) => {
+          .then((returnedRecords: any) => {
             expect(returnedRecords).toEqual(expectedTestTypesRecords);
           });
       });
@@ -121,7 +121,7 @@ describe("when database is on", () => {
             });
         });
       });
-    })
+    });
 
     context("when the testCode queried contains an array on vehicleAxles field", () => {
       it("should return the testCode", () => {
