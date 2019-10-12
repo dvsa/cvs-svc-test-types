@@ -37,4 +37,3 @@ export const getTestTypesById: Handler = (event, context, callback) => {
       return new HTTPResponse(error.statusCode, error.body);
     });
 };
-

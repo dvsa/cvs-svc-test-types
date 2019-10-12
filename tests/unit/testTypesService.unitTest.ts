@@ -331,6 +331,28 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
   });
 });
 
+describe("when database is off", () => {
+  it("should return error 500", () => {
+
+    const MockTestTypesDAO = jest.fn().mockImplementation(() => {
+      return {
+        getAll: () => {
+          return Promise.reject({});
+        }
+      };
+    });
+
+    const testTypesService = new TestTypesService(new MockTestTypesDAO());
+
+    return testTypesService.getTestTypesList()
+      .then(() => undefined)
+      .catch((errorResponse) => {
+        expect(errorResponse.statusCode).toEqual(500);
+        expect(errorResponse.body).toEqual("Internal Server Error");
+      });
+  });
+});
+
 describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
   context("when passing a testCode that contains an array on field forVehicleAxles and a filterExpression that has a value included in that array  ", () => {
     it("should return true", () => {
