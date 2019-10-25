@@ -1,12 +1,26 @@
 import LambdaTester from "lambda-tester";
 import { handler } from "../../src/handler";
+import {emptyDatabase, populateDatabase} from "../util/dbOperations";
 
-//This test is garbage and doesn't actually test anything. Should be replaced with an actual test.
 describe("getTestTypes", () => {
+  beforeAll(async () => {
+    jest.restoreAllMocks();
+    await emptyDatabase();
+  });
+  beforeEach(async () => {
+    await populateDatabase();
+  });
+  afterEach(async () => {
+    await emptyDatabase();
+  });
+  afterAll(async () => {
+    await populateDatabase();
+  });
+
   it("should return a promise", () => {
-    const lambda = LambdaTester(handler);
+    const lambda = LambdaTester(handler).event({httpMethod: "GET", path: "/test-types"});
     return lambda.expectResolve((response: any) => {
-      expect(response).toBeTruthy();
+      return expect(response).toBeDefined();
     });
   });
 });

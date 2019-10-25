@@ -74,3 +74,5 @@ custom:
         sources:
         - table: cvs-local-test-types
           sources: [./tests/resources/test-types.json]
+    stages:
+      - dev
