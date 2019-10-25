@@ -1399,217 +1399,217 @@
     ]
   },
   {
-    "id": "42",
-    "linkedIds": null,
-    "name": "Technical test",
+    "forVehicleAxles": null,
+    "forVehicleConfiguration": null,
+    "forVehicleSize": null,
     "forVehicleType": [
       "hgv",
       "trl"
     ],
-    "forVehicleSize": null,
-    "forVehicleConfiguration": null,
-    "forVehicleAxles": null,
+    "id": "42",
+    "linkedIds": null,
+    "name": "Technical test",
     "nextTestTypesOrCategories": [
       {
-        "id": "43",
-        "linkedIds": null,
-        "name": "LEC",
+        "forVehicleAxles": null,
+        "forVehicleConfiguration": null,
+        "forVehicleSize": null,
         "forVehicleType": [
           "hgv"
         ],
-        "forVehicleSize": null,
-        "forVehicleConfiguration": null,
-        "forVehicleAxles": null,
+        "id": "43",
+        "linkedIds": null,
+        "name": "LEC",
         "nextTestTypesOrCategories": [
           {
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
+            "forVehicleType": [
+              "hgv"
+            ],
             "id": "44",
             "linkedIds": null,
             "name": "With linked test",
-            "testTypeName": "Low Emissions Certificate (LEC) with annual test",
+            "testCodes": [
+              {
+                "defaultTestCode": "ldv",
+                "forVehicleAxles": null,
+                "forVehicleConfiguration": null,
+                "forVehicleSize": null,
+                "forVehicleType": "hgv",
+                "linkedTestCode": null
+              }
+            ],
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeName": "Low Emissions Certificate (LEC) with annual test"
+          },
+          {
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
             "forVehicleType": [
               "hgv"
             ],
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
-            "testTypeClassification": "Annual With Certificate",
-            "testCodes": [
-              {
-                "forVehicleType": "hgv",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
-                "defaultTestCode": "ldv",
-                "linkedTestCode": null
-              }
-            ]
-          },
-          {
             "id": "45",
             "linkedIds": null,
             "name": "Without linked test",
-            "testTypeName": "Low Emissions Certificate (LEC)",
-            "forVehicleType": [
-              "hgv"
-            ],
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
-            "testTypeClassification": "Annual With Certificate",
             "testCodes": [
               {
-                "forVehicleType": "hgv",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
                 "defaultTestCode": "lev",
+                "forVehicleAxles": null,
+                "forVehicleConfiguration": null,
+                "forVehicleSize": null,
+                "forVehicleType": "hgv",
                 "linkedTestCode": null
               }
-            ]
+            ],
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeName": "Low Emissions Certificate (LEC)"
           }
         ]
       },
       {
+        "forVehicleAxles": null,
+        "forVehicleConfiguration": null,
+        "forVehicleSize": null,
+        "forVehicleType": [
+          "hgv",
+          "trl"
+        ],
         "id": "46",
         "linkedIds": null,
         "name": "Notifiable alteration",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
-        "forVehicleSize": null,
-        "forVehicleConfiguration": null,
-        "forVehicleAxles": null,
         "nextTestTypesOrCategories": [
           {
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
+            "forVehicleType": [
+              "hgv",
+              "trl"
+            ],
             "id": "47",
             "linkedIds": null,
             "name": "Free",
-            "testTypeName": "Free notifiable alteration",
+            "testCodes": [
+              {
+                "defaultTestCode": "nfv",
+                "forVehicleAxles": null,
+                "forVehicleConfiguration": null,
+                "forVehicleSize": null,
+                "forVehicleType": "hgv",
+                "linkedTestCode": null
+              },
+              {
+                "defaultTestCode": "nft",
+                "forVehicleAxles": null,
+                "forVehicleConfiguration": null,
+                "forVehicleSize": null,
+                "forVehicleType": "trl",
+                "linkedTestCode": null
+              }
+            ],
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeName": "Free notifiable alteration"
+          },
+          {
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
             "forVehicleType": [
               "hgv",
               "trl"
             ],
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
-            "testTypeClassification": "Annual NO CERTIFICATE",
-            "testCodes": [
-              {
-                "forVehicleType": "hgv",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
-                "defaultTestCode": "nfv",
-                "linkedTestCode": null
-              },
-              {
-                "forVehicleType": "trl",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
-                "defaultTestCode": "nft",
-                "linkedTestCode": null
-              }
-            ]
-          },
-          {
             "id": "48",
             "linkedIds": null,
             "name": "Paid",
-            "testTypeName": "Paid notifiable alteration",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
-            "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
               {
-                "forVehicleType": "hgv",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
                 "defaultTestCode": "nvv",
+                "forVehicleAxles": null,
+                "forVehicleConfiguration": null,
+                "forVehicleSize": null,
+                "forVehicleType": "hgv",
                 "linkedTestCode": null
               },
               {
-                "forVehicleType": "trl",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
                 "defaultTestCode": "nvt",
+                "forVehicleAxles": null,
+                "forVehicleConfiguration": null,
+                "forVehicleSize": null,
+                "forVehicleType": "trl",
                 "linkedTestCode": null
               }
-            ]
+            ],
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeName": "Paid notifiable alteration"
           }
         ]
       },
       {
+        "forVehicleAxles": null,
+        "forVehicleConfiguration": null,
+        "forVehicleSize": null,
+        "forVehicleType": [
+          "hgv",
+          "trl"
+        ],
         "id": "49",
         "linkedIds": null,
         "name": "TIR",
-        "testTypeName": "TIR test",
+        "testCodes": [
+          {
+            "defaultTestCode": "tiv",
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
+            "forVehicleType": "hgv",
+            "linkedTestCode": null
+          },
+          {
+            "defaultTestCode": "tit",
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
+            "forVehicleType": "trl",
+            "linkedTestCode": null
+          }
+        ],
+        "testTypeClassification": "Annual NO CERTIFICATE",
+        "testTypeName": "TIR test"
+      },
+      {
+        "forVehicleAxles": null,
+        "forVehicleConfiguration": null,
+        "forVehicleSize": null,
         "forVehicleType": [
           "hgv",
           "trl"
         ],
-        "forVehicleSize": null,
-        "forVehicleConfiguration": null,
-        "forVehicleAxles": null,
-        "testTypeClassification": "Annual NO CERTIFICATE",
-        "testCodes": [
-          {
-            "forVehicleType": "hgv",
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
-            "defaultTestCode": "tiv",
-            "linkedTestCode": null
-          },
-          {
-            "forVehicleType": "trl",
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
-            "defaultTestCode": "tit",
-            "linkedTestCode": null
-          }
-        ]
-      },
-      {
         "id": "50",
         "linkedIds": null,
         "name": "ADR",
-        "testTypeName": "ADR test",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
-        "forVehicleSize": null,
-        "forVehicleConfiguration": null,
-        "forVehicleAxles": null,
-        "testTypeClassification": "Annual NO CERTIFICATE",
         "testCodes": [
           {
-            "forVehicleType": "hgv",
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
             "defaultTestCode": "ddv",
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
+            "forVehicleType": "hgv",
             "linkedTestCode": null
           },
           {
-            "forVehicleType": "trl",
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
             "defaultTestCode": "ddt",
+            "forVehicleAxles": null,
+            "forVehicleConfiguration": null,
+            "forVehicleSize": null,
+            "forVehicleType": "trl",
             "linkedTestCode": null
           }
-        ]
+        ],
+        "testTypeClassification": "Annual NO CERTIFICATE",
+        "testTypeName": "ADR test"
       }
     ]
   },
