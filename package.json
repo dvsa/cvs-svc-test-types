@@ -21,7 +21,7 @@
     "predeploy": "npm install && npm run prepush",
     "security-checks": "git secrets --scan && git log -p | scanrepo",
     "tslint": "tslint src/**/*.ts tests/**/*.ts -q",
-    "sonar-scanner": "npm run tslint && npm run test && sonar-scanner",
+    "sonar-scanner": "npm run tslint && npm run coverage && sonar-scanner",
     "coverage": "BRANCH=local SLS_DEBUG=* jest --testMatch=\"**/*.*Test.ts\" --runInBand --coverage",
     "audit-dep": "npm audit --json | audit-filter --nsp-config=.nsprc --audit=-"
   },
