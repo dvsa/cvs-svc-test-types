@@ -42,7 +42,7 @@ export default class TestTypesDAO {
   */
   public createMultiple(testTypesItems: ITestType[]): Promise<PromiseResult<DocumentClient.BatchWriteItemOutput, AWS.AWSError>> {
     const params = this.generatePartialParams();
-    testTypesItems.map((testTypesItem: ITestType) => {
+    testTypesItems.forEach((testTypesItem: ITestType) => {
       params.RequestItems[this.tableName].push(
         {
           PutRequest:
