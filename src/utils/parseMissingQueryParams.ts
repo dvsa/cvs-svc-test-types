@@ -7,7 +7,7 @@ export const parseMissingQueryParams = (queryStringParameters: any) => {
         queryParams.vehicleAxles = parseInt(queryParams.vehicleAxles, 10);
     }
 
-    if (queryParams.vehicleSize === undefined) {
+    if (queryParams.vehicleSize === "undefined") {
         queryParams.vehicleSize = null;
     }
 
