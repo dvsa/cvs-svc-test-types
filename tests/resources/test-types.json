@@ -1164,7 +1164,7 @@
           "rigid"
         ],
         "forVehicleAxles": null,
-        "testTypeClassification": "NON ANNUAL",
+        "testTypeClassification": "Annual With Certificate",
         "testCodes": [
           {
             "forVehicleType": "psv",
