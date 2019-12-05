@@ -188,7 +188,7 @@ describe("when database is on", () => {
           .then((returnedRecords: any) => {
             expect(returnedRecords).toEqual({
               id: "62",
-              testTypeClassification: "Annual NO CERTIFICATE",
+              testTypeClassification: "Annual With Certificate",
               defaultTestCode: "qqv",
               linkedTestCode: null
             });
@@ -223,7 +223,7 @@ describe("when database is on", () => {
           .then((returnedRecords: any) => {
             expect(returnedRecords).toEqual({
               id: "62",
-              testTypeClassification: "Annual NO CERTIFICATE",
+              testTypeClassification: "Annual With Certificate",
               defaultTestCode: "qqv",
               linkedTestCode: null
             });
@@ -241,7 +241,7 @@ describe("when database is on", () => {
           .then((returnedRecords: any) => {
             expect(returnedRecords).toEqual({
               id: "62",
-              testTypeClassification: "Annual NO CERTIFICATE",
+              testTypeClassification: "Annual With Certificate",
               defaultTestCode: "qqv",
               linkedTestCode: null
             });
