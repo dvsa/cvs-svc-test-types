@@ -273,7 +273,6 @@ describe("getTestTypesById", () => {
           })
           .expectResolve((result: { statusCode: any; body: string; }) => {
             expect(result.statusCode).toEqual(200);
-            console.log(result.body);
             expect(JSON.parse(result.body)).toEqual(expectedResult);
           });
       });
