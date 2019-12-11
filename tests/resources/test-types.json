@@ -56,6 +56,7 @@
       "large"
     ],
     "forVehicleConfiguration": [
+      "articulated",
       "rigid"
     ],
     "forVehicleAxles": null,
@@ -73,6 +74,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -81,7 +83,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "wdl",
             "linkedTestCode": null
@@ -89,7 +91,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "wds",
             "linkedTestCode": null
@@ -109,6 +111,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -117,7 +120,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "wbl",
             "linkedTestCode": null
@@ -125,7 +128,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "wbs",
             "linkedTestCode": null
@@ -226,6 +229,7 @@
               "large"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -234,7 +238,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "whl",
                 "linkedTestCode": null
@@ -242,7 +246,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "whs",
                 "linkedTestCode": null
@@ -329,6 +333,7 @@
       "small"
     ],
     "forVehicleConfiguration": [
+      "articulated",
       "rigid"
     ],
     "forVehicleAxles": null,
@@ -361,6 +366,7 @@
               "small"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -378,6 +384,7 @@
                   "small"
                 ],
                 "forVehicleConfiguration": [
+                  "articulated",
                   "rigid"
                 ],
                 "forVehicleAxles": null,
@@ -386,7 +393,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "large",
-                    "forVehicleConfiguration": "rigid",
+                    "forVehicleConfiguration": "rigid/articulated",
                     "forVehicleAxles": null,
                     "defaultTestCode": "p1l",
                     "linkedTestCode": null
@@ -394,7 +401,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "small",
-                    "forVehicleConfiguration": "rigid",
+                    "forVehicleConfiguration": "rigid/articulated",
                     "forVehicleAxles": null,
                     "defaultTestCode": "p1s",
                     "linkedTestCode": null
@@ -414,6 +421,7 @@
                   "small"
                 ],
                 "forVehicleConfiguration": [
+                  "articulated",
                   "rigid"
                 ],
                 "forVehicleAxles": null,
@@ -422,7 +430,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "large",
-                    "forVehicleConfiguration": "rigid",
+                    "forVehicleConfiguration": "rigid/articulated",
                     "forVehicleAxles": null,
                     "defaultTestCode": "phl",
                     "linkedTestCode": null
@@ -430,7 +438,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "small",
-                    "forVehicleConfiguration": "rigid",
+                    "forVehicleConfiguration": "rigid/articulated",
                     "forVehicleAxles": null,
                     "defaultTestCode": "phs",
                     "linkedTestCode": null
@@ -452,6 +460,7 @@
               "small"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -460,7 +469,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "prl",
                 "linkedTestCode": null
@@ -468,7 +477,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "prs",
                 "linkedTestCode": null
@@ -488,6 +497,7 @@
               "small"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -496,7 +506,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "pgl",
                 "linkedTestCode": null
@@ -504,7 +514,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "pgs",
                 "linkedTestCode": null
@@ -523,6 +533,7 @@
               "small"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -539,6 +550,7 @@
                   "small"
                 ],
                 "forVehicleConfiguration": [
+                  "articulated",
                   "rigid"
                 ],
                 "forVehicleAxles": null,
@@ -556,6 +568,7 @@
                       "small"
                     ],
                     "forVehicleConfiguration": [
+                      "articulated",
                       "rigid"
                     ],
                     "forVehicleAxles": null,
@@ -564,7 +577,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": "rigid",
+                        "forVehicleConfiguration": "rigid/articulated",
                         "forVehicleAxles": null,
                         "defaultTestCode": "p8l",
                         "linkedTestCode": null
@@ -572,7 +585,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": "rigid",
+                        "forVehicleConfiguration": "rigid/articulated",
                         "forVehicleAxles": null,
                         "defaultTestCode": "p8s",
                         "linkedTestCode": null
@@ -592,6 +605,7 @@
                       "small"
                     ],
                     "forVehicleConfiguration": [
+                      "articulated",
                       "rigid"
                     ],
                     "forVehicleAxles": null,
@@ -600,7 +614,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": "rigid",
+                        "forVehicleConfiguration": "rigid/articulated",
                         "forVehicleAxles": null,
                         "defaultTestCode": "pml",
                         "linkedTestCode": null
@@ -608,7 +622,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": "rigid",
+                        "forVehicleConfiguration": "rigid/articulated",
                         "forVehicleAxles": null,
                         "defaultTestCode": "pms",
                         "linkedTestCode": null
@@ -646,6 +660,7 @@
                       "small"
                     ],
                     "forVehicleConfiguration": [
+                      "articulated",
                       "rigid"
                     ],
                     "forVehicleAxles": null,
@@ -654,7 +669,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": "rigid",
+                        "forVehicleConfiguration": "rigid/articulated",
                         "forVehicleAxles": null,
                         "defaultTestCode": "p6l",
                         "linkedTestCode": null
@@ -664,7 +679,7 @@
                         "forVehicleSize": "small",
                         "forVehicleConfiguration": "rigid",
                         "forVehicleAxles": null,
-                        "defaultTestCode": "p6s",
+                        "defaultTestCode": "rigid/articulated",
                         "linkedTestCode": null
                       }
                     ]
@@ -682,6 +697,7 @@
                       "small"
                     ],
                     "forVehicleConfiguration": [
+                      "articulated",
                       "rigid"
                     ],
                     "forVehicleAxles": null,
@@ -690,7 +706,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": "rigid",
+                        "forVehicleConfiguration": "rigid/articulated",
                         "forVehicleAxles": null,
                         "defaultTestCode": "p2l",
                         "linkedTestCode": null
@@ -698,7 +714,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": "rigid",
+                        "forVehicleConfiguration": "rigid/articulated",
                         "forVehicleAxles": null,
                         "defaultTestCode": "p2s",
                         "linkedTestCode": null
@@ -723,6 +739,7 @@
           "small"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -740,6 +757,7 @@
               "large"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -748,7 +766,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "wfl",
                 "linkedTestCode": null
@@ -756,7 +774,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "wfs",
                 "linkedTestCode": null
@@ -776,6 +794,7 @@
               "large"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -784,7 +803,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "wis",
                 "linkedTestCode": null
@@ -792,7 +811,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "wil",
                 "linkedTestCode": null
@@ -813,6 +832,7 @@
           "small"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -830,6 +850,7 @@
               "large"
             ],
             "forVehicleConfiguration": [
+              "articulated",
               "rigid"
             ],
             "forVehicleAxles": null,
@@ -838,7 +859,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "wes",
                 "linkedTestCode": null
@@ -846,7 +867,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": "rigid",
+                "forVehicleConfiguration": "rigid/articulated",
                 "forVehicleAxles": null,
                 "defaultTestCode": "wel",
                 "linkedTestCode": null
@@ -884,6 +905,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": [
@@ -895,7 +917,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": 2,
             "defaultTestCode": "qal",
             "linkedTestCode": null
@@ -903,7 +925,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": 2,
             "defaultTestCode": "qas",
             "linkedTestCode": null
@@ -911,7 +933,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": 3,
             "defaultTestCode": "qgl",
             "linkedTestCode": null
@@ -919,7 +941,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": 3,
             "defaultTestCode": "qgs",
             "linkedTestCode": null
@@ -939,6 +961,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -947,7 +970,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "qdl",
             "linkedTestCode": null
@@ -955,7 +978,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "qds",
             "linkedTestCode": null
@@ -975,6 +998,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -983,7 +1007,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "qcl",
             "linkedTestCode": null
@@ -991,7 +1015,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "qcs",
             "linkedTestCode": null
@@ -1011,6 +1035,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -1019,7 +1044,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "qbl",
             "linkedTestCode": null
@@ -1027,7 +1052,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "qbs",
             "linkedTestCode": null
@@ -1044,6 +1069,7 @@
         ],
         "forVehicleSize": null,
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -1052,7 +1078,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": null,
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "bif",
             "linkedTestCode": null
@@ -1072,6 +1098,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -1080,7 +1107,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "tel",
             "linkedTestCode": null
@@ -1088,7 +1115,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "tes",
             "linkedTestCode": null
@@ -1169,6 +1196,7 @@
       "small"
     ],
     "forVehicleConfiguration": [
+      "articulated",
       "rigid"
     ],
     "forVehicleAxles": null,
@@ -1186,6 +1214,7 @@
           "large"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -1194,7 +1223,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "nfl",
             "linkedTestCode": null
@@ -1202,7 +1231,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "nfs",
             "linkedTestCode": null
@@ -1219,6 +1248,7 @@
         ],
         "forVehicleSize": null,
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
@@ -1227,7 +1257,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": null,
-            "forVehicleConfiguration": "rigid",
+            "forVehicleConfiguration": "rigid/articulated",
             "forVehicleAxles": null,
             "defaultTestCode": "lbp",
             "linkedTestCode": "lcp"
