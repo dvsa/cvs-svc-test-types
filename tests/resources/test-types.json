@@ -741,7 +741,7 @@
                           "articulated"
                         ],
                         "forVehicleAxles": null,
-                        "defaultTestCode": "p6s",
+                        "defaultTestCode": "rigid/articulated",
                         "linkedTestCode": null
                       }
                     ]
