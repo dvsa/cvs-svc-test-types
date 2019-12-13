@@ -741,7 +741,10 @@
                           "articulated"
                         ],
                         "forVehicleAxles": null,
-                        "defaultTestCode": "rigid/articulated",
+                        "defaultTestCode": [
+                          "articulated",
+                          "rigid"
+                        ],
                         "linkedTestCode": null
                       }
                     ]
