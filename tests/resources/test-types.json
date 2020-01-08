@@ -868,9 +868,7 @@
       "large",
       "small"
     ],
-    "forVehicleConfiguration": [
-      "rigid"
-    ],
+    "forVehicleConfiguration": null,
     "forVehicleAxles": null,
     "nextTestTypesOrCategories": [
       {
