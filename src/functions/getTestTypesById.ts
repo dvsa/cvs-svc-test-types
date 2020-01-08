@@ -4,6 +4,7 @@ import { HTTPResponse } from "../models/HTTPResponse";
 import Joi from "joi";
 import { Handler } from "aws-lambda";
 import {parseMissingQueryParams} from "../utils/parseMissingQueryParams";
+import {ForEuVehicleCategory, ForVehicleConfiguration, ForVehicleSize, ForVehicleSubclass, ForVehicleType} from "../models/ITestType";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
@@ -12,10 +13,14 @@ export const getTestTypesById: Handler = (event, context, callback) => {
   // Validate query parameters
   const queryParamSchema = Joi.object().keys({
     fields: Joi.string().regex(/^(testTypeClassification|defaultTestCode|linkedTestCode),?\s*((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?$/).required(),
-    vehicleType: Joi.any().only([ "psv", "hgv", "trl" ]).required(),
-    vehicleSize: Joi.any().only([ "small", "large" ]),
-    vehicleConfiguration: Joi.string().allow(null).optional(),
-    vehicleAxles: Joi.number().min(0).max(99).allow(null).optional()
+    vehicleType: Joi.string().only(Object.values(ForVehicleType)).required(),
+    vehicleSize: Joi.string().only(Object.values(ForVehicleSize)),
+    vehicleConfiguration: Joi.string().only(Object.values(ForVehicleConfiguration)).allow(null),
+    euVehicleCategory: Joi.string().only(Object.values(ForEuVehicleCategory)).allow(null),
+    vehicleClass: Joi.number().min(0).max(99).allow(null),
+    vehicleSubclass: Joi.string().only(Object.values(ForVehicleSubclass)).allow(null),
+    vehicleWheels: Joi.number().min(0).max(99).allow(null),
+    vehicleAxles: Joi.number().min(0).max(99).allow(null)
   });
 
   const queryParams = parseMissingQueryParams(event.queryStringParameters);
