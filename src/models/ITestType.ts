@@ -7,6 +7,10 @@ export interface ITestType {
     forVehicleSize: ForVehicleSize[] | null;
     forVehicleConfiguration: ForVehicleConfiguration[] | null;
     forVehicleAxles: number[] | null;
+    forEuVehicleCategory: ForEuVehicleCategory[] | null;
+    forVehicleClass: string[] | null;
+    forVehicleSubclass: ForVehicleSubclass[] | null;
+    forVehicleWheels: number[] | null;
     testTypeClassification?: TestTypeClassification;
     testCodes?: TestCode[];
     nextTestTypesOrCategories?: NextTestTypesOrCategory[];
@@ -18,14 +22,38 @@ export enum ForVehicleConfiguration {
 }
 
 export enum ForVehicleSize {
-    Large = "large",
     Small = "small",
+    Large = "large",
 }
 
 export enum ForVehicleType {
     Hgv = "hgv",
     Psv = "psv",
     Trl = "trl",
+    Car = "car",
+    Lgv = "lgv",
+    Motorcycle = "motorcycle"
+}
+
+export enum ForEuVehicleCategory {
+    N2 = "n2",
+    N3 = "n3",
+    O1 = "o1",
+    O2 = "o2",
+    O3 = "o3",
+    O4 = "o4"
+}
+
+export enum ForVehicleSubclass {
+    A = "a",
+    C = "c",
+    S = "s",
+    L = "l",
+    M = "m",
+    N = "n",
+    P = "p",
+    T = "t",
+    R = "r"
 }
 
 export interface NextTestTypesOrCategory {
@@ -37,16 +65,24 @@ export interface NextTestTypesOrCategory {
     forVehicleSize: ForVehicleSize[] | null;
     forVehicleConfiguration: ForVehicleConfiguration[] | null;
     forVehicleAxles: number[] | null;
+    forEuVehicleCategory: ForEuVehicleCategory[] | null;
+    forVehicleClass: string[] | null;
+    forVehicleSubclass: ForVehicleSubclass[] | null;
+    forVehicleWheels: number[] | null;
     testTypeClassification?: TestTypeClassification;
     testCodes?: TestCode[];
     nextTestTypesOrCategories?: NextTestTypesOrCategory[];
 }
 
 export interface TestCode {
-    forVehicleType: ForVehicleType;
+    forVehicleType: ForVehicleType | ForVehicleType[];
     forVehicleSize: ForVehicleSize | null;
     forVehicleConfiguration: ForVehicleConfiguration | null;
-    forVehicleAxles: number[] | number | null;
+    forVehicleAxles: number | number[] | null;
+    forEuVehicleCategory: ForEuVehicleCategory | ForEuVehicleCategory[] | null;
+    forVehicleClass: string | string[] | null;
+    forVehicleSubclass: ForVehicleSubclass | ForVehicleSubclass[] | null;
+    forVehicleWheels: number | number[] | null;
     defaultTestCode: string;
     linkedTestCode: null | string;
 }
