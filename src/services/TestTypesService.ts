@@ -1,6 +1,6 @@
 import { HTTPError } from "../models/HTTPError";
 import TestTypesDAO from "../models/TestTypesDAO";
-import { ITestType } from "../models/ITestType";
+import {ITestType, TestCode} from "../models/ITestType";
 import {ERRORS, HTTPRESPONSE} from "../assets/Enums";
 
 export class TestTypesService {
@@ -47,16 +47,24 @@ export class TestTypesService {
                 if (testType === null) {
                     throwResourceNotFound();
                 }
-                let testCodes = testType.testCodes;
+                let testCodes: TestCode[] = testType.testCodes;
 
-                testCodes = testCodes.filter((testCode: ITestType) => { // filter by vehicleType if present in DB, otherwise skip
+                testCodes = testCodes.filter((testCode) => { // filter by vehicleType if present in DB, otherwise skip
                     return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true;
-                }).filter((testCode: ITestType) => { // filter by vehicleSize if present in DB & in request, otherwise skip
+                }).filter((testCode) => { // filter by vehicleSize if present in DB & in request, otherwise skip
                     return (testCode.forVehicleSize && filterExpression.vehicleSize) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSize") : true;
-                }).filter((testCode: ITestType) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
+                }).filter((testCode) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
                     return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleConfiguration") : true;
-                }).filter((testCode: ITestType) => { // filter by vehicleAxles if present in DB & in request, otherwise skip
+                }).filter((testCode) => { // filter by vehicleAxles if present in DB & in request, otherwise skip
                     return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles") : true;
+                }).filter((testCode) => {
+                    return (testCode.forEuVehicleCategory && filterExpression.euVehicleCategory) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory") : true;
+                }).filter((testCode) => {
+                    return (testCode.forVehicleClass && filterExpression.vehicleClass) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass") : true;
+                }).filter((testCode) => {
+                    return (testCode.forVehicleSubclass && filterExpression.vehicleSubclass) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass") : true;
+                }).filter((testCode) => {
+                    return (testCode.forVehicleWheels && filterExpression.vehicleWheels) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels") : true;
                 });
 
                 if (testCodes.length === 0) {
@@ -73,7 +81,7 @@ export class TestTypesService {
                 };
 
                 filterExpression.fields // Iterate through filterExpression's fields and populate them in the response
-                    .forEach((field: string) => {
+                    .forEach((field: keyof TestCode) => {
                         response[field] = testCodes[0][field];
                     });
 
@@ -85,6 +93,11 @@ export class TestTypesService {
             });
     }
 
+    /**
+     * returns null if the test-type was not found
+     * @param id
+     * @param testTypes
+     */
     public findTestType({ id, testTypes }: { id: string; testTypes: any; }) {
         for (const testType of testTypes) {
             // for (let i = 0; i < testTypes.length; i++) {
@@ -107,9 +120,6 @@ export class TestTypesService {
         const testTypeArray = testTypes;
 
         for (const testType of testTypeArray) {
-            // for (let i = 0; i < testTypeArray.length; i++) {
-            // const testType = testTypeArray[i];
-
             if (testType.hasOwnProperty("nextTestTypesOrCategories")) {
                 Object.assign(testTypeArray, { nextTestTypesOrCategories: this.sort(testType.nextTestTypesOrCategories) });
             }
@@ -163,39 +173,32 @@ export class TestTypesService {
 
     public fieldInfilterExpressionMatchesTheOneInTestCode(testCode: any, filterExpression: any, field: string) {
         let bool = false;
+        const filterOnField = (filterVal: string) => {
+            if (Array.isArray(testCode[filterVal])) {
+                testCode[filterVal].map((arrayElement: any) => {
+                    if (arrayElement === filterExpression[getFilterFieldWithoutFor(filterVal)]) {
+                        bool = true;
+                    }
+                });
+            } else {
+                bool = testCode[filterVal] === filterExpression[getFilterFieldWithoutFor(filterVal)];
+            }
+        };
+
+        const getFilterFieldWithoutFor = (filterVal: any) => {
+            const rightLetters = filterVal.slice(3); // cut off the leading "for", but still got a capital letter leading
+            return rightLetters[0].toLowerCase() + rightLetters.slice(1); // switch first letter to lower case, and rejoin with rest of string
+        };
+
         switch (field) {
             case "forVehicleSize":
-                if (Array.isArray(testCode.forVehicleSize)) {
-                    testCode.forVehicleSize.map((sizeValue: number) => {
-                        if (sizeValue === filterExpression.vehicleSize) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleSize === filterExpression.vehicleSize;
-                }
-                break;
             case "forVehicleConfiguration":
-                if (Array.isArray(testCode.forVehicleConfiguration)) {
-                    testCode.forVehicleConfiguration.map((configurationValue: number) => {
-                        if (configurationValue === filterExpression.vehicleConfiguration) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleConfiguration === filterExpression.vehicleConfiguration;
-                }
-                break;
             case "forVehicleAxles":
-                if (Array.isArray(testCode.forVehicleAxles)) {
-                    testCode.forVehicleAxles.map((axleValue: number) => {
-                        if (axleValue === filterExpression.vehicleAxles) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleAxles === filterExpression.vehicleAxles;
-                }
+            case "forEuVehicleCategory":
+            case "forVehicleClass":
+            case "forVehicleSubclass":
+            case "forVehicleWheels":
+                filterOnField(field);
                 break;
             default:
                 console.error("Field you filtered by does not exist");
@@ -204,7 +207,6 @@ export class TestTypesService {
 
         return bool;
     }
-
 }
 
 const throwResourceNotFound = () => {
