@@ -697,7 +697,8 @@
                   "small"
                 ],
                 "forVehicleConfiguration": [
-                  "rigid"
+                  "rigid",
+                  "articulated"
                 ],
                 "forVehicleAxles": null,
                 "nextTestTypesOrCategories": [
@@ -734,12 +735,12 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": "rigid",
-                        "forVehicleAxles": null,
-                        "defaultTestCode": [
-                          "articulated",
-                          "rigid"
+                        "forVehicleConfiguration": [
+                          "rigid",
+                          "articulated"
                         ],
+                        "forVehicleAxles": null,
+                        "defaultTestCode": "p6s",
                         "linkedTestCode": null
                       }
                     ]
