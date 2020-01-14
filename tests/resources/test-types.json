@@ -351,8 +351,8 @@
       "small"
     ],
     "forVehicleConfiguration": [
-      "articulated",
-      "rigid"
+      "rigid",
+      "articulated"
     ],
     "forVehicleAxles": null,
     "nextTestTypesOrCategories": [
@@ -741,10 +741,7 @@
                           "articulated"
                         ],
                         "forVehicleAxles": null,
-                        "defaultTestCode": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "defaultTestCode": "p6s",
                         "linkedTestCode": null
                       }
                     ]
