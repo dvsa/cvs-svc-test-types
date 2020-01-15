@@ -1646,7 +1646,7 @@
             "linkedTestCode": null
           }
         ],
-        "testTypeClassification": "Annual With Certificate",
+        "testTypeClassification": "Annual NO CERTIFICATE",
         "testTypeName": "ADR test"
       }
     ]
@@ -1990,7 +1990,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "Annual With Certificate",
+            "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -2022,7 +2022,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": "Annual With Certificate",
+            "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
               {
                 "forVehicleType": "hgv",
