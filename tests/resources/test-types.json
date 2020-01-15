@@ -368,6 +368,7 @@
           "small"
         ],
         "forVehicleConfiguration": [
+          "articulated",
           "rigid"
         ],
         "forVehicleAxles": null,
