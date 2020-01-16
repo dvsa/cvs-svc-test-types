@@ -244,6 +244,50 @@ export class TestTypesService {
                     bool = testCode.forVehicleWheels === filterExpression.vehicleWheels;
                 }
                 break;
+            case "forEuVehicleCategory":
+                if (Array.isArray(testCode.forEuVehicleCategory)) {
+                    testCode.forEuVehicleCategory.map((arrayElement) => {
+                        if (arrayElement === filterExpression.euVehicleCategory) {
+                            bool = true;
+                        }
+                    });
+                } else {
+                    bool = testCode.forEuVehicleCategory === filterExpression.euVehicleCategory;
+                }
+                break;
+            case "forVehicleClass":
+                if (Array.isArray(testCode.forVehicleClass)) {
+                    testCode.forVehicleClass.map((arrayElement) => {
+                        if (arrayElement === filterExpression.vehicleClass) {
+                            bool = true;
+                        }
+                    });
+                } else {
+                    bool = testCode.forVehicleClass === filterExpression.vehicleClass;
+                }
+                break;
+            case "forVehicleSubclass":
+                if (Array.isArray(testCode.forVehicleSubclass)) {
+                    testCode.forVehicleSubclass.map((arrayElement) => {
+                        if (arrayElement === filterExpression.vehicleSubclass) {
+                            bool = true;
+                        }
+                    });
+                } else {
+                    bool = testCode.forVehicleSubclass === filterExpression.vehicleSubclass;
+                }
+                break;
+            case "forVehicleWheels":
+                if (Array.isArray(testCode.forVehicleWheels)) {
+                    testCode.forVehicleWheels.map((arrayElement) => {
+                        if (arrayElement === filterExpression.vehicleWheels) {
+                            bool = true;
+                        }
+                    });
+                } else {
+                    bool = testCode.forVehicleWheels === filterExpression.vehicleWheels;
+                }
+                break;
             default:
                 console.error("Field you filtered by does not exist");
                 throwInternalServerError();
