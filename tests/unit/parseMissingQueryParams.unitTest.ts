@@ -5,7 +5,7 @@ describe("parseMissingQueryParams", () => {
         it("vehicleSize should not be added", () => {
 
             const queryStringParametersWithoutVehicleSize = {
-                vehicleAxles: 3,
+                vehicleAxles: "3",
                 vehicleConfiguration: "rigid"
             };
 
@@ -13,16 +13,98 @@ describe("parseMissingQueryParams", () => {
         });
     });
 
-    context("if queryStringParameters.vehicleConfiguration is null string", () => {
+    context("if queryStringParameters contains parameters with the string value \"null\" ", () => {
+
         it("vehicleConfiguration should be returned as null value", () => {
 
-            const queryStringParametersWithoutVehicleSize = {
-                vehicleAxles: 3,
+            const testQueryStringParameters = {
+                vehicleAxles: "3",
                 vehicleSize: "small",
                 vehicleConfiguration: "null"
             };
 
-            expect(parseMissingQueryParams(queryStringParametersWithoutVehicleSize).vehicleConfiguration).toEqual(null);
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleConfiguration).toEqual(null);
+        });
+
+        it("vehicleWheels should be returned as null value", () => {
+
+            const testQueryStringParameters = {
+                vehicleAxles: "3",
+                vehicleSize: "small",
+                vehicleWheels: "null"
+            };
+
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toEqual(null);
+        });
+
+        it("vehicleClass should be returned as null value", () => {
+
+            const testQueryStringParameters = {
+                vehicleAxles: "3",
+                vehicleSize: "small",
+                vehicleClass: "null"
+            };
+
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleClass).toEqual(null);
+        });
+    });
+
+    context("if queryStringParameters contains parameters with the string value \"undefined\" ", () => {
+
+        it("vehicleConfiguration should be returned as null value", () => {
+
+            const testQueryStringParameters = {
+                vehicleAxles: "3",
+                vehicleSize: "small",
+                vehicleConfiguration: "undefined"
+            };
+
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleConfiguration).toEqual(null);
+        });
+
+        it("vehicleWheels should be returned as null value", () => {
+
+            const testQueryStringParameters = {
+                vehicleAxles: "3",
+                vehicleSize: "small",
+                vehicleWheels: "undefined"
+            };
+
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toEqual(null);
+        });
+
+        it("vehicleClass should be returned as null value", () => {
+
+            const testQueryStringParameters = {
+                vehicleAxles: "3",
+                vehicleSize: "small",
+                vehicleClass: "undefined"
+            };
+
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleClass).toEqual(null);
+        });
+    });
+
+    context("if queryStringParameters contains numeric parameters ", () => {
+
+        it("vehicleAxles should be converted to number", () => {
+
+            const testQueryStringParameters = {
+                vehicleAxles: "3",
+            };
+
+            expect(typeof parseMissingQueryParams(testQueryStringParameters).vehicleAxles).toBe("number");
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleAxles).toBe(3);
+        });
+
+        it("vehicleWheels should be converted to number", () => {
+
+            const testQueryStringParameters = {
+                vehicleWheels: "4"
+            };
+
+            expect(typeof parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toBe("number");
+            expect(parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toBe(4);
         });
     });
 

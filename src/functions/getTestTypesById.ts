@@ -17,7 +17,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     vehicleSize: Joi.string().only(Object.values(ForVehicleSize)),
     vehicleConfiguration: Joi.string().only(Object.values(ForVehicleConfiguration)).allow(null),
     euVehicleCategory: Joi.string().only(Object.values(ForEuVehicleCategory)).allow(null),
-    vehicleClass: Joi.number().min(0).max(99).allow(null),
+    vehicleClass: Joi.string().allow(null),
     vehicleSubclass: Joi.string().only(Object.values(ForVehicleSubclass)).allow(null),
     vehicleWheels: Joi.number().min(0).max(99).allow(null),
     vehicleAxles: Joi.number().min(0).max(99).allow(null)
@@ -25,7 +25,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
 
   const queryParams = parseMissingQueryParams(event.queryStringParameters);
 
-  const validation = Joi.validate(queryParams, queryParamSchema);
+  const validation = Joi.validate(queryParams, queryParamSchema, { convert: false }); // strict validation
 
   if (validation.error) {
     return Promise.resolve(new HTTPResponse(400, `Query parameter ${validation.error.details[0].message}`));
