@@ -5,10 +5,10 @@
  *
  * This method is required to cast all the parameters to the correct type
  * @param queryStringParameters
+ * @param numericParameters List of the queryString parameter names to be casted to number
  */
-export const parseMissingQueryParams = (queryStringParameters: any) => {
+export const parseAndCastQueryParams = (queryStringParameters: any, numericParameters: string[]) => {
     const queryParams = Object.assign({}, queryStringParameters);
-    const numericParameters = ["vehicleAxles", "vehicleWheels"];
 
     Object.keys(queryParams).forEach((parameterName: string) => {
         if (queryParams[parameterName] === "null" || queryParams[parameterName] === "undefined") {
