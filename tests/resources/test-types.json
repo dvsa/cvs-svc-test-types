@@ -7992,10 +7992,10 @@
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
-            "forVehicleClass": [
+            "forVehicleClass": null,
+            "forVehicleSubclass": [
               "r"
             ],
-            "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
@@ -8153,7 +8153,8 @@
               "hgv",
               "trl",
               "lgv",
-              "car"
+              "car",
+              "motorcycle"
             ],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
