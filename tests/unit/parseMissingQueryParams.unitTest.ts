@@ -1,4 +1,6 @@
-import {parseMissingQueryParams} from "../../src/utils/parseMissingQueryParams";
+import {parseAndCastQueryParams} from "../../src/utils/parseMissingQueryParams";
+
+const numericParameters = ["vehicleAxles", "vehicleWheels"];
 
 describe("parseMissingQueryParams", () => {
     context("if queryStringParameters does not contain vehicleSize", () => {
@@ -9,7 +11,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleConfiguration: "rigid"
             };
 
-            expect(Object.keys(parseMissingQueryParams(queryStringParametersWithoutVehicleSize))).not.toContain("vehicleSize");
+            expect(Object.keys(parseAndCastQueryParams(queryStringParametersWithoutVehicleSize, numericParameters))).not.toContain("vehicleSize");
         });
     });
 
@@ -23,7 +25,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleConfiguration: "null"
             };
 
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleConfiguration).toEqual(null);
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleConfiguration).toEqual(null);
         });
 
         it("vehicleWheels should be returned as null value", () => {
@@ -34,7 +36,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleWheels: "null"
             };
 
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toEqual(null);
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleWheels).toEqual(null);
         });
 
         it("vehicleClass should be returned as null value", () => {
@@ -45,7 +47,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleClass: "null"
             };
 
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleClass).toEqual(null);
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleClass).toEqual(null);
         });
     });
 
@@ -59,7 +61,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleConfiguration: "undefined"
             };
 
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleConfiguration).toEqual(null);
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleConfiguration).toEqual(null);
         });
 
         it("vehicleWheels should be returned as null value", () => {
@@ -70,7 +72,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleWheels: "undefined"
             };
 
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toEqual(null);
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleWheels).toEqual(null);
         });
 
         it("vehicleClass should be returned as null value", () => {
@@ -81,7 +83,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleClass: "undefined"
             };
 
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleClass).toEqual(null);
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleClass).toEqual(null);
         });
     });
 
@@ -93,8 +95,8 @@ describe("parseMissingQueryParams", () => {
                 vehicleAxles: "3",
             };
 
-            expect(typeof parseMissingQueryParams(testQueryStringParameters).vehicleAxles).toBe("number");
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleAxles).toBe(3);
+            expect(typeof parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleAxles).toBe("number");
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleAxles).toBe(3);
         });
 
         it("vehicleWheels should be converted to number", () => {
@@ -103,8 +105,8 @@ describe("parseMissingQueryParams", () => {
                 vehicleWheels: "4"
             };
 
-            expect(typeof parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toBe("number");
-            expect(parseMissingQueryParams(testQueryStringParameters).vehicleWheels).toBe(4);
+            expect(typeof parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleWheels).toBe("number");
+            expect(parseAndCastQueryParams(testQueryStringParameters, numericParameters).vehicleWheels).toBe(4);
         });
     });
 
@@ -117,7 +119,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleConfiguration: "rigid"
             };
 
-            expect(parseMissingQueryParams(queryStringParametersWithoutVehicleSize).vehicleAxles).toEqual(null);
+            expect(parseAndCastQueryParams(queryStringParametersWithoutVehicleSize, numericParameters).vehicleAxles).toEqual(null);
         });
     });
 
@@ -130,7 +132,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleConfiguration: "rigid"
             };
 
-            expect(parseMissingQueryParams(queryStringParametersWithoutVehicleSize).vehicleAxles).toEqual(3);
+            expect(parseAndCastQueryParams(queryStringParametersWithoutVehicleSize, numericParameters).vehicleAxles).toEqual(3);
         });
     });
 
@@ -142,7 +144,7 @@ describe("parseMissingQueryParams", () => {
                 vehicleConfiguration: "rigid"
             };
 
-            expect(parseMissingQueryParams(queryStringParametersWithoutVehicleSize).vehicleAxles).toEqual(undefined);
+            expect(parseAndCastQueryParams(queryStringParametersWithoutVehicleSize, numericParameters).vehicleAxles).toEqual(undefined);
         });
     });
 });

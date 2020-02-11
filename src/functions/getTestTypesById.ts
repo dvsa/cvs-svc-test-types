@@ -3,7 +3,7 @@ import {TestTypesService} from "../services/TestTypesService";
 import { HTTPResponse } from "../models/HTTPResponse";
 import Joi from "joi";
 import { Handler } from "aws-lambda";
-import {parseMissingQueryParams} from "../utils/parseMissingQueryParams";
+import { parseAndCastQueryParams } from "../utils/parseMissingQueryParams";
 import {ForEuVehicleCategory, ForVehicleConfiguration, ForVehicleSize, ForVehicleSubclass, ForVehicleType} from "../models/ITestType";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
@@ -21,11 +21,12 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     vehicleSubclass: Joi.string().only(Object.values(ForVehicleSubclass)).allow(null),
     vehicleWheels: Joi.number().min(0).max(99).allow(null),
     vehicleAxles: Joi.number().min(0).max(99).allow(null)
-  });
+  }).strict();
 
-  const queryParams = parseMissingQueryParams(event.queryStringParameters);
+  const numericParameters = ["vehicleAxles", "vehicleWheels"];
+  const queryParams = parseAndCastQueryParams(event.queryStringParameters, numericParameters);
 
-  const validation = Joi.validate(queryParams, queryParamSchema, { convert: false }); // strict validation
+  const validation = Joi.validate(queryParams, queryParamSchema);
 
   if (validation.error) {
     return Promise.resolve(new HTTPResponse(400, `Query parameter ${validation.error.details[0].message}`));
