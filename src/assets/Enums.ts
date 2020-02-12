@@ -19,3 +19,8 @@ export enum HTTPMethods {
       PUT = "PUT",
       DELETE = "DELETE"
 }
+
+export enum NUM_PARAMETERS {
+    VEHICLE_AXLES = "vehicleAxles",
+    VEHICLE_WHEELS = "vehicleWheels",
+}
