@@ -22,6 +22,6 @@ export const parseAndCastQueryParams = (queryStringParameters: any, numericParam
     return queryParams;
 };
 
-function castToNumber(parameter: string): number {
-    if (parameter === null) { return parameter; } else { return parseInt(parameter, 10); }
+function castToNumber(parameter: string): number | null {
+    return parameter ? parseInt(parameter, 10) : null;
 }
