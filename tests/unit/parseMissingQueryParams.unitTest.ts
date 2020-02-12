@@ -1,6 +1,7 @@
 import {parseAndCastQueryParams} from "../../src/utils/parseMissingQueryParams";
+import { NUM_PARAMETERS } from "../../src/assets/Enums";
 
-const numericParameters = ["vehicleAxles", "vehicleWheels"];
+const numericParameters = Object.values(NUM_PARAMETERS);
 
 describe("parseMissingQueryParams", () => {
     context("if queryStringParameters does not contain vehicleSize", () => {

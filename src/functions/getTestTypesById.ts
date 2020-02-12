@@ -5,6 +5,7 @@ import Joi from "joi";
 import { Handler } from "aws-lambda";
 import { parseAndCastQueryParams } from "../utils/parseMissingQueryParams";
 import {ForEuVehicleCategory, ForVehicleConfiguration, ForVehicleSize, ForVehicleSubclass, ForVehicleType} from "../models/ITestType";
+import { NUM_PARAMETERS } from "../assets/Enums";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
@@ -23,8 +24,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     vehicleAxles: Joi.number().min(0).max(99).allow(null)
   }).strict();
 
-  const numericParameters = ["vehicleAxles", "vehicleWheels"];
-  const queryParams = parseAndCastQueryParams(event.queryStringParameters, numericParameters);
+  const queryParams = parseAndCastQueryParams(event.queryStringParameters, Object.values(NUM_PARAMETERS));
 
   const validation = Joi.validate(queryParams, queryParamSchema);
 
