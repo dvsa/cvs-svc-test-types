@@ -199,14 +199,6 @@ export class TestTypesService {
             case "forVehicleClass":
             case "forVehicleSubclass":
             case "forVehicleWheels":
-            case "forEuVehicleCategory":
-            case "forVehicleClass":
-            case "forVehicleSubclass":
-            case "forVehicleWheels":
-            case "forEuVehicleCategory":
-            case "forVehicleClass":
-            case "forVehicleSubclass":
-            case "forVehicleWheels":
                 filterOnField(field);
                 break;
             default:
