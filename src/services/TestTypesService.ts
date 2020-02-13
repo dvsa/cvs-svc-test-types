@@ -52,19 +52,19 @@ export class TestTypesService {
                 testCodes = testCodes.filter((testCode) => { // filter by vehicleType if present in DB, otherwise skip
                     return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true;
                 }).filter((testCode) => { // filter by vehicleSize if present in DB & in request, otherwise skip
-                    return (testCode.forVehicleSize && filterExpression.vehicleSize) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSize") : true;
+                    return (testCode.forVehicleSize && filterExpression.vehicleSize) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSize") : true;
                 }).filter((testCode) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
-                    return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleConfiguration") : true;
+                    return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleConfiguration") : true;
                 }).filter((testCode) => { // filter by vehicleAxles if present in DB & in request, otherwise skip
-                    return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles") : true;
+                    return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles") : true;
                 }).filter((testCode) => {
-                    return (testCode.forEuVehicleCategory && filterExpression.euVehicleCategory) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory") : true;
+                    return (testCode.forEuVehicleCategory && filterExpression.euVehicleCategory) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory") : true;
                 }).filter((testCode) => {
-                    return (testCode.forVehicleClass && filterExpression.vehicleClass) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass") : true;
+                    return (testCode.forVehicleClass && filterExpression.vehicleClass) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass") : true;
                 }).filter((testCode) => {
-                    return (testCode.forVehicleSubclass && filterExpression.vehicleSubclass) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass") : true;
+                    return (testCode.forVehicleSubclass && filterExpression.vehicleSubclass) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass") : true;
                 }).filter((testCode) => {
-                    return (testCode.forVehicleWheels && filterExpression.vehicleWheels) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels") : true;
+                    return (testCode.forVehicleWheels && filterExpression.vehicleWheels) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels") : true;
                 });
 
                 if (testCodes.length === 0) {
@@ -171,17 +171,18 @@ export class TestTypesService {
             });
     }
 
-    public fieldInfilterExpressionMatchesTheOneInTestCode(testCode: TestCode, filterExpression: any, field: string) {
+    public fieldInFilterExpressionMatchesTheOneInTestCode(testCode: TestCode, filterExpression: any, field: string) {
         let bool = false;
         const filterOnField = (filterVal: string) => {
-            if (Array.isArray(testCode[filterVal])) {
-                testCode[filterVal].map((arrayElement: any) => {
+            const filterField = (testCode as any)[filterVal];
+            if (Array.isArray(filterField)) {
+                filterField.map((arrayElement: any) => {
                     if (arrayElement === filterExpression[getFilterFieldWithoutFor(filterVal)]) {
                         bool = true;
                     }
                 });
             } else {
-                bool = testCode[filterVal] === filterExpression[getFilterFieldWithoutFor(filterVal)];
+                bool = filterField === filterExpression[getFilterFieldWithoutFor(filterVal)];
             }
         };
 
@@ -198,95 +199,15 @@ export class TestTypesService {
             case "forVehicleClass":
             case "forVehicleSubclass":
             case "forVehicleWheels":
+            case "forEuVehicleCategory":
+            case "forVehicleClass":
+            case "forVehicleSubclass":
+            case "forVehicleWheels":
+            case "forEuVehicleCategory":
+            case "forVehicleClass":
+            case "forVehicleSubclass":
+            case "forVehicleWheels":
                 filterOnField(field);
-                break;
-            case "forEuVehicleCategory":
-                if (Array.isArray(testCode.forEuVehicleCategory)) {
-                    testCode.forEuVehicleCategory.map((arrayElement) => {
-                        if (arrayElement === filterExpression.euVehicleCategory) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forEuVehicleCategory === filterExpression.euVehicleCategory;
-                }
-                break;
-            case "forVehicleClass":
-                if (Array.isArray(testCode.forVehicleClass)) {
-                    testCode.forVehicleClass.map((arrayElement) => {
-                        if (arrayElement === filterExpression.vehicleClass) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleClass === filterExpression.vehicleClass;
-                }
-                break;
-            case "forVehicleSubclass":
-                if (Array.isArray(testCode.forVehicleSubclass)) {
-                    testCode.forVehicleSubclass.map((arrayElement) => {
-                        if (arrayElement === filterExpression.vehicleSubclass) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleSubclass === filterExpression.vehicleSubclass;
-                }
-                break;
-            case "forVehicleWheels":
-                if (Array.isArray(testCode.forVehicleWheels)) {
-                    testCode.forVehicleWheels.map((arrayElement) => {
-                        if (arrayElement === filterExpression.vehicleWheels) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleWheels === filterExpression.vehicleWheels;
-                }
-                break;
-            case "forEuVehicleCategory":
-                if (Array.isArray(testCode.forEuVehicleCategory)) {
-                    testCode.forEuVehicleCategory.map((arrayElement) => {
-                        if (arrayElement === filterExpression.euVehicleCategory) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forEuVehicleCategory === filterExpression.euVehicleCategory;
-                }
-                break;
-            case "forVehicleClass":
-                if (Array.isArray(testCode.forVehicleClass)) {
-                    testCode.forVehicleClass.map((arrayElement) => {
-                        if (arrayElement === filterExpression.vehicleClass) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleClass === filterExpression.vehicleClass;
-                }
-                break;
-            case "forVehicleSubclass":
-                if (Array.isArray(testCode.forVehicleSubclass)) {
-                    testCode.forVehicleSubclass.map((arrayElement) => {
-                        if (arrayElement === filterExpression.vehicleSubclass) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleSubclass === filterExpression.vehicleSubclass;
-                }
-                break;
-            case "forVehicleWheels":
-                if (Array.isArray(testCode.forVehicleWheels)) {
-                    testCode.forVehicleWheels.map((arrayElement) => {
-                        if (arrayElement === filterExpression.vehicleWheels) {
-                            bool = true;
-                        }
-                    });
-                } else {
-                    bool = testCode.forVehicleWheels === filterExpression.vehicleWheels;
-                }
                 break;
             default:
                 console.error("Field you filtered by does not exist");
