@@ -50,7 +50,7 @@ export class TestTypesService {
                 let testCodes: TestCode[] = testType.testCodes;
 
                 testCodes = testCodes.filter((testCode) => { // filter by vehicleType if present in DB, otherwise skip
-                    return testCode.forVehicleType ? testCode.forVehicleType === filterExpression.vehicleType : true;
+                    return testCode.forVehicleType ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleType") : true;
                 }).filter((testCode) => { // filter by vehicleSize if present in DB & in request, otherwise skip
                     return (testCode.forVehicleSize && filterExpression.vehicleSize) ? this.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSize") : true;
                 }).filter((testCode) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
@@ -191,6 +191,7 @@ export class TestTypesService {
         };
 
         switch (field) {
+            case "forVehicleType":
             case "forVehicleSize":
             case "forVehicleConfiguration":
             case "forVehicleAxles":
