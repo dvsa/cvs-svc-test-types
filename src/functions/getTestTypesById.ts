@@ -4,7 +4,7 @@ import { HTTPResponse } from "../models/HTTPResponse";
 import Joi from "joi";
 import { Handler } from "aws-lambda";
 import { parseAndCastQueryParams } from "../utils/parseMissingQueryParams";
-import {ForEuVehicleCategory, ForVehicleConfiguration, ForVehicleSize, ForVehicleSubclass, ForVehicleType} from "../models/ITestType";
+import { ForVehicleConfiguration, ForVehicleSize, ForVehicleType} from "../models/ITestType";
 import { NUM_PARAMETERS } from "../assets/Enums";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
@@ -17,9 +17,9 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     vehicleType: Joi.string().only(Object.values(ForVehicleType)).required(),
     vehicleSize: Joi.string().only(Object.values(ForVehicleSize)),
     vehicleConfiguration: Joi.string().only(Object.values(ForVehicleConfiguration)).allow(null),
-    euVehicleCategory: Joi.string().only(Object.values(ForEuVehicleCategory)).allow(null),
+    euVehicleCategory: Joi.string().allow(null),
     vehicleClass: Joi.string().allow(null),
-    vehicleSubclass: Joi.string().only(Object.values(ForVehicleSubclass)).allow(null),
+    vehicleSubclass: Joi.string().allow(null),
     vehicleWheels: Joi.number().min(0).max(99).allow(null),
     vehicleAxles: Joi.number().min(0).max(99).allow(null)
   }).strict();
