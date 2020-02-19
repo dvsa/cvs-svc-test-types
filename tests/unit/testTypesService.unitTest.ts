@@ -329,7 +329,7 @@ describe("when database is off", () => {
   });
 });
 
-describe("fieldInFilterExpressionMatchesTheOneInTestCode", () => {
+describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
   context("when passing a testCode that contains an array on field forVehicleAxles and a filterExpression that has a value included in that array  ", () => {
     it("should return true", () => {
       const testCode = JSON.parse("{\n" +
@@ -407,7 +407,7 @@ describe("when database is off", () => {
   });
 });
 
-describe("fieldInFilterExpressionMatchesTheOneInTestCode", () => {
+describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
   context("when passing a testCode that contains an array on field forVehicleAxles and a filterExpression that has a value included in that array  ", () => {
     it("should return true", () => {
       const testCode = JSON.parse("{\n" +
@@ -459,185 +459,6 @@ describe("fieldInFilterExpressionMatchesTheOneInTestCode", () => {
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
       expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles")).toEqual(true);
-    });
-  });
-
-  context("when passing filterExpression with non valid fields", () => {
-    it("should throw a 500 error", () => {
-      const testCode = {} as TestCode;
-
-      const filterExpression = {
-        nonexistentFilter: null,
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect.assertions(2);
-      try {
-        testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "nonexistentFilter");
-      } catch (error) {
-        expect(error.statusCode).toBe(500);
-        expect(error.body).toBe(ERRORS.InternalServerError);
-      }
-    });
-  });
-
-  context("when filtering based on forEuVehicleCategory defined as an array", () => {
-    it("should return true", () => {
-      const testCode = {
-        forEuVehicleCategory: [
-          ForEuVehicleCategory.N2,
-          ForEuVehicleCategory.N3,
-        ]
-      } as TestCode;
-
-      const filterExpression = {
-        euVehicleCategory: ForEuVehicleCategory.N2,
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory")).toBe(true);
-    });
-  });
-
-  context("when filtering based on forEuVehicleCategory defined as a single value", () => {
-    it("should return true", () => {
-      const testCode = {
-        forEuVehicleCategory: ForEuVehicleCategory.N2
-      } as TestCode;
-
-      const filterExpression = {
-        euVehicleCategory: ForEuVehicleCategory.N2,
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory")).toBe(true);
-    });
-  });
-
-  context("when filtering based on forVehicleClass defined as an array", () => {
-    it("should return true", () => {
-      const testCode = {
-        forVehicleClass: [
-          "a",
-          "b",
-        ]
-      } as TestCode;
-
-      const filterExpression = {
-        vehicleClass: "a",
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass")).toBe(true);
-    });
-  });
-
-  context("when filtering based on forVehicleClass defined as a single value", () => {
-    it("should return true", () => {
-      const testCode = {
-        forVehicleClass: "a"
-      } as TestCode;
-
-      const filterExpression = {
-        vehicleClass: "a",
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass")).toBe(true);
-    });
-  });
-
-  context("when filtering based on forVehicleSubclass defined as an array", () => {
-    it("should return true", () => {
-      const testCode = {
-        forVehicleSubclass: [
-          ForVehicleSubclass.A,
-          ForVehicleSubclass.C,
-        ]
-      } as TestCode;
-
-      const filterExpression = {
-        vehicleSubclass: ForVehicleSubclass.A,
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass")).toBe(true);
-    });
-  });
-
-  context("when filtering based on forVehicleSubclass defined as a single value", () => {
-    it("should return true", () => {
-      const testCode = {
-        forVehicleSubclass: ForVehicleSubclass.A,
-      } as TestCode;
-
-      const filterExpression = {
-        vehicleSubclass: ForVehicleSubclass.A,
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass")).toBe(true);
-    });
-  });
-
-  context("when filtering based on forVehicleWheels defined as an array", () => {
-    it("should return true", () => {
-      const testCode = {
-        forVehicleWheels: [
-          1,
-          2,
-          3,
-        ]
-      } as TestCode;
-
-      const filterExpression = {
-        vehicleWheels: 3,
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels")).toBe(true);
-    });
-  });
-
-  context("when filtering based on forVehicleWheels defined as a single value", () => {
-    it("should return true", () => {
-      const testCode = {
-        forVehicleWheels: 1,
-      } as TestCode;
-
-      const filterExpression = {
-        vehicleWheels: 1,
-      };
-      // tslint:disable-next-line:no-empty
-      const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
-
-      const testTypesService = new TestTypesService(new MockTestTypesDAO());
-
-      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels")).toBe(true);
     });
   });
 
