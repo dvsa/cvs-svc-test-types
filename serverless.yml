@@ -57,8 +57,8 @@ resources:
         - AttributeName: name
           KeyType: RANGE
         ProvisionedThroughput:
-          ReadCapacityUnits: 10
-          WriteCapacityUnits: 1
+          ReadCapacityUnits: 20
+          WriteCapacityUnits: 20
 custom:
   serverless-offline:
     port: 3002
