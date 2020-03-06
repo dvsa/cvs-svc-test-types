@@ -5,7 +5,10 @@ import {HTTPResponse} from "../../src/models/HTTPResponse";
 import {HTTPError} from "../../src/models/HTTPError";
 
 describe("getTestTypesById Function", () => {
-  const ctx = mockContext();
+  let ctx: any = mockContext();
+  afterAll(() => {
+     ctx = null;
+  });
 
   context("with good event but invalid details", ()  => {
     it("should return error from Joi", async () => {
