@@ -1,15 +1,12 @@
 import {getTestTypesById} from "../../src/functions/getTestTypesById";
 import {TestTypesService} from "../../src/services/TestTypesService";
-import mockContext from "aws-lambda-mock-context";
+import {Context} from "aws-lambda";
 import {HTTPResponse} from "../../src/models/HTTPResponse";
 import {HTTPError} from "../../src/models/HTTPError";
 
 describe("getTestTypesById Function", () => {
-  let ctx: any = mockContext();
-  afterAll(() => {
-     ctx = null;
-  });
-
+  // @ts-ignore
+  const ctx: Context = null;
   context("with good event but invalid details", ()  => {
     it("should return error from Joi", async () => {
       TestTypesService.prototype.getTestTypesById = jest.fn().mockResolvedValue("Success");
