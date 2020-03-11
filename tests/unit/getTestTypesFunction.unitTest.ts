@@ -1,10 +1,11 @@
 import {getTestTypes} from "../../src/functions/getTestTypes";
 import {TestTypesService} from "../../src/services/TestTypesService";
-import mockContext from "aws-lambda-mock-context";
 import {HTTPError} from "../../src/models/HTTPError";
+import {Context} from "aws-lambda";
 
 describe("getTestTypes function", () => {
-  const ctx = mockContext();
+  // @ts-ignore
+  const ctx: Context = null;
   context("gets successful response from Service", () => {
     it("returns 200 OK + data", async () =>  {
       TestTypesService.prototype.getTestTypesList = jest.fn().mockResolvedValue("Success");

@@ -1,11 +1,12 @@
 import {getTestTypesById} from "../../src/functions/getTestTypesById";
 import {TestTypesService} from "../../src/services/TestTypesService";
-import mockContext from "aws-lambda-mock-context";
+import {Context} from "aws-lambda";
 import {HTTPResponse} from "../../src/models/HTTPResponse";
 import {HTTPError} from "../../src/models/HTTPError";
 
 describe("getTestTypesById Function", () => {
-  const ctx = mockContext();
+  // @ts-ignore
+  const ctx: Context = null;
 
   context("with good event but invalid details", ()  => {
     it("should return error from Joi", async () => {
