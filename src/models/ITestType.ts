@@ -1,103 +1,43 @@
+import {
+  FOR_VEHICLE_TYPE,
+  FOR_VEHICLE_SIZE,
+  FOR_VEHICLE_CONFIGURATION,
+  FOR_EU_VEHICLE_CATEGORY,
+  FOR_VEHICLE_SUB_CLASS,
+  TEST_TYPE_CLASSIFICATION
+} from "../assets/Enums";
+
 export interface ITestType {
-    id: string;
-    linkedIds: string[] | null;
-    name: string;
-    testTypeName?: string;
-    forVehicleType: ForVehicleType[];
-    forVehicleSize: ForVehicleSize[] | null;
-    forVehicleConfiguration: ForVehicleConfiguration[] | null;
-    forVehicleAxles: number[] | null;
-    forEuVehicleCategory: ForEuVehicleCategory[] | null;
-    forVehicleClass: string[] | null;
-    forVehicleSubclass: ForVehicleSubclass[] | null;
-    forVehicleWheels: number[] | null;
-    testTypeClassification?: TestTypeClassification;
-    testCodes?: TestCode[];
-    nextTestTypesOrCategories?: NextTestTypesOrCategory[];
+  id: string;
+  linkedIds: string[] | null;
+  name: string;
+  testTypeName?: string;
+  forVehicleType: FOR_VEHICLE_TYPE[];
+  forVtmOnly: boolean;
+  forVehicleSize: FOR_VEHICLE_SIZE[] | null;
+  forVehicleConfiguration: FOR_VEHICLE_CONFIGURATION[] | null;
+  forVehicleAxles: number[] | null;
+  forEuVehicleCategory: FOR_EU_VEHICLE_CATEGORY[] | null;
+  forVehicleClass: string[] | null;
+  forVehicleSubclass: FOR_VEHICLE_SUB_CLASS[] | null;
+  forVehicleWheels: number[] | null;
+  testTypeClassification?: TEST_TYPE_CLASSIFICATION;
+  testCodes?: TestCode[];
+  nextTestTypesOrCategories?: ITestType[];
 }
-
-export enum ForVehicleConfiguration {
-    Articulated = "articulated",
-    Rigid = "rigid",
-    CentreAxleDrawbar = "centre axle drawbar",
-    SemiCarTransporter = "semi-car transporter",
-    SemiTrailer = "semi-trailer",
-    LowLoader = "low loader",
-    Other = "other",
-    Drawbar = "drawbar",
-    FourInLine = "four-in-line",
-    Dolly = "dolly",
-    FullDrawbar = "full drawbar"
-}
-
-export enum ForVehicleSize {
-    Small = "small",
-    Large = "large",
-}
-
-export enum ForVehicleType {
-    Hgv = "hgv",
-    Psv = "psv",
-    Trl = "trl",
-    Car = "car",
-    Lgv = "lgv",
-    Motorcycle = "motorcycle"
-}
-
-export enum ForEuVehicleCategory {
-    N2 = "n2",
-    N3 = "n3",
-    O1 = "o1",
-    O2 = "o2",
-    O3 = "o3",
-    O4 = "o4"
-}
-
-export enum ForVehicleSubclass {
-    A = "a",
-    C = "c",
-    S = "s",
-    L = "l",
-    M = "m",
-    N = "n",
-    P = "p",
-    T = "t",
-    R = "r"
-}
-
-export interface NextTestTypesOrCategory {
-    id: string;
-    linkedIds: string[] | null;
-    name: string;
-    testTypeName?: string;
-    forVehicleType: ForVehicleType | ForVehicleType[];
-    forVehicleSize: ForVehicleSize[] | null;
-    forVehicleConfiguration: ForVehicleConfiguration[] | null;
-    forVehicleAxles: number[] | null;
-    forEuVehicleCategory: ForEuVehicleCategory[] | null;
-    forVehicleClass: string[] | null;
-    forVehicleSubclass: ForVehicleSubclass[] | null;
-    forVehicleWheels: number[] | null;
-    testTypeClassification?: TestTypeClassification;
-    testCodes?: TestCode[];
-    nextTestTypesOrCategories?: NextTestTypesOrCategory[];
-}
-
 export interface TestCode {
-    forVehicleType: ForVehicleType | ForVehicleType[];
-    forVehicleSize: ForVehicleSize | null;
-    forVehicleConfiguration: ForVehicleConfiguration | null;
-    forVehicleAxles: number | number[] | null;
-    forEuVehicleCategory: ForEuVehicleCategory | ForEuVehicleCategory[] | null;
-    forVehicleClass: string | string[] | null;
-    forVehicleSubclass: ForVehicleSubclass | ForVehicleSubclass[] | null;
-    forVehicleWheels: number | number[] | null;
-    defaultTestCode: string;
-    linkedTestCode: null | string;
-}
-
-export enum TestTypeClassification {
-    AnnualNOCERTIFICATE = "Annual NO CERTIFICATE",
-    AnnualWithCertificate = "Annual With Certificate",
-    NonAnnual = "NON ANNUAL",
+  forVehicleType: FOR_VEHICLE_TYPE | FOR_VEHICLE_TYPE[];
+  forVtmOnly: boolean;
+  forVehicleSize: FOR_VEHICLE_SIZE | null;
+  forVehicleConfiguration: FOR_VEHICLE_CONFIGURATION | null;
+  forVehicleAxles: number | number[] | null;
+  forEuVehicleCategory:
+    | FOR_EU_VEHICLE_CATEGORY
+    | FOR_EU_VEHICLE_CATEGORY[]
+    | null;
+  forVehicleClass: string | string[] | null;
+  forVehicleSubclass: FOR_VEHICLE_SUB_CLASS | FOR_VEHICLE_SUB_CLASS[] | null;
+  forVehicleWheels: number | number[] | null;
+  defaultTestCode: string;
+  linkedTestCode: null | string;
 }

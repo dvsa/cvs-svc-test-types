@@ -4,8 +4,7 @@ import { HTTPResponse } from "../models/HTTPResponse";
 import Joi from "joi";
 import { Handler } from "aws-lambda";
 import { parseAndCastQueryParams } from "../utils/parseMissingQueryParams";
-import { ForVehicleConfiguration, ForVehicleSize, ForVehicleType} from "../models/ITestType";
-import { NUM_PARAMETERS } from "../assets/Enums";
+import { NUM_PARAMETERS, FOR_VEHICLE_TYPE, FOR_VEHICLE_SIZE, FOR_VEHICLE_CONFIGURATION } from "../assets/Enums";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
@@ -14,9 +13,9 @@ export const getTestTypesById: Handler = (event, context, callback) => {
   // Validate query parameters
   const queryParamSchema = Joi.object().keys({
     fields: Joi.string().regex(/^(testTypeClassification|defaultTestCode|linkedTestCode),?\s*((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?$/).required(),
-    vehicleType: Joi.string().only(Object.values(ForVehicleType)).required(),
-    vehicleSize: Joi.string().only(Object.values(ForVehicleSize)),
-    vehicleConfiguration: Joi.string().only(Object.values(ForVehicleConfiguration)).allow(null),
+    vehicleType: Joi.string().only(Object.values(FOR_VEHICLE_TYPE)).required(),
+    vehicleSize: Joi.string().only(Object.values(FOR_VEHICLE_SIZE)),
+    vehicleConfiguration: Joi.string().only(Object.values(FOR_VEHICLE_CONFIGURATION)).allow(null),
     euVehicleCategory: Joi.string().allow(null),
     vehicleClass: Joi.string().allow(null),
     vehicleSubclass: Joi.string().allow(null),
