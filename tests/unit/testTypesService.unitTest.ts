@@ -1,8 +1,9 @@
 import {TestTypesService} from "../../src/services/TestTypesService";
 import TestTypes from "../resources/test-types.json";
 import {cloneDeep} from "lodash";
-import {ERRORS, HTTPRESPONSE} from "../../src/assets/Enums";
-import {ForEuVehicleCategory, ForVehicleSubclass, TestCode} from "../../src/models/ITestType";
+import { ERRORS, HTTPRESPONSE, FOR_EU_VEHICLE_CATEGORY, FOR_VEHICLE_SUB_CLASS, APPLICABLE_TO } from "../../src/assets/Enums";
+import { TestCode } from "../../src/models/ITestType";
+
 
 describe("when database is on", () => {
   let mockTestTypesRecords: any;
@@ -32,13 +33,33 @@ describe("when database is on", () => {
 
   context("database call returns valid data", () => {
     context("getTestTypesList", () => {
-      it("should return the purged, sorted data", () => {
+      it("should return all purged, sorted data for APPLICABLE_TO.ALL", () => {
         const expectedTestTypesRecords = cloneDeep(mockTestTypesRecords);
         MockTestTypesDAO = jest.fn().mockImplementation(() => {
           return {
             getAll: () => {
               return Promise.resolve({
                 Items: mockTestTypesRecords,
+                Count: mockTestTypesRecords.length
+              });
+            }
+          };
+        });
+        testTypesService = new TestTypesService(new MockTestTypesDAO());
+        testTypesService.purgeTestTypes(expectedTestTypesRecords);
+        testTypesService.sort(expectedTestTypesRecords);
+        return testTypesService.getTestTypesList(APPLICABLE_TO.ALL)
+          .then((returnedRecords: any) => {
+            expect(expectedTestTypesRecords).toEqual(returnedRecords);
+          });
+      });
+      it("should return VTA only purged, sorted data when APPLICABLE_TO is not provided", () => {
+        const expectedTestTypesRecords = cloneDeep([mockTestTypesRecords[0], mockTestTypesRecords[1], mockTestTypesRecords[2]]);
+        MockTestTypesDAO = jest.fn().mockImplementation(() => {
+          return {
+            getAll: () => {
+              return Promise.resolve({
+                Items: expectedTestTypesRecords,
                 Count: mockTestTypesRecords.length
               });
             }
@@ -488,13 +509,13 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
     it("should return true", () => {
       const testCode = {
         forEuVehicleCategory: [
-          ForEuVehicleCategory.N2,
-          ForEuVehicleCategory.N3,
+          FOR_EU_VEHICLE_CATEGORY.N2,
+          FOR_EU_VEHICLE_CATEGORY.N3,
         ]
       } as TestCode;
 
       const filterExpression = {
-        euVehicleCategory: ForEuVehicleCategory.N2,
+        euVehicleCategory: FOR_EU_VEHICLE_CATEGORY.N2,
       };
       // tslint:disable-next-line:no-empty
       const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
@@ -508,11 +529,11 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
   context("when filtering based on forEuVehicleCategory defined as a single value", () => {
     it("should return true", () => {
       const testCode = {
-        forEuVehicleCategory: ForEuVehicleCategory.N2
+        forEuVehicleCategory: FOR_EU_VEHICLE_CATEGORY.N2
       } as TestCode;
 
       const filterExpression = {
-        euVehicleCategory: ForEuVehicleCategory.N2,
+        euVehicleCategory: FOR_EU_VEHICLE_CATEGORY.N2,
       };
       // tslint:disable-next-line:no-empty
       const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
@@ -566,13 +587,13 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
     it("should return true", () => {
       const testCode = {
         forVehicleSubclass: [
-          ForVehicleSubclass.A,
-          ForVehicleSubclass.C,
+          FOR_VEHICLE_SUB_CLASS.A,
+          FOR_VEHICLE_SUB_CLASS.C,
         ]
       } as TestCode;
 
       const filterExpression = {
-        vehicleSubclass: ForVehicleSubclass.A,
+        vehicleSubclass: FOR_VEHICLE_SUB_CLASS.A,
       };
       // tslint:disable-next-line:no-empty
       const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
@@ -586,11 +607,11 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
   context("when filtering based on forVehicleSubclass defined as a single value", () => {
     it("should return true", () => {
       const testCode = {
-        forVehicleSubclass: ForVehicleSubclass.A,
+        forVehicleSubclass: FOR_VEHICLE_SUB_CLASS.A,
       } as TestCode;
 
       const filterExpression = {
-        vehicleSubclass: ForVehicleSubclass.A,
+        vehicleSubclass: FOR_VEHICLE_SUB_CLASS.A,
       };
       // tslint:disable-next-line:no-empty
       const MockTestTypesDAO = jest.fn().mockImplementation(() => { });
