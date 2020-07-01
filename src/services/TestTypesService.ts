@@ -1,96 +1,116 @@
 import { HTTPError } from "../models/HTTPError";
 import TestTypesDAO from "../models/TestTypesDAO";
-import {ITestType, TestCode} from "../models/ITestType";
-import {ERRORS, HTTPRESPONSE} from "../assets/Enums";
+import { ITestType, TestCode } from "../models/ITestType";
+import { ERRORS, HTTPRESPONSE, APPLICABLE_TO } from "../assets/Enums";
+import { cloneDeep } from "lodash";
 
 export class TestTypesService {
-    public readonly testTypesDAO: TestTypesDAO;
+  public readonly testTypesDAO: TestTypesDAO;
 
-    constructor(testTypesDAO: TestTypesDAO) {
-        this.testTypesDAO = testTypesDAO;
-    }
+  constructor(testTypesDAO: TestTypesDAO) {
+    this.testTypesDAO = testTypesDAO;
+  }
 
-    public getTestTypesList() {
-        return this.testTypesDAO.getAll()
-            .then((data) => {
-                if (data.Count === 0) {
-                    throwResourceNotFound();
-                }
+  public getTestTypesList(applicableTo?: APPLICABLE_TO) {
+    applicableTo = applicableTo || APPLICABLE_TO.VTA;
+    return this.testTypesDAO
+      .getAll()
+      .then((data) => {
+        if (data.Count === 0) {
+          throwResourceNotFound();
+        }
+        return data.Items as ITestType[];
+      })
+      .then((testTypes: ITestType[]) => {
+        let filteredTestType: ITestType[] = [];
+        if (applicableTo !== APPLICABLE_TO.ALL) {
+          const forVtmOnly = applicableTo === APPLICABLE_TO.VTM;
+          filteredTestType = this.filterTestTypesByVtmOnly(forVtmOnly, testTypes);
+        } else {
+          filteredTestType = cloneDeep(testTypes);
+        }
+        this.purgeTestTypes(filteredTestType);
 
-                this.purgeTestTypes(data.Items);
-                return this.sort(data.Items);
-            })
-            .catch((error) => {
-                if (!(error instanceof HTTPError)) {
-                    console.error(error);
-                    error.statusCode = 500;
-                    error.body = "Internal Server Error";
-                }
+        return this.sort(filteredTestType);
+      })
+      .catch((error) => {
+        if (!(error instanceof HTTPError)) {
+          console.error(error);
+          error.statusCode = 500;
+          error.body = "Internal Server Error";
+        }
 
-                throw new HTTPError(error.statusCode, error.body);
-            });
-    }
+        throw new HTTPError(error.statusCode, error.body);
+      });
+  }
 
-    public getTestTypesById(id: string, filterExpression: any) {
-        return this.testTypesDAO.getAll()
-            .then((data) => {
-                if (data.Count === 0) {
-                    throwResourceNotFound();
-                }
+  public getTestTypesById(id: string, filterExpression: any) {
+    return this.testTypesDAO.getAll()
+        .then((data) => {
+            if (data.Count === 0) {
+                throwResourceNotFound();
+            }
 
-                return data.Items;
-            })
-            .then((testTypes) => {
-                return this.findTestType({ id, testTypes });
-            })
-            .then((testType) => {
-                if (testType === null) {
-                    throwResourceNotFound();
-                }
-                let testCodes: TestCode[] = testType.testCodes;
+            return data.Items;
+        })
+        .then((testTypes) => {
+            return this.findTestType({ id, testTypes });
+        })
+        .then((testType) => {
+            let testCodes: TestCode[] = testType.testCodes;
 
-                testCodes = testCodes.filter((testCode) => { // filter by vehicleType if present in DB, otherwise skip
-                    return testCode.forVehicleType ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleType") : true;
-                }).filter((testCode) => { // filter by vehicleSize if present in DB & in request, otherwise skip
+            if (testType === null || testCodes.length === 0) throwResourceNotFound();
+
+            if (testCodes.length > 1) {
+                console.error("More than one testType was retrieved");
+                throwInternalServerError();
+            }
+
+            const createFilterPipe = 
+                (filterExpression: any, param: any) =>
+                    (cb: any) =>
+                        (testCode: any) => 
+                            cb(testCode, filterExpression, param)
+
+            const testCodePipe = createFilterPipe(filterExpression, "forVehicleSize")
+
+            const forVehicleSize = testCodePipe(this.fieldInFilterExpressionMatchesTheOneInTestCode)
+
+            testType.testCodes
+                .filter(forVehicleSize)
+                .filter((testCode: any) => { // filter by vehicleSize if present in DB & in request, otherwise skip
                     return (testCode.forVehicleSize && filterExpression.vehicleSize) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSize") : true;
-                }).filter((testCode) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
+                }).filter((testCode: any) => { // filter by vehicleConfiguration if present in DB & in request, otherwise skip
                     return (testCode.forVehicleConfiguration && filterExpression.vehicleConfiguration) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleConfiguration") : true;
-                }).filter((testCode) => { // filter by vehicleAxles if present in DB & in request, otherwise skip
+                }).filter((testCode: any) => { // filter by vehicleAxles if present in DB & in request, otherwise skip
                     return (testCode.forVehicleAxles && filterExpression.vehicleAxles) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleAxles") : true;
-                }).filter((testCode) => {
+                }).filter((testCode: any) => {
                     return (testCode.forEuVehicleCategory && filterExpression.euVehicleCategory) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory") : true;
-                }).filter((testCode) => {
+                }).filter((testCode: any) => {
                     return (testCode.forVehicleClass && filterExpression.vehicleClass) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass") : true;
-                }).filter((testCode) => {
+                }).filter((testCode: any) => {
                     return (testCode.forVehicleSubclass && filterExpression.vehicleSubclass) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass") : true;
-                }).filter((testCode) => {
+                }).filter((testCode: any) => {
                     return (testCode.forVehicleWheels && filterExpression.vehicleWheels) ? this.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels") : true;
                 });
 
-                if (testCodes.length === 0) {
-                    throwResourceNotFound();
-                }
 
-                if (testCodes.length > 1) {
-                    console.error("More than one testType was retrieved");
-                    throwInternalServerError();
-                }
 
-                const response: any = {
+            const response: any = {
                     id: testType.id
                 };
 
-                filterExpression.fields // Iterate through filterExpression's fields and populate them in the response
+            filterExpression.fields // Iterate through filterExpression's fields and populate them in the response
                     .forEach((field: keyof TestCode) => {
                         response[field] = testCodes[0][field];
                     });
 
                 // Populating testTypeClassification that is found in testType, not testCode
-                if (filterExpression.fields.includes("testTypeClassification")) {
+            if (filterExpression.fields.includes("testTypeClassification")) {
                     response.testTypeClassification = testType.testTypeClassification;
                 }
-                return response;
-            });
+            return response;
+        });
     }
 
     /**
@@ -208,6 +228,17 @@ export class TestTypesService {
         }
 
         return bool;
+    }
+
+    private filterTestTypesByVtmOnly(forVtmOnly: boolean, testTypes: ITestType[]) {
+        return testTypes.filter(function findTestTypesByVtmOnly(testType): any {
+            if (testType.forVtmOnly === forVtmOnly) {
+            return true;
+            }
+            if (testType.nextTestTypesOrCategories) {
+            return (testType.nextTestTypesOrCategories = testType.nextTestTypesOrCategories.filter(findTestTypesByVtmOnly)).length;
+            }
+        });
     }
 }
 
