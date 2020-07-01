@@ -15,6 +15,7 @@
       "articulated",
       "rigid"
     ],
+    "forVtmOnly": false,
     "forVehicleAxles": null,
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
@@ -24,6 +25,7 @@
     "testCodes": [
       {
         "forVehicleType": "psv",
+        "forVtmOnly": false,
         "forVehicleSize": "large",
         "forVehicleConfiguration": "rigid",
         "forVehicleAxles": null,
@@ -36,6 +38,7 @@
       },
       {
         "forVehicleType": "psv",
+        "forVtmOnly": false,
         "forVehicleSize": "small",
         "forVehicleConfiguration": "rigid",
         "forVehicleAxles": null,
@@ -48,6 +51,7 @@
       },
       {
         "forVehicleType": "psv",
+        "forVtmOnly": false,
         "forVehicleSize": "large",
         "forVehicleConfiguration": "articulated",
         "forVehicleAxles": null,
@@ -67,6 +71,7 @@
     "forVehicleType": [
       "psv"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": [
       "small",
       "large"
@@ -89,6 +94,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -106,6 +112,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -121,6 +128,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -144,6 +152,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -161,6 +170,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -176,6 +186,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -200,6 +211,7 @@
     "forVehicleType": [
       "psv"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": [
       "large",
       "small"
@@ -221,6 +233,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "large",
           "small"
@@ -243,6 +256,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large",
               "small"
@@ -260,6 +274,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": "articulated",
                 "forVehicleAxles": null,
@@ -272,6 +287,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": "rigid",
                 "forVehicleAxles": null,
@@ -284,6 +300,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": "rigid",
                 "forVehicleAxles": null,
@@ -304,6 +321,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -321,6 +339,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -336,6 +355,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -382,6 +402,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large",
               "small"
@@ -399,6 +420,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": "articulated",
                 "forVehicleAxles": null,
@@ -411,6 +433,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": "rigid",
                 "forVehicleAxles": null,
@@ -423,6 +446,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": "rigid",
                 "forVehicleAxles": null,
@@ -446,6 +470,7 @@
     "forVehicleType": [
       "psv"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": [
       "large",
       "small"
@@ -467,6 +492,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "large",
           "small"
@@ -488,6 +514,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large",
               "small"
@@ -510,6 +537,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "large",
                   "small"
@@ -527,6 +555,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": [
                       "articulated",
@@ -542,6 +571,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": [
                       "articulated",
@@ -565,6 +595,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "large",
                   "small"
@@ -582,6 +613,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": [
                       "articulated",
@@ -597,6 +629,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": [
                       "articulated",
@@ -622,6 +655,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large",
               "small"
@@ -639,6 +673,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -654,6 +689,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -677,6 +713,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large",
               "small"
@@ -694,6 +731,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -709,6 +747,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -731,6 +770,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large",
               "small"
@@ -752,6 +792,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "large",
                   "small"
@@ -774,6 +815,7 @@
                     "forVehicleType": [
                       "psv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": [
                       "large",
                       "small"
@@ -791,6 +833,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": [
                           "articulated",
@@ -806,6 +849,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "small",
                         "forVehicleConfiguration": [
                           "articulated",
@@ -829,6 +873,7 @@
                     "forVehicleType": [
                       "psv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": [
                       "large",
                       "small"
@@ -846,6 +891,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": [
                           "articulated",
@@ -861,6 +907,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "small",
                         "forVehicleConfiguration": [
                           "articulated",
@@ -885,6 +932,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "large",
                   "small"
@@ -907,6 +955,7 @@
                     "forVehicleType": [
                       "psv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": [
                       "large",
                       "small"
@@ -924,6 +973,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": [
                           "articulated",
@@ -939,6 +989,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "small",
                         "forVehicleConfiguration": [
                           "rigid",
@@ -962,6 +1013,7 @@
                     "forVehicleType": [
                       "psv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": [
                       "large",
                       "small"
@@ -979,6 +1031,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": [
                           "articulated",
@@ -994,6 +1047,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "small",
                         "forVehicleConfiguration": [
                           "articulated",
@@ -1022,6 +1076,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "large",
           "small"
@@ -1044,6 +1099,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -1061,6 +1117,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -1076,6 +1133,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -1099,6 +1157,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -1116,6 +1175,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -1131,6 +1191,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -1155,6 +1216,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "large",
           "small"
@@ -1177,6 +1239,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -1194,6 +1257,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -1209,6 +1273,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": [
                   "articulated",
@@ -1235,6 +1300,7 @@
     "forVehicleType": [
       "psv"
     ],
+    "forVtmOnly": null,
     "forVehicleSize": [
       "large",
       "small"
@@ -1254,6 +1320,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -1274,6 +1341,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -1289,6 +1357,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -1304,6 +1373,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -1319,6 +1389,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -1342,6 +1413,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -1359,6 +1431,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -1374,6 +1447,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -1397,6 +1471,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -1414,6 +1489,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -1429,6 +1505,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -1452,6 +1529,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -1469,6 +1547,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -1484,6 +1563,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -1507,6 +1587,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": [
           "articulated",
@@ -1521,6 +1602,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": [
               "articulated",
@@ -1544,6 +1626,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": true,
         "forVehicleSize": [
           "small",
           "large"
@@ -1561,6 +1644,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": true,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -1576,6 +1660,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": true,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -1598,6 +1683,7 @@
       "forVehicleType": [
         "psv"
       ],
+      "forVtmOnly": false,
       "forVehicleSize": null,
       "forVehicleConfiguration": null,
       "forVehicleAxles": null,
@@ -1615,6 +1701,7 @@
           "forVehicleType": [
             "psv"
           ],
+          "forVtmOnly": false,
           "forVehicleSize": null,
           "forVehicleConfiguration": null,
           "forVehicleAxles": null,
@@ -1626,6 +1713,7 @@
           "testCodes": [
             {
               "forVehicleType": "psv",
+              "forVtmOnly": false,
               "forVehicleSize": null,
               "forVehicleConfiguration": null,
               "forVehicleAxles": null,
@@ -1646,6 +1734,7 @@
           "forVehicleType": [
             "psv"
           ],
+          "forVtmOnly": false,
           "forVehicleSize": null,
           "forVehicleConfiguration": null,
           "forVehicleAxles": null,
@@ -1657,6 +1746,7 @@
           "testCodes": [
             {
               "forVehicleType": "psv",
+              "forVtmOnly": false,
               "forVehicleSize": null,
               "forVehicleConfiguration": null,
               "forVehicleAxles": null,
@@ -1680,6 +1770,7 @@
     "forVehicleType": [
       "psv"
     ],
+    "forVtmOnly": null,
     "forVehicleSize": [
       "large",
       "small"
@@ -1702,6 +1793,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -1719,6 +1811,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "large",
             "forVehicleConfiguration": [
               "articulated",
@@ -1734,6 +1827,7 @@
           },
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": "small",
             "forVehicleConfiguration": [
               "articulated",
@@ -1757,6 +1851,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": null,
         "forVehicleSize": null,
         "forVehicleConfiguration": [
           "articulated",
@@ -1771,6 +1866,7 @@
         "testCodes": [
           {
             "forVehicleType": "psv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": [
               "articulated",
@@ -1783,6 +1879,47 @@
             "forVehicleWheels": null,
             "defaultTestCode": "lbp",
             "linkedTestCode": "lcp"
+          }
+        ],
+        "nextTestTypesOrCategories": [
+          {
+            "id": "209",
+            "linkedIds": null,
+            "name": "LEC without inspection",
+            "testTypeName": "Technical LEC without inspection",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": [
+              "articulated",
+              "rigid"
+            ],
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": [
+                  "articulated",
+                  "rigid"
+                ],
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lnp",
+                "linkedTestCode": null
+              }
+            ]            
           }
         ]
       }
@@ -1797,6 +1934,7 @@
       "hgv",
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": [
@@ -1818,6 +1956,7 @@
     "testCodes": [
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 2,
@@ -1830,6 +1969,7 @@
       },
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 3,
@@ -1842,6 +1982,7 @@
       },
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 4,
@@ -1854,6 +1995,7 @@
       },
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -1873,6 +2015,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 2,
@@ -1885,6 +2028,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 3,
@@ -1897,6 +2041,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 4,
@@ -1909,6 +2054,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -1936,6 +2082,7 @@
     "forVehicleType": [
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": [
@@ -1949,6 +2096,7 @@
     "testCodes": [
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 1,
@@ -1970,6 +2118,7 @@
       "hgv",
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": [
@@ -1991,6 +2140,7 @@
     "testCodes": [
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 2,
@@ -2003,6 +2153,7 @@
       },
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 3,
@@ -2015,6 +2166,7 @@
       },
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 4,
@@ -2027,6 +2179,7 @@
       },
       {
         "forVehicleType": "hgv",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -2046,6 +2199,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 2,
@@ -2058,6 +2212,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 3,
@@ -2070,6 +2225,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 4,
@@ -2082,6 +2238,7 @@
       },
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -2109,6 +2266,7 @@
     "forVehicleType": [
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": [
@@ -2122,6 +2280,7 @@
     "testCodes": [
       {
         "forVehicleType": "trl",
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": 1,
@@ -2146,6 +2305,7 @@
       "hgv",
       "trl"
     ],
+    "forVtmOnly": null,
     "id": "42",
     "linkedIds": null,
     "name": "Technical test",
@@ -2161,6 +2321,7 @@
         "forVehicleType": [
           "hgv"
         ],
+        "forVtmOnly": false,
         "id": "43",
         "linkedIds": null,
         "name": "LEC",
@@ -2176,6 +2337,7 @@
             "forVehicleType": [
               "hgv"
             ],
+            "forVtmOnly": false,
             "id": "44",
             "linkedIds": null,
             "name": "With linked test",
@@ -2190,6 +2352,7 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "linkedTestCode": null
               }
             ],
@@ -2207,6 +2370,7 @@
             "forVehicleType": [
               "hgv"
             ],
+            "forVtmOnly": false,
             "id": "45",
             "linkedIds": null,
             "name": "Without linked test",
@@ -2221,11 +2385,45 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "linkedTestCode": null
               }
             ],
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testTypeName": "Low Emissions Certificate (LEC)"
+          },
+          {
+            "id": "206",
+            "linkedIds": null,
+            "name": "Type approved tractor unit",
+            "testTypeName": "Declaration of conformity and application for ADR road vehicle certification for a new type approved tractor unit",
+            "forVehicleType": [
+              "hgv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "hgv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "cdv",
+                "linkedTestCode": null
+              }
+            ]
           }
         ]
       },
@@ -2241,6 +2439,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": null,
         "id": "46",
         "linkedIds": null,
         "name": "Notifiable alteration",
@@ -2257,6 +2456,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "id": "47",
             "linkedIds": null,
             "name": "Free",
@@ -2271,6 +2471,7 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "linkedTestCode": null
               },
               {
@@ -2283,6 +2484,7 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "linkedTestCode": null
               }
             ],
@@ -2301,6 +2503,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "id": "48",
             "linkedIds": null,
             "name": "Paid",
@@ -2315,6 +2518,7 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "linkedTestCode": null
               },
               {
@@ -2327,11 +2531,59 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "linkedTestCode": null
               }
             ],
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testTypeName": "Paid notifiable alteration"
+          },
+          {
+            "id": "208",
+            "linkedIds": null,
+            "name": "Paid notifiable alteration without inspection",
+            "testTypeName": "Paid notifiable alteration without inspection",
+            "forVehicleType": [
+              "hgv",
+              "trl"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testCodes": [
+              {
+                "forVehicleType": "hgv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "nnt",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "trl",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "nnv",
+                "linkedTestCode": null
+              }         
+            ]
           }
         ]
       },
@@ -2347,6 +2599,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "id": "49",
         "linkedIds": null,
         "name": "TIR",
@@ -2361,6 +2614,7 @@
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "linkedTestCode": null
           },
           {
@@ -2373,6 +2627,7 @@
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "linkedTestCode": null
           }
         ],
@@ -2391,6 +2646,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "id": "50",
         "linkedIds": null,
         "name": "ADR",
@@ -2405,6 +2661,7 @@
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "linkedTestCode": null
           },
           {
@@ -2417,11 +2674,113 @@
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "linkedTestCode": null
           }
         ],
         "testTypeClassification": "Annual NO CERTIFICATE",
         "testTypeName": "ADR test"
+      },
+      {
+        "id": "204",
+        "linkedIds": null,
+        "name": "ADR without inspection",
+        "testTypeName": "ADR without inspection",
+        "forVehicleType": [
+          "hgv",
+          "trl",
+          "lgv"
+        ],
+        "forVtmOnly": true,
+        "forVehicleSize": null,
+        "forVehicleConfiguration": null,
+        "forVehicleAxles": null,
+        "forEuVehicleCategory": null,
+        "forVehicleClass": null,
+        "forVehicleSubclass": null,
+        "forVehicleWheels": null,
+        "nextTestTypesOrCategories": [
+          {
+            "id": "205",
+            "linkedIds": null,
+            "name": "Type approved tractor unit",
+            "testTypeName": "Declaration of conformity and application for ADR road vehicle certification for a new type approved tractor unit",
+            "forVehicleType": [
+              "hgv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "hgv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "cdv",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "207",
+            "linkedIds": null,
+            "name": "LEC without inspection",
+            "testTypeName": "Technical LEC without inspection",
+            "forVehicleType": [
+              "hgv",
+              "lgv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "hgv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lnv",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "lgv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lnz",
+                "linkedTestCode": null
+              }              
+            ]
+          }
+        ]
       }
     ]
   },
@@ -2433,6 +2792,7 @@
       "hgv",
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -2449,6 +2809,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -2476,6 +2837,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -2497,6 +2859,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -2509,6 +2872,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -2521,6 +2885,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -2533,6 +2898,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -2552,6 +2918,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -2564,6 +2931,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -2576,6 +2944,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -2588,6 +2957,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -2616,6 +2986,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -2637,6 +3008,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -2649,6 +3021,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -2661,6 +3034,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -2673,6 +3047,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -2692,6 +3067,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -2704,6 +3080,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -2716,6 +3093,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -2728,6 +3106,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -2757,6 +3136,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -2774,6 +3154,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -2785,6 +3166,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -2797,6 +3179,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -2817,6 +3200,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -2830,6 +3214,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -2852,6 +3237,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -2869,6 +3255,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -2880,6 +3267,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -2892,6 +3280,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -2913,6 +3302,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -2924,6 +3314,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -2936,6 +3327,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -2958,6 +3350,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -2975,6 +3368,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -2996,6 +3390,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3008,6 +3403,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3020,6 +3416,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3032,6 +3429,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3052,6 +3450,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3082,6 +3481,7 @@
               "trl"
             ],
             "forVehicleSize": null,
+            "forVtmOnly": false,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
               1
@@ -3094,6 +3494,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -3115,6 +3516,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -3126,6 +3528,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -3138,6 +3541,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -3160,6 +3564,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -3187,6 +3592,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3208,6 +3614,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3220,6 +3627,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3232,6 +3640,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3244,6 +3653,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3263,6 +3673,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3275,6 +3686,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3287,6 +3699,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3299,6 +3712,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3327,6 +3741,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3348,6 +3763,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3360,6 +3776,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3372,6 +3789,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3384,6 +3802,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3403,6 +3822,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3415,6 +3835,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3427,6 +3848,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3439,6 +3861,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3466,6 +3889,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3479,6 +3903,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3500,6 +3925,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -3518,6 +3944,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3531,6 +3958,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -3551,6 +3979,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3564,6 +3993,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -3585,6 +4015,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -3603,6 +4034,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3616,6 +4048,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -3636,6 +4069,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3649,6 +4083,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -3673,6 +4108,7 @@
       "hgv",
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": [
@@ -3699,6 +4135,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -3726,6 +4163,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3747,6 +4185,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3759,6 +4198,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3771,6 +4211,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3783,6 +4224,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3802,6 +4244,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3814,6 +4257,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3826,6 +4270,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3838,6 +4283,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3866,6 +4312,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -3887,6 +4334,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3899,6 +4347,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3911,6 +4360,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3923,6 +4373,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -3942,6 +4393,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -3954,6 +4406,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -3966,6 +4419,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -3978,6 +4432,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -4008,6 +4463,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -4029,6 +4485,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -4041,6 +4498,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -4053,6 +4511,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -4065,6 +4524,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -4084,6 +4544,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -4096,6 +4557,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -4108,6 +4570,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -4120,6 +4583,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -4148,6 +4612,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -4169,6 +4634,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -4181,6 +4647,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -4193,6 +4660,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -4205,6 +4673,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -4224,6 +4693,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -4236,6 +4706,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -4248,6 +4719,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -4260,6 +4732,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -4287,6 +4760,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -4313,6 +4787,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -4340,6 +4815,7 @@
                   "hgv",
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -4361,6 +4837,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4373,6 +4850,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4385,6 +4863,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4397,6 +4876,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4416,6 +4896,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4428,6 +4909,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4440,6 +4922,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4452,6 +4935,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4480,6 +4964,7 @@
                   "hgv",
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -4501,6 +4986,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4513,6 +4999,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4525,6 +5012,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4537,6 +5025,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4556,6 +5045,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4568,6 +5058,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4580,6 +5071,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4592,6 +5084,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4621,6 +5114,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -4648,6 +5142,7 @@
                   "hgv",
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -4669,6 +5164,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4681,6 +5177,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4693,6 +5190,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4705,6 +5203,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4724,6 +5223,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4736,6 +5236,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4748,6 +5249,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4760,6 +5262,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4788,6 +5291,7 @@
                   "hgv",
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -4809,6 +5313,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4821,6 +5326,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4833,6 +5339,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4845,6 +5352,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4864,6 +5372,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -4876,6 +5385,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -4888,6 +5398,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 4,
@@ -4900,6 +5411,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": [
@@ -4931,6 +5443,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -4958,6 +5471,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -4979,6 +5493,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -4991,6 +5506,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -5003,6 +5519,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -5015,6 +5532,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5034,6 +5552,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -5046,6 +5565,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -5058,6 +5578,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -5070,6 +5591,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5098,6 +5620,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5119,6 +5642,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -5131,6 +5655,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -5143,6 +5668,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -5155,6 +5681,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5174,6 +5701,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -5186,6 +5714,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -5198,6 +5727,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 4,
@@ -5210,6 +5740,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5240,6 +5771,7 @@
     "forVehicleType": [
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": [
@@ -5257,6 +5789,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -5275,6 +5808,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5288,6 +5822,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -5308,6 +5843,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5321,6 +5857,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -5343,6 +5880,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -5356,6 +5894,7 @@
         "testCodes": [
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 1,
@@ -5376,6 +5915,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -5389,6 +5929,7 @@
         "testCodes": [
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 1,
@@ -5408,6 +5949,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -5425,6 +5967,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5443,6 +5986,7 @@
                 "forVehicleType": [
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5456,6 +6000,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 1,
@@ -5476,6 +6021,7 @@
                 "forVehicleType": [
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5489,6 +6035,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 1,
@@ -5510,6 +6057,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5528,6 +6076,7 @@
                 "forVehicleType": [
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5541,6 +6090,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 1,
@@ -5561,6 +6111,7 @@
                 "forVehicleType": [
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": [
@@ -5574,6 +6125,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 1,
@@ -5597,6 +6149,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -5615,6 +6168,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5628,6 +6182,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -5648,6 +6203,7 @@
             "forVehicleType": [
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5661,6 +6217,7 @@
             "testCodes": [
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 1,
@@ -5685,6 +6242,7 @@
       "hgv",
       "trl"
     ],
+    "forVtmOnly": false,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -5702,6 +6260,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5713,6 +6272,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 1,
@@ -5725,6 +6285,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -5737,6 +6298,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -5749,6 +6311,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -5761,6 +6324,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5780,6 +6344,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 1,
@@ -5792,6 +6357,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -5804,6 +6370,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -5816,6 +6383,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -5828,6 +6396,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -5855,6 +6424,7 @@
         "forVehicleType": [
           "hgv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5866,6 +6436,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -5887,6 +6458,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5898,6 +6470,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -5910,6 +6483,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -5930,6 +6504,7 @@
         "forVehicleType": [
           "hgv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5941,6 +6516,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -5961,6 +6537,7 @@
         "forVehicleType": [
           "hgv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5972,6 +6549,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -5992,6 +6570,7 @@
         "forVehicleType": [
           "hgv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -6003,6 +6582,7 @@
         "testCodes": [
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6024,6 +6604,7 @@
           "hgv",
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -6045,6 +6626,7 @@
         "testCodes": [
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -6057,6 +6639,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -6069,6 +6652,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -6081,6 +6665,7 @@
           },
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -6100,6 +6685,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 2,
@@ -6112,6 +6698,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 3,
@@ -6124,6 +6711,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 4,
@@ -6136,6 +6724,7 @@
           },
           {
             "forVehicleType": "hgv",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": [
@@ -6163,6 +6752,7 @@
         "forVehicleType": [
           "trl"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [
@@ -6176,6 +6766,7 @@
         "testCodes": [
           {
             "forVehicleType": "trl",
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": 1,
@@ -6202,6 +6793,7 @@
       "lgv",
       "motorcycle"
     ],
+    "forVtmOnly": null,
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -6222,6 +6814,7 @@
           "lgv",
           "motorcycle"
         ],
+        "forVtmOnly": null,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -6239,6 +6832,7 @@
               "car",
               "lgv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6259,6 +6853,7 @@
             "testCodes": [
               {
                 "forVehicleType": "car",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6275,6 +6870,7 @@
               },
               {
                 "forVehicleType": "car",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6293,6 +6889,7 @@
               },
               {
                 "forVehicleType": "lgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6309,6 +6906,7 @@
               },
               {
                 "forVehicleType": "lgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6335,6 +6933,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -6349,6 +6948,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6361,6 +6961,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -6373,6 +6974,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -6394,6 +6996,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6412,6 +7015,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6424,6 +7028,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6436,6 +7041,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6448,6 +7054,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6460,6 +7067,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6472,6 +7080,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6493,6 +7102,7 @@
               "car",
               "lgv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6506,6 +7116,7 @@
             "testCodes": [
               {
                 "forVehicleType": "car",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6518,6 +7129,7 @@
               },
               {
                 "forVehicleType": "lgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6541,6 +7153,7 @@
               "car",
               "lgv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6557,6 +7170,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -6571,6 +7185,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6583,6 +7198,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -6595,6 +7211,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -6616,6 +7233,7 @@
                   "hgv",
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6634,6 +7252,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6646,6 +7265,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6658,6 +7278,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6670,6 +7291,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6682,6 +7304,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6694,6 +7317,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6715,6 +7339,7 @@
                   "car",
                   "lgv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6728,6 +7353,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "car",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6740,6 +7366,7 @@
                   },
                   {
                     "forVehicleType": "lgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6761,6 +7388,7 @@
                   "car",
                   "lgv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6781,6 +7409,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "lgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6797,6 +7426,7 @@
                   },
                   {
                     "forVehicleType": "lgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6815,6 +7445,7 @@
                   },
                   {
                     "forVehicleType": "car",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6831,6 +7462,7 @@
                   },
                   {
                     "forVehicleType": "car",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6864,6 +7496,7 @@
               "lgv",
               "motorcycle"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6882,6 +7515,7 @@
                   "lgv",
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6903,6 +7537,7 @@
         "forVehicleType": [
           "motorcycle"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -6923,6 +7558,7 @@
             "forVehicleType": [
               "motorcycle"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6944,6 +7580,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6957,6 +7594,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -6977,6 +7615,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -6997,6 +7636,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7009,6 +7649,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7021,6 +7662,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7033,6 +7675,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7045,6 +7688,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7065,6 +7709,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7082,6 +7727,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7094,6 +7740,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7106,6 +7753,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7128,6 +7776,7 @@
             "forVehicleType": [
               "motorcycle"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -7148,6 +7797,7 @@
             "testCodes": [
               {
                 "forVehicleType": "motorcycle",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7160,6 +7810,7 @@
               },
               {
                 "forVehicleType": "motorcycle",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7172,6 +7823,7 @@
               },
               {
                 "forVehicleType": "motorcycle",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7184,6 +7836,7 @@
               },
               {
                 "forVehicleType": "motorcycle",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7203,6 +7856,7 @@
             "forVehicleType": [
               "motorcycle"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -7224,6 +7878,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7237,6 +7892,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7257,6 +7913,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7277,6 +7934,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7289,6 +7947,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7301,6 +7960,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7313,6 +7973,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7325,6 +7986,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7345,6 +8007,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7362,6 +8025,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7374,6 +8038,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7386,6 +8051,7 @@
                   },
                   {
                     "forVehicleType": "motorcycle",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7409,6 +8075,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": [
           "small",
           "large"
@@ -7428,6 +8095,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -7442,6 +8110,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7454,6 +8123,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7474,6 +8144,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -7488,6 +8159,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7500,6 +8172,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7520,6 +8193,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -7534,6 +8208,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7546,6 +8221,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7565,6 +8241,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -7584,6 +8261,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -7598,6 +8276,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7610,6 +8289,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7630,6 +8310,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -7644,6 +8325,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7656,6 +8338,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -7682,6 +8365,7 @@
               "small",
               "large"
             ],
+            "forVtmOnly": false,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7692,6 +8376,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7704,6 +8389,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7712,6 +8398,52 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "fas",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "203",
+            "linkedIds": null,
+            "name": "COIF COC",
+            "testTypeName": "COIF Certificate of Conformity",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVtmOnly": true,
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "cds",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVtmOnly": true,
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "cdl",
                 "linkedTestCode": null
               }
             ]
@@ -7725,6 +8457,7 @@
         "forVehicleType": [
           "psv"
         ],
+        "forVtmOnly": null,
         "forVehicleSize": [
           "large"
         ],
@@ -7743,6 +8476,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large"
             ],
@@ -7756,6 +8490,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7776,6 +8511,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large"
             ],
@@ -7789,6 +8525,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7797,6 +8534,138 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "7ol",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "198",
+            "linkedIds": null,
+            "name": "DDA COC",
+            "testTypeName": "DDA Certificate of conformity",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "7jl",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "199",
+            "linkedIds": null,
+            "name": "DDA Schedule 1, 2 or 3 without inspection",
+            "testTypeName": "DDA Schedule 1, 2 or 3 without inspection",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "7ql",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "200",
+            "linkedIds": null,
+            "name": "TA Different Schedule 1, 2, or 3",
+            "testTypeName": "TA Different Schedule 1, 2, or 3",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "8al",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "201",
+            "linkedIds": null,
+            "name": "Change to DDA Type approval",
+            "testTypeName": "Change to DDA Type approval",
+            "forVehicleType": [
+              "psv"
+            ],
+            "forVtmOnly": true,
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "9jp",
                 "linkedTestCode": null
               }
             ]
@@ -7814,6 +8683,7 @@
           "lgv",
           "car"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -7830,6 +8700,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "small",
               "large"
@@ -7844,6 +8715,7 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "small",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7856,6 +8728,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 2,
@@ -7868,6 +8741,7 @@
               },
               {
                 "forVehicleType": "psv",
+                "forVtmOnly": false,
                 "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": 3,
@@ -7889,6 +8763,7 @@
               "hgv",
               "trl"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -7907,6 +8782,7 @@
             "testCodes": [
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7919,6 +8795,7 @@
               },
               {
                 "forVehicleType": "hgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7931,6 +8808,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7943,6 +8821,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7955,6 +8834,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7967,6 +8847,7 @@
               },
               {
                 "forVehicleType": "trl",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -7988,6 +8869,7 @@
               "car",
               "lgv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -8001,6 +8883,7 @@
             "testCodes": [
               {
                 "forVehicleType": "car",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8013,6 +8896,7 @@
               },
               {
                 "forVehicleType": "lgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8034,6 +8918,7 @@
               "lgv",
               "car"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -8054,6 +8939,7 @@
             "testCodes": [
               {
                 "forVehicleType": "car",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8070,6 +8956,7 @@
               },
               {
                 "forVehicleType": "car",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8088,6 +8975,7 @@
               },
               {
                 "forVehicleType": "lgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8106,6 +8994,7 @@
               },
               {
                 "forVehicleType": "lgv",
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8136,6 +9025,7 @@
           "car",
           "motorcycle"
         ],
+        "forVtmOnly": false,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -8156,6 +9046,7 @@
               "car",
               "motorcycle"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -8172,6 +9063,7 @@
                   "lgv",
                   "car"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8198,6 +9090,7 @@
                       "lgv",
                       "car"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8218,6 +9111,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "car",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8234,6 +9128,7 @@
                       },
                       {
                         "forVehicleType": "car",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8252,6 +9147,7 @@
                       },
                       {
                         "forVehicleType": "lgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8268,6 +9164,7 @@
                       },
                       {
                         "forVehicleType": "lgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8295,6 +9192,7 @@
                       "lgv",
                       "car"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8315,6 +9213,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "car",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8331,6 +9230,7 @@
                       },
                       {
                         "forVehicleType": "car",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8349,6 +9249,7 @@
                       },
                       {
                         "forVehicleType": "lgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8367,6 +9268,7 @@
                       },
                       {
                         "forVehicleType": "lgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8396,6 +9298,7 @@
                   "lgv",
                   "car"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8412,6 +9315,7 @@
                     "forVehicleType": [
                       "psv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": [
                       "small",
                       "large"
@@ -8426,6 +9330,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "small",
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8438,6 +9343,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": 2,
@@ -8450,6 +9356,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": 3,
@@ -8471,6 +9378,7 @@
                       "hgv",
                       "trl"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8489,6 +9397,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "hgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8501,6 +9410,7 @@
                       },
                       {
                         "forVehicleType": "hgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8513,6 +9423,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8525,6 +9436,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8537,6 +9449,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8549,6 +9462,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8570,6 +9484,7 @@
                       "car",
                       "lgv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8583,6 +9498,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "car",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8595,6 +9511,7 @@
                       },
                       {
                         "forVehicleType": "lgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8615,6 +9532,7 @@
                     "forVehicleType": [
                       "psv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": [
                       "small",
                       "large"
@@ -8629,6 +9547,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "small",
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8641,6 +9560,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": 2,
@@ -8653,6 +9573,7 @@
                       },
                       {
                         "forVehicleType": "psv",
+                        "forVtmOnly": false,
                         "forVehicleSize": "large",
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": 3,
@@ -8674,6 +9595,7 @@
                       "hgv",
                       "trl"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8692,6 +9614,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "hgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8704,6 +9627,7 @@
                       },
                       {
                         "forVehicleType": "hgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8716,6 +9640,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8728,6 +9653,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8740,6 +9666,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8752,6 +9679,7 @@
                       },
                       {
                         "forVehicleType": "trl",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8773,6 +9701,7 @@
                       "car",
                       "lgv"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8786,6 +9715,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "car",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8798,6 +9728,7 @@
                       },
                       {
                         "forVehicleType": "lgv",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8825,6 +9756,7 @@
                   "car",
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8843,6 +9775,7 @@
                       "car",
                       "motorcycle"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8851,6 +9784,61 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "yuz",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "202",
+                "linkedIds": null,
+                "name": "Mutual Recognition/End series/etc without inspection",
+                "testTypeName": "Mutual Recognition/End series/etc without inspection",
+                "forVehicleType": [
+                  "psv",
+                  "hgv",
+                  "trl",
+                  "car",
+                  "lgv"
+                ],
+                "forVtmOnly": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": [
+                  "m1",
+                  "m2",
+                  "m3",
+                  "n1",
+                  "n2",
+                  "n3",
+                  "03",
+                  "04"
+                ],
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testCodes": [
+                  {
+                    "forVehicleType": "psv",
+                    "forVtmOnly": true,
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": [
+                      "m1",
+                      "m2",
+                      "m3",
+                      "n1",
+                      "n2",
+                      "n3",
+                      "03",
+                      "04"
+                    ],
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "ysz",
                     "linkedTestCode": null
                   }
                 ]
@@ -8864,6 +9852,7 @@
             "forVehicleType": [
               "motorcycle"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -8888,6 +9877,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8906,6 +9896,7 @@
                     "forVehicleType": [
                       "motorcycle"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8919,6 +9910,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8939,6 +9931,7 @@
                     "forVehicleType": [
                       "motorcycle"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8952,6 +9945,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -8973,6 +9967,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8998,6 +9993,7 @@
                     "forVehicleType": [
                       "motorcycle"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9018,6 +10014,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9030,6 +10027,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9042,6 +10040,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9055,6 +10054,7 @@
 
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9067,6 +10067,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9087,6 +10088,7 @@
                     "forVehicleType": [
                       "motorcycle"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9107,6 +10109,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9119,6 +10122,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9131,6 +10135,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9143,6 +10148,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9155,6 +10161,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9176,6 +10183,7 @@
                 "forVehicleType": [
                   "motorcycle"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -9198,6 +10206,7 @@
                     "forVehicleType": [
                       "motorcycle"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9215,6 +10224,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9227,6 +10237,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9239,6 +10250,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9259,6 +10271,7 @@
                     "forVehicleType": [
                       "motorcycle"
                     ],
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9276,6 +10289,7 @@
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9288,6 +10302,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9300,6 +10315,7 @@
                       },
                       {
                         "forVehicleType": "motorcycle",
+                        "forVtmOnly": false,
                         "forVehicleSize": null,
                         "forVehicleConfiguration": null,
                         "forVehicleAxles": null,
@@ -9327,6 +10343,7 @@
               "small",
               "large"
             ],
+            "forVtmOnly": false,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -9342,6 +10359,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -9356,6 +10374,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9368,6 +10387,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9388,6 +10408,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -9402,6 +10423,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9414,6 +10436,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9434,6 +10457,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -9448,6 +10472,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9460,6 +10485,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9480,6 +10506,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -9494,6 +10521,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9506,6 +10534,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9526,6 +10555,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -9540,6 +10570,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9552,6 +10583,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9573,6 +10605,7 @@
             "forVehicleType": [
               "psv"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": [
               "large"
             ],
@@ -9591,6 +10624,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "large"
                 ],
@@ -9604,6 +10638,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9624,6 +10659,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "large"
                 ],
@@ -9637,6 +10673,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9662,6 +10699,7 @@
               "lgv",
               "car"
             ],
+            "forVtmOnly": false,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -9678,6 +10716,7 @@
                 "forVehicleType": [
                   "psv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": [
                   "small",
                   "large"
@@ -9692,6 +10731,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "small",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9704,6 +10744,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 2,
@@ -9716,6 +10757,7 @@
                   },
                   {
                     "forVehicleType": "psv",
+                    "forVtmOnly": false,
                     "forVehicleSize": "large",
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": 3,
@@ -9737,6 +10779,7 @@
                   "hgv",
                   "trl"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -9755,6 +10798,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9767,6 +10811,7 @@
                   },
                   {
                     "forVehicleType": "hgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9779,6 +10824,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9791,6 +10837,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9803,6 +10850,7 @@
                   },
                   {
                     "forVehicleType": "trl",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9836,6 +10884,7 @@
                   "car",
                   "lgv"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -9849,6 +10898,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "car",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9861,6 +10911,7 @@
                   },
                   {
                     "forVehicleType": "lgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9882,6 +10933,7 @@
                   "lgv",
                   "car"
                 ],
+                "forVtmOnly": false,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -9902,6 +10954,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "car",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9918,6 +10971,7 @@
                   },
                   {
                     "forVehicleType": "car",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9936,6 +10990,7 @@
                   },
                   {
                     "forVehicleType": "lgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -9954,6 +11009,7 @@
                   },
                   {
                     "forVehicleType": "lgv",
+                    "forVtmOnly": false,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
