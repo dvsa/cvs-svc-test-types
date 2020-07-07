@@ -2321,7 +2321,7 @@
         "forVehicleType": [
           "hgv"
         ],
-        "forVtmOnly": false,
+        "forVtmOnly": null,
         "id": "43",
         "linkedIds": null,
         "name": "LEC",
@@ -8075,7 +8075,7 @@
         "forVehicleType": [
           "psv"
         ],
-        "forVtmOnly": false,
+        "forVtmOnly": null,
         "forVehicleSize": [
           "small",
           "large"
@@ -9025,7 +9025,7 @@
           "car",
           "motorcycle"
         ],
-        "forVtmOnly": false,
+        "forVtmOnly": null,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -9046,7 +9046,7 @@
               "car",
               "motorcycle"
             ],
-            "forVtmOnly": false,
+            "forVtmOnly": null,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,

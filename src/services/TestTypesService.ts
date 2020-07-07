@@ -22,16 +22,16 @@ export class TestTypesService {
         return data.Items as ITestType[];
       })
       .then((testTypes: ITestType[]) => {
-        let filterdTestType: ITestType[] = [];
+        let filteredTestType: ITestType[] = [];
         if (applicableTo !== APPLICABLE_TO.ALL) {
           const forVtmOnly = applicableTo === APPLICABLE_TO.VTM;
-          filterdTestType = this.findTestTypesByVtmOnly(forVtmOnly, testTypes, "-");
+          filteredTestType = this.filterTestTypesByVtmOnly(forVtmOnly, testTypes);
         } else {
-          filterdTestType = cloneDeep(testTypes);
+          filteredTestType = cloneDeep(testTypes);
         }
-        this.purgeTestTypes(filterdTestType);
+        this.purgeTestTypes(filteredTestType);
 
-        return this.sort(filterdTestType);
+        return this.sort(filteredTestType);
       })
       .catch((error) => {
         if (!(error instanceof HTTPError)) {
@@ -180,10 +180,7 @@ export class TestTypesService {
       // for (let i = 0; i < testTypes.length; i++) {
       //   const testType: any = testTypes[i];
       if (testType.hasOwnProperty("nextTestTypesOrCategories")) {
-        const childrenTestType: any = this.findTestType({
-          id,
-          testTypes: testType.nextTestTypesOrCategories
-        });
+        const childrenTestType: any = this.findTestType({id, testTypes: testType.nextTestTypesOrCategories});
 
         if (childrenTestType != null) {
           return childrenTestType;
@@ -263,26 +260,18 @@ export class TestTypesService {
       });
   }
 
-  public fieldInFilterExpressionMatchesTheOneInTestCode(
-    testCode: TestCode,
-    filterExpression: any,
-    field: string
-  ) {
+  public fieldInFilterExpressionMatchesTheOneInTestCode(testCode: TestCode, filterExpression: any, field: string) {
     let bool = false;
     const filterOnField = (filterVal: string) => {
       const filterField = (testCode as any)[filterVal];
       if (Array.isArray(filterField)) {
         filterField.map((arrayElement: any) => {
-          if (
-            arrayElement ===
-            filterExpression[getFilterFieldWithoutFor(filterVal)]
-          ) {
+          if (arrayElement === filterExpression[getFilterFieldWithoutFor(filterVal)]) {
             bool = true;
           }
         });
       } else {
-        bool =
-          filterField === filterExpression[getFilterFieldWithoutFor(filterVal)];
+        bool = filterField === filterExpression[getFilterFieldWithoutFor(filterVal)];
       }
     };
 
@@ -310,41 +299,15 @@ export class TestTypesService {
     return bool;
   }
 
-  private findTestTypesByVtmOnly(
-    forVtmOnly: boolean,
-    testTypes: ITestType[],
-    depth: string
-  ): ITestType[] {
-    const filteredTestTypes = testTypes.filter((testType) => {
-      if (testType.nextTestTypesOrCategories) {
-        this.findTestTypesByVtmOnly(forVtmOnly, testType.nextTestTypesOrCategories, depth + "-");
+  private filterTestTypesByVtmOnly(forVtmOnly: boolean, testTypes: ITestType[]) {
+    return testTypes.filter(function findTestTypesByVtmOnly(testType): any {
+      if (testType.forVtmOnly === forVtmOnly) {
+        return true;
       }
-
-      // if (depth === "-" && forVtmOnly) {
-      //   console.log(`eid: ${testType.id} root node status: ${testType.forVtmOnly === null}`);
-      //   return testType.forVtmOnly === null;
-
-      // }
-      console.log(`eid: ${testType.id} tree depth: ${depth} status: ${(testType.forVtmOnly === forVtmOnly)}`);
-      // return ( testType.forVtmOnly === forVtmOnly);
-
-      // return testType.testCodes && testType.testCodes.filter((code) => code.forVtmOnly === forVtmOnly);
-
-      // if (testType.nextTestTypesOrCategories) {
-      //   this.findTestTypesByVtmOnly(
-      //     forVtmOnly,
-      //     testType.nextTestTypesOrCategories
-      //   );
-      // }
-      return testType.forVtmOnly === forVtmOnly;
+      if (testType.nextTestTypesOrCategories) {
+        return (testType.nextTestTypesOrCategories = testType.nextTestTypesOrCategories.filter(findTestTypesByVtmOnly)).length;
+      }
     });
-    // .map((testType) => {
-    //   let newTestType = Object.assign({}, testType);
-    //   if (newTestType.nextTestTypesOrCategories) {
-    //     return newTestType.nextTestTypesOrCategories.filter((tType) => tType.forVtmOnly === forVtmOnly);
-    //   }
-    // });
-    return filteredTestTypes;
   }
 }
 
@@ -355,3 +318,4 @@ const throwResourceNotFound = () => {
 const throwInternalServerError = () => {
   throw new HTTPError(500, ERRORS.InternalServerError);
 };
+
