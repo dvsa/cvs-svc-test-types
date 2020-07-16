@@ -51,7 +51,7 @@
     "jest-plugin-context": "^2.9.0",
     "jest-sonar-reporter": "^2.0.0",
     "lambda-tester": "^3.6.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "serverless": "^1.73.1",
     "serverless-dynamodb-local": "^0.2.38",
     "serverless-offline": "5.12.0",
