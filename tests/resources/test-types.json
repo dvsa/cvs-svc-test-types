@@ -217,7 +217,7 @@
       {
         "id": "6",
         "linkedIds": ["38", "39"],
-        "name": "Paid",
+        "name": "Paid retest",
         "forVehicleType": [
           "psv"
         ],
@@ -238,7 +238,7 @@
           {
             "id": "7",
             "linkedIds": ["38", "39"],
-            "name": "Any PSV",
+            "name": "Any PSV retest",
             "testTypeName": "Paid retest",
             "forVehicleType": [
               "psv"
@@ -299,7 +299,7 @@
           {
             "id": "8",
             "linkedIds": ["38", "39"],
-            "name": "Class 6A (seatbelt installation check)",
+            "name": "Class 6A retest (seatbelt installation check)",
             "testTypeName": "Paid retest with Class 6A seatbelt installation check",
             "forVehicleType": [
               "psv"
@@ -356,7 +356,7 @@
       {
         "id": "9",
         "linkedIds": ["38", "39"],
-        "name": "Part paid",
+        "name": "Part paid retest",
         "forVehicleType": [
           "psv"
         ],
@@ -377,7 +377,7 @@
           {
             "id": "10",
             "linkedIds": ["38", "39"],
-            "name": "Any PSV",
+            "name": "Any PSV retest",
             "testTypeName": "Part-paid retest",
             "forVehicleType": [
               "psv"
@@ -1590,87 +1590,7 @@
             "linkedTestCode": null
           }
         ]
-      },
-    {
-      "id": "96",
-      "linkedIds": [],
-      "name": "Vitesse 100",
-      "forVehicleType": [
-        "psv"
-      ],
-      "forVehicleSize": null,
-      "forVehicleConfiguration": null,
-      "forVehicleAxles": null,
-      "forEuVehicleCategory": null,
-      "forVehicleClass": null,
-      "forVehicleSubclass": null,
-      "forVehicleWheels": null,
-      "testTypeClassification": "NON ANNUAL",
-      "nextTestTypesOrCategories": [
-        {
-          "id": "100",
-          "linkedIds": [],
-          "name": "Vitesse 100 Replacement",
-          "testTypeName": "Vitesse 100 Replacement",
-          "forVehicleType": [
-            "psv"
-          ],
-          "forVehicleSize": null,
-          "forVehicleConfiguration": null,
-          "forVehicleAxles": null,
-          "forEuVehicleCategory": null,
-          "forVehicleClass": null,
-          "forVehicleSubclass": null,
-          "forVehicleWheels": null,
-          "testTypeClassification": "NON ANNUAL",
-          "testCodes": [
-            {
-              "forVehicleType": "psv",
-              "forVehicleSize": null,
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "mda",
-              "linkedTestCode": null
-            }
-          ]
-        },
-        {
-          "id": "121",
-          "linkedIds": [],
-          "name": "Vitesse 100 Application",
-          "testTypeName": "Vitesse 100 Application",
-          "forVehicleType": [
-            "psv"
-          ],
-          "forVehicleSize": null,
-          "forVehicleConfiguration": null,
-          "forVehicleAxles": null,
-          "forEuVehicleCategory": null,
-          "forVehicleClass": null,
-          "forVehicleSubclass": null,
-          "forVehicleWheels": null,
-          "testTypeClassification": "NON ANNUAL",
-          "testCodes": [
-            {
-              "forVehicleType": "psv",
-              "forVehicleSize": null,
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "mdu",
-              "linkedTestCode": null
-            }
-          ]
-        }
-      ]
-    }
+      }
     ]
   },
   {
@@ -2444,7 +2364,7 @@
       {
         "id": "52",
         "linkedIds": null,
-        "name": "Annual test",
+        "name": "Annual test retest",
         "forVehicleType": [
           "hgv",
           "trl"
@@ -2470,7 +2390,7 @@
           {
             "id": "53",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid annual test retest",
             "forVehicleType": [
               "hgv",
@@ -2610,7 +2530,7 @@
           {
             "id": "54",
             "linkedIds": null,
-            "name": "Part paid",
+            "name": "Part paid retest",
             "testTypeName": "Part paid annual test retest",
             "forVehicleType": [
               "hgv",
@@ -2746,13 +2666,46 @@
                 "linkedTestCode": null
               }
             ]
+          },
+          {
+            "id": "198",
+            "linkedIds": null,
+            "name": "Free loaded retest",
+            "testTypeName": "Free loaded retest",
+            "forVehicleType": [
+              "trl"
+            ],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": [
+              3
+            ],
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testTypeClassification": "Annual With Certificate",
+            "testCodes": [
+              {
+                "forVehicleType": "trl",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": 3,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "rht",
+                "linkedTestCode": null
+              }
+            ]
           }
         ]
       },
       {
         "id": "55",
         "linkedIds": null,
-        "name": "TIR",
+        "name": "TIR retest",
         "forVehicleType": [
           "hgv",
           "trl"
@@ -2768,7 +2721,7 @@
           {
             "id": "56",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid TIR retest",
             "forVehicleType": [
               "hgv",
@@ -2812,7 +2765,7 @@
           {
             "id": "57",
             "linkedIds": null,
-            "name": "Free",
+            "name": "Free retest",
             "testTypeName": "Free TIR retest",
             "forVehicleType": [
               "trl"
@@ -2847,7 +2800,7 @@
       {
         "id": "58",
         "linkedIds": null,
-        "name": "ADR",
+        "name": "ADR retest",
         "forVehicleType": [
           "hgv",
           "trl"
@@ -2863,7 +2816,7 @@
           {
             "id": "59",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid ADR retest",
             "forVehicleType": [
               "hgv",
@@ -2907,7 +2860,7 @@
           {
             "id": "60",
             "linkedIds": null,
-            "name": "Free",
+            "name": "Free retest",
             "testTypeName": "Free ADR retest",
             "forVehicleType": [
               "hgv",
@@ -2953,7 +2906,7 @@
       {
         "id": "61",
         "linkedIds": null,
-        "name": "Roadworthiness",
+        "name": "Roadworthiness retest",
         "forVehicleType": [
           "hgv",
           "trl"
@@ -2969,7 +2922,7 @@
           {
             "id": "62",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid roadworthiness retest",
             "forVehicleType": [
               "hgv",
@@ -3076,7 +3029,7 @@
           {
             "id": "101",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid roadworthiness retest",
             "forVehicleType": [
               "trl"
@@ -3109,7 +3062,7 @@
           {
             "id": "63",
             "linkedIds": null,
-            "name": "Part Paid",
+            "name": "Part Paid retest",
             "testTypeName": "Part paid roadworthiness retest",
             "forVehicleType": [
               "hgv",
@@ -3181,7 +3134,7 @@
           {
             "id": "65",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid first test retest",
             "forVehicleType": [
               "hgv",
@@ -3321,7 +3274,7 @@
           {
             "id": "66",
             "linkedIds": null,
-            "name": "Part paid",
+            "name": "Part paid retest",
             "testTypeName": "Part paid first test retest",
             "forVehicleType": [
               "hgv",
@@ -3461,7 +3414,7 @@
           {
             "id": "67",
             "linkedIds": null,
-            "name": "Free",
+            "name": "Free retest",
             "testTypeName": "Free first test retest",
             "forVehicleType": [
               "trl"
@@ -3496,7 +3449,7 @@
       {
         "id": "97",
         "linkedIds": null,
-        "name": "Annual test",
+        "name": "Annual test retest",
         "forVehicleType": [
           "trl"
         ],
@@ -3513,7 +3466,7 @@
           {
             "id": "98",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid annual test retest",
             "forVehicleType": [
               "trl"
@@ -3546,7 +3499,7 @@
           {
             "id": "99",
             "linkedIds": null,
-            "name": "Part paid",
+            "name": "Part paid retest",
             "testTypeName": "Part paid annual test retest",
             "forVehicleType": [
               "trl"
@@ -3598,7 +3551,7 @@
           {
             "id": "103",
             "linkedIds": null,
-            "name": "Paid",
+            "name": "Paid retest",
             "testTypeName": "Paid first test retest",
             "forVehicleType": [
               "trl"
@@ -3631,7 +3584,7 @@
           {
             "id": "104",
             "linkedIds": null,
-            "name": "Part paid",
+            "name": "Part paid retest",
             "testTypeName": "Part paid first test retest",
             "forVehicleType": [
               "trl"
