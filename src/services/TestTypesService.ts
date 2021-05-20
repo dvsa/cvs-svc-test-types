@@ -10,26 +10,24 @@ export class TestTypesService {
     this.testTypesDAO = testTypesDAO;
   }
 
-  public getTestTypesList() {
-    return this.testTypesDAO
-      .getAll()
-      .then((data) => {
-        if (data.Count === 0) {
-          throwResourceNotFound();
-        }
+  public async getTestTypesList() {
+    try {
+      const data = await this.testTypesDAO.getAll();
+      if (data.Count === 0) {
+        throwResourceNotFound();
+      }
 
-        this.purgeTestTypes(data.Items);
-        return this.sort(data.Items);
-      })
-      .catch((error) => {
-        if (!(error instanceof HTTPError)) {
-          console.error(error);
-          error.statusCode = 500;
-          error.body = "Internal Server Error";
-        }
+      this.purgeTestTypes(data.Items);
+      return this.sort(data.Items);
+    } catch (error) {
+      if (!(error instanceof HTTPError)) {
+        console.error(error);
+        error.statusCode = 500;
+        error.body = "Internal Server Error";
+      }
 
-        throw new HTTPError(error.statusCode, error.body);
-      });
+      throw new HTTPError(error.statusCode, error.body);
+    }
   }
 
   public getTestTypesById(id: string, filterExpression: any) {
@@ -198,8 +196,8 @@ export class TestTypesService {
     }
 
     return testTypeArray.sort(
-      (a: { id: string }, b: { id: string }) =>
-        parseInt(a.id, 10) - parseInt(b.id, 10)
+      (a: { sortId: string }, b: { sortId: string }) =>
+        parseInt(a.sortId, 10) - parseInt(b.sortId, 10)
     );
   }
 
