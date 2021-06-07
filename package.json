@@ -27,7 +27,7 @@
     "tslint": "tslint src/**/*.ts tests/**/*.ts -q",
     "sonar-scanner": "npm run tslint && npm run coverage && sonar-scanner",
     "coverage": "npm t -- --runInBand --coverage",
-    "audit-dep": "npm audit --json | node_modules/.bin/audit-filter --nsp-config=.nsprc --audit=-",
+    "audit-dep": "npm audit",
     "package": "mkdir ${ZIP_NAME} && cp package.json package-lock.json ${ZIP_NAME}/ && cp -r .build/src/* ${ZIP_NAME}/ && cd ${ZIP_NAME} && npm ci --production && rm package.json package-lock.json && zip -qr ../${ZIP_NAME}.zip .",
     "tools-setup": "sls dynamodb migrate && BRANCH=local gulp start-serverless && sls dynamodb seed --seed=test-types"
   },
@@ -90,7 +90,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run tslint && npm run security-checks && npm run build",
+      "pre-commit": "npm audit && npm run tslint && npm run security-checks && npm run build",
       "pre-push": "npm run prepush"
     }
   }
