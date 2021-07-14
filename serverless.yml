@@ -1,6 +1,7 @@
 service: cvs-svc-test-types
-lambdaHashingVersion: 20201221
+
 provider:
+  lambdaHashingVersion: 20201221
   name: aws
   runtime: nodejs14.x
   stage: dev
