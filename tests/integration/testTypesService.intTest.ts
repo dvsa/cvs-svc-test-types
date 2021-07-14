@@ -4,7 +4,7 @@ import { TestTypesService } from "../../src/services/TestTypesService";
 import TestTypesDAO from "../../src/models/TestTypesDAO";
 import TestTypes from "../resources/test-types.json";
 import { ITestType } from "../../src/models/ITestType";
-import {emptyDatabase, populateDatabase} from "../util/dbOperations";
+import { emptyDatabase, populateDatabase } from "../util/dbOperations";
 const url = "http://localhost:3002/";
 
 describe("test types", () => {

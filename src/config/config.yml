@@ -1,16 +1,16 @@
 functions:
-- getTestTypes:
-    method: GET
-    path: /test-types
-    proxy: null
-    function: getTestTypes
-    event: apigateway
-- getTestTypesById:
-    method: GET
-    path: /test-types/{+proxy}
-    proxy: :id
-    function: getTestTypesById
-    event: lambda
+  - getTestTypes:
+      method: GET
+      path: /test-types
+      proxy: null
+      function: getTestTypes
+      event: apigateway
+  - getTestTypesById:
+      method: GET
+      path: /test-types/{+proxy}
+      proxy: :id
+      function: getTestTypesById
+      event: lambda
 dynamodb:
   local:
     params:
