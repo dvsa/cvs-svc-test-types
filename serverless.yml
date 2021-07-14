@@ -1,21 +1,26 @@
 service: cvs-svc-test-types
 
 provider:
+  lambdaHashingVersion: 20201221
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs14.x
   stage: dev
-  tracing: true # enable tracing
-  iamRoleStatements:
-    - Effect: "Allow"
-      Action:
-        - "xray:PutTraceSegments"
-        - "xray:PutTelemetryRecords"
-      Resource:
-        - "*"
+  tracing:
+    lambda: true
+    apiGateway: true
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "xray:PutTraceSegments"
+            - "xray:PutTelemetryRecords"
+          Resource:
+            - "*"
 
 plugins:
-  - serverless-dynamodb-local
   - serverless-offline
+  - serverless-dynamodb-local
   - serverless-plugin-tracing
   - serverless-plugin-typescript
 
@@ -66,9 +71,9 @@ custom:
     start:
       port: 8002
       inMemory: true
-      migrate: false
-      seed: false
-      noStart: true
+      migrate: true
+      seed: true
+      noStart: false
     seed:
       test-types:
         sources:

@@ -1,6 +1,6 @@
 import LambdaTester from "lambda-tester";
 import { handler } from "../../src/handler";
-import {emptyDatabase, populateDatabase} from "../util/dbOperations";
+import { emptyDatabase, populateDatabase } from "../util/dbOperations";
 
 describe("getTestTypes", () => {
   beforeAll(async () => {
@@ -18,7 +18,10 @@ describe("getTestTypes", () => {
   });
 
   it("should return a promise", () => {
-    const lambda = LambdaTester(handler).event({httpMethod: "GET", path: "/test-types"});
+    const lambda = LambdaTester(handler).event({
+      httpMethod: "GET",
+      path: "/test-types",
+    });
     return lambda.expectResolve((response: any) => {
       return expect(response).toBeDefined();
     });
