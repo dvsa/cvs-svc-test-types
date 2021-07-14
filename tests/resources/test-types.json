@@ -4,17 +4,9 @@
     "linkedIds": ["38", "39"],
     "name": "Annual test",
     "testTypeName": "Annual test",
-    "forVehicleType": [
-      "psv"
-    ],
-    "forVehicleSize": [
-      "small",
-      "large"
-    ],
-    "forVehicleConfiguration": [
-      "articulated",
-      "rigid"
-    ],
+    "forVehicleType": ["psv"],
+    "forVehicleSize": ["small", "large"],
+    "forVehicleConfiguration": ["articulated", "rigid"],
     "forVehicleAxles": null,
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
@@ -64,17 +56,9 @@
     "id": "2",
     "linkedIds": ["38", "39"],
     "name": "Class 6A",
-    "forVehicleType": [
-      "psv"
-    ],
-    "forVehicleSize": [
-      "small",
-      "large"
-    ],
-    "forVehicleConfiguration": [
-      "articulated",
-      "rigid"
-    ],
+    "forVehicleType": ["psv"],
+    "forVehicleSize": ["small", "large"],
+    "forVehicleConfiguration": ["articulated", "rigid"],
     "forVehicleAxles": null,
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
@@ -86,17 +70,9 @@
         "linkedIds": ["38", "39"],
         "name": "Annual test",
         "testTypeName": "Class 6A seatbelt installation check (annual test)",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -107,10 +83,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -122,10 +95,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -141,17 +111,9 @@
         "linkedIds": ["38", "39"],
         "name": "First test",
         "testTypeName": "Class 6A seatbelt installation check (first test)",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -162,10 +124,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -177,10 +136,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -197,17 +153,9 @@
     "id": "5",
     "linkedIds": ["38", "39"],
     "name": "Retest",
-    "forVehicleType": [
-      "psv"
-    ],
-    "forVehicleSize": [
-      "large",
-      "small"
-    ],
-    "forVehicleConfiguration": [
-      "rigid",
-      "articulated"
-    ],
+    "forVehicleType": ["psv"],
+    "forVehicleSize": ["large", "small"],
+    "forVehicleConfiguration": ["rigid", "articulated"],
     "forVehicleAxles": null,
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
@@ -218,17 +166,9 @@
         "id": "6",
         "linkedIds": ["38", "39"],
         "name": "Paid retest",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large",
-          "small"
-        ],
-        "forVehicleConfiguration": [
-          "rigid",
-          "articulated"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["large", "small"],
+        "forVehicleConfiguration": ["rigid", "articulated"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -240,17 +180,9 @@
             "linkedIds": ["38", "39"],
             "name": "Any PSV retest",
             "testTypeName": "Paid retest",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large",
-              "small"
-            ],
-            "forVehicleConfiguration": [
-              "rigid",
-              "articulated"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large", "small"],
+            "forVehicleConfiguration": ["rigid", "articulated"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -301,17 +233,9 @@
             "linkedIds": ["38", "39"],
             "name": "Class 6A retest (seatbelt installation check)",
             "testTypeName": "Paid retest with Class 6A seatbelt installation check",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -322,10 +246,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -337,10 +258,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -357,17 +275,9 @@
         "id": "9",
         "linkedIds": ["38", "39"],
         "name": "Part paid retest",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large",
-          "small"
-        ],
-        "forVehicleConfiguration": [
-          "rigid",
-          "articulated"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["large", "small"],
+        "forVehicleConfiguration": ["rigid", "articulated"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -379,17 +289,9 @@
             "linkedIds": ["38", "39"],
             "name": "Any PSV retest",
             "testTypeName": "Part-paid retest",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large",
-              "small"
-            ],
-            "forVehicleConfiguration": [
-              "rigid",
-              "articulated"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large", "small"],
+            "forVehicleConfiguration": ["rigid", "articulated"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -443,17 +345,9 @@
     "id": "11",
     "linkedIds": ["38", "39"],
     "name": "Prohibition clearance",
-    "forVehicleType": [
-      "psv"
-    ],
-    "forVehicleSize": [
-      "large",
-      "small"
-    ],
-    "forVehicleConfiguration": [
-      "rigid",
-      "articulated"
-    ],
+    "forVehicleType": ["psv"],
+    "forVehicleSize": ["large", "small"],
+    "forVehicleConfiguration": ["rigid", "articulated"],
     "forVehicleAxles": null,
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
@@ -464,17 +358,9 @@
         "id": "12",
         "linkedIds": ["38", "39"],
         "name": "Any PSV",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large",
-          "small"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["large", "small"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -485,17 +371,9 @@
             "id": "13",
             "linkedIds": ["38", "39"],
             "name": "Full inspection/ full fee",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large",
-              "small"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large", "small"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -507,17 +385,9 @@
                 "linkedIds": ["38", "39"],
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (full inspection with certificate)",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large",
-                  "small"
-                ],
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["large", "small"],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -528,10 +398,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "large",
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -543,10 +410,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "small",
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -562,17 +426,9 @@
                 "linkedIds": ["38", "39"],
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (full inspection without certificate)",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large",
-                  "small"
-                ],
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["large", "small"],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -583,10 +439,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "large",
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -598,10 +451,7 @@
                   {
                     "forVehicleType": "psv",
                     "forVehicleSize": "small",
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -619,17 +469,9 @@
             "linkedIds": ["38", "39"],
             "name": "Full inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (full inspection)",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large",
-              "small"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large", "small"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -640,10 +482,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -655,10 +494,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -674,17 +510,9 @@
             "linkedIds": ["38", "39"],
             "name": "Part inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (partial inspection)",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large",
-              "small"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large", "small"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -695,10 +523,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -710,10 +535,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -728,17 +550,9 @@
             "id": "24",
             "name": "PG9 retest",
             "linkedIds": ["38", "39"],
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large",
-              "small"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large", "small"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -749,17 +563,9 @@
                 "id": "17",
                 "linkedIds": ["38", "39"],
                 "name": "Paid",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large",
-                  "small"
-                ],
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["large", "small"],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -771,17 +577,9 @@
                     "name": "With certification",
                     "linkedIds": ["38", "39"],
                     "testTypeName": "Paid prohibition clearance (retest with certificate)",
-                    "forVehicleType": [
-                      "psv"
-                    ],
-                    "forVehicleSize": [
-                      "large",
-                      "small"
-                    ],
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleType": ["psv"],
+                    "forVehicleSize": ["large", "small"],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -792,10 +590,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "forVehicleConfiguration": ["articulated", "rigid"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -807,10 +602,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "forVehicleConfiguration": ["articulated", "rigid"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -826,17 +618,9 @@
                     "linkedIds": ["38", "39"],
                     "name": "Without certification",
                     "testTypeName": "Paid prohibition clearance (retest without certificate)",
-                    "forVehicleType": [
-                      "psv"
-                    ],
-                    "forVehicleSize": [
-                      "large",
-                      "small"
-                    ],
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleType": ["psv"],
+                    "forVehicleSize": ["large", "small"],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -847,10 +631,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "forVehicleConfiguration": ["articulated", "rigid"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -862,10 +643,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "forVehicleConfiguration": ["articulated", "rigid"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -882,17 +660,9 @@
                 "id": "20",
                 "linkedIds": ["38", "39"],
                 "name": "Part paid",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large",
-                  "small"
-                ],
-                "forVehicleConfiguration": [
-                  "rigid",
-                  "articulated"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["large", "small"],
+                "forVehicleConfiguration": ["rigid", "articulated"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -904,17 +674,9 @@
                     "name": "With certification",
                     "linkedIds": ["38", "39"],
                     "testTypeName": "Part-paid prohibition clearance (retest with certificate)",
-                    "forVehicleType": [
-                      "psv"
-                    ],
-                    "forVehicleSize": [
-                      "large",
-                      "small"
-                    ],
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleType": ["psv"],
+                    "forVehicleSize": ["large", "small"],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -925,10 +687,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "forVehicleConfiguration": ["articulated", "rigid"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -940,10 +699,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": [
-                          "rigid",
-                          "articulated"
-                        ],
+                        "forVehicleConfiguration": ["rigid", "articulated"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -959,17 +715,9 @@
                     "linkedIds": ["38", "39"],
                     "name": "Without certification",
                     "testTypeName": "Part-paid prohibition clearance (retest without certificate)",
-                    "forVehicleType": [
-                      "psv"
-                    ],
-                    "forVehicleSize": [
-                      "large",
-                      "small"
-                    ],
-                    "forVehicleConfiguration": [
-                      "articulated",
-                      "rigid"
-                    ],
+                    "forVehicleType": ["psv"],
+                    "forVehicleSize": ["large", "small"],
+                    "forVehicleConfiguration": ["articulated", "rigid"],
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
@@ -980,10 +728,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "large",
-                        "forVehicleConfiguration": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "forVehicleConfiguration": ["articulated", "rigid"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -995,10 +740,7 @@
                       {
                         "forVehicleType": "psv",
                         "forVehicleSize": "small",
-                        "forVehicleConfiguration": [
-                          "articulated",
-                          "rigid"
-                        ],
+                        "forVehicleConfiguration": ["articulated", "rigid"],
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
@@ -1019,17 +761,9 @@
         "id": "26",
         "linkedIds": ["38", "39"],
         "name": "Class 6A (seatbelt installation check)",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large",
-          "small"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["large", "small"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1041,17 +775,9 @@
             "linkedIds": ["38", "39"],
             "name": "Full inspection / full fee",
             "testTypeName": "Paid prohibition clearance with Class 6A seatbelt installation check (full inspection)",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1062,10 +788,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -1077,10 +800,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -1096,17 +816,9 @@
             "linkedIds": ["38", "39"],
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest with Class 6A seatbelt installation check)",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1117,10 +829,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -1132,10 +841,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -1152,17 +858,9 @@
         "id": "92",
         "linkedIds": ["38", "39"],
         "name": "Class 6A (No seatbelt installation check)",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large",
-          "small"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["large", "small"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1174,17 +872,9 @@
             "linkedIds": ["38", "39"],
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest without Class 6A seatbelt installation check)",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1195,10 +885,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "small",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -1210,10 +897,7 @@
               {
                 "forVehicleType": "psv",
                 "forVehicleSize": "large",
-                "forVehicleConfiguration": [
-                  "articulated",
-                  "rigid"
-                ],
+                "forVehicleConfiguration": ["articulated", "rigid"],
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
@@ -1232,13 +916,8 @@
     "id": "29",
     "linkedIds": ["30", "31", "32", "33", "34"],
     "name": "Voluntary test",
-    "forVehicleType": [
-      "psv"
-    ],
-    "forVehicleSize": [
-      "large",
-      "small"
-    ],
+    "forVehicleType": ["psv"],
+    "forVehicleSize": ["large", "small"],
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
     "forEuVehicleCategory": null,
@@ -1251,21 +930,10 @@
         "linkedIds": ["31", "32", "34"],
         "name": "Brake test",
         "testTypeName": "Voluntary brake test",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
-        "forVehicleAxles": [
-          2,
-          3
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
+        "forVehicleAxles": [2, 3],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -1275,10 +943,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": 2,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1290,10 +955,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": 2,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1305,10 +967,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": 3,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1320,10 +979,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": 3,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1339,17 +995,9 @@
         "linkedIds": ["30", "32", "34"],
         "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim check",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1360,10 +1008,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1375,10 +1020,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1394,17 +1036,9 @@
         "linkedIds": ["30", "31", "34"],
         "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1415,10 +1049,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1430,10 +1061,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1449,17 +1077,9 @@
         "linkedIds": ["34"],
         "name": "Multi - check",
         "testTypeName": "Voluntary multi check (headlamp aim, smoke and brake test)",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1470,10 +1090,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1485,10 +1102,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1504,14 +1118,9 @@
         "linkedIds": ["30", "31", "32", "33"],
         "name": "Speed limiter check",
         "testTypeName": "Voluntary speed limiter check",
-        "forVehicleType": [
-          "psv"
-        ],
+        "forVehicleType": ["psv"],
         "forVehicleSize": null,
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1522,10 +1131,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": null,
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1541,17 +1147,9 @@
         "linkedIds": [],
         "name": "Tempo 100",
         "testTypeName": "Voluntary Tempo 100",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1562,10 +1160,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1577,10 +1172,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1595,19 +1187,35 @@
   },
   {
     "id": "37",
-    "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","38","39","92","93"],
+    "linkedIds": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "10",
+      "14",
+      "15",
+      "16",
+      "23",
+      "18",
+      "19",
+      "21",
+      "22",
+      "27",
+      "28",
+      "38",
+      "39",
+      "92",
+      "93"
+    ],
     "name": "Technical test",
-    "forVehicleType": [
-      "psv"
-    ],
-    "forVehicleSize": [
-      "large",
-      "small"
-    ],
-    "forVehicleConfiguration": [
-      "articulated",
-      "rigid"
-    ],
+    "forVehicleType": ["psv"],
+    "forVehicleSize": ["large", "small"],
+    "forVehicleConfiguration": ["articulated", "rigid"],
     "forVehicleAxles": null,
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
@@ -1616,20 +1224,35 @@
     "nextTestTypesOrCategories": [
       {
         "id": "38",
-        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","39","92","93"],
+        "linkedIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "10",
+          "14",
+          "15",
+          "16",
+          "23",
+          "18",
+          "19",
+          "21",
+          "22",
+          "27",
+          "28",
+          "39",
+          "92",
+          "93"
+        ],
         "name": "Notifiable alteration",
         "testTypeName": "Notifiable alteration check",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1640,10 +1263,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "large",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1655,10 +1275,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": "small",
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1671,17 +1288,35 @@
       },
       {
         "id": "39",
-        "linkedIds": ["1","2","3","4","5","6","7","8","10","14","15","16","23","18","19","21","22","27","28","38","92","93"],
+        "linkedIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "10",
+          "14",
+          "15",
+          "16",
+          "23",
+          "18",
+          "19",
+          "21",
+          "22",
+          "27",
+          "28",
+          "38",
+          "92",
+          "93"
+        ],
         "name": "LEC",
         "testTypeName": "Low Emissions Certificate (LEC) with annual test",
-        "forVehicleType": [
-          "psv"
-        ],
+        "forVehicleType": ["psv"],
         "forVehicleSize": null,
-        "forVehicleConfiguration": [
-          "articulated",
-          "rigid"
-        ],
+        "forVehicleConfiguration": ["articulated", "rigid"],
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
@@ -1692,10 +1327,7 @@
           {
             "forVehicleType": "psv",
             "forVehicleSize": null,
-            "forVehicleConfiguration": [
-              "articulated",
-              "rigid"
-            ],
+            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
@@ -1713,23 +1345,10 @@
     "linkedIds": null,
     "name": "Annual test",
     "testTypeName": "Annual test",
-    "forVehicleType": [
-      "hgv",
-      "trl"
-    ],
+    "forVehicleType": ["hgv", "trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
-    "forVehicleAxles": [
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
+    "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
     "forVehicleSubclass": null,
@@ -1776,14 +1395,7 @@
         "forVehicleType": "hgv",
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -1831,14 +1443,7 @@
         "forVehicleType": "trl",
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -1853,14 +1458,10 @@
     "linkedIds": null,
     "name": "Annual test",
     "testTypeName": "Annual test",
-    "forVehicleType": [
-      "trl"
-    ],
+    "forVehicleType": ["trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
-    "forVehicleAxles": [
-      1
-    ],
+    "forVehicleAxles": [1],
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
     "forVehicleSubclass": null,
@@ -1886,23 +1487,10 @@
     "linkedIds": null,
     "name": "First test",
     "testTypeName": "First test",
-    "forVehicleType": [
-      "hgv",
-      "trl"
-    ],
+    "forVehicleType": ["hgv", "trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
-    "forVehicleAxles": [
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
+    "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
     "forVehicleSubclass": null,
@@ -1949,14 +1537,7 @@
         "forVehicleType": "hgv",
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -2004,14 +1585,7 @@
         "forVehicleType": "trl",
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -2026,14 +1600,10 @@
     "linkedIds": null,
     "name": "First test",
     "testTypeName": "First test",
-    "forVehicleType": [
-      "trl"
-    ],
+    "forVehicleType": ["trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
-    "forVehicleAxles": [
-      1
-    ],
+    "forVehicleAxles": [1],
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
     "forVehicleSubclass": null,
@@ -2062,10 +1632,7 @@
     "forVehicleWheels": null,
     "forVehicleConfiguration": null,
     "forVehicleSize": null,
-    "forVehicleType": [
-      "hgv",
-      "trl"
-    ],
+    "forVehicleType": ["hgv", "trl"],
     "id": "42",
     "linkedIds": null,
     "name": "Technical test",
@@ -2078,9 +1645,7 @@
         "forVehicleWheels": null,
         "forVehicleConfiguration": null,
         "forVehicleSize": null,
-        "forVehicleType": [
-          "hgv"
-        ],
+        "forVehicleType": ["hgv"],
         "id": "43",
         "linkedIds": null,
         "name": "LEC",
@@ -2093,9 +1658,7 @@
             "forVehicleWheels": null,
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
-            "forVehicleType": [
-              "hgv"
-            ],
+            "forVehicleType": ["hgv"],
             "id": "44",
             "linkedIds": null,
             "name": "With linked test",
@@ -2124,9 +1687,7 @@
             "forVehicleWheels": null,
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
-            "forVehicleType": [
-              "hgv"
-            ],
+            "forVehicleType": ["hgv"],
             "id": "45",
             "linkedIds": null,
             "name": "Without linked test",
@@ -2157,10 +1718,7 @@
         "forVehicleWheels": null,
         "forVehicleConfiguration": null,
         "forVehicleSize": null,
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "id": "46",
         "linkedIds": null,
         "name": "Notifiable alteration",
@@ -2173,10 +1731,7 @@
             "forVehicleWheels": null,
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "id": "47",
             "linkedIds": null,
             "name": "Free",
@@ -2217,10 +1772,7 @@
             "forVehicleWheels": null,
             "forVehicleConfiguration": null,
             "forVehicleSize": null,
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "id": "48",
             "linkedIds": null,
             "name": "Paid",
@@ -2263,10 +1815,7 @@
         "forVehicleWheels": null,
         "forVehicleConfiguration": null,
         "forVehicleSize": null,
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "id": "49",
         "linkedIds": null,
         "name": "TIR",
@@ -2307,10 +1856,7 @@
         "forVehicleWheels": null,
         "forVehicleConfiguration": null,
         "forVehicleSize": null,
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "id": "50",
         "linkedIds": null,
         "name": "ADR",
@@ -2349,10 +1895,7 @@
     "id": "51",
     "linkedIds": null,
     "name": "Retest",
-    "forVehicleType": [
-      "hgv",
-      "trl"
-    ],
+    "forVehicleType": ["hgv", "trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -2365,23 +1908,10 @@
         "id": "52",
         "linkedIds": null,
         "name": "Annual test retest",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -2392,23 +1922,10 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid annual test retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -2455,14 +1972,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -2510,14 +2020,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -2532,23 +2035,10 @@
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid annual test retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -2595,14 +2085,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -2650,14 +2133,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -2672,14 +2148,10 @@
             "linkedIds": null,
             "name": "Free loaded retest",
             "testTypeName": "Free loaded retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              3
-            ],
+            "forVehicleAxles": [3],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -2706,10 +2178,7 @@
         "id": "55",
         "linkedIds": null,
         "name": "TIR retest",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -2723,10 +2192,7 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid TIR retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -2767,14 +2233,10 @@
             "linkedIds": null,
             "name": "Free retest",
             "testTypeName": "Free TIR retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              3
-            ],
+            "forVehicleAxles": [3],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -2801,10 +2263,7 @@
         "id": "58",
         "linkedIds": null,
         "name": "ADR retest",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -2818,10 +2277,7 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid ADR retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -2862,10 +2318,7 @@
             "linkedIds": null,
             "name": "Free retest",
             "testTypeName": "Free ADR retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -2907,10 +2360,7 @@
         "id": "61",
         "linkedIds": null,
         "name": "Roadworthiness retest",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -2924,23 +2374,10 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid roadworthiness retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -2987,15 +2424,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [4, 5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3007,16 +2436,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [3, 4, 5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3031,14 +2451,10 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid roadworthiness retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3064,10 +2480,7 @@
             "linkedIds": null,
             "name": "Part Paid retest",
             "testTypeName": "Part paid roadworthiness retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -3109,23 +2522,10 @@
         "id": "64",
         "linkedIds": null,
         "name": "First test retest",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -3136,23 +2536,10 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid first test retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3199,14 +2586,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3254,14 +2634,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3276,23 +2649,10 @@
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid first test retest",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3339,14 +2699,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3394,14 +2747,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3416,14 +2762,10 @@
             "linkedIds": null,
             "name": "Free retest",
             "testTypeName": "Free first test retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              3
-            ],
+            "forVehicleAxles": [3],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3450,14 +2792,10 @@
         "id": "97",
         "linkedIds": null,
         "name": "Annual test retest",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -3468,14 +2806,10 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid annual test retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3501,14 +2835,10 @@
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid annual test retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3535,14 +2865,10 @@
         "id": "102",
         "linkedIds": null,
         "name": "First test retest",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -3553,14 +2879,10 @@
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid first test retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3586,14 +2908,10 @@
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid first test retest",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3622,23 +2940,10 @@
     "id": "68",
     "linkedIds": null,
     "name": "Prohibition clearance",
-    "forVehicleType": [
-      "hgv",
-      "trl"
-    ],
+    "forVehicleType": ["hgv", "trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
-    "forVehicleAxles": [
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
+    "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
     "forVehicleSubclass": null,
@@ -3648,23 +2953,10 @@
         "id": "69",
         "linkedIds": null,
         "name": "Full inspection/ Fee",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -3675,23 +2967,10 @@
             "linkedIds": null,
             "name": "With certification",
             "testTypeName": "Paid prohibition clearance (full inspection with certification)",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3738,14 +3017,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3793,14 +3065,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3815,23 +3080,10 @@
             "linkedIds": null,
             "name": "Without certification",
             "testTypeName": "Paid prohibition clearance (full inspection without certification)",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -3878,14 +3130,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3933,14 +3178,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -3957,23 +3195,10 @@
         "linkedIds": null,
         "name": "Full inspection/ Part Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (full inspection without certification)",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -4020,14 +3245,7 @@
             "forVehicleType": "hgv",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -4075,14 +3293,7 @@
             "forVehicleType": "trl",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -4097,23 +3308,10 @@
         "linkedIds": null,
         "name": "Part Inspection/ Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (part inspection without certification)",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -4160,14 +3358,7 @@
             "forVehicleType": "hgv",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -4215,14 +3406,7 @@
             "forVehicleType": "trl",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -4236,23 +3420,10 @@
         "id": "74",
         "linkedIds": null,
         "name": "Retest",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -4262,23 +3433,10 @@
             "id": "75",
             "linkedIds": null,
             "name": "Paid",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -4289,23 +3447,10 @@
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (retest with certification)",
-                "forVehicleType": [
-                  "hgv",
-                  "trl"
-                ],
+                "forVehicleType": ["hgv", "trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -4352,14 +3497,7 @@
                     "forVehicleType": "hgv",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4407,14 +3545,7 @@
                     "forVehicleType": "trl",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4429,23 +3560,10 @@
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (retest without certification)",
-                "forVehicleType": [
-                  "hgv",
-                  "trl"
-                ],
+                "forVehicleType": ["hgv", "trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -4492,14 +3610,7 @@
                     "forVehicleType": "hgv",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4547,14 +3658,7 @@
                     "forVehicleType": "trl",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4570,23 +3674,10 @@
             "id": "78",
             "linkedIds": null,
             "name": "Part paid",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -4597,23 +3688,10 @@
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Part paid prohibition clearance (retest with certification)",
-                "forVehicleType": [
-                  "hgv",
-                  "trl"
-                ],
+                "forVehicleType": ["hgv", "trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -4660,14 +3738,7 @@
                     "forVehicleType": "hgv",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4715,14 +3786,7 @@
                     "forVehicleType": "trl",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4737,23 +3801,10 @@
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Part paid prohibition clearance (retest without certification)",
-                "forVehicleType": [
-                  "hgv",
-                  "trl"
-                ],
+                "forVehicleType": ["hgv", "trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -4800,14 +3851,7 @@
                     "forVehicleType": "hgv",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4855,14 +3899,7 @@
                     "forVehicleType": "trl",
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
-                    "forVehicleAxles": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
+                    "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
@@ -4880,23 +3917,10 @@
         "id": "81",
         "linkedIds": null,
         "name": "Prohibition clearance on first test",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -4907,23 +3931,10 @@
             "linkedIds": null,
             "name": "Full Inspection/ Fee - With certification",
             "testTypeName": "Paid prohibition clearance on first test (full inspection with certification)",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -4970,14 +3981,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5025,14 +4029,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5047,23 +4044,10 @@
             "linkedIds": null,
             "name": "Retest - Paid",
             "testTypeName": "Paid retest prohibition clearance on first test",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5110,14 +4094,7 @@
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5165,14 +4142,7 @@
                 "forVehicleType": "trl",
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
+                "forVehicleAxles": [5, 6, 7, 8, 9, 10],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5190,14 +4160,10 @@
     "id": "105",
     "linkedIds": null,
     "name": "Prohibition clearance",
-    "forVehicleType": [
-      "trl"
-    ],
+    "forVehicleType": ["trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
-    "forVehicleAxles": [
-      1
-    ],
+    "forVehicleAxles": [1],
     "forEuVehicleCategory": null,
     "forVehicleClass": null,
     "forVehicleSubclass": null,
@@ -5207,14 +4173,10 @@
         "id": "106",
         "linkedIds": null,
         "name": "Full inspection/ Fee",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -5225,14 +4187,10 @@
             "linkedIds": null,
             "name": "With certification",
             "testTypeName": "Paid prohibition clearance (full inspection with certification)",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5258,14 +4216,10 @@
             "linkedIds": null,
             "name": "Without certification",
             "testTypeName": "Paid prohibition clearance (full inspection without certification)",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5293,14 +4247,10 @@
         "linkedIds": null,
         "name": "Full inspection/ Part Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (full inspection without certification)",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -5326,14 +4276,10 @@
         "linkedIds": null,
         "name": "Part Inspection/ Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (part inspection without certification)",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -5358,14 +4304,10 @@
         "id": "111",
         "linkedIds": null,
         "name": "Retest",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -5375,14 +4317,10 @@
             "id": "112",
             "linkedIds": null,
             "name": "Paid",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5393,14 +4331,10 @@
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (retest with certification)",
-                "forVehicleType": [
-                  "trl"
-                ],
+                "forVehicleType": ["trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  1
-                ],
+                "forVehicleAxles": [1],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5426,14 +4360,10 @@
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (retest without certification)",
-                "forVehicleType": [
-                  "trl"
-                ],
+                "forVehicleType": ["trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  1
-                ],
+                "forVehicleAxles": [1],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5460,14 +4390,10 @@
             "id": "115",
             "linkedIds": null,
             "name": "Part paid",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5478,14 +4404,10 @@
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Part paid prohibition clearance (retest with certification)",
-                "forVehicleType": [
-                  "trl"
-                ],
+                "forVehicleType": ["trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  1
-                ],
+                "forVehicleAxles": [1],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5511,14 +4433,10 @@
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Part paid prohibition clearance (retest without certification)",
-                "forVehicleType": [
-                  "trl"
-                ],
+                "forVehicleType": ["trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
-                "forVehicleAxles": [
-                  1
-                ],
+                "forVehicleAxles": [1],
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
@@ -5547,14 +4465,10 @@
         "id": "118",
         "linkedIds": null,
         "name": "Prohibition clearance on first test",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -5565,14 +4479,10 @@
             "linkedIds": null,
             "name": "Full Inspection/ Fee - With certification",
             "testTypeName": "Paid prohibition clearance on first test (full inspection with certification)",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5598,14 +4508,10 @@
             "linkedIds": null,
             "name": "Retest - Paid",
             "testTypeName": "Paid retest prohibition clearance on first test",
-            "forVehicleType": [
-              "trl"
-            ],
+            "forVehicleType": ["trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              1
-            ],
+            "forVehicleAxles": [1],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5634,10 +4540,7 @@
     "id": "84",
     "linkedIds": null,
     "name": "Voluntary test",
-    "forVehicleType": [
-      "hgv",
-      "trl"
-    ],
+    "forVehicleType": ["hgv", "trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -5651,10 +4554,7 @@
         "linkedIds": null,
         "name": "Brake test",
         "testTypeName": "Voluntary brake test",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5716,14 +4616,7 @@
             "forVehicleType": "hgv",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5783,14 +4676,7 @@
             "forVehicleType": "trl",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -5805,9 +4691,7 @@
         "linkedIds": null,
         "name": "Multi - check",
         "testTypeName": "Voluntary multi-check",
-        "forVehicleType": [
-          "hgv"
-        ],
+        "forVehicleType": ["hgv"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5836,10 +4720,7 @@
         "linkedIds": null,
         "name": "Shaker plate check",
         "testTypeName": "Voluntary Shaker plate check",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5880,9 +4761,7 @@
         "linkedIds": null,
         "name": "Speed limiter check",
         "testTypeName": "Voluntary Speed limiter check",
-        "forVehicleType": [
-          "hgv"
-        ],
+        "forVehicleType": ["hgv"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5911,9 +4790,7 @@
         "linkedIds": null,
         "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
-        "forVehicleType": [
-          "hgv"
-        ],
+        "forVehicleType": ["hgv"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5942,9 +4819,7 @@
         "linkedIds": null,
         "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim test",
-        "forVehicleType": [
-          "hgv"
-        ],
+        "forVehicleType": ["hgv"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -5973,23 +4848,10 @@
         "linkedIds": null,
         "name": "Roadworthiness test",
         "testTypeName": "Voluntary roadworthiness test",
-        "forVehicleType": [
-          "hgv",
-          "trl"
-        ],
+        "forVehicleType": ["hgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
+        "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -6036,14 +4898,7 @@
             "forVehicleType": "trl",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -6091,14 +4946,7 @@
             "forVehicleType": "hgv",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10
-            ],
+            "forVehicleAxles": [5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -6113,14 +4961,10 @@
         "linkedIds": null,
         "name": "Roadworthiness test",
         "testTypeName": "Voluntary roadworthiness test",
-        "forVehicleType": [
-          "trl"
-        ],
+        "forVehicleType": ["trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
-        "forVehicleAxles": [
-          1
-        ],
+        "forVehicleAxles": [1],
         "forEuVehicleCategory": null,
         "forVehicleClass": null,
         "forVehicleSubclass": null,
@@ -6147,14 +4991,7 @@
     "id": "123",
     "linkedIds": null,
     "name": "Specialist test",
-    "forVehicleType": [
-      "psv",
-      "hgv",
-      "trl",
-      "car",
-      "lgv",
-      "motorcycle"
-    ],
+    "forVehicleType": ["psv", "hgv", "trl", "car", "lgv", "motorcycle"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -6167,14 +5004,7 @@
         "id": "124",
         "linkedIds": null,
         "name": "IVA",
-        "forVehicleType": [
-          "psv",
-          "hgv",
-          "trl",
-          "car",
-          "lgv",
-          "motorcycle"
-        ],
+        "forVehicleType": ["psv", "hgv", "trl", "car", "lgv", "motorcycle"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -6188,25 +5018,13 @@
             "linkedIds": null,
             "name": "Basic inspection",
             "testTypeName": "Basic IVA inspection",
-            "forVehicleType": [
-              "car",
-              "lgv"
-            ],
+            "forVehicleType": ["car", "lgv"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
-            "forVehicleSubclass": [
-              "a",
-              "c",
-              "s",
-              "l",
-              "m",
-              "n",
-              "p",
-              "t"
-            ],
+            "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
             "forVehicleWheels": null,
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
@@ -6217,11 +5035,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "a",
-                  "c",
-                  "s"
-                ],
+                "forVehicleSubclass": ["a", "c", "s"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yf4",
                 "linkedTestCode": null
@@ -6233,13 +5047,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "l",
-                  "m",
-                  "n",
-                  "p",
-                  "t"
-                ],
+                "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yl4",
                 "linkedTestCode": null
@@ -6251,11 +5059,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "a",
-                  "c",
-                  "s"
-                ],
+                "forVehicleSubclass": ["a", "c", "s"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yf7",
                 "linkedTestCode": null
@@ -6267,13 +5071,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "l",
-                  "m",
-                  "n",
-                  "p",
-                  "t"
-                ],
+                "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yl7",
                 "linkedTestCode": null
@@ -6285,13 +5083,8 @@
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal IVA inspection",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -6343,21 +5136,11 @@
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal IVA inspection",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "forEuVehicleCategory": [
-              "n2",
-              "n3",
-              "o1",
-              "o2",
-              "o3",
-              "o4"
-            ],
+            "forEuVehicleCategory": ["n2", "n3", "o1", "o2", "o3", "o4"],
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
@@ -6442,18 +5225,13 @@
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal IVA inspection",
-            "forVehicleType": [
-              "car",
-              "lgv"
-            ],
+            "forVehicleType": ["car", "lgv"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
-            "forVehicleSubclass": [
-              "r"
-            ],
+            "forVehicleSubclass": ["r"],
             "forVehicleWheels": null,
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
@@ -6487,13 +5265,7 @@
             "id": "127",
             "linkedIds": null,
             "name": "Appeal",
-            "forVehicleType": [
-              "psv",
-              "hgv",
-              "trl",
-              "car",
-              "lgv"
-            ],
+            "forVehicleType": ["psv", "hgv", "trl", "car", "lgv"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6507,13 +5279,8 @@
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Appeal on a normal IVA inspection",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -6565,21 +5332,11 @@
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Appeal on a normal IVA inspection",
-                "forVehicleType": [
-                  "hgv",
-                  "trl"
-                ],
+                "forVehicleType": ["hgv", "trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
-                "forEuVehicleCategory": [
-                  "n2",
-                  "n3",
-                  "o1",
-                  "o2",
-                  "o3",
-                  "o4"
-                ],
+                "forEuVehicleCategory": ["n2", "n3", "o1", "o2", "o3", "o4"],
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
@@ -6664,18 +5421,13 @@
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Appeal on a normal IVA inspection",
-                "forVehicleType": [
-                  "car",
-                  "lgv"
-                ],
+                "forVehicleType": ["car", "lgv"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "r"
-                ],
+                "forVehicleSubclass": ["r"],
                 "forVehicleWheels": null,
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
@@ -6710,25 +5462,13 @@
                 "linkedIds": null,
                 "name": "Basic inspection",
                 "testTypeName": "Appeal on a basic IVA inspection",
-                "forVehicleType": [
-                  "car",
-                  "lgv"
-                ],
+                "forVehicleType": ["car", "lgv"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "a",
-                  "c",
-                  "s",
-                  "l",
-                  "m",
-                  "n",
-                  "p",
-                  "t"
-                ],
+                "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
@@ -6739,11 +5479,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "a",
-                      "c",
-                      "s"
-                    ],
+                    "forVehicleSubclass": ["a", "c", "s"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "yk7",
                     "linkedTestCode": null
@@ -6755,13 +5491,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "l",
-                      "m",
-                      "n",
-                      "p",
-                      "t"
-                    ],
+                    "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "yq7",
                     "linkedTestCode": null
@@ -6773,11 +5503,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "a",
-                      "c",
-                      "s"
-                    ],
+                    "forVehicleSubclass": ["a", "c", "s"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "yk4",
                     "linkedTestCode": null
@@ -6789,13 +5515,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "l",
-                      "m",
-                      "n",
-                      "p",
-                      "t"
-                    ],
+                    "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "yq4",
                     "linkedTestCode": null
@@ -6809,14 +5529,7 @@
             "linkedIds": null,
             "name": "Mutual recognition/ end of series & inspection",
             "testTypeName": "IVA mutual recognition/ end of series & inspection",
-            "forVehicleType": [
-              "psv",
-              "hgv",
-              "trl",
-              "car",
-              "lgv",
-              "motorcycle"
-            ],
+            "forVehicleType": ["psv", "hgv", "trl", "car", "lgv", "motorcycle"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -6853,19 +5566,12 @@
         "id": "131",
         "linkedIds": null,
         "name": "MSVA",
-        "forVehicleType": [
-          "motorcycle"
-        ],
+        "forVehicleType": ["motorcycle"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
-        "forVehicleClass": [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
+        "forVehicleClass": ["1", "2", "3", "4"],
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "nextTestTypesOrCategories": [
@@ -6873,19 +5579,12 @@
             "id": "132",
             "linkedIds": null,
             "name": "Full inspection",
-            "forVehicleType": [
-              "motorcycle"
-            ],
+            "forVehicleType": ["motorcycle"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
-            "forVehicleClass": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
+            "forVehicleClass": ["1", "2", "3", "4"],
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "nextTestTypesOrCategories": [
@@ -6894,16 +5593,12 @@
                 "linkedIds": null,
                 "name": "Moped vehicle",
                 "testTypeName": "Full MSVA moped vehicle inspection",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "1"
-                ],
+                "forVehicleClass": ["1"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "testTypeClassification": "Annual NO CERTIFICATE",
@@ -6927,25 +5622,14 @@
                 "linkedIds": null,
                 "name": "Unbodied vehicle",
                 "testTypeName": "Full MSVA unbodied vehicle inspection",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "1",
-                  "2",
-                  "3",
-                  "4"
-                ],
+                "forVehicleClass": ["1", "2", "3", "4"],
                 "forVehicleSubclass": null,
-                "forVehicleWheels": [
-                  2,
-                  3,
-                  4
-                ],
+                "forVehicleWheels": [2, 3, 4],
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
                   {
@@ -7015,22 +5699,14 @@
                 "linkedIds": null,
                 "name": "Bodied vehicle",
                 "testTypeName": "Full MSVA bodied vehicle inspection",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "3",
-                  "4"
-                ],
+                "forVehicleClass": ["3", "4"],
                 "forVehicleSubclass": null,
-                "forVehicleWheels": [
-                  3,
-                  4
-                ],
+                "forVehicleWheels": [3, 4],
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
                   {
@@ -7078,25 +5754,14 @@
             "linkedIds": null,
             "name": "Part inspection",
             "testTypeName": "Part MSVA inspection",
-            "forVehicleType": [
-              "motorcycle"
-            ],
+            "forVehicleType": ["motorcycle"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
-            "forVehicleClass": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
+            "forVehicleClass": ["1", "2", "3", "4"],
             "forVehicleSubclass": null,
-            "forVehicleWheels": [
-              2,
-              3,
-              4
-            ],
+            "forVehicleWheels": [2, 3, 4],
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
               {
@@ -7153,19 +5818,12 @@
             "id": "137",
             "linkedIds": null,
             "name": "Appeal",
-            "forVehicleType": [
-              "motorcycle"
-            ],
+            "forVehicleType": ["motorcycle"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
-            "forVehicleClass": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
+            "forVehicleClass": ["1", "2", "3", "4"],
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "nextTestTypesOrCategories": [
@@ -7174,16 +5832,12 @@
                 "linkedIds": null,
                 "name": "Moped vehicle",
                 "testTypeName": "Appeal on a MSVA moped vehicle inspection",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "1"
-                ],
+                "forVehicleClass": ["1"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "testTypeClassification": "Annual NO CERTIFICATE",
@@ -7207,25 +5861,14 @@
                 "linkedIds": null,
                 "name": "Unbodied vehicle",
                 "testTypeName": "Appeal on a MSVA unbodied vehicle inspection",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "1",
-                  "2",
-                  "3",
-                  "4"
-                ],
+                "forVehicleClass": ["1", "2", "3", "4"],
                 "forVehicleSubclass": null,
-                "forVehicleWheels": [
-                  2,
-                  3,
-                  4
-                ],
+                "forVehicleWheels": [2, 3, 4],
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
                   {
@@ -7295,22 +5938,14 @@
                 "linkedIds": null,
                 "name": "Bodied vehicle",
                 "testTypeName": "Appeal on a MSVA bodied vehicle inspection",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "3",
-                  "4"
-                ],
+                "forVehicleClass": ["3", "4"],
                 "forVehicleSubclass": null,
-                "forVehicleWheels": [
-                  3,
-                  4
-                ],
+                "forVehicleWheels": [3, 4],
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
                   {
@@ -7359,13 +5994,8 @@
         "id": "141",
         "linkedIds": null,
         "name": "COIF",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "small",
-          "large"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["small", "large"],
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
@@ -7378,13 +6008,8 @@
             "linkedIds": null,
             "name": "With annual test",
             "testTypeName": "COIF with annual test",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7424,13 +6049,8 @@
             "linkedIds": null,
             "name": "Without annual test",
             "testTypeName": "COIF without annual test",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7470,13 +6090,8 @@
             "linkedIds": null,
             "name": "Type approved to bus directive",
             "testTypeName": "Type approved to bus directive COIF",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7515,13 +6130,8 @@
             "id": "145",
             "linkedIds": null,
             "name": "Seatbelt installation check",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7534,13 +6144,8 @@
                 "linkedIds": null,
                 "name": "with annual test",
                 "testTypeName": "Seatbelt installation check COIF with annual test",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -7580,13 +6185,8 @@
                 "linkedIds": null,
                 "name": "without annual test",
                 "testTypeName": "Seatbelt installation check COIF without annual test",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -7628,13 +6228,8 @@
             "linkedIds": null,
             "name": "Annex 7",
             "testTypeName": "Annex 7 COIF",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7675,12 +6270,8 @@
         "id": "149",
         "linkedIds": null,
         "name": "DDA",
-        "forVehicleType": [
-          "psv"
-        ],
-        "forVehicleSize": [
-          "large"
-        ],
+        "forVehicleType": ["psv"],
+        "forVehicleSize": ["large"],
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
@@ -7693,12 +6284,8 @@
             "linkedIds": null,
             "name": "Schedule 1, 2 or 3",
             "testTypeName": "DDA Schedule 1, 2 or 3",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7726,12 +6313,8 @@
             "linkedIds": null,
             "name": "Schedule 1 + 2 or 3",
             "testTypeName": "DDA Schedule 1 + 2 or 3",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7760,13 +6343,7 @@
         "id": "152",
         "linkedIds": null,
         "name": "Voluntary IVA",
-        "forVehicleType": [
-          "psv",
-          "hgv",
-          "trl",
-          "lgv",
-          "car"
-        ],
+        "forVehicleType": ["psv", "hgv", "trl", "lgv", "car"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -7780,13 +6357,8 @@
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal voluntary IVA inspection",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -7838,21 +6410,11 @@
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal voluntary IVA inspection",
-            "forVehicleType": [
-              "hgv",
-              "trl"
-            ],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "forEuVehicleCategory": [
-              "n2",
-              "n3",
-              "o1",
-              "o2",
-              "o3",
-              "o4"
-            ],
+            "forEuVehicleCategory": ["n2", "n3", "o1", "o2", "o3", "o4"],
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
@@ -7937,18 +6499,13 @@
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal voluntary IVA inspection",
-            "forVehicleType": [
-              "car",
-              "lgv"
-            ],
+            "forVehicleType": ["car", "lgv"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
-            "forVehicleSubclass": [
-              "r"
-            ],
+            "forVehicleSubclass": ["r"],
             "forVehicleWheels": null,
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
@@ -7983,25 +6540,13 @@
             "linkedIds": null,
             "name": "Basic inspection",
             "testTypeName": "Basic voluntary IVA inspection",
-            "forVehicleType": [
-              "lgv",
-              "car"
-            ],
+            "forVehicleType": ["lgv", "car"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
-            "forVehicleSubclass": [
-              "a",
-              "c",
-              "s",
-              "l",
-              "m",
-              "n",
-              "p",
-              "t"
-            ],
+            "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
             "forVehicleWheels": null,
             "testTypeClassification": "Annual NO CERTIFICATE",
             "testCodes": [
@@ -8012,11 +6557,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "a",
-                  "c",
-                  "s"
-                ],
+                "forVehicleSubclass": ["a", "c", "s"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yj4",
                 "linkedTestCode": null
@@ -8028,13 +6569,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "l",
-                  "m",
-                  "n",
-                  "p",
-                  "t"
-                ],
+                "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yp4",
                 "linkedTestCode": null
@@ -8046,13 +6581,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "l",
-                  "m",
-                  "n",
-                  "p",
-                  "t"
-                ],
+                "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yp7",
                 "linkedTestCode": null
@@ -8064,11 +6593,7 @@
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "a",
-                  "c",
-                  "s"
-                ],
+                "forVehicleSubclass": ["a", "c", "s"],
                 "forVehicleWheels": null,
                 "defaultTestCode": "yj7",
                 "linkedTestCode": null
@@ -8081,14 +6606,7 @@
         "id": "155",
         "linkedIds": null,
         "name": "Retest",
-        "forVehicleType": [
-          "psv",
-          "hgv",
-          "trl",
-          "lgv",
-          "car",
-          "motorcycle"
-        ],
+        "forVehicleType": ["psv", "hgv", "trl", "lgv", "car", "motorcycle"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -8101,14 +6619,7 @@
             "id": "156",
             "linkedIds": null,
             "name": "IVA",
-            "forVehicleType": [
-              "psv",
-              "hgv",
-              "trl",
-              "lgv",
-              "car",
-              "motorcycle"
-            ],
+            "forVehicleType": ["psv", "hgv", "trl", "lgv", "car", "motorcycle"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -8121,25 +6632,13 @@
                 "id": "157",
                 "linkedIds": null,
                 "name": "Basic inspection",
-                "forVehicleType": [
-                  "lgv",
-                  "car"
-                ],
+                "forVehicleType": ["lgv", "car"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "a",
-                  "c",
-                  "s",
-                  "l",
-                  "m",
-                  "n",
-                  "p",
-                  "t"
-                ],
+                "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
                 "nextTestTypesOrCategories": [
                   {
@@ -8147,10 +6646,7 @@
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid basic IVA inspection",
-                    "forVehicleType": [
-                      "lgv",
-                      "car"
-                    ],
+                    "forVehicleType": ["lgv", "car"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8176,11 +6672,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "a",
-                          "c",
-                          "s"
-                        ],
+                        "forVehicleSubclass": ["a", "c", "s"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "yg4",
                         "linkedTestCode": null
@@ -8192,13 +6684,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "l",
-                          "m",
-                          "n",
-                          "p",
-                          "t"
-                        ],
+                        "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "ym4",
                         "linkedTestCode": null
@@ -8210,11 +6696,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "a",
-                          "c",
-                          "s"
-                        ],
+                        "forVehicleSubclass": ["a", "c", "s"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "yg7",
                         "linkedTestCode": null
@@ -8226,13 +6708,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "l",
-                          "m",
-                          "n",
-                          "p",
-                          "t"
-                        ],
+                        "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "ym7",
                         "linkedTestCode": null
@@ -8244,10 +6720,7 @@
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free basic IVA inspection",
-                    "forVehicleType": [
-                      "lgv",
-                      "car"
-                    ],
+                    "forVehicleType": ["lgv", "car"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8273,11 +6746,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "a",
-                          "c",
-                          "s"
-                        ],
+                        "forVehicleSubclass": ["a", "c", "s"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "yh4",
                         "linkedTestCode": null
@@ -8289,13 +6758,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "l",
-                          "m",
-                          "n",
-                          "p",
-                          "t"
-                        ],
+                        "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "yn4",
                         "linkedTestCode": null
@@ -8307,13 +6770,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "l",
-                          "m",
-                          "n",
-                          "p",
-                          "t"
-                        ],
+                        "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "yn7",
                         "linkedTestCode": null
@@ -8325,11 +6782,7 @@
                         "forVehicleAxles": null,
                         "forEuVehicleCategory": null,
                         "forVehicleClass": null,
-                        "forVehicleSubclass": [
-                          "a",
-                          "c",
-                          "s"
-                        ],
+                        "forVehicleSubclass": ["a", "c", "s"],
                         "forVehicleWheels": null,
                         "defaultTestCode": "yh7",
                         "linkedTestCode": null
@@ -8342,13 +6795,7 @@
                 "id": "160",
                 "linkedIds": null,
                 "name": "Normal inspection",
-                "forVehicleType": [
-                  "psv",
-                  "hgv",
-                  "trl",
-                  "lgv",
-                  "car"
-                ],
+                "forVehicleType": ["psv", "hgv", "trl", "lgv", "car"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -8362,13 +6809,8 @@
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid normal IVA inspection",
-                    "forVehicleType": [
-                      "psv"
-                    ],
-                    "forVehicleSize": [
-                      "small",
-                      "large"
-                    ],
+                    "forVehicleType": ["psv"],
+                    "forVehicleSize": ["small", "large"],
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
@@ -8420,10 +6862,7 @@
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid normal IVA inspection",
-                    "forVehicleType": [
-                      "hgv",
-                      "trl"
-                    ],
+                    "forVehicleType": ["hgv", "trl"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8519,18 +6958,13 @@
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid normal IVA inspection",
-                    "forVehicleType": [
-                      "car",
-                      "lgv"
-                    ],
+                    "forVehicleType": ["car", "lgv"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "r"
-                    ],
+                    "forVehicleSubclass": ["r"],
                     "forVehicleWheels": null,
                     "testTypeClassification": "Annual NO CERTIFICATE",
                     "testCodes": [
@@ -8565,13 +6999,8 @@
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free normal IVA inspection",
-                    "forVehicleType": [
-                      "psv"
-                    ],
-                    "forVehicleSize": [
-                      "small",
-                      "large"
-                    ],
+                    "forVehicleType": ["psv"],
+                    "forVehicleSize": ["small", "large"],
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
@@ -8623,10 +7052,7 @@
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free normal IVA inspection",
-                    "forVehicleType": [
-                      "hgv",
-                      "trl"
-                    ],
+                    "forVehicleType": ["hgv", "trl"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -8722,18 +7148,13 @@
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free normal IVA inspection",
-                    "forVehicleType": [
-                      "car",
-                      "lgv"
-                    ],
+                    "forVehicleType": ["car", "lgv"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "r"
-                    ],
+                    "forVehicleSubclass": ["r"],
                     "forVehicleWheels": null,
                     "testTypeClassification": "Annual NO CERTIFICATE",
                     "testCodes": [
@@ -8814,40 +7235,25 @@
             "id": "164",
             "linkedIds": null,
             "name": "MSVA",
-            "forVehicleType": [
-              "motorcycle"
-            ],
+            "forVehicleType": ["motorcycle"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
-            "forVehicleClass": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
+            "forVehicleClass": ["1", "2", "3", "4"],
             "forVehicleSubclass": null,
-            "forVehicleWheels": [
-              2,
-              3,
-              4
-            ],
+            "forVehicleWheels": [2, 3, 4],
             "nextTestTypesOrCategories": [
               {
                 "id": "165",
                 "linkedIds": null,
                 "name": "Moped vehicle",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "1"
-                ],
+                "forVehicleClass": ["1"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "nextTestTypesOrCategories": [
@@ -8856,16 +7262,12 @@
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid MSVA moped vehicle retest",
-                    "forVehicleType": [
-                      "motorcycle"
-                    ],
+                    "forVehicleType": ["motorcycle"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
-                    "forVehicleClass": [
-                      "1"
-                    ],
+                    "forVehicleClass": ["1"],
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "testTypeClassification": "Annual NO CERTIFICATE",
@@ -8889,16 +7291,12 @@
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free MSVA moped vehicle retest",
-                    "forVehicleType": [
-                      "motorcycle"
-                    ],
+                    "forVehicleType": ["motorcycle"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
-                    "forVehicleClass": [
-                      "1"
-                    ],
+                    "forVehicleClass": ["1"],
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "testTypeClassification": "Annual NO CERTIFICATE",
@@ -8923,50 +7321,28 @@
                 "id": "168",
                 "linkedIds": null,
                 "name": "Unbodied vehicle",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "1",
-                  "2",
-                  "3",
-                  "4"
-                ],
+                "forVehicleClass": ["1", "2", "3", "4"],
                 "forVehicleSubclass": null,
-                "forVehicleWheels": [
-                  2,
-                  3,
-                  4
-                ],
+                "forVehicleWheels": [2, 3, 4],
                 "nextTestTypesOrCategories": [
                   {
                     "id": "169",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid MSVA unbodied vehicle retest",
-                    "forVehicleType": [
-                      "motorcycle"
-                    ],
+                    "forVehicleType": ["motorcycle"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
-                    "forVehicleClass": [
-                      "1",
-                      "2",
-                      "3",
-                      "4"
-                    ],
+                    "forVehicleClass": ["1", "2", "3", "4"],
                     "forVehicleSubclass": null,
-                    "forVehicleWheels": [
-                      2,
-                      3,
-                      4
-                    ],
+                    "forVehicleWheels": [2, 3, 4],
                     "testTypeClassification": "Annual NO CERTIFICATE",
                     "testCodes": [
                       {
@@ -9037,25 +7413,14 @@
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free MSVA unbodied vehicle retest",
-                    "forVehicleType": [
-                      "motorcycle"
-                    ],
+                    "forVehicleType": ["motorcycle"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
-                    "forVehicleClass": [
-                      "1",
-                      "2",
-                      "3",
-                      "4"
-                    ],
+                    "forVehicleClass": ["1", "2", "3", "4"],
                     "forVehicleSubclass": null,
-                    "forVehicleWheels": [
-                      2,
-                      3,
-                      4
-                    ],
+                    "forVehicleWheels": [2, 3, 4],
                     "testTypeClassification": "Annual NO CERTIFICATE",
                     "testCodes": [
                       {
@@ -9126,44 +7491,28 @@
                 "id": "171",
                 "linkedIds": null,
                 "name": "Bodied vehicle",
-                "forVehicleType": [
-                  "motorcycle"
-                ],
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
-                "forVehicleClass": [
-                  "3",
-                  "4"
-                ],
+                "forVehicleClass": ["3", "4"],
                 "forVehicleSubclass": null,
-                "forVehicleWheels": [
-                  3,
-                  4
-                ],
+                "forVehicleWheels": [3, 4],
                 "nextTestTypesOrCategories": [
                   {
                     "id": "172",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid MSVA bodied vehicle retest",
-                    "forVehicleType": [
-                      "motorcycle"
-                    ],
+                    "forVehicleType": ["motorcycle"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
-                    "forVehicleClass": [
-                      "3",
-                      "4"
-                    ],
+                    "forVehicleClass": ["3", "4"],
                     "forVehicleSubclass": null,
-                    "forVehicleWheels": [
-                      3,
-                      4
-                    ],
+                    "forVehicleWheels": [3, 4],
                     "testTypeClassification": "Annual NO CERTIFICATE",
                     "testCodes": [
                       {
@@ -9209,22 +7558,14 @@
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free MSVA bodied vehicle retest",
-                    "forVehicleType": [
-                      "motorcycle"
-                    ],
+                    "forVehicleType": ["motorcycle"],
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
-                    "forVehicleClass": [
-                      "3",
-                      "4"
-                    ],
+                    "forVehicleClass": ["3", "4"],
                     "forVehicleSubclass": null,
-                    "forVehicleWheels": [
-                      3,
-                      4
-                    ],
+                    "forVehicleWheels": [3, 4],
                     "testTypeClassification": "Annual NO CERTIFICATE",
                     "testCodes": [
                       {
@@ -9273,13 +7614,8 @@
             "id": "174",
             "linkedIds": null,
             "name": "COIF",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "small",
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -9292,13 +7628,8 @@
                 "linkedIds": null,
                 "name": "with annual test",
                 "testTypeName": "COIF retest with annual test",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9338,13 +7669,8 @@
                 "linkedIds": null,
                 "name": "without annual test",
                 "testTypeName": "COIF retest without annual test",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9384,13 +7710,8 @@
                 "linkedIds": null,
                 "name": "Seatbelt installation check with annual test",
                 "testTypeName": "Seatbelt installation check COIF retest with annual test",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9430,13 +7751,8 @@
                 "linkedIds": null,
                 "name": "Annex 7",
                 "testTypeName": "Annex 7 COIF retest",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9476,13 +7792,8 @@
                 "linkedIds": null,
                 "name": "TILT",
                 "testTypeName": "TILT COIF retest",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9523,12 +7834,8 @@
             "id": "180",
             "linkedIds": null,
             "name": "DDA",
-            "forVehicleType": [
-              "psv"
-            ],
-            "forVehicleSize": [
-              "large"
-            ],
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
@@ -9541,12 +7848,8 @@
                 "linkedIds": null,
                 "name": "Schedule 1, 2 or 3",
                 "testTypeName": "DDA Schedule 1, 2 or 3 retest",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9574,12 +7877,8 @@
                 "linkedIds": null,
                 "name": "Schedule 1 + 2 or 3",
                 "testTypeName": "DDA Schedule 1 + 2 or 3 retest",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9608,13 +7907,7 @@
             "id": "183",
             "linkedIds": null,
             "name": "Voluntary IVA",
-            "forVehicleType": [
-              "psv",
-              "hgv",
-              "trl",
-              "lgv",
-              "car"
-            ],
+            "forVehicleType": ["psv", "hgv", "trl", "lgv", "car"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -9628,13 +7921,8 @@
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Normal voluntary IVA inspection retest",
-                "forVehicleType": [
-                  "psv"
-                ],
-                "forVehicleSize": [
-                  "small",
-                  "large"
-                ],
+                "forVehicleType": ["psv"],
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
@@ -9686,21 +7974,11 @@
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Normal voluntary IVA inspection retest",
-                "forVehicleType": [
-                  "hgv",
-                  "trl"
-                ],
+                "forVehicleType": ["hgv", "trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
-                "forEuVehicleCategory": [
-                  "n2",
-                  "n3",
-                  "o1",
-                  "o2",
-                  "o3",
-                  "o4"
-                ],
+                "forEuVehicleCategory": ["n2", "n3", "o1", "o2", "o3", "o4"],
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
@@ -9785,18 +8063,13 @@
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Normal voluntary IVA inspection retest",
-                "forVehicleType": [
-                  "car",
-                  "lgv"
-                ],
+                "forVehicleType": ["car", "lgv"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "r"
-                ],
+                "forVehicleSubclass": ["r"],
                 "forVehicleWheels": null,
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
@@ -9831,25 +8104,13 @@
                 "linkedIds": null,
                 "name": "Basic inspection",
                 "testTypeName": "Basic voluntary IVA inspection retest",
-                "forVehicleType": [
-                  "lgv",
-                  "car"
-                ],
+                "forVehicleType": ["lgv", "car"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
-                "forVehicleSubclass": [
-                  "a",
-                  "c",
-                  "s",
-                  "l",
-                  "m",
-                  "n",
-                  "p",
-                  "t"
-                ],
+                "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
                 "testTypeClassification": "Annual NO CERTIFICATE",
                 "testCodes": [
@@ -9860,11 +8121,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "a",
-                      "c",
-                      "s"
-                    ],
+                    "forVehicleSubclass": ["a", "c", "s"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "ys4",
                     "linkedTestCode": null
@@ -9876,13 +8133,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "l",
-                      "m",
-                      "n",
-                      "p",
-                      "t"
-                    ],
+                    "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "yt4",
                     "linkedTestCode": null
@@ -9894,13 +8145,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "l",
-                      "m",
-                      "n",
-                      "p",
-                      "t"
-                    ],
+                    "forVehicleSubclass": ["l", "m", "n", "p", "t"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "yt7",
                     "linkedTestCode": null
@@ -9912,11 +8157,7 @@
                     "forVehicleAxles": null,
                     "forEuVehicleCategory": null,
                     "forVehicleClass": null,
-                    "forVehicleSubclass": [
-                      "a",
-                      "c",
-                      "s"
-                    ],
+                    "forVehicleSubclass": ["a", "c", "s"],
                     "forVehicleWheels": null,
                     "defaultTestCode": "ys7",
                     "linkedTestCode": null
