@@ -25,6 +25,7 @@
     "predeploy": "npm install && npm run prepush",
     "security-checks": "git secrets --scan && git log -p | scanrepo",
     "tslint": "tslint src/**/*.ts tests/**/*.ts -q",
+    "format": "prettier --write .",
     "sonar-scanner": "npm run coverage && sonar-scanner",
     "coverage": "npm t -- --runInBand --coverage",
     "audit": "npm audit",
@@ -90,7 +91,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run audit && npm run security-checks && npm run tslint",
+      "pre-commit": "npm run audit && npm run security-checks && npm run tslint && npm run format",
       "pre-push": "npm run prepush"
     }
   }
