@@ -8,7 +8,7 @@
     "url": "https://github.com/dvsa/cvs-svc-test-types.git"
   },
   "engines": {
-    "node": "10.18.1",
+    "node": "14.*",
     "npm": "5.6.0"
   },
   "scripts": {
@@ -21,13 +21,13 @@
     "test": "BRANCH=local SLS_DEBUG=* AWS_XRAY_CONTEXT_MISSING=LOG_ERROR jest --testMatch=\"**/*.unitTest.ts\"",
     "test-i": "BRANCH=local jest --testMatch=\"**/*.intTest.ts\" --runInBand",
     "dynamodb": "sls dynamodb start",
-    "prepush": "npm run coverage",
+    "prepush": "npm run coverage && npm run build",
     "predeploy": "npm install && npm run prepush",
     "security-checks": "git secrets --scan && git log -p | scanrepo",
     "tslint": "tslint src/**/*.ts tests/**/*.ts -q",
-    "sonar-scanner": "npm run tslint && npm run coverage && sonar-scanner",
+    "sonar-scanner": "npm run coverage && sonar-scanner",
     "coverage": "npm t -- --runInBand --coverage",
-    "audit-dep": "npm audit",
+    "audit": "npm audit",
     "package": "mkdir ${ZIP_NAME} && cp package.json package-lock.json ${ZIP_NAME}/ && cp -r .build/src/* ${ZIP_NAME}/ && cd ${ZIP_NAME} && npm ci --production && rm package.json package-lock.json && zip -qr ../${ZIP_NAME}.zip .",
     "tools-setup": "sls dynamodb migrate && BRANCH=local gulp start-serverless && sls dynamodb seed --seed=test-types"
   },
@@ -40,7 +40,7 @@
     "@types/jest": "^25.2.1",
     "@types/jest-plugin-context": "^2.9.2",
     "@types/joi": "^14.3.3",
-    "@types/lambda-tester": "^3.5.1",
+    "@types/lambda-tester": "^3.6.1",
     "@types/lodash": "^4.14.142",
     "@types/node": "^12.11.2",
     "@types/request": "^2.48.1",
@@ -54,7 +54,7 @@
     "jest-cucumber": "^2.0.11",
     "jest-plugin-context": "^2.9.0",
     "jest-sonar-reporter": "^2.0.0",
-    "lambda-tester": "^3.6.0",
+    "lambda-tester": "^4.0.1",
     "lodash": "^4.17.21",
     "serverless": "^2.43.1",
     "serverless-dynamodb-local": "^0.2.38",
@@ -90,7 +90,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm audit && npm run tslint && npm run security-checks && npm run build",
+      "pre-commit": "npm run audit && npm run security-checks && npm run tslint",
       "pre-push": "npm run prepush"
     }
   }
