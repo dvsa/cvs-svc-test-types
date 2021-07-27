@@ -22,6 +22,11 @@ dynamodb:
       region: localhost
       endpoint: http://localhost:8000
     table: cvs-local-global-test-types
+  localstack:
+    params:
+      region: eu-west-1
+      endpoint: http://${LOCALSTACK_HOSTNAME}:4566
+    table: cvs-localstack-test-types
   remote:
     params: {}
     table: cvs-${BRANCH}-test-types
