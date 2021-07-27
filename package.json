@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "BRANCH=local SLS_DEBUG=*  serverless offline start",
+    "start:localstack": "BRANCH=localstack SLS_DEBUG=*  serverless offline start",
     "start:test": "npm run tslint && SLS_DEBUG=* BRANCH=local gulp start-serverless",
     "end:test": "node_modules/gulp/bin/gulp.js kill-serverless",
     "debug": "export SLS_DEBUG=* && BRANCH=local node --inspect ./node_modules/serverless/bin/serverless offline start",
