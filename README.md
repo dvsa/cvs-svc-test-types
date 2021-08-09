@@ -23,6 +23,7 @@ These will be run as part of your projects hooks so you don't accidentally intro
 ## Architecture
 
 Data is used is made available to VTA for searching a vehicle.
+Please refer to the the [docs](./docs/README.md) for the API specification and samples of postman requests.
 
 ### End to end design
 
