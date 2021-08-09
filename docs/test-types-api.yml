@@ -1,0 +1,384 @@
+openapi: 3.0.0
+info:
+  description: >-
+    This is the API spec for the test types microservice. This microservice has
+    one endpoint which will get all of the test type data.
+  version: 1.0.0
+  title: Test Types Microservice
+  termsOfService: ''
+  contact:
+    email: mdclarke@deloitte.co.uk
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: Test Types
+    description: One endpoint which will return all of the data relating to test types.
+    externalDocs:
+      description: Find out more
+      url: 'https://wiki.i-env.net/display/HVT/Epic%3A+Select+a+test+type'
+paths:
+  /test-types:
+    get:
+      tags:
+        - Test Types
+      summary: Return test types
+      description: >-
+        This endpoint will return all the data for test types based on filters provided. By default it will return all testTypes where forVtmOnly is false.
+      parameters:
+        - in: query
+          name: applicableTo
+          schema:
+            type: string
+            enum:
+              - vta
+              - vtm
+              - all
+            description: >-
+              It is used to filter testTypes by forVtmOnly attribute.
+              vta - Returns all testTypes where forVtmOnly = false
+              vtm - Returns all testTypes where forVtmOnly = true
+              all - Returns all testTypes without any filterƒå
+      operationId: getTestTypes
+      responses:
+        '200':
+          description: All test types returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/testTypesTaxonomy'
+        '401':
+          description: Not authenticated
+        '403':
+          description: Unauthorised Access
+        '404':
+          description: Test types not found
+  '/test-types/{id}':
+    get:
+      tags:
+        - Test Types
+      summary: Return test type information by ID
+      description: >-
+        This endpoint will return data of the test types needed to be saved
+        agains the test results.
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+        - in: query
+          name: fields
+          schema:
+            type: string
+            enum:
+              - testTypeClassification
+              - defaultTestCode
+              - linkedTestCode
+          required: true
+        - in: query
+          name: vehicleType
+          schema:
+            type: string
+            enum:
+              - psv
+              - hgv
+              - trl
+              - car
+              - lgv
+              - motorcycle
+          required: true
+        - in: query
+          name: vehicleSize
+          schema:
+            type: string
+            enum:
+              - small
+              - large
+          required: false
+        - in: query
+          name: vehicleConfiguration
+          schema:
+            type: string
+            nullable: true
+          required: false
+        - in: query
+          name: vehicleAxles
+          schema:
+            type: number
+            nullable: true
+          required: false
+        - in: query
+          name: euVehicleCategory
+          schema:
+            type: string
+            nullable: true
+          required: false
+        - in: query
+          name: vehicleClass
+          schema:
+            type: string
+            nullable: true
+          required: false
+        - in: query
+          name: vehicleSubclass
+          schema:
+            type: string
+            nullable: true
+          required: false
+        - in: query
+          name: vehicleWheels
+          schema:
+            type: number
+            nullable: true
+          required: false
+      operationId: 'getTestTypes/{id}'
+      responses:
+        '200':
+          description: The values for the attributes form the query paramaters are returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/testTypeInfo'
+        '401':
+          description: Not authenticated
+        '403':
+          description: Unauthorised Access
+        '404':
+          description: Test types not found
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: 'https://example.com/oauth/authorize'
+          tokenUrl: 'https://example.com/oauth/token'
+          scopes:
+            read: Grants read access
+            write: Grants write access
+  schemas:
+    testTypeInfo:
+      type: object
+      description: Test type
+      properties:
+        id:
+          type: string
+          description: Unique identifier
+        testTypeClassification:
+          type: string
+          enum:
+            - Annual With Certificate
+            - Annual No Certificate
+            - Non Annual
+          nullable: true
+        defaultTestCode:
+          type: string
+          nullable: true
+          minimum: 3
+          maximum: 3
+        linkedTestCode:
+          type: string
+          nullable: true
+          minimum: 3
+          maximum: 3
+    testType:
+      type: object
+      description: Test type
+      properties:
+        id:
+          type: string
+          description: Unique identifier
+        linkedIds:
+          type: array
+          items:
+              type: string
+          description: The lsit of test type IDs or categories IDs, used to determine if two test types can be added as linked within the same test.
+        name:
+          type: string
+          description: Name of the test type
+        testTypeName:
+          type: string
+          description: >-
+            Full name of the test type containing the entire path, having a
+            business value
+          nullable: true
+        forVehicleType:
+          type: array
+          items:
+            type: string
+            enum:
+              - psv
+              - hgv
+              - trl
+              - car
+              - lgv
+              - motorcycle
+          description: >-
+            This category is applying only to these vehicle types. The vehicle
+            types should descend from its parent, but should not be necessarily
+            the same
+        forVtmOnly:
+          type: boolean
+          description: >-
+            True for test specific to VTM false for tests specific to VTA. null if it is a parent for test types where both VTA and VTM child test type exists.
+        forVehicleSize:
+          type: array
+          items:
+            type: string
+            enum:
+              - small
+              - large
+          description: >-
+            This category is applying only to these vehicle sizes. The vehicle
+            sizes should descend from its parent, but should not be necessarily
+            the same
+          nullable: true
+        forVehicleConfiguration:
+          type: array
+          items:
+            type: string
+          description: >-
+            This category is applying only to these vehicle configurations. The
+            vehicle configurations should descend from its parent, but should
+            not be necessarily the same
+          nullable: true
+        forVehicleAxles:
+          type: array
+          items:
+            type: number
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with those number of axles. The vehicle number of axles should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any number of axles.
+        forEuVehicleCategory:
+          type: array
+          items:
+            type: string
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with that eu category. The eu vehicle category should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any eu vehicle category.
+        forVehicleClass:
+          type: array
+          items:
+            type: string
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with that vehicle class. The vehicle class should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any vehicle class.
+        forVehicleSubclass:
+          type: array
+          items:
+            type: string
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with that vehicle subclass. The vehicle subclass should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any vehicle subclass.
+        forVehicleWheels:
+          type: array
+          items:
+            type: number
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with those number of wheels. The vehicle number of wheels should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any number of wheels.
+    testTypeCategory:
+      type: object
+      description: >-
+        A category that can be composed of zero/more categories + one/more test
+        types
+      properties:
+        id:
+          type: string
+          description: Unique identifier
+        sortId:
+          type: string
+          description: used in helping to sort test types
+        linkedIds:
+          type: array
+          items:
+              type: string
+          description: The lsit of test type IDs or categories IDs, used to determine if two test types can be added as linked within the same test.
+        name:
+          type: string
+          description: Name of the category
+        forVehicleType:
+          type: array
+          items:
+            type: string
+            enum:
+              - psv
+              - hgv
+              - trl
+              - car
+              - lgv
+              - motorcycle∂
+          description: This category is applying only to these vehicle types.
+        forVtmOnly:
+          type: boolean
+          description: true for test specific to VTM else false.
+        forVehicleSize:
+          type: array
+          items:
+            type: string
+            enum:
+              - small
+              - large
+          description: This category is applying only to these vehicle sizes.
+          nullable: true
+        forVehicleConfiguration:
+          type: array
+          items:
+            type: string
+          description: This category is applying only to these vehicle configurations.
+          nullable: true
+        forVehicleAxles:
+          type: array
+          items:
+            type: number
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with those number of axles. If the value is null then it means the category or test type is applicable to any number of axles.
+        forEuVehicleCategory:
+          type: array
+          items:
+            type: string
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with that eu category. The eu vehicle category should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any eu vehicle category.
+        forVehicleClass:
+          type: array
+          items:
+            type: string
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with that vehicle class. The vehicle class should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any vehicle class.
+        forVehicleSubclass:
+          type: array
+          items:
+            type: string
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with that vehicle subclass. The vehicle subclass should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any vehicle subclass.
+        forVehicleWheels:
+          type: array
+          items:
+            type: number
+          nullable: true
+          description: >-
+            This category is applying only to the vehicles with those number of wheels. The vehicle number of wheels should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any number of wheels.
+        nextTestTypesOrCategories:
+          type: array
+          description: This is an array composed of TestTypeCateogries and/or TestTypes
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/testType'
+    testTypesTaxonomy:
+      type: array
+      items:
+        oneOf:
+          - $ref: '#/components/schemas/testType'
+          - $ref: '#/components/schemas/testTypeCategory'
+security:
+  - ApiKeyAuth: []
+  - OAuth2:
+      - read
+      - write
+servers:
+  - url: 'https://url/api/v1'
