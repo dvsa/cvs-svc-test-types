@@ -138,7 +138,7 @@ describe("when database is on", () => {
                 id: "1",
                 testTypeClassification: "Annual With Certificate",
                 defaultTestCode: "aas",
-                suggestedTestTypeIds: [ "1", "7", "10" ],
+                suggestedTestTypeIds: ["1", "7", "10"],
                 linkedTestCode: null,
               });
             });
@@ -165,7 +165,7 @@ describe("when database is on", () => {
                   testTypeClassification: "Annual With Certificate",
                   defaultTestCode: "adl",
                   linkedTestCode: null,
-                  suggestedTestTypeIds: [ "1", "7", "10" ],
+                  suggestedTestTypeIds: ["1", "7", "10"],
                 });
               });
           });
@@ -327,33 +327,29 @@ describe("when database is on", () => {
     );
   });
 
-
-  context(
-      "when the suggested test type ids are present",
-      () => {
-        it("should return the suggested test type ids", () => {
-          return testTypesService
-              .getTestTypesById("1", {
-                fields: [
-                  "testTypeClassification",
-                  "defaultTestCode",
-                  "linkedTestCode",
-                ],
-                vehicleType: "psv",
-                vehicleConfiguration: "articulated",
-              })
-              .then((returnedRecords: any) => {
-                expect(returnedRecords).toEqual({
-                  id: "1",
-                  testTypeClassification: "Annual With Certificate",
-                  defaultTestCode: "adl",
-                  linkedTestCode: null,
-                  suggestedTestTypeIds: [ "1", "7", "10" ],
-                });
-              });
+  context("when the suggested test type ids are present", () => {
+    it("should return the suggested test type ids", () => {
+      return testTypesService
+        .getTestTypesById("1", {
+          fields: [
+            "testTypeClassification",
+            "defaultTestCode",
+            "linkedTestCode",
+          ],
+          vehicleType: "psv",
+          vehicleConfiguration: "articulated",
+        })
+        .then((returnedRecords: any) => {
+          expect(returnedRecords).toEqual({
+            id: "1",
+            testTypeClassification: "Annual With Certificate",
+            defaultTestCode: "adl",
+            linkedTestCode: null,
+            suggestedTestTypeIds: ["1", "7", "10"],
+          });
         });
-      }
-  );
+    });
+  });
 });
 
 context("database call returns empty data", () => {
