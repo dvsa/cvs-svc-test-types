@@ -182,6 +182,11 @@ components:
           nullable: true
           minimum: 3
           maximum: 3
+        suggestedTestTypeIds:
+          type: string
+          nullable: true
+          minimum: 1
+          maximum: 4
     testType:
       type: object
       description: Test type
@@ -193,7 +198,12 @@ components:
           type: array
           items:
               type: string
-          description: The lsit of test type IDs or categories IDs, used to determine if two test types can be added as linked within the same test.
+          description: The list of test type IDs or categories IDs, used to determine if two test types can be added as linked within the same test.
+        suggestedTestTypeIds:
+          type: array
+          items:
+              type: string
+          description: The list of suggested test types, used to determine suggested test types for psv, trl and hgv.
         name:
           type: string
           description: Name of the test type
