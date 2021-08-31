@@ -143,7 +143,6 @@ export class TestTypesService {
 
         const response: any = {
           id: testType.id,
-          suggestedTestTypeIds: testType.suggestedTestTypeIds,
         };
 
         filterExpression.fields // Iterate through filterExpression's fields and populate them in the response
