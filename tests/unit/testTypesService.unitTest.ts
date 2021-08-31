@@ -138,7 +138,6 @@ describe("when database is on", () => {
                 id: "1",
                 testTypeClassification: "Annual With Certificate",
                 defaultTestCode: "aas",
-                suggestedTestTypeIds: ["1", "7", "10"],
                 linkedTestCode: null,
               });
             });
@@ -165,7 +164,6 @@ describe("when database is on", () => {
                   testTypeClassification: "Annual With Certificate",
                   defaultTestCode: "adl",
                   linkedTestCode: null,
-                  suggestedTestTypeIds: ["1", "7", "10"],
                 });
               });
           });
@@ -345,7 +343,6 @@ describe("when database is on", () => {
             testTypeClassification: "Annual With Certificate",
             defaultTestCode: "adl",
             linkedTestCode: null,
-            suggestedTestTypeIds: ["1", "7", "10"],
           });
         });
     });
