@@ -182,11 +182,6 @@ components:
           nullable: true
           minimum: 3
           maximum: 3
-        suggestedTestTypeIds:
-          type: string
-          nullable: true
-          minimum: 1
-          maximum: 4
     testType:
       type: object
       description: Test type
