@@ -324,29 +324,6 @@ describe("when database is on", () => {
       }
     );
   });
-
-  context("when the suggested test type ids are present", () => {
-    it("should return the suggested test type ids", () => {
-      return testTypesService
-        .getTestTypesById("1", {
-          fields: [
-            "testTypeClassification",
-            "defaultTestCode",
-            "linkedTestCode",
-          ],
-          vehicleType: "psv",
-          vehicleConfiguration: "articulated",
-        })
-        .then((returnedRecords: any) => {
-          expect(returnedRecords).toEqual({
-            id: "1",
-            testTypeClassification: "Annual With Certificate",
-            defaultTestCode: "adl",
-            linkedTestCode: null,
-          });
-        });
-    });
-  });
 });
 
 context("database call returns empty data", () => {
