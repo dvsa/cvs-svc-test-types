@@ -33,33 +33,37 @@ describe("getTestTypes function", () => {
         const output = await getTestTypes({}, ctx, () => {
           return;
         });
+        const {
+          id,
+          linkedIds,
+          suggestedTestTypeIds,
+          name,
+          testTypeName,
+          forVehicleType,
+          forVehicleSize,
+          forVehicleConfiguration,
+          forVehicleAxles,
+          forEuVehicleCategory,
+          forVehicleClass,
+          forVehicleSubclass,
+          forVehicleWheels,
+          testTypeClassification,
+        } = JSON.parse(output.body);
         expect(output.statusCode).toEqual(200);
-        expect(JSON.parse(output.body).id).toEqual("1");
-        expect(JSON.parse(output.body).linkedIds).toEqual(["38", "39"]);
-        expect(JSON.parse(output.body).suggestedTestTypeIds).toEqual([
-          "1",
-          "7",
-          "10",
-        ]);
-        expect(JSON.parse(output.body).name).toEqual("Annual test");
-        expect(JSON.parse(output.body).testTypeName).toEqual("Annual test");
-        expect(JSON.parse(output.body).forVehicleType).toEqual(["psv"]);
-        expect(JSON.parse(output.body).forVehicleSize).toEqual([
-          "small",
-          "large",
-        ]);
-        expect(JSON.parse(output.body).forVehicleConfiguration).toEqual([
-          "articulated",
-          "rigid",
-        ]);
-        expect(JSON.parse(output.body).forVehicleAxles).toEqual(null);
-        expect(JSON.parse(output.body).forEuVehicleCategory).toEqual(null);
-        expect(JSON.parse(output.body).forVehicleClass).toEqual(null);
-        expect(JSON.parse(output.body).forVehicleSubclass).toEqual(null);
-        expect(JSON.parse(output.body).forVehicleWheels).toEqual(null);
-        expect(JSON.parse(output.body).testTypeClassification).toEqual(
-          "Annual With Certificate"
-        );
+        expect(id).toEqual("1");
+        expect(linkedIds).toEqual(["38", "39"]);
+        expect(suggestedTestTypeIds).toEqual(["1", "7", "10"]);
+        expect(name).toEqual("Annual test");
+        expect(testTypeName).toEqual("Annual test");
+        expect(forVehicleType).toEqual(["psv"]);
+        expect(forVehicleSize).toEqual(["small", "large"]);
+        expect(forVehicleConfiguration).toEqual(["articulated", "rigid"]);
+        expect(forVehicleAxles).toEqual(null);
+        expect(forEuVehicleCategory).toEqual(null);
+        expect(forVehicleClass).toEqual(null);
+        expect(forVehicleSubclass).toEqual(null);
+        expect(forVehicleWheels).toEqual(null);
+        expect(testTypeClassification).toEqual("Annual With Certificate");
       });
     }
   );
