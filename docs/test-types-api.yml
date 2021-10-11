@@ -5,18 +5,18 @@ info:
     one endpoint which will get all of the test type data.
   version: 1.0.0
   title: Test Types Microservice
-  termsOfService: ''
+  termsOfService: ""
   contact:
     email: mdclarke@deloitte.co.uk
   license:
     name: Apache 2.0
-    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 tags:
   - name: Test Types
     description: One endpoint which will return all of the data relating to test types.
     externalDocs:
       description: Find out more
-      url: 'https://wiki.i-env.net/display/HVT/Epic%3A+Select+a+test+type'
+      url: "https://wiki.i-env.net/display/HVT/Epic%3A+Select+a+test+type"
 paths:
   /test-types:
     get:
@@ -41,19 +41,19 @@ paths:
               all - Returns all testTypes without any filterƒå
       operationId: getTestTypes
       responses:
-        '200':
+        "200":
           description: All test types returned
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/testTypesTaxonomy'
-        '401':
+                $ref: "#/components/schemas/testTypesTaxonomy"
+        "401":
           description: Not authenticated
-        '403':
+        "403":
           description: Unauthorised Access
-        '404':
+        "404":
           description: Test types not found
-  '/test-types/{id}':
+  "/test-types/{id}":
     get:
       tags:
         - Test Types
@@ -132,19 +132,19 @@ paths:
             type: number
             nullable: true
           required: false
-      operationId: 'getTestTypes/{id}'
+      operationId: "getTestTypes/{id}"
       responses:
-        '200':
+        "200":
           description: The values for the attributes form the query paramaters are returned
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/testTypeInfo'
-        '401':
+                $ref: "#/components/schemas/testTypeInfo"
+        "401":
           description: Not authenticated
-        '403':
+        "403":
           description: Unauthorised Access
-        '404':
+        "404":
           description: Test types not found
 components:
   securitySchemes:
@@ -152,8 +152,8 @@ components:
       type: oauth2
       flows:
         authorizationCode:
-          authorizationUrl: 'https://example.com/oauth/authorize'
-          tokenUrl: 'https://example.com/oauth/token'
+          authorizationUrl: "https://example.com/oauth/authorize"
+          tokenUrl: "https://example.com/oauth/token"
           scopes:
             read: Grants read access
             write: Grants write access
@@ -192,8 +192,13 @@ components:
         linkedIds:
           type: array
           items:
-              type: string
-          description: The lsit of test type IDs or categories IDs, used to determine if two test types can be added as linked within the same test.
+            type: string
+          description: The list of test type IDs or categories IDs, used to determine if two test types can be added as linked within the same test.
+        suggestedTestTypeIds:
+          type: array
+          items:
+            type: string
+          description: The list of suggested test types, used to determine suggested test types for psv, trl and hgv.
         name:
           type: string
           description: Name of the test type
@@ -293,7 +298,7 @@ components:
         linkedIds:
           type: array
           items:
-              type: string
+            type: string
           description: The lsit of test type IDs or categories IDs, used to determine if two test types can be added as linked within the same test.
         name:
           type: string
@@ -368,17 +373,17 @@ components:
           description: This is an array composed of TestTypeCateogries and/or TestTypes
           items:
             oneOf:
-              - $ref: '#/components/schemas/testType'
+              - $ref: "#/components/schemas/testType"
     testTypesTaxonomy:
       type: array
       items:
         oneOf:
-          - $ref: '#/components/schemas/testType'
-          - $ref: '#/components/schemas/testTypeCategory'
+          - $ref: "#/components/schemas/testType"
+          - $ref: "#/components/schemas/testTypeCategory"
 security:
   - ApiKeyAuth: []
   - OAuth2:
       - read
       - write
 servers:
-  - url: 'https://url/api/v1'
+  - url: "https://url/api/v1"

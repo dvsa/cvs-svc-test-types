@@ -1,42 +1,33 @@
 {
-	"info": {
-		"_postman_id": "5a727174-fb98-431b-861e-27cf7f169130",
-		"name": "test-types",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "get all test-types",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{bearer_token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://api.{{api}}.cvs.dvsacloud.uk/{{branch}}/test-types",
-					"protocol": "https",
-					"host": [
-						"api",
-						"{{api}}",
-						"cvs",
-						"dvsacloud",
-						"uk"
-					],
-					"path": [
-						"{{branch}}",
-						"test-types"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "5a727174-fb98-431b-861e-27cf7f169130",
+    "name": "test-types",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "get all test-types",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{bearer_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.{{api}}.cvs.dvsacloud.uk/{{branch}}/test-types",
+          "protocol": "https",
+          "host": ["api", "{{api}}", "cvs", "dvsacloud", "uk"],
+          "path": ["{{branch}}", "test-types"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
