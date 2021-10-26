@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "sortId": "1",
     "linkedIds": ["38", "39"],
     "suggestedTestTypeIds": ["1", "7", "10"],
     "name": "Annual test",
@@ -55,6 +56,7 @@
   },
   {
     "id": "2",
+    "sortId": "2",
     "linkedIds": ["38", "39"],
     "suggestedTestTypeIds": ["3", "4", "8"],
     "name": "Class 6A",
@@ -69,6 +71,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "3",
+        "sortId": "3",
         "linkedIds": ["38", "39"],
         "name": "Annual test",
         "testTypeName": "Class 6A seatbelt installation check (annual test)",
@@ -110,6 +113,7 @@
       },
       {
         "id": "4",
+        "sortId": "4",
         "linkedIds": ["38", "39"],
         "name": "First test",
         "testTypeName": "Class 6A seatbelt installation check (first test)",
@@ -153,6 +157,7 @@
   },
   {
     "id": "5",
+    "sortId": "5",
     "linkedIds": ["38", "39"],
     "name": "Retest",
     "forVehicleType": ["psv"],
@@ -166,6 +171,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "6",
+        "sortId": "6",
         "linkedIds": ["38", "39"],
         "name": "Paid retest",
         "forVehicleType": ["psv"],
@@ -179,6 +185,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "7",
+            "sortId": "7",
             "linkedIds": ["38", "39"],
             "name": "Any PSV retest",
             "testTypeName": "Paid retest",
@@ -232,6 +239,7 @@
           },
           {
             "id": "8",
+            "sortId": "8",
             "linkedIds": ["38", "39"],
             "name": "Class 6A retest (seatbelt installation check)",
             "testTypeName": "Paid retest with Class 6A seatbelt installation check",
@@ -275,6 +283,7 @@
       },
       {
         "id": "9",
+        "sortId": "9",
         "linkedIds": ["38", "39"],
         "name": "Part paid retest",
         "forVehicleType": ["psv"],
@@ -288,6 +297,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "10",
+            "sortId": "10",
             "linkedIds": ["38", "39"],
             "name": "Any PSV retest",
             "testTypeName": "Part-paid retest",
@@ -345,6 +355,7 @@
   },
   {
     "id": "11",
+    "sortId": "11",
     "linkedIds": ["38", "39"],
     "name": "Prohibition clearance",
     "forVehicleType": ["psv"],
@@ -358,6 +369,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "12",
+        "sortId": "12",
         "linkedIds": ["38", "39"],
         "name": "Any PSV",
         "forVehicleType": ["psv"],
@@ -371,6 +383,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "13",
+            "sortId": "13",
             "linkedIds": ["38", "39"],
             "name": "Full inspection/ full fee",
             "forVehicleType": ["psv"],
@@ -384,6 +397,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "14",
+                "sortId": "14",
                 "linkedIds": ["38", "39"],
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (full inspection with certificate)",
@@ -425,6 +439,7 @@
               },
               {
                 "id": "15",
+                "sortId": "15",
                 "linkedIds": ["38", "39"],
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (full inspection without certificate)",
@@ -468,6 +483,7 @@
           },
           {
             "id": "16",
+            "sortId": "16",
             "linkedIds": ["38", "39"],
             "name": "Full inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (full inspection)",
@@ -509,6 +525,7 @@
           },
           {
             "id": "23",
+            "sortId": "23",
             "linkedIds": ["38", "39"],
             "name": "Part inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (partial inspection)",
@@ -550,6 +567,7 @@
           },
           {
             "id": "24",
+            "sortId": "24",
             "name": "PG9 retest",
             "linkedIds": ["38", "39"],
             "forVehicleType": ["psv"],
@@ -563,6 +581,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "17",
+                "sortId": "17",
                 "linkedIds": ["38", "39"],
                 "name": "Paid",
                 "forVehicleType": ["psv"],
@@ -576,6 +595,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "18",
+                    "sortId": "18",
                     "name": "With certification",
                     "linkedIds": ["38", "39"],
                     "testTypeName": "Paid prohibition clearance (retest with certificate)",
@@ -617,6 +637,7 @@
                   },
                   {
                     "id": "19",
+                    "sortId": "19",
                     "linkedIds": ["38", "39"],
                     "name": "Without certification",
                     "testTypeName": "Paid prohibition clearance (retest without certificate)",
@@ -660,6 +681,7 @@
               },
               {
                 "id": "20",
+                "sortId": "20",
                 "linkedIds": ["38", "39"],
                 "name": "Part paid",
                 "forVehicleType": ["psv"],
@@ -673,6 +695,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "21",
+                    "sortId": "21",
                     "name": "With certification",
                     "linkedIds": ["38", "39"],
                     "testTypeName": "Part-paid prohibition clearance (retest with certificate)",
@@ -714,6 +737,7 @@
                   },
                   {
                     "id": "22",
+                    "sortId": "22",
                     "linkedIds": ["38", "39"],
                     "name": "Without certification",
                     "testTypeName": "Part-paid prohibition clearance (retest without certificate)",
@@ -761,6 +785,7 @@
       },
       {
         "id": "26",
+        "sortId": "26",
         "linkedIds": ["38", "39"],
         "name": "Class 6A (seatbelt installation check)",
         "forVehicleType": ["psv"],
@@ -774,6 +799,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "27",
+            "sortId": "27",
             "linkedIds": ["38", "39"],
             "name": "Full inspection / full fee",
             "testTypeName": "Paid prohibition clearance with Class 6A seatbelt installation check (full inspection)",
@@ -815,6 +841,7 @@
           },
           {
             "id": "28",
+            "sortId": "28",
             "linkedIds": ["38", "39"],
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest with Class 6A seatbelt installation check)",
@@ -858,6 +885,7 @@
       },
       {
         "id": "92",
+        "sortId": "92",
         "linkedIds": ["38", "39"],
         "name": "Class 6A (No seatbelt installation check)",
         "forVehicleType": ["psv"],
@@ -871,6 +899,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "93",
+            "sortId": "93",
             "linkedIds": ["38", "39"],
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest without Class 6A seatbelt installation check)",
@@ -916,6 +945,7 @@
   },
   {
     "id": "29",
+    "sortId": "29",
     "linkedIds": ["30", "31", "32", "33", "34"],
     "name": "Voluntary test",
     "forVehicleType": ["psv"],
@@ -929,6 +959,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "30",
+        "sortId": "30",
         "linkedIds": ["31", "32", "34"],
         "name": "Brake test",
         "testTypeName": "Voluntary brake test",
@@ -994,6 +1025,7 @@
       },
       {
         "id": "31",
+        "sortId": "31",
         "linkedIds": ["30", "32", "34"],
         "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim check",
@@ -1035,6 +1067,7 @@
       },
       {
         "id": "32",
+        "sortId": "32",
         "linkedIds": ["30", "31", "34"],
         "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
@@ -1076,6 +1109,7 @@
       },
       {
         "id": "33",
+        "sortId": "33",
         "linkedIds": ["34"],
         "name": "Multi - check",
         "testTypeName": "Voluntary multi check (headlamp aim, smoke and brake test)",
@@ -1117,6 +1151,7 @@
       },
       {
         "id": "34",
+        "sortId": "34",
         "linkedIds": ["30", "31", "32", "33"],
         "name": "Speed limiter check",
         "testTypeName": "Voluntary speed limiter check",
@@ -1146,6 +1181,7 @@
       },
       {
         "id": "36",
+        "sortId": "36",
         "linkedIds": [],
         "name": "Tempo 100",
         "testTypeName": "Voluntary Tempo 100",
@@ -1214,6 +1250,7 @@
       "92",
       "93"
     ],
+    "sortId": "37",
     "name": "Technical test",
     "forVehicleType": ["psv"],
     "forVehicleSize": ["large", "small"],
@@ -1226,6 +1263,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "38",
+        "sortId": "38",
         "linkedIds": [
           "1",
           "2",
@@ -1290,6 +1328,7 @@
       },
       {
         "id": "39",
+        "sortId": "39",
         "linkedIds": [
           "1",
           "2",
@@ -1344,6 +1383,7 @@
   },
   {
     "id": "94",
+    "sortId": "11",
     "linkedIds": null,
     "suggestedTestTypeIds": ["53", "54", "94"],
     "name": "Annual test",
@@ -1458,6 +1498,7 @@
   },
   {
     "id": "40",
+    "sortId": "10",
     "linkedIds": null,
     "suggestedTestTypeIds": ["40", "53", "54", "199"],
     "name": "Annual test",
@@ -1488,6 +1529,7 @@
   },
   {
     "id": "95",
+    "sortId": "61",
     "linkedIds": null,
     "suggestedTestTypeIds": ["65", "66", "95"],
     "name": "First test",
@@ -1602,6 +1644,7 @@
   },
   {
     "id": "41",
+    "sortId": "60",
     "linkedIds": null,
     "suggestedTestTypeIds": ["41", "65", "66", "67"],
     "name": "First test",
@@ -1640,6 +1683,7 @@
     "forVehicleSize": null,
     "forVehicleType": ["hgv", "trl"],
     "id": "42",
+    "sortId": "5",
     "linkedIds": null,
     "name": "Technical test",
     "nextTestTypesOrCategories": [
@@ -1653,6 +1697,7 @@
         "forVehicleSize": null,
         "forVehicleType": ["hgv"],
         "id": "43",
+        "sortId": "43",
         "linkedIds": null,
         "name": "LEC",
         "nextTestTypesOrCategories": [
@@ -1666,6 +1711,7 @@
             "forVehicleSize": null,
             "forVehicleType": ["hgv"],
             "id": "44",
+            "sortId": "44",
             "linkedIds": null,
             "name": "With linked test",
             "testCodes": [
@@ -1695,6 +1741,7 @@
             "forVehicleSize": null,
             "forVehicleType": ["hgv"],
             "id": "45",
+            "sortId": "45",
             "linkedIds": null,
             "name": "Without linked test",
             "testCodes": [
@@ -1726,6 +1773,7 @@
         "forVehicleSize": null,
         "forVehicleType": ["hgv", "trl"],
         "id": "46",
+        "sortId": "46",
         "linkedIds": null,
         "name": "Notifiable alteration",
         "nextTestTypesOrCategories": [
@@ -1739,6 +1787,7 @@
             "forVehicleSize": null,
             "forVehicleType": ["hgv", "trl"],
             "id": "47",
+            "sortId": "47",
             "linkedIds": null,
             "name": "Free",
             "testCodes": [
@@ -1780,6 +1829,7 @@
             "forVehicleSize": null,
             "forVehicleType": ["hgv", "trl"],
             "id": "48",
+            "sortId": "48",
             "linkedIds": null,
             "name": "Paid",
             "testCodes": [
@@ -1823,6 +1873,7 @@
         "forVehicleSize": null,
         "forVehicleType": ["hgv", "trl"],
         "id": "49",
+        "sortId": "49",
         "linkedIds": null,
         "name": "TIR",
         "testCodes": [
@@ -1864,6 +1915,7 @@
         "forVehicleSize": null,
         "forVehicleType": ["hgv", "trl"],
         "id": "50",
+        "sortId": "50",
         "linkedIds": null,
         "name": "ADR",
         "testCodes": [
@@ -1899,6 +1951,7 @@
   },
   {
     "id": "51",
+    "sortId": "2",
     "linkedIds": null,
     "name": "Retest",
     "forVehicleType": ["hgv", "trl"],
@@ -1912,6 +1965,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "52",
+        "sortId": "52",
         "linkedIds": null,
         "name": "Annual test retest",
         "forVehicleType": ["hgv", "trl"],
@@ -1925,6 +1979,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "53",
+            "sortId": "53",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid annual test retest",
@@ -2038,6 +2093,7 @@
           },
           {
             "id": "54",
+            "sortId": "54",
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid annual test retest",
@@ -2151,6 +2207,7 @@
           },
           {
             "id": "199",
+            "sortId": "199",
             "linkedIds": null,
             "name": "Free loaded retest",
             "testTypeName": "Free loaded retest",
@@ -2182,6 +2239,7 @@
       },
       {
         "id": "55",
+        "sortId": "55",
         "linkedIds": null,
         "name": "TIR retest",
         "forVehicleType": ["hgv", "trl"],
@@ -2195,6 +2253,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "56",
+            "sortId": "56",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid TIR retest",
@@ -2236,6 +2295,7 @@
           },
           {
             "id": "57",
+            "sortId": "57",
             "linkedIds": null,
             "name": "Free retest",
             "testTypeName": "Free TIR retest",
@@ -2267,6 +2327,7 @@
       },
       {
         "id": "58",
+        "sortId": "58",
         "linkedIds": null,
         "name": "ADR retest",
         "forVehicleType": ["hgv", "trl"],
@@ -2280,6 +2341,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "59",
+            "sortId": "59",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid ADR retest",
@@ -2321,6 +2383,7 @@
           },
           {
             "id": "60",
+            "sortId": "60",
             "linkedIds": null,
             "name": "Free retest",
             "testTypeName": "Free ADR retest",
@@ -2364,6 +2427,7 @@
       },
       {
         "id": "61",
+        "sortId": "61",
         "linkedIds": null,
         "name": "Roadworthiness retest",
         "forVehicleType": ["hgv", "trl"],
@@ -2377,6 +2441,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "62",
+            "sortId": "62",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid roadworthiness retest",
@@ -2454,6 +2519,7 @@
           },
           {
             "id": "101",
+            "sortId": "101",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid roadworthiness retest",
@@ -2483,6 +2549,7 @@
           },
           {
             "id": "63",
+            "sortId": "63",
             "linkedIds": null,
             "name": "Part Paid retest",
             "testTypeName": "Part paid roadworthiness retest",
@@ -2526,6 +2593,7 @@
       },
       {
         "id": "64",
+        "sortId": "64",
         "linkedIds": null,
         "name": "First test retest",
         "forVehicleType": ["hgv", "trl"],
@@ -2539,6 +2607,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "65",
+            "sortId": "65",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid first test retest",
@@ -2652,6 +2721,7 @@
           },
           {
             "id": "66",
+            "sortId": "66",
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid first test retest",
@@ -2765,6 +2835,7 @@
           },
           {
             "id": "67",
+            "sortId": "67",
             "linkedIds": null,
             "name": "Free retest",
             "testTypeName": "Free first test retest",
@@ -2796,6 +2867,7 @@
       },
       {
         "id": "97",
+        "sortId": "97",
         "linkedIds": null,
         "name": "Annual test retest",
         "forVehicleType": ["trl"],
@@ -2809,6 +2881,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "98",
+            "sortId": "98",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid annual test retest",
@@ -2838,6 +2911,7 @@
           },
           {
             "id": "99",
+            "sortId": "99",
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid annual test retest",
@@ -2869,6 +2943,7 @@
       },
       {
         "id": "102",
+        "sortId": "102",
         "linkedIds": null,
         "name": "First test retest",
         "forVehicleType": ["trl"],
@@ -2882,6 +2957,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "103",
+            "sortId": "103",
             "linkedIds": null,
             "name": "Paid retest",
             "testTypeName": "Paid first test retest",
@@ -2911,6 +2987,7 @@
           },
           {
             "id": "104",
+            "sortId": "104",
             "linkedIds": null,
             "name": "Part paid retest",
             "testTypeName": "Part paid first test retest",
@@ -2944,6 +3021,7 @@
   },
   {
     "id": "68",
+    "sortId": "3",
     "linkedIds": null,
     "name": "Prohibition clearance",
     "forVehicleType": ["hgv", "trl"],
@@ -2957,6 +3035,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "69",
+        "sortId": "69",
         "linkedIds": null,
         "name": "Full inspection/ Fee",
         "forVehicleType": ["hgv", "trl"],
@@ -2970,6 +3049,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "70",
+            "sortId": "70",
             "linkedIds": null,
             "name": "With certification",
             "testTypeName": "Paid prohibition clearance (full inspection with certification)",
@@ -3083,6 +3163,7 @@
           },
           {
             "id": "71",
+            "sortId": "71",
             "linkedIds": null,
             "name": "Without certification",
             "testTypeName": "Paid prohibition clearance (full inspection without certification)",
@@ -3198,6 +3279,7 @@
       },
       {
         "id": "72",
+        "sortId": "72",
         "linkedIds": null,
         "name": "Full inspection/ Part Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (full inspection without certification)",
@@ -3311,6 +3393,7 @@
       },
       {
         "id": "73",
+        "sortId": "73",
         "linkedIds": null,
         "name": "Part Inspection/ Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (part inspection without certification)",
@@ -3424,6 +3507,7 @@
       },
       {
         "id": "74",
+        "sortId": "74",
         "linkedIds": null,
         "name": "Retest",
         "forVehicleType": ["hgv", "trl"],
@@ -3437,6 +3521,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "75",
+            "sortId": "75",
             "linkedIds": null,
             "name": "Paid",
             "forVehicleType": ["hgv", "trl"],
@@ -3450,6 +3535,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "76",
+                "sortId": "76",
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (retest with certification)",
@@ -3563,6 +3649,7 @@
               },
               {
                 "id": "77",
+                "sortId": "77",
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (retest without certification)",
@@ -3678,6 +3765,7 @@
           },
           {
             "id": "78",
+            "sortId": "78",
             "linkedIds": null,
             "name": "Part paid",
             "forVehicleType": ["hgv", "trl"],
@@ -3691,6 +3779,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "79",
+                "sortId": "79",
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Part paid prohibition clearance (retest with certification)",
@@ -3804,6 +3893,7 @@
               },
               {
                 "id": "80",
+                "sortId": "80",
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Part paid prohibition clearance (retest without certification)",
@@ -3921,6 +4011,7 @@
       },
       {
         "id": "81",
+        "sortId": "81",
         "linkedIds": null,
         "name": "Prohibition clearance on first test",
         "forVehicleType": ["hgv", "trl"],
@@ -3934,6 +4025,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "82",
+            "sortId": "82",
             "linkedIds": null,
             "name": "Full Inspection/ Fee - With certification",
             "testTypeName": "Paid prohibition clearance on first test (full inspection with certification)",
@@ -4047,6 +4139,7 @@
           },
           {
             "id": "83",
+            "sortId": "83",
             "linkedIds": null,
             "name": "Retest - Paid",
             "testTypeName": "Paid retest prohibition clearance on first test",
@@ -4164,6 +4257,7 @@
   },
   {
     "id": "105",
+    "sortId": "31",
     "linkedIds": null,
     "name": "Prohibition clearance",
     "forVehicleType": ["trl"],
@@ -4177,6 +4271,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "106",
+        "sortId": "106",
         "linkedIds": null,
         "name": "Full inspection/ Fee",
         "forVehicleType": ["trl"],
@@ -4190,6 +4285,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "107",
+            "sortId": "107",
             "linkedIds": null,
             "name": "With certification",
             "testTypeName": "Paid prohibition clearance (full inspection with certification)",
@@ -4219,6 +4315,7 @@
           },
           {
             "id": "108",
+            "sortId": "108",
             "linkedIds": null,
             "name": "Without certification",
             "testTypeName": "Paid prohibition clearance (full inspection without certification)",
@@ -4250,6 +4347,7 @@
       },
       {
         "id": "109",
+        "sortId": "109",
         "linkedIds": null,
         "name": "Full inspection/ Part Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (full inspection without certification)",
@@ -4279,6 +4377,7 @@
       },
       {
         "id": "110",
+        "sortId": "110",
         "linkedIds": null,
         "name": "Part Inspection/ Fee - Without certification",
         "testTypeName": "Part paid prohibition clearance (part inspection without certification)",
@@ -4308,6 +4407,7 @@
       },
       {
         "id": "111",
+        "sortId": "111",
         "linkedIds": null,
         "name": "Retest",
         "forVehicleType": ["trl"],
@@ -4321,6 +4421,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "112",
+            "sortId": "112",
             "linkedIds": null,
             "name": "Paid",
             "forVehicleType": ["trl"],
@@ -4334,6 +4435,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "113",
+                "sortId": "113",
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (retest with certification)",
@@ -4363,6 +4465,7 @@
               },
               {
                 "id": "114",
+                "sortId": "114",
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (retest without certification)",
@@ -4394,6 +4497,7 @@
           },
           {
             "id": "115",
+            "sortId": "115",
             "linkedIds": null,
             "name": "Part paid",
             "forVehicleType": ["trl"],
@@ -4407,6 +4511,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "116",
+                "sortId": "116",
                 "linkedIds": null,
                 "name": "With certification",
                 "testTypeName": "Part paid prohibition clearance (retest with certification)",
@@ -4436,6 +4541,7 @@
               },
               {
                 "id": "117",
+                "sortId": "117",
                 "linkedIds": null,
                 "name": "Without certification",
                 "testTypeName": "Part paid prohibition clearance (retest without certification)",
@@ -4469,6 +4575,7 @@
       },
       {
         "id": "118",
+        "sortId": "118",
         "linkedIds": null,
         "name": "Prohibition clearance on first test",
         "forVehicleType": ["trl"],
@@ -4482,6 +4589,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "119",
+            "sortId": "119",
             "linkedIds": null,
             "name": "Full Inspection/ Fee - With certification",
             "testTypeName": "Paid prohibition clearance on first test (full inspection with certification)",
@@ -4511,6 +4619,7 @@
           },
           {
             "id": "120",
+            "sortId": "120",
             "linkedIds": null,
             "name": "Retest - Paid",
             "testTypeName": "Paid retest prohibition clearance on first test",
@@ -4544,6 +4653,7 @@
   },
   {
     "id": "84",
+    "sortId": "4",
     "linkedIds": null,
     "name": "Voluntary test",
     "forVehicleType": ["hgv", "trl"],
@@ -4557,6 +4667,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "85",
+        "sortId": "85",
         "linkedIds": null,
         "name": "Brake test",
         "testTypeName": "Voluntary brake test",
@@ -4694,6 +4805,7 @@
       },
       {
         "id": "86",
+        "sortId": "86",
         "linkedIds": null,
         "name": "Multi - check",
         "testTypeName": "Voluntary multi-check",
@@ -4723,6 +4835,7 @@
       },
       {
         "id": "87",
+        "sortId": "87",
         "linkedIds": null,
         "name": "Shaker plate check",
         "testTypeName": "Voluntary Shaker plate check",
@@ -4764,6 +4877,7 @@
       },
       {
         "id": "88",
+        "sortId": "88",
         "linkedIds": null,
         "name": "Speed limiter check",
         "testTypeName": "Voluntary Speed limiter check",
@@ -4793,6 +4907,7 @@
       },
       {
         "id": "89",
+        "sortId": "89",
         "linkedIds": null,
         "name": "Smoke test",
         "testTypeName": "Voluntary smoke test",
@@ -4822,6 +4937,7 @@
       },
       {
         "id": "90",
+        "sortId": "90",
         "linkedIds": null,
         "name": "Headlamp aim test",
         "testTypeName": "Voluntary headlamp aim test",
@@ -4851,6 +4967,7 @@
       },
       {
         "id": "122",
+        "sortId": "122",
         "linkedIds": null,
         "name": "Roadworthiness test",
         "testTypeName": "Voluntary roadworthiness test",
@@ -4964,6 +5081,7 @@
       },
       {
         "id": "91",
+        "sortId": "91",
         "linkedIds": null,
         "name": "Roadworthiness test",
         "testTypeName": "Voluntary roadworthiness test",
@@ -4995,6 +5113,7 @@
   },
   {
     "id": "123",
+    "sortId": "7",
     "linkedIds": null,
     "name": "Specialist test",
     "forVehicleType": ["psv", "hgv", "trl", "car", "lgv", "motorcycle"],
@@ -5008,6 +5127,7 @@
     "nextTestTypesOrCategories": [
       {
         "id": "124",
+        "sortId": "124",
         "linkedIds": null,
         "name": "IVA",
         "forVehicleType": ["psv", "hgv", "trl", "car", "lgv", "motorcycle"],
@@ -5021,6 +5141,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "125",
+            "sortId": "125",
             "linkedIds": null,
             "name": "Basic inspection",
             "testTypeName": "Basic IVA inspection",
@@ -5086,6 +5207,7 @@
           },
           {
             "id": "126",
+            "sortId": "126",
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal IVA inspection",
@@ -5139,6 +5261,7 @@
           },
           {
             "id": "186",
+            "sortId": "186",
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal IVA inspection",
@@ -5228,6 +5351,7 @@
           },
           {
             "id": "187",
+            "sortId": "187",
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal IVA inspection",
@@ -5269,6 +5393,7 @@
           },
           {
             "id": "127",
+            "sortId": "127",
             "linkedIds": null,
             "name": "Appeal",
             "forVehicleType": ["psv", "hgv", "trl", "car", "lgv"],
@@ -5282,6 +5407,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "128",
+                "sortId": "128",
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Appeal on a normal IVA inspection",
@@ -5335,6 +5461,7 @@
               },
               {
                 "id": "188",
+                "sortId": "188",
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Appeal on a normal IVA inspection",
@@ -5424,6 +5551,7 @@
               },
               {
                 "id": "189",
+                "sortId": "189",
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Appeal on a normal IVA inspection",
@@ -5465,6 +5593,7 @@
               },
               {
                 "id": "129",
+                "sortId": "129",
                 "linkedIds": null,
                 "name": "Basic inspection",
                 "testTypeName": "Appeal on a basic IVA inspection",
@@ -5532,6 +5661,7 @@
           },
           {
             "id": "130",
+            "sortId": "130",
             "linkedIds": null,
             "name": "Mutual recognition/ end of series & inspection",
             "testTypeName": "IVA mutual recognition/ end of series & inspection",
@@ -5570,6 +5700,7 @@
       },
       {
         "id": "131",
+        "sortId": "131",
         "linkedIds": null,
         "name": "MSVA",
         "forVehicleType": ["motorcycle"],
@@ -5583,6 +5714,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "132",
+            "sortId": "132",
             "linkedIds": null,
             "name": "Full inspection",
             "forVehicleType": ["motorcycle"],
@@ -5596,6 +5728,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "133",
+                "sortId": "133",
                 "linkedIds": null,
                 "name": "Moped vehicle",
                 "testTypeName": "Full MSVA moped vehicle inspection",
@@ -5625,6 +5758,7 @@
               },
               {
                 "id": "134",
+                "sortId": "134",
                 "linkedIds": null,
                 "name": "Unbodied vehicle",
                 "testTypeName": "Full MSVA unbodied vehicle inspection",
@@ -5702,6 +5836,7 @@
               },
               {
                 "id": "135",
+                "sortId": "135",
                 "linkedIds": null,
                 "name": "Bodied vehicle",
                 "testTypeName": "Full MSVA bodied vehicle inspection",
@@ -5757,6 +5892,7 @@
           },
           {
             "id": "136",
+            "sortId": "136",
             "linkedIds": null,
             "name": "Part inspection",
             "testTypeName": "Part MSVA inspection",
@@ -5822,6 +5958,7 @@
           },
           {
             "id": "137",
+            "sortId": "137",
             "linkedIds": null,
             "name": "Appeal",
             "forVehicleType": ["motorcycle"],
@@ -5835,6 +5972,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "138",
+                "sortId": "138",
                 "linkedIds": null,
                 "name": "Moped vehicle",
                 "testTypeName": "Appeal on a MSVA moped vehicle inspection",
@@ -5864,6 +6002,7 @@
               },
               {
                 "id": "139",
+                "sortId": "139",
                 "linkedIds": null,
                 "name": "Unbodied vehicle",
                 "testTypeName": "Appeal on a MSVA unbodied vehicle inspection",
@@ -5941,6 +6080,7 @@
               },
               {
                 "id": "140",
+                "sortId": "140",
                 "linkedIds": null,
                 "name": "Bodied vehicle",
                 "testTypeName": "Appeal on a MSVA bodied vehicle inspection",
@@ -5998,6 +6138,7 @@
       },
       {
         "id": "141",
+        "sortId": "141",
         "linkedIds": null,
         "name": "COIF",
         "forVehicleType": ["psv"],
@@ -6011,6 +6152,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "142",
+            "sortId": "142",
             "linkedIds": null,
             "name": "With annual test",
             "testTypeName": "COIF with annual test",
@@ -6052,6 +6194,7 @@
           },
           {
             "id": "143",
+            "sortId": "143",
             "linkedIds": null,
             "name": "Without annual test",
             "testTypeName": "COIF without annual test",
@@ -6093,6 +6236,7 @@
           },
           {
             "id": "144",
+            "sortId": "144",
             "linkedIds": null,
             "name": "Type approved to bus directive",
             "testTypeName": "Type approved to bus directive COIF",
@@ -6134,6 +6278,7 @@
           },
           {
             "id": "145",
+            "sortId": "145",
             "linkedIds": null,
             "name": "Seatbelt installation check",
             "forVehicleType": ["psv"],
@@ -6147,6 +6292,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "146",
+                "sortId": "146",
                 "linkedIds": null,
                 "name": "with annual test",
                 "testTypeName": "Seatbelt installation check COIF with annual test",
@@ -6188,6 +6334,7 @@
               },
               {
                 "id": "147",
+                "sortId": "147",
                 "linkedIds": null,
                 "name": "without annual test",
                 "testTypeName": "Seatbelt installation check COIF without annual test",
@@ -6231,6 +6378,7 @@
           },
           {
             "id": "148",
+            "sortId": "148",
             "linkedIds": null,
             "name": "Annex 7",
             "testTypeName": "Annex 7 COIF",
@@ -6274,6 +6422,7 @@
       },
       {
         "id": "149",
+        "sortId": "149",
         "linkedIds": null,
         "name": "DDA",
         "forVehicleType": ["psv"],
@@ -6287,6 +6436,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "150",
+            "sortId": "150",
             "linkedIds": null,
             "name": "Schedule 1, 2 or 3",
             "testTypeName": "DDA Schedule 1, 2 or 3",
@@ -6316,6 +6466,7 @@
           },
           {
             "id": "151",
+            "sortId": "151",
             "linkedIds": null,
             "name": "Schedule 1 + 2 or 3",
             "testTypeName": "DDA Schedule 1 + 2 or 3",
@@ -6347,6 +6498,7 @@
       },
       {
         "id": "152",
+        "sortId": "152",
         "linkedIds": null,
         "name": "Voluntary IVA",
         "forVehicleType": ["psv", "hgv", "trl", "lgv", "car"],
@@ -6360,6 +6512,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "153",
+            "sortId": "153",
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal voluntary IVA inspection",
@@ -6413,6 +6566,7 @@
           },
           {
             "id": "190",
+            "sortId": "190",
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal voluntary IVA inspection",
@@ -6502,6 +6656,7 @@
           },
           {
             "id": "191",
+            "sortId": "191",
             "linkedIds": null,
             "name": "Normal inspection",
             "testTypeName": "Normal voluntary IVA inspection",
@@ -6543,6 +6698,7 @@
           },
           {
             "id": "154",
+            "sortId": "154",
             "linkedIds": null,
             "name": "Basic inspection",
             "testTypeName": "Basic voluntary IVA inspection",
@@ -6610,6 +6766,7 @@
       },
       {
         "id": "155",
+        "sortId": "155",
         "linkedIds": null,
         "name": "Retest",
         "forVehicleType": ["psv", "hgv", "trl", "lgv", "car", "motorcycle"],
@@ -6623,6 +6780,7 @@
         "nextTestTypesOrCategories": [
           {
             "id": "156",
+            "sortId": "156",
             "linkedIds": null,
             "name": "IVA",
             "forVehicleType": ["psv", "hgv", "trl", "lgv", "car", "motorcycle"],
@@ -6636,6 +6794,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "157",
+                "sortId": "157",
                 "linkedIds": null,
                 "name": "Basic inspection",
                 "forVehicleType": ["lgv", "car"],
@@ -6649,6 +6808,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "158",
+                    "sortId": "158",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid basic IVA inspection",
@@ -6723,6 +6883,7 @@
                   },
                   {
                     "id": "159",
+                    "sortId": "159",
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free basic IVA inspection",
@@ -6799,6 +6960,7 @@
               },
               {
                 "id": "160",
+                "sortId": "160",
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "forVehicleType": ["psv", "hgv", "trl", "lgv", "car"],
@@ -6812,6 +6974,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "161",
+                    "sortId": "161",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid normal IVA inspection",
@@ -6865,6 +7028,7 @@
                   },
                   {
                     "id": "192",
+                    "sortId": "192",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid normal IVA inspection",
@@ -6961,6 +7125,7 @@
                   },
                   {
                     "id": "193",
+                    "sortId": "193",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid normal IVA inspection",
@@ -7002,6 +7167,7 @@
                   },
                   {
                     "id": "162",
+                    "sortId": "162",
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free normal IVA inspection",
@@ -7055,6 +7221,7 @@
                   },
                   {
                     "id": "194",
+                    "sortId": "194",
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free normal IVA inspection",
@@ -7151,6 +7318,7 @@
                   },
                   {
                     "id": "195",
+                    "sortId": "195",
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free normal IVA inspection",
@@ -7194,6 +7362,7 @@
               },
               {
                 "id": "163",
+                "sortId": "163",
                 "linkedIds": null,
                 "name": "Mutual recognition/ end of series",
                 "testTypeName": "Mutual recognition/ end of series IVA retest",
@@ -7239,6 +7408,7 @@
           },
           {
             "id": "164",
+            "sortId": "164",
             "linkedIds": null,
             "name": "MSVA",
             "forVehicleType": ["motorcycle"],
@@ -7252,6 +7422,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "165",
+                "sortId": "165",
                 "linkedIds": null,
                 "name": "Moped vehicle",
                 "forVehicleType": ["motorcycle"],
@@ -7265,6 +7436,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "166",
+                    "sortId": "166",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid MSVA moped vehicle retest",
@@ -7294,6 +7466,7 @@
                   },
                   {
                     "id": "167",
+                    "sortId": "167",
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free MSVA moped vehicle retest",
@@ -7325,6 +7498,7 @@
               },
               {
                 "id": "168",
+                "sortId": "168",
                 "linkedIds": null,
                 "name": "Unbodied vehicle",
                 "forVehicleType": ["motorcycle"],
@@ -7338,6 +7512,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "169",
+                    "sortId": "169",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid MSVA unbodied vehicle retest",
@@ -7416,6 +7591,7 @@
                   },
                   {
                     "id": "170",
+                    "sortId": "170",
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free MSVA unbodied vehicle retest",
@@ -7495,6 +7671,7 @@
               },
               {
                 "id": "171",
+                "sortId": "171",
                 "linkedIds": null,
                 "name": "Bodied vehicle",
                 "forVehicleType": ["motorcycle"],
@@ -7508,6 +7685,7 @@
                 "nextTestTypesOrCategories": [
                   {
                     "id": "172",
+                    "sortId": "172",
                     "linkedIds": null,
                     "name": "Paid",
                     "testTypeName": "Paid MSVA bodied vehicle retest",
@@ -7561,6 +7739,7 @@
                   },
                   {
                     "id": "173",
+                    "sortId": "173",
                     "linkedIds": null,
                     "name": "Free",
                     "testTypeName": "Free MSVA bodied vehicle retest",
@@ -7618,6 +7797,7 @@
           },
           {
             "id": "174",
+            "sortId": "174",
             "linkedIds": null,
             "name": "COIF",
             "forVehicleType": ["psv"],
@@ -7631,6 +7811,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "175",
+                "sortId": "175",
                 "linkedIds": null,
                 "name": "with annual test",
                 "testTypeName": "COIF retest with annual test",
@@ -7672,6 +7853,7 @@
               },
               {
                 "id": "176",
+                "sortId": "176",
                 "linkedIds": null,
                 "name": "without annual test",
                 "testTypeName": "COIF retest without annual test",
@@ -7713,6 +7895,7 @@
               },
               {
                 "id": "177",
+                "sortId": "177",
                 "linkedIds": null,
                 "name": "Seatbelt installation check with annual test",
                 "testTypeName": "Seatbelt installation check COIF retest with annual test",
@@ -7754,6 +7937,7 @@
               },
               {
                 "id": "178",
+                "sortId": "178",
                 "linkedIds": null,
                 "name": "Annex 7",
                 "testTypeName": "Annex 7 COIF retest",
@@ -7795,6 +7979,7 @@
               },
               {
                 "id": "179",
+                "sortId": "179",
                 "linkedIds": null,
                 "name": "TILT",
                 "testTypeName": "TILT COIF retest",
@@ -7838,6 +8023,7 @@
           },
           {
             "id": "180",
+            "sortId": "180",
             "linkedIds": null,
             "name": "DDA",
             "forVehicleType": ["psv"],
@@ -7851,6 +8037,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "181",
+                "sortId": "181",
                 "linkedIds": null,
                 "name": "Schedule 1, 2 or 3",
                 "testTypeName": "DDA Schedule 1, 2 or 3 retest",
@@ -7880,6 +8067,7 @@
               },
               {
                 "id": "182",
+                "sortId": "182",
                 "linkedIds": null,
                 "name": "Schedule 1 + 2 or 3",
                 "testTypeName": "DDA Schedule 1 + 2 or 3 retest",
@@ -7911,6 +8099,7 @@
           },
           {
             "id": "183",
+            "sortId": "183",
             "linkedIds": null,
             "name": "Voluntary IVA",
             "forVehicleType": ["psv", "hgv", "trl", "lgv", "car"],
@@ -7924,6 +8113,7 @@
             "nextTestTypesOrCategories": [
               {
                 "id": "184",
+                "sortId": "184",
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Normal voluntary IVA inspection retest",
@@ -7977,6 +8167,7 @@
               },
               {
                 "id": "196",
+                "sortId": "196",
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Normal voluntary IVA inspection retest",
@@ -8066,6 +8257,7 @@
               },
               {
                 "id": "197",
+                "sortId": "197",
                 "linkedIds": null,
                 "name": "Normal inspection",
                 "testTypeName": "Normal voluntary IVA inspection retest",
@@ -8107,6 +8299,7 @@
               },
               {
                 "id": "185",
+                "sortId": "185",
                 "linkedIds": null,
                 "name": "Basic inspection",
                 "testTypeName": "Basic voluntary IVA inspection retest",

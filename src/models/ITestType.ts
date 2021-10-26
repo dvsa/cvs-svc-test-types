@@ -1,5 +1,6 @@
 export interface ITestType {
   id: string;
+  sortId: string;
   linkedIds: string[] | null;
   name: string;
   testTypeName?: string;
