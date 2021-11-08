@@ -163,7 +163,7 @@
   },
   {
     "id": "5",
-    "sortId": "5",
+    "sortId": "3",
     "linkedIds": ["38", "39"],
     "name": "Retest",
     "forVehicleType": ["psv"],
@@ -367,7 +367,7 @@
   },
   {
     "id": "11",
-    "sortId": "11",
+    "sortId": "4",
     "linkedIds": ["38", "39"],
     "name": "Prohibition clearance",
     "forVehicleType": ["psv"],
@@ -957,7 +957,7 @@
   },
   {
     "id": "29",
-    "sortId": "29",
+    "sortId": "5",
     "linkedIds": ["30", "31", "32", "33", "34"],
     "name": "Voluntary test",
     "forVehicleType": ["psv"],
@@ -1262,7 +1262,7 @@
       "92",
       "93"
     ],
-    "sortId": "37",
+    "sortId": "6",
     "name": "Technical test",
     "forVehicleType": ["psv"],
     "forVehicleSize": ["large", "small"],
@@ -1395,7 +1395,7 @@
   },
   {
     "id": "94",
-    "sortId": "11",
+    "sortId": "1",
     "linkedIds": null,
     "suggestedTestTypeIds": ["53", "54", "94"],
     "name": "Annual test",
@@ -1512,7 +1512,7 @@
   },
   {
     "id": "40",
-    "sortId": "10",
+    "sortId": "1",
     "linkedIds": null,
     "suggestedTestTypeIds": ["40", "53", "54", "199"],
     "name": "Annual test",
@@ -1545,7 +1545,7 @@
   },
   {
     "id": "95",
-    "sortId": "61",
+    "sortId": "6",
     "linkedIds": null,
     "suggestedTestTypeIds": ["65", "66", "95"],
     "name": "First test",
@@ -1662,7 +1662,7 @@
   },
   {
     "id": "41",
-    "sortId": "60",
+    "sortId": "6",
     "linkedIds": null,
     "suggestedTestTypeIds": ["41", "65", "66", "67"],
     "name": "First test",
@@ -4289,7 +4289,7 @@
   },
   {
     "id": "105",
-    "sortId": "31",
+    "sortId": "3",
     "linkedIds": null,
     "name": "Prohibition clearance",
     "forVehicleType": ["trl"],
