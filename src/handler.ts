@@ -60,10 +60,10 @@ const handler: Handler = async (
 
     Object.assign(event, { pathParameters: lambdaPathParams });
 
-    console.log(
-      `HTTP ${event.httpMethod} ${event.path} -> λ ${lambdaEvent.name}
-      Path Params: ${JSON.stringify(event.pathParameters)}
-      Query Params: ${JSON.stringify(event.queryStringParameters)}`
+    console.log(`\n`+
+        `HTTP ${event.httpMethod} ${event.path} -> λ ${lambdaEvent.name}\n`+
+        `Path Params: ${JSON.stringify(event.pathParameters)}\n`+
+        `Query Params: ${JSON.stringify(event.queryStringParameters)}`
     );
 
     // Explicit conversion because typescript can't figure it out
