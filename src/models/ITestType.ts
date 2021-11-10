@@ -2,8 +2,11 @@ export interface ITestType {
   id: string;
   sortId: string;
   linkedIds: string[] | null;
+  suggestedTestTypeIds?: string[];
   name: string;
   testTypeName?: string;
+  suggestedTestTypeDisplayName?: string;
+  suggestedTestTypeDisplayOrder?: string;
   forVehicleType: ForVehicleType[];
   forVehicleSize: ForVehicleSize[] | null;
   forVehicleConfiguration: ForVehicleConfiguration[] | null;

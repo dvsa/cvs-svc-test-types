@@ -1,4 +1,3 @@
-import { default as unwrappedAWS } from "aws-sdk";
 import { Configuration } from "../utils/Configuration";
 import { PromiseResult } from "aws-sdk/lib/request";
 import { DocumentClient } from "aws-sdk/lib/dynamodb/document_client";

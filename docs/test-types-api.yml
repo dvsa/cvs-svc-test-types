@@ -199,6 +199,7 @@ components:
           items:
             type: string
           description: The list of suggested test types, used to determine suggested test types for psv, trl and hgv.
+          nullable: true
         name:
           type: string
           description: Name of the test type
@@ -207,6 +208,16 @@ components:
           description: >-
             Full name of the test type containing the entire path, having a
             business value
+          nullable: true
+        suggestedTestTypeDisplayName:
+          type: string
+          description: >-
+            Name to be displayed in the mobile app suggested next test type popup
+          nullable: true
+        suggestedTestTypeDisplayOrder:
+          type: string
+          description: >-
+            Order in which this test type is displayed in the mobile app suggested next test type popup
           nullable: true
         forVehicleType:
           type: array
