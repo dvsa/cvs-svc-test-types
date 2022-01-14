@@ -39,6 +39,8 @@ describe("getTestTypes function", () => {
           suggestedTestTypeIds,
           name,
           testTypeName,
+          suggestedTestTypeDisplayName,
+          suggestedTestTypeDisplayOrder,
           forVehicleType,
           forVehicleSize,
           forVehicleConfiguration,
@@ -55,6 +57,8 @@ describe("getTestTypes function", () => {
         expect(suggestedTestTypeIds).toEqual(["1", "7", "10"]);
         expect(name).toEqual("Annual test");
         expect(testTypeName).toEqual("Annual test");
+        expect(suggestedTestTypeDisplayName).toEqual("Annual test");
+        expect(suggestedTestTypeDisplayOrder).toEqual("3");
         expect(forVehicleType).toEqual(["psv"]);
         expect(forVehicleSize).toEqual(["small", "large"]);
         expect(forVehicleConfiguration).toEqual(["articulated", "rigid"]);
