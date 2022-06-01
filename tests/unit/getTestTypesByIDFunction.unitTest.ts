@@ -142,4 +142,28 @@ describe("getTestTypesById Function", () => {
       );
     });
   });
+
+  context("with invalid path params", () => {
+    it("should return data from service", async () => {
+      TestTypesService.prototype.getTestTypesById = jest
+          .fn()
+          .mockResolvedValue("Success");
+      const myEvent = {
+        httpMethod: "GET",
+        path: "/test-types/undefined",
+        queryStringParameters: {},
+        pathParameters: {
+          id: undefined,
+        },
+      };
+      const result = await getTestTypesById(myEvent, ctx, () => {
+        return;
+      });
+      expect(result).toBeInstanceOf(HTTPResponse);
+      expect(result.statusCode).toEqual(400);
+      expect(result.body).toEqual(
+          JSON.stringify("Request missing testType id")
+      );
+    });
+  });
 });

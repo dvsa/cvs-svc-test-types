@@ -10,11 +10,16 @@ import {
   ForVehicleType,
 } from "../models/ITestType";
 import { NUM_PARAMETERS } from "../assets/Enums";
+import {Validator} from "../utils/Validator";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
   const testTypesService = new TestTypesService(testTypesDAO);
+  const check: Validator = new Validator();
 
+  if (!check.parameterIsValid(event.pathParameters) || !check.parameterIsValid(event.pathParameters.id)) {
+      return Promise.resolve(new HTTPResponse(400, "Request missing testType id"));
+  }
   // Validate query parameters
   const queryParamSchema = Joi.object()
     .keys({
