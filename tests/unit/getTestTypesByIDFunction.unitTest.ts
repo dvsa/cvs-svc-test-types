@@ -144,7 +144,7 @@ describe("getTestTypesById Function", () => {
   });
 
   context("with invalid path params", () => {
-    it("should return data from service", async () => {
+    it("should throw bad request error when path parameter is undefined", async () => {
       TestTypesService.prototype.getTestTypesById = jest
           .fn()
           .mockResolvedValue("Success");
@@ -154,6 +154,28 @@ describe("getTestTypesById Function", () => {
         queryStringParameters: {},
         pathParameters: {
           id: undefined,
+        },
+      };
+      const result = await getTestTypesById(myEvent, ctx, () => {
+        return;
+      });
+      expect(result).toBeInstanceOf(HTTPResponse);
+      expect(result.statusCode).toEqual(400);
+      expect(result.body).toEqual(
+          JSON.stringify("Request missing testType id")
+      );
+    });
+
+    it("should throw bad request error when path parameter is null", async () => {
+      TestTypesService.prototype.getTestTypesById = jest
+          .fn()
+          .mockResolvedValue("Success");
+      const myEvent = {
+        httpMethod: "GET",
+        path: "/test-types/null",
+        queryStringParameters: {},
+        pathParameters: {
+          id: null,
         },
       };
       const result = await getTestTypesById(myEvent, ctx, () => {
