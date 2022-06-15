@@ -3,6 +3,7 @@ import { TestTypesService } from "../../src/services/TestTypesService";
 import { Context } from "aws-lambda";
 import { HTTPResponse } from "../../src/models/HTTPResponse";
 import { HTTPError } from "../../src/models/HTTPError";
+import {HTTPRESPONSE} from "../../src/assets/Enums";
 
 describe("getTestTypesById Function", () => {
   // @ts-ignore
@@ -23,7 +24,7 @@ describe("getTestTypesById Function", () => {
           vehicleConfiguration: "notAConfiguration",
         },
         pathParameters: {
-          id: 1,
+          id: "1",
         },
       };
       const result = await getTestTypesById(myEvent, ctx, () => {
@@ -54,7 +55,7 @@ describe("getTestTypesById Function", () => {
           vehicleConfiguration: "drawbar",
         },
         pathParameters: {
-          id: 1,
+          id: "1",
         },
       };
       const result = await getTestTypesById(myEvent, ctx, () => {
@@ -81,7 +82,7 @@ describe("getTestTypesById Function", () => {
           vehicleConfiguration: "rigid",
         },
         pathParameters: {
-          id: 1,
+          id: "1",
         },
       };
       const result = await getTestTypesById(myEvent, ctx, () => {
@@ -107,7 +108,7 @@ describe("getTestTypesById Function", () => {
           vehicleConfiguration: "rigid",
         },
         pathParameters: {
-          id: 1,
+          id: "1",
         },
       };
       const result = await getTestTypesById(myEvent, ctx, () => {
@@ -129,7 +130,7 @@ describe("getTestTypesById Function", () => {
         path: "/test-types/1",
         queryStringParameters: {},
         pathParameters: {
-          id: 1,
+          id: "1",
         },
       };
       const result = await getTestTypesById(myEvent, ctx, () => {
@@ -161,9 +162,7 @@ describe("getTestTypesById Function", () => {
       });
       expect(result).toBeInstanceOf(HTTPResponse);
       expect(result.statusCode).toEqual(400);
-      expect(result.body).toEqual(
-          JSON.stringify("Request missing testType id")
-      );
+      expect(result.body).toEqual(JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS));
     });
 
     it("should throw bad request error when path parameter is null", async () => {
@@ -183,9 +182,26 @@ describe("getTestTypesById Function", () => {
       });
       expect(result).toBeInstanceOf(HTTPResponse);
       expect(result.statusCode).toEqual(400);
-      expect(result.body).toEqual(
-          JSON.stringify("Request missing testType id")
-      );
+      expect(result.body).toEqual(JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS));
+    });
+    it("returns error when path parameter is an empty string", async () => {
+      TestTypesService.prototype.getTestTypesById = jest
+          .fn()
+          .mockResolvedValue("Success");
+      const myEvent = {
+        httpMethod: "GET",
+        path: "/test-types/",
+        queryStringParameters: {},
+        pathParameters: {
+          id: " ",
+        },
+      };
+      const result = await getTestTypesById(myEvent, ctx, () => {
+        return;
+      });
+      expect(result).toBeInstanceOf(HTTPResponse);
+      expect(result.statusCode).toEqual(400);
+      expect(result.body).toEqual(JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS));
     });
   });
 });
