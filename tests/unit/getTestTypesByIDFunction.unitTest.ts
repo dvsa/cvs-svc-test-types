@@ -151,7 +151,7 @@ describe("getTestTypesById Function", () => {
           .mockResolvedValue("Success");
       const myEvent = {
         httpMethod: "GET",
-        path: "/test-types/undefined",
+        path: "/test-types/",
         queryStringParameters: {},
         pathParameters: {
           id: undefined,
@@ -171,7 +171,7 @@ describe("getTestTypesById Function", () => {
           .mockResolvedValue("Success");
       const myEvent = {
         httpMethod: "GET",
-        path: "/test-types/null",
+        path: "/test-types/",
         queryStringParameters: {},
         pathParameters: {
           id: null,

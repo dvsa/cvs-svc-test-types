@@ -4,12 +4,23 @@ export class Validator {
 
     /**
      * Validate query or path parameter provided in the request
-     * @param parameter Query or path parameter provided
      * @returns boolean Result of logic determining validity
+     * @param parameters This is expecting an object as a parameter
      */
-    public parameterIsValid(parameter: string): boolean {
-        return parameter
-            ? parameter.trim().length !== 0 && parameter !== "undefined" && parameter !== "null"
-            : false;
+    public parametersAreValid<T extends string>(parameters: T): boolean {
+        let isValid: boolean = true;
+        for (const key of Object.keys(parameters)) {
+            const value: string = Object.values(parameters)[key.indexOf(key)];
+            if (value) {
+                if (value.trim().length === 0 || value === "undefined" || value === "null") {
+                    isValid = false;
+                    break;
+                }
+            } else {
+                isValid = false;
+                break;
+            }
+        }
+        return isValid;
     }
 }

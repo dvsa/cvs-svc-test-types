@@ -16,9 +16,8 @@ export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
   const testTypesService = new TestTypesService(testTypesDAO);
   const check: Validator = new Validator();
-  const id: string = event.pathParameters.id;
 
-  if (!check.parameterIsValid(id)) {
+  if (!check.parametersAreValid(event.pathParameters)) {
       return Promise.resolve(new HTTPResponse(400, HTTPRESPONSE.MISSING_PARAMETERS));
   }
 
