@@ -184,6 +184,7 @@ describe("getTestTypesById Function", () => {
       expect(result.statusCode).toEqual(400);
       expect(result.body).toEqual(JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS));
     });
+
     it("returns error when path parameter is an empty string", async () => {
       TestTypesService.prototype.getTestTypesById = jest
           .fn()
