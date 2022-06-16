@@ -157,12 +157,17 @@ describe("getTestTypesById Function", () => {
           id: undefined,
         },
       };
-      const result = await getTestTypesById(myEvent, ctx, () => {
-        return;
-      });
-      expect(result).toBeInstanceOf(HTTPResponse);
-      expect(result.statusCode).toEqual(400);
-      expect(result.body).toEqual(JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS));
+
+      try {
+        await getTestTypesById(myEvent, ctx, () => {
+          return;
+        });
+      } catch (e) {
+        expect.assertions(3);
+        expect(e).toBeInstanceOf(HTTPError);
+        expect(e.statusCode).toEqual(400);
+        expect(e.body).toEqual(HTTPRESPONSE.MISSING_PARAMETERS);
+      }
     });
 
     it("should throw bad request error when path parameter is null", async () => {
@@ -177,12 +182,16 @@ describe("getTestTypesById Function", () => {
           id: null,
         },
       };
-      const result = await getTestTypesById(myEvent, ctx, () => {
-        return;
-      });
-      expect(result).toBeInstanceOf(HTTPResponse);
-      expect(result.statusCode).toEqual(400);
-      expect(result.body).toEqual(JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS));
+      try {
+        await getTestTypesById(myEvent, ctx, () => {
+          return;
+        });
+      } catch (e) {
+        expect.assertions(3);
+        expect(e).toBeInstanceOf(HTTPError);
+        expect(e.statusCode).toEqual(400);
+        expect(e.body).toEqual(HTTPRESPONSE.MISSING_PARAMETERS);
+      }
     });
 
     it("returns error when path parameter is an empty string", async () => {
@@ -197,12 +206,16 @@ describe("getTestTypesById Function", () => {
           id: " ",
         },
       };
-      const result = await getTestTypesById(myEvent, ctx, () => {
-        return;
-      });
-      expect(result).toBeInstanceOf(HTTPResponse);
-      expect(result.statusCode).toEqual(400);
-      expect(result.body).toEqual(JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS));
+      try {
+        await getTestTypesById(myEvent, ctx, () => {
+          return;
+        });
+      } catch (e) {
+        expect.assertions(3);
+        expect(e).toBeInstanceOf(HTTPError);
+        expect(e.statusCode).toEqual(400);
+        expect(e.body).toEqual(HTTPRESPONSE.MISSING_PARAMETERS);
+      }
     });
   });
 });
