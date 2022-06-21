@@ -3,6 +3,7 @@ import { TestTypesService } from "../../src/services/TestTypesService";
 import { Context } from "aws-lambda";
 import { HTTPResponse } from "../../src/models/HTTPResponse";
 import { HTTPError } from "../../src/models/HTTPError";
+import {HTTPRESPONSE} from "../../src/assets/Enums";
 
 describe("getTestTypesById Function", () => {
   // @ts-ignore
@@ -140,6 +141,81 @@ describe("getTestTypesById Function", () => {
       expect(result.body).toEqual(
         JSON.stringify('Query parameter "fields" is required')
       );
+    });
+  });
+
+  context("with invalid path params", () => {
+    it("should throw bad request error when path parameter is undefined", async () => {
+      TestTypesService.prototype.getTestTypesById = jest
+          .fn()
+          .mockResolvedValue("Success");
+      const myEvent = {
+        httpMethod: "GET",
+        path: "/test-types/undefined",
+        queryStringParameters: {},
+        pathParameters: {
+          id: undefined,
+        },
+      };
+
+      expect.assertions(3);
+      try {
+        await getTestTypesById(myEvent, ctx, () => {
+          return;
+        });
+      } catch (e) {
+        expect(e).toBeInstanceOf(HTTPError);
+        expect(e.statusCode).toEqual(400);
+        expect(e.body).toEqual(HTTPRESPONSE.MISSING_PARAMETERS);
+      }
+    });
+
+    it("should throw bad request error when path parameter is null", async () => {
+      TestTypesService.prototype.getTestTypesById = jest
+          .fn()
+          .mockResolvedValue("Success");
+      const myEvent = {
+        httpMethod: "GET",
+        path: "/test-types/null",
+        queryStringParameters: {},
+        pathParameters: {
+          id: null,
+        },
+      };
+      expect.assertions(3);
+      try {
+        await getTestTypesById(myEvent, ctx, () => {
+          return;
+        });
+      } catch (e) {
+        expect(e).toBeInstanceOf(HTTPError);
+        expect(e.statusCode).toEqual(400);
+        expect(e.body).toEqual(HTTPRESPONSE.MISSING_PARAMETERS);
+      }
+    });
+
+    it("returns error when path parameter is an empty string", async () => {
+      TestTypesService.prototype.getTestTypesById = jest
+          .fn()
+          .mockResolvedValue("Success");
+      const myEvent = {
+        httpMethod: "GET",
+        path: "/test-types/0",
+        queryStringParameters: {},
+        pathParameters: {
+          id: " ",
+        },
+      };
+      expect.assertions(3);
+      try {
+        await getTestTypesById(myEvent, ctx, () => {
+          return;
+        });
+      } catch (e) {
+        expect(e).toBeInstanceOf(HTTPError);
+        expect(e.statusCode).toEqual(400);
+        expect(e.body).toEqual(HTTPRESPONSE.MISSING_PARAMETERS);
+      }
     });
   });
 });
