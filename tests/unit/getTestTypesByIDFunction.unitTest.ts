@@ -3,7 +3,6 @@ import { TestTypesService } from "../../src/services/TestTypesService";
 import { Context } from "aws-lambda";
 import { HTTPResponse } from "../../src/models/HTTPResponse";
 import { HTTPError } from "../../src/models/HTTPError";
-import {HTTPRESPONSE} from "../../src/assets/Enums";
 
 describe("getTestTypesById Function", () => {
   // @ts-ignore

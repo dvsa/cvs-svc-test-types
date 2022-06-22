@@ -11,7 +11,6 @@ import {
 } from "../models/ITestType";
 import {HTTPRESPONSE, NUM_PARAMETERS} from "../assets/Enums";
 import {Validator} from "../utils/Validator";
-import {HTTPError} from "../models/HTTPError";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
