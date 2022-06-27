@@ -9,8 +9,8 @@ import {
   ForVehicleSize,
   ForVehicleType,
 } from "../models/ITestType";
-import {HTTPRESPONSE, NUM_PARAMETERS} from "../assets/Enums";
-import {Validator} from "../utils/Validator";
+import { HTTPRESPONSE, NUM_PARAMETERS } from "../assets/Enums";
+import { Validator } from "../utils/Validator";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
