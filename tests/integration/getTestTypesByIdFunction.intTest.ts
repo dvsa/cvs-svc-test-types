@@ -29,7 +29,7 @@ describe("getTestTypesById", () => {
           },
           pathParameters: {
             id: "30",
-          }
+          },
         })
         .expectResolve((result: { statusCode: any; body: any }) => {
           expect(result.statusCode).toEqual(400);
@@ -53,7 +53,7 @@ describe("getTestTypesById", () => {
           },
           pathParameters: {
             id: "30",
-          }
+          },
         })
         .expectResolve((result: { statusCode: any; body: any }) => {
           expect(result.statusCode).toEqual(400);
@@ -79,7 +79,7 @@ describe("getTestTypesById", () => {
             },
             pathParameters: {
               id: "30",
-            }
+            },
           })
           .expectResolve((result: { statusCode: any; body: any }) => {
             expect(result.statusCode).toEqual(400);
