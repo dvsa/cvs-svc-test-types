@@ -3,6 +3,7 @@ import { PromiseResult } from "aws-sdk/lib/request";
 import { DocumentClient } from "aws-sdk/lib/dynamodb/document_client";
 import { ITestType } from "./ITestType";
 import { IDBConfig } from "./IDBConfig";
+import { AWSError } from "aws-sdk/lib/error";
 
 /* tslint:disable */
 let AWS: { DynamoDB: { DocumentClient: new (arg0: any) => DocumentClient } };
@@ -31,7 +32,7 @@ export default class TestTypesDAO {
    * @returns ultimately, an array of TestTypes objects, wrapped in a PromiseResult, wrapped in a Promise
    */
   public getAll(): Promise<
-    PromiseResult<DocumentClient.ScanOutput, AWS.AWSError>
+    PromiseResult<DocumentClient.ScanOutput, AWSError>
   > {
     return TestTypesDAO.dbClient.scan({ TableName: this.tableName }).promise();
   }
@@ -43,7 +44,7 @@ export default class TestTypesDAO {
    */
   public createMultiple(
     testTypesItems: ITestType[]
-  ): Promise<PromiseResult<DocumentClient.BatchWriteItemOutput, AWS.AWSError>> {
+  ): Promise<PromiseResult<DocumentClient.BatchWriteItemOutput, AWSError>> {
     const params = this.generatePartialParams();
     testTypesItems.forEach((testTypesItem: ITestType) => {
       params.RequestItems[this.tableName].push({
@@ -62,7 +63,7 @@ export default class TestTypesDAO {
    */
   public deleteMultiple(
     primaryKeysToBeDeleted: string[][]
-  ): Promise<PromiseResult<DocumentClient.BatchWriteItemOutput, AWS.AWSError>> {
+  ): Promise<PromiseResult<DocumentClient.BatchWriteItemOutput, AWSError>> {
     const params = this.generatePartialParams();
 
     primaryKeysToBeDeleted.forEach((compositeKey) => {
