@@ -20,7 +20,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     .keys({
       fields: Joi.string()
         .regex(
-          /^(testTypeClassification|defaultTestCode|linkedTestCode),?\s*((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?((testTypeClassification|defaultTestCode|linkedTestCode),?\s*)?$/
+          /^((testTypeClassification|defaultTestCode|linkedTestCode|name|testTypeName),?\s*)*$/
         )
         .required(),
       vehicleType: Joi.string().only(Object.values(ForVehicleType)).required(),
