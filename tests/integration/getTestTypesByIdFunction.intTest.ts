@@ -27,9 +27,6 @@ describe("getTestTypesById", () => {
             vehicleConfiguration: "rigid",
             vehicleAxles: "2",
           },
-          pathParameters: {
-            id: "30",
-          },
         })
         .expectResolve((result: { statusCode: any; body: any }) => {
           expect(result.statusCode).toEqual(400);
@@ -50,9 +47,6 @@ describe("getTestTypesById", () => {
             vehicleSize: "small",
             vehicleConfiguration: "rigid",
             vehicleAxles: "101",
-          },
-          pathParameters: {
-            id: "30",
           },
         })
         .expectResolve((result: { statusCode: any; body: any }) => {
@@ -76,9 +70,6 @@ describe("getTestTypesById", () => {
               vehicleSize: "small",
               vehicleConfiguration: "rigid",
               vehicleAxles: "-1",
-            },
-            pathParameters: {
-              id: "30",
             },
           })
           .expectResolve((result: { statusCode: any; body: any }) => {

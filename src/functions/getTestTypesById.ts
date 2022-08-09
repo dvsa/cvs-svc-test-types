@@ -9,20 +9,12 @@ import {
   ForVehicleSize,
   ForVehicleType,
 } from "../models/ITestType";
-import { HTTPRESPONSE, NUM_PARAMETERS } from "../assets/Enums";
-import { Validator } from "../utils/Validator";
+import { NUM_PARAMETERS } from "../assets/Enums";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
   const testTypesService = new TestTypesService(testTypesDAO);
-  const check: Validator = new Validator();
 
-  if (event.pathParameters) {
-      if (!check.parametersAreValid(event.pathParameters)) {
-            return Promise.resolve(new HTTPResponse(400, HTTPRESPONSE.MISSING_PARAMETERS));
-      }
-  } else {
-      return Promise.resolve(new HTTPResponse(400, HTTPRESPONSE.MISSING_PARAMETERS));  }
   // Validate query parameters
   const queryParamSchema = Joi.object()
     .keys({

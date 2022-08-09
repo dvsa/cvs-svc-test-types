@@ -2125,25 +2125,13 @@
             "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
-            "forVehicleAxles": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "testTypeClassification": "Annual With Certificate",
             "testCodes": [
-              {
-                "forVehicleType": "hgv",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": 1,
-                "forEuVehicleCategory": null,
-                "forVehicleClass": null,
-                "forVehicleSubclass": null,
-                "forVehicleWheels": null,
-                "defaultTestCode": "rsv2",
-                "linkedTestCode": null
-              },
               {
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
