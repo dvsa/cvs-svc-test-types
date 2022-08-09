@@ -34,11 +34,12 @@ paths:
               - vta
               - vtm
               - all
-            description: >-
-              It is used to filter testTypes by forVtmOnly attribute.
-              vta - Returns all testTypes where forVtmOnly = false
-              vtm - Returns all testTypes where forVtmOnly = true
-              all - Returns all testTypes without any filterƒå
+          description: >-
+            NOTE: NOT CURRENTLY IMPLEMENTED
+          # It is used to filter testTypes by forVtmOnly attribute.
+          # vta - Returns all testTypes where forVtmOnly = false
+          # vtm - Returns all testTypes where forVtmOnly = true
+          # all - Returns all testTypes without any filter
       operationId: getTestTypes
       responses:
         "200":
@@ -69,12 +70,17 @@ paths:
           required: true
         - in: query
           name: fields
+          explode: false
           schema:
-            type: string
-            enum:
-              - testTypeClassification
-              - defaultTestCode
-              - linkedTestCode
+            type: array
+            items:
+              type: string
+              enum:
+                - testTypeClassification
+                - defaultTestCode
+                - linkedTestCode
+                - name
+                - testTypeName
           required: true
         - in: query
           name: vehicleType
@@ -185,6 +191,7 @@ components:
     testType:
       type: object
       description: Test type
+      required: ["id", "forVehicleType", "name"]
       properties:
         id:
           type: string
@@ -299,6 +306,7 @@ components:
       description: >-
         A category that can be composed of zero/more categories + one/more test
         types
+      required: ["id", "forVehicleType", "name"]
       properties:
         id:
           type: string
@@ -324,7 +332,7 @@ components:
               - trl
               - car
               - lgv
-              - motorcycle∂
+              - motorcycle
           description: This category is applying only to these vehicle types.
         forVtmOnly:
           type: boolean
@@ -381,10 +389,11 @@ components:
             This category is applying only to the vehicles with those number of wheels. The vehicle number of wheels should descend from its parent, but should not be necessarily the same. If the value is null then it means the category or test type is applicable to any number of wheels.
         nextTestTypesOrCategories:
           type: array
-          description: This is an array composed of TestTypeCateogries and/or TestTypes
+          description: This is an array composed of TestTypeCategories and/or TestTypes
           items:
             oneOf:
               - $ref: "#/components/schemas/testType"
+              - $ref: "#/components/schemas/testTypeCategory"
     testTypesTaxonomy:
       type: array
       items:
@@ -392,7 +401,6 @@ components:
           - $ref: "#/components/schemas/testType"
           - $ref: "#/components/schemas/testTypeCategory"
 security:
-  - ApiKeyAuth: []
   - OAuth2:
       - read
       - write

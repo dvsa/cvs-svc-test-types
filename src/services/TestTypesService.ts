@@ -143,17 +143,30 @@ export class TestTypesService {
           id: testType.id,
         };
 
-        filterExpression.fields // Iterate through filterExpression's fields and populate them in the response
-          .forEach((field: keyof TestCode) => {
-            response[field] = testCodes[0][field];
-          });
-
         // Populating testTypeClassification that is found in testType, not testCode
-        if (filterExpression.fields.includes("testTypeClassification")) {
-          response.testTypeClassification = testType.testTypeClassification;
-        }
+        this.addFieldsToResponse(
+          testType,
+          testCodes[0],
+          filterExpression.fields,
+          response
+        );
         return response;
       });
+  }
+
+  public addFieldsToResponse(
+    testType: ITestType,
+    testCode: TestCode,
+    fields: string[],
+    response: any
+  ): void {
+    fields.forEach((field) => {
+      if (testCode.hasOwnProperty(field)) {
+        response[field] = testCode[field as keyof TestCode];
+      } else if (testType.hasOwnProperty(field)) {
+        response[field] = testType[field as keyof ITestType];
+      }
+    });
   }
 
   /**
