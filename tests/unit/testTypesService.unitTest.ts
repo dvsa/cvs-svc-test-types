@@ -5,6 +5,7 @@ import { ERRORS, HTTPRESPONSE } from "../../src/assets/Enums";
 import {
   ForEuVehicleCategory,
   ForVehicleSubclass,
+  ITestType,
   TestCode,
 } from "../../src/models/ITestType";
 
@@ -105,18 +106,109 @@ describe("when database is on", () => {
 
       context("testTypeClassification not requested", () => {
         it("returns id  and requested fields, without testTypeClassification", async () => {
-          expect.assertions(4);
+          testTypesService.findTestType = jest.fn().mockReturnValue({
+            id: "1",
+            name: "foo",
+            testTypeName: "bar",
+            testTypeClassification: "class1",
+            testCodes: [
+              {
+                forVehicleType: "psv",
+                forVehicleSize: "small",
+                forVehicleConfiguration: "rigid",
+                defaultTestCode: "foobar",
+                linkedTestCode: "foo",
+              },
+              {
+                forVehicleType: "psv",
+                forVehicleSize: "large",
+                forVehicleConfiguration: "rigid",
+                defaultTestCode: "foo",
+                linkedTestCode: "bar",
+              },
+            ],
+          });
+          expect.assertions(6);
           const output = await testTypesService.getTestTypesById("1", {
-            fields: ["defaultTestCode", "linkedTestCode"],
+            fields: [
+              "defaultTestCode",
+              "linkedTestCode",
+              "name",
+              "testTypeName",
+            ],
             vehicleType: "psv",
             vehicleSize: "small",
             vehicleConfiguration: "rigid",
           });
           const outputKeys = Object.keys(output);
-          expect(outputKeys).toContain("id");
-          expect(outputKeys).toContain("defaultTestCode");
-          expect(outputKeys).toContain("linkedTestCode");
+          expect(output.id).toEqual("1");
+          expect(output.defaultTestCode).toEqual("foobar");
+          expect(output.linkedTestCode).toEqual("foo");
+          expect(output.testTypeName).toEqual("bar");
+          expect(output.name).toEqual("foo");
           expect(outputKeys).not.toContain("testTypeClassification");
+        });
+      });
+
+      context("addFieldsToResponse", () => {
+        let testType: ITestType;
+        let testCode: TestCode;
+        let response: any;
+        beforeEach(() => {
+          testType = {
+            id: "1",
+            foo: "foo",
+          } as unknown as ITestType;
+          testCode = {
+            bar: "bar",
+          } as unknown as TestCode;
+          response = {
+            foobar: "foobar",
+          };
+        });
+        it("should add requested testCode fields to the response", () => {
+          const fields = ["foo"];
+          testTypesService.addFieldsToResponse(
+            testType,
+            testCode,
+            fields,
+            response
+          );
+          expect(response).toEqual({ foobar: "foobar", foo: "foo" });
+        });
+        it("should add requested testType fields to the response", () => {
+          const fields = ["bar"];
+          testTypesService.addFieldsToResponse(
+            testType,
+            testCode,
+            fields,
+            response
+          );
+          expect(response).toEqual({ foobar: "foobar", bar: "bar" });
+        });
+        it("should add requested testType and testCode fields to the response", () => {
+          const fields = ["bar", "foo"];
+          testTypesService.addFieldsToResponse(
+            testType,
+            testCode,
+            fields,
+            response
+          );
+          expect(response).toEqual({
+            foobar: "foobar",
+            bar: "bar",
+            foo: "foo",
+          });
+        });
+        it("should not add unknown fields to the response", () => {
+          const fields = ["bar", "baz"];
+          testTypesService.addFieldsToResponse(
+            testType,
+            testCode,
+            fields,
+            response
+          );
+          expect(response).toEqual({ foobar: "foobar", bar: "bar" });
         });
       });
 
