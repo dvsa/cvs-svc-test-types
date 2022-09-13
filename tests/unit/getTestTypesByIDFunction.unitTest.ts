@@ -3,7 +3,7 @@ import { TestTypesService } from "../../src/services/TestTypesService";
 import { Context } from "aws-lambda";
 import { HTTPResponse } from "../../src/models/HTTPResponse";
 import { HTTPError } from "../../src/models/HTTPError";
-import {HTTPRESPONSE} from "../../src/assets/Enums";
+import { HTTPRESPONSE } from "../../src/assets/Enums";
 
 describe("getTestTypesById Function", () => {
   // @ts-ignore
@@ -160,15 +160,15 @@ describe("getTestTypesById Function", () => {
       expect(result).toBeInstanceOf(HTTPResponse);
       expect(result.statusCode).toEqual(400);
       expect(result.body).toEqual(
-          JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
+        JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
       );
     });
   });
   context("with path params", () => {
     it("should trigger validation in function when id is null", async () => {
       TestTypesService.prototype.getTestTypesById = jest
-          .fn()
-          .mockResolvedValue("Success");
+        .fn()
+        .mockResolvedValue("Success");
       const myEvent = {
         httpMethod: "GET",
         path: "/test-types/1",
@@ -183,13 +183,13 @@ describe("getTestTypesById Function", () => {
       expect(result).toBeInstanceOf(HTTPResponse);
       expect(result.statusCode).toEqual(400);
       expect(result.body).toEqual(
-          JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
+        JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
       );
     });
     it("should trigger validation in function when id is undefined", async () => {
       TestTypesService.prototype.getTestTypesById = jest
-          .fn()
-          .mockResolvedValue("Success");
+        .fn()
+        .mockResolvedValue("Success");
       const myEvent = {
         httpMethod: "GET",
         path: "/test-types/1",
@@ -204,13 +204,13 @@ describe("getTestTypesById Function", () => {
       expect(result).toBeInstanceOf(HTTPResponse);
       expect(result.statusCode).toEqual(400);
       expect(result.body).toEqual(
-          JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
+        JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
       );
     });
     it("should trigger validation in function when id is an empty string", async () => {
       TestTypesService.prototype.getTestTypesById = jest
-          .fn()
-          .mockResolvedValue("Success");
+        .fn()
+        .mockResolvedValue("Success");
       const myEvent = {
         httpMethod: "GET",
         path: "/test-types/1",
@@ -225,7 +225,7 @@ describe("getTestTypesById Function", () => {
       expect(result).toBeInstanceOf(HTTPResponse);
       expect(result.statusCode).toEqual(400);
       expect(result.body).toEqual(
-          JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
+        JSON.stringify(HTTPRESPONSE.MISSING_PARAMETERS)
       );
     });
   });

@@ -18,11 +18,16 @@ export const getTestTypesById: Handler = (event, context, callback) => {
   const check: Validator = new Validator();
 
   if (event.pathParameters) {
-      if (!check.parametersAreValid(event.pathParameters)) {
-            return Promise.resolve(new HTTPResponse(400, HTTPRESPONSE.MISSING_PARAMETERS));
-      }
+    if (!check.parametersAreValid(event.pathParameters)) {
+      return Promise.resolve(
+        new HTTPResponse(400, HTTPRESPONSE.MISSING_PARAMETERS)
+      );
+    }
   } else {
-      return Promise.resolve(new HTTPResponse(400, HTTPRESPONSE.MISSING_PARAMETERS));  }
+    return Promise.resolve(
+      new HTTPResponse(400, HTTPRESPONSE.MISSING_PARAMETERS)
+    );
+  }
   // Validate query parameters
   const queryParamSchema = Joi.object()
     .keys({
