@@ -53,7 +53,7 @@ describe("getTestTypes function", () => {
         } = JSON.parse(output.body);
         expect(output.statusCode).toEqual(200);
         expect(id).toEqual("1");
-        expect(linkedIds).toEqual(["38", "39"]);
+        expect(linkedIds).toEqual(["38", "200"]);
         expect(suggestedTestTypeIds).toEqual(["1", "7", "10"]);
         expect(name).toEqual("Annual test");
         expect(testTypeName).toEqual("Annual test");

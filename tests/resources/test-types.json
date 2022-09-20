@@ -2,7 +2,7 @@
   {
     "id": "1",
     "sortId": "1",
-    "linkedIds": ["38", "39"],
+    "linkedIds": ["38", "200"],
     "suggestedTestTypeIds": ["1", "7", "10"],
     "name": "Annual test",
     "testTypeName": "Annual test",
@@ -59,7 +59,7 @@
   {
     "id": "2",
     "sortId": "2",
-    "linkedIds": ["38", "39"],
+    "linkedIds": ["38", "200"],
     "name": "Class 6A",
     "forVehicleType": ["psv"],
     "forVehicleSize": ["small", "large"],
@@ -73,7 +73,7 @@
       {
         "id": "3",
         "sortId": "3",
-        "linkedIds": ["38", "39"],
+        "linkedIds": ["38", "200"],
         "suggestedTestTypeIds": ["3", "4", "8"],
         "name": "Annual test",
         "testTypeName": "Class 6A seatbelt installation check (annual test)",
@@ -118,7 +118,7 @@
       {
         "id": "4",
         "sortId": "4",
-        "linkedIds": ["38", "39"],
+        "linkedIds": ["38", "200"],
         "suggestedTestTypeIds": ["3", "4", "8"],
         "name": "First test",
         "testTypeName": "Class 6A seatbelt installation check (first test)",
@@ -165,7 +165,7 @@
   {
     "id": "5",
     "sortId": "3",
-    "linkedIds": ["38", "39"],
+    "linkedIds": ["38", "200"],
     "name": "Retest",
     "forVehicleType": ["psv"],
     "forVehicleSize": ["large", "small"],
@@ -179,7 +179,7 @@
       {
         "id": "6",
         "sortId": "6",
-        "linkedIds": ["38", "39"],
+        "linkedIds": ["38", "200"],
         "name": "Paid retest",
         "forVehicleType": ["psv"],
         "forVehicleSize": ["large", "small"],
@@ -193,7 +193,7 @@
           {
             "id": "7",
             "sortId": "7",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "Any PSV retest",
             "testTypeName": "Paid retest",
             "suggestedTestTypeDisplayName": "Paid annual retest",
@@ -249,7 +249,7 @@
           {
             "id": "8",
             "sortId": "8",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "Class 6A retest (seatbelt installation check)",
             "testTypeName": "Paid retest with Class 6A seatbelt installation check",
             "suggestedTestTypeDisplayName": "Paid class 6A retest",
@@ -295,7 +295,7 @@
       {
         "id": "9",
         "sortId": "9",
-        "linkedIds": ["38", "39"],
+        "linkedIds": ["38", "200"],
         "name": "Part paid retest",
         "forVehicleType": ["psv"],
         "forVehicleSize": ["large", "small"],
@@ -309,7 +309,7 @@
           {
             "id": "10",
             "sortId": "10",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "Any PSV retest",
             "testTypeName": "Part-paid retest",
             "suggestedTestTypeDisplayName": "Part paid annual retest",
@@ -369,7 +369,7 @@
   {
     "id": "11",
     "sortId": "4",
-    "linkedIds": ["38", "39"],
+    "linkedIds": ["38", "200"],
     "name": "Prohibition clearance",
     "forVehicleType": ["psv"],
     "forVehicleSize": ["large", "small"],
@@ -383,7 +383,7 @@
       {
         "id": "12",
         "sortId": "12",
-        "linkedIds": ["38", "39"],
+        "linkedIds": ["38", "200"],
         "name": "Any PSV",
         "forVehicleType": ["psv"],
         "forVehicleSize": ["large", "small"],
@@ -397,7 +397,7 @@
           {
             "id": "13",
             "sortId": "13",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "Full inspection/ full fee",
             "forVehicleType": ["psv"],
             "forVehicleSize": ["large", "small"],
@@ -411,7 +411,7 @@
               {
                 "id": "14",
                 "sortId": "14",
-                "linkedIds": ["38", "39"],
+                "linkedIds": ["38", "200"],
                 "name": "With certification",
                 "testTypeName": "Paid prohibition clearance (full inspection with certificate)",
                 "forVehicleType": ["psv"],
@@ -453,7 +453,7 @@
               {
                 "id": "15",
                 "sortId": "15",
-                "linkedIds": ["38", "39"],
+                "linkedIds": ["38", "200"],
                 "name": "Without certification",
                 "testTypeName": "Paid prohibition clearance (full inspection without certificate)",
                 "forVehicleType": ["psv"],
@@ -497,7 +497,7 @@
           {
             "id": "16",
             "sortId": "16",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "Full inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (full inspection)",
             "forVehicleType": ["psv"],
@@ -539,7 +539,7 @@
           {
             "id": "23",
             "sortId": "23",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "Part inspection/ part fee",
             "testTypeName": "Part-paid prohibition clearance (partial inspection)",
             "forVehicleType": ["psv"],
@@ -582,7 +582,7 @@
             "id": "24",
             "sortId": "24",
             "name": "PG9 retest",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "forVehicleType": ["psv"],
             "forVehicleSize": ["large", "small"],
             "forVehicleConfiguration": ["articulated", "rigid"],
@@ -595,7 +595,7 @@
               {
                 "id": "17",
                 "sortId": "17",
-                "linkedIds": ["38", "39"],
+                "linkedIds": ["38", "200"],
                 "name": "Paid",
                 "forVehicleType": ["psv"],
                 "forVehicleSize": ["large", "small"],
@@ -610,7 +610,7 @@
                     "id": "18",
                     "sortId": "18",
                     "name": "With certification",
-                    "linkedIds": ["38", "39"],
+                    "linkedIds": ["38", "200"],
                     "testTypeName": "Paid prohibition clearance (retest with certificate)",
                     "forVehicleType": ["psv"],
                     "forVehicleSize": ["large", "small"],
@@ -651,7 +651,7 @@
                   {
                     "id": "19",
                     "sortId": "19",
-                    "linkedIds": ["38", "39"],
+                    "linkedIds": ["38", "200"],
                     "name": "Without certification",
                     "testTypeName": "Paid prohibition clearance (retest without certificate)",
                     "forVehicleType": ["psv"],
@@ -695,7 +695,7 @@
               {
                 "id": "20",
                 "sortId": "20",
-                "linkedIds": ["38", "39"],
+                "linkedIds": ["38", "200"],
                 "name": "Part paid",
                 "forVehicleType": ["psv"],
                 "forVehicleSize": ["large", "small"],
@@ -710,7 +710,7 @@
                     "id": "21",
                     "sortId": "21",
                     "name": "With certification",
-                    "linkedIds": ["38", "39"],
+                    "linkedIds": ["38", "200"],
                     "testTypeName": "Part-paid prohibition clearance (retest with certificate)",
                     "forVehicleType": ["psv"],
                     "forVehicleSize": ["large", "small"],
@@ -751,7 +751,7 @@
                   {
                     "id": "22",
                     "sortId": "22",
-                    "linkedIds": ["38", "39"],
+                    "linkedIds": ["38", "200"],
                     "name": "Without certification",
                     "testTypeName": "Part-paid prohibition clearance (retest without certificate)",
                     "forVehicleType": ["psv"],
@@ -799,7 +799,7 @@
       {
         "id": "26",
         "sortId": "26",
-        "linkedIds": ["38", "39"],
+        "linkedIds": ["38", "200"],
         "name": "Class 6A (seatbelt installation check)",
         "forVehicleType": ["psv"],
         "forVehicleSize": ["large", "small"],
@@ -813,7 +813,7 @@
           {
             "id": "27",
             "sortId": "27",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "Full inspection / full fee",
             "testTypeName": "Paid prohibition clearance with Class 6A seatbelt installation check (full inspection)",
             "forVehicleType": ["psv"],
@@ -855,7 +855,7 @@
           {
             "id": "28",
             "sortId": "28",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest with Class 6A seatbelt installation check)",
             "forVehicleType": ["psv"],
@@ -899,7 +899,7 @@
       {
         "id": "92",
         "sortId": "92",
-        "linkedIds": ["38", "39"],
+        "linkedIds": ["38", "200"],
         "name": "Class 6A (No seatbelt installation check)",
         "forVehicleType": ["psv"],
         "forVehicleSize": ["large", "small"],
@@ -913,7 +913,7 @@
           {
             "id": "93",
             "sortId": "93",
-            "linkedIds": ["38", "39"],
+            "linkedIds": ["38", "200"],
             "name": "PG9 retest",
             "testTypeName": "Prohibition clearance (retest without Class 6A seatbelt installation check)",
             "forVehicleType": ["psv"],
@@ -1259,7 +1259,7 @@
       "27",
       "28",
       "38",
-      "39",
+      "200",
       "92",
       "93"
     ],
@@ -1297,7 +1297,7 @@
           "22",
           "27",
           "28",
-          "39",
+          "200",
           "92",
           "93"
         ],
