@@ -33,7 +33,7 @@ describe("getTestTypesById Function", () => {
       expect(result.statusCode).toEqual(400);
       expect(result.body).toEqual(
         JSON.stringify(
-          'Query parameter "vehicleConfiguration" must be one of [articulated, rigid, centre axle drawbar, semi-car transporter, semi-trailer, low loader, other, drawbar, four-in-line, dolly, full drawbar, null]'
+          'Query parameter "vehicleConfiguration" must be one of [articulated, rigid, centre axle drawbar, semi-car transporter, semi-trailer, long semi-trailer, low loader, other, drawbar, four-in-line, dolly, full drawbar, null]'
         )
       );
     });

@@ -26,6 +26,7 @@ export enum ForVehicleConfiguration {
   CentreAxleDrawbar = "centre axle drawbar",
   SemiCarTransporter = "semi-car transporter",
   SemiTrailer = "semi-trailer",
+  LongSemiTrailer = "long semi-trailer",
   LowLoader = "low loader",
   Other = "other",
   Drawbar = "drawbar",
