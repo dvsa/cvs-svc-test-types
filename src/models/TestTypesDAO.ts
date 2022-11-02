@@ -31,9 +31,7 @@ export default class TestTypesDAO {
    * Get All test Types  in the DB
    * @returns ultimately, an array of TestTypes objects, wrapped in a PromiseResult, wrapped in a Promise
    */
-  public getAll(): Promise<
-    PromiseResult<DocumentClient.ScanOutput, AWSError>
-  > {
+  public getAll(): Promise<PromiseResult<DocumentClient.ScanOutput, AWSError>> {
     return TestTypesDAO.dbClient.scan({ TableName: this.tableName }).promise();
   }
 

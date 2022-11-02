@@ -1260,6 +1260,7 @@
       "28",
       "38",
       "39",
+      "201",
       "92",
       "93"
     ],
@@ -1298,6 +1299,7 @@
           "27",
           "28",
           "39",
+          "201",
           "92",
           "93"
         ],
@@ -1340,8 +1342,16 @@
         ]
       },
       {
-        "id": "39",
-        "sortId": "39",
+        "forVehicleAxles": null,
+        "forEuVehicleCategory": null,
+        "forVehicleClass": null,
+        "forVehicleSubclass": null,
+        "forVehicleWheels": null,
+        "forVehicleConfiguration": ["articulated", "rigid"],
+        "forVehicleSize": null,
+        "forVehicleType": ["psv"],
+        "id": "200",
+        "sortId": "200",
         "linkedIds": [
           "1",
           "2",
@@ -1367,28 +1377,112 @@
           "93"
         ],
         "name": "LEC",
-        "testTypeName": "Low Emissions Certificate (LEC) with annual test",
-        "forVehicleType": ["psv"],
-        "forVehicleSize": null,
-        "forVehicleConfiguration": ["articulated", "rigid"],
-        "forVehicleAxles": null,
-        "forEuVehicleCategory": null,
-        "forVehicleClass": null,
-        "forVehicleSubclass": null,
-        "forVehicleWheels": null,
-        "testTypeClassification": "NON ANNUAL",
-        "testCodes": [
+        "nextTestTypesOrCategories": [
           {
-            "forVehicleType": "psv",
-            "forVehicleSize": null,
-            "forVehicleConfiguration": ["articulated", "rigid"],
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "defaultTestCode": "lbp",
-            "linkedTestCode": "lcp"
+            "forVehicleConfiguration": ["articulated", "rigid"],
+            "forVehicleSize": null,
+            "forVehicleType": "psv",
+            "id": "39",
+            "sortId": "39",
+            "linkedIds": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "10",
+              "14",
+              "15",
+              "16",
+              "23",
+              "18",
+              "19",
+              "21",
+              "22",
+              "27",
+              "28",
+              "38",
+              "92",
+              "93"
+            ],
+            "name": "With linked test",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": ["articulated", "rigid"],
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lcp",
+                "linkedTestCode": null
+              }
+            ],
+            "testTypeClassification": "NON ANNUAL",
+            "testTypeName": "Low Emissions Certificate (LEC) with annual test"
+          },
+          {
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "forVehicleConfiguration": ["articulated", "rigid"],
+            "forVehicleSize": null,
+            "forVehicleType": "psv",
+            "id": "201",
+            "sortId": "201",
+            "linkedIds": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "10",
+              "14",
+              "15",
+              "16",
+              "23",
+              "18",
+              "19",
+              "21",
+              "22",
+              "27",
+              "28",
+              "38",
+              "92",
+              "93"
+            ],
+            "name": "Without linked test",
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": ["articulated", "rigid"],
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lbp",
+                "linkedTestCode": null
+              }
+            ],
+            "testTypeClassification": "NON ANNUAL",
+            "testTypeName": "Low Emissions Certificate (LEC)"
           }
         ]
       }
