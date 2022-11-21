@@ -24,22 +24,14 @@ paths:
         - Test Types
       summary: Return test types
       description: >-
-        This endpoint will return all the data for test types based on filters provided. By default it will return all testTypes where forVtmOnly is false.
+        This endpoint will return all the data for test types based on filters provided. By default it will return all testTypes which don't have a typeOfTest field.
       parameters:
         - in: query
-          name: applicableTo
+          name: typeOfTest
           schema:
             type: string
-            enum:
-              - vta
-              - vtm
-              - all
           description: >-
-            NOTE: NOT CURRENTLY IMPLEMENTED
-          # It is used to filter testTypes by forVtmOnly attribute.
-          # vta - Returns all testTypes where forVtmOnly = false
-          # vtm - Returns all testTypes where forVtmOnly = true
-          # all - Returns all testTypes without any filter
+            It is used to filter test types based on the given typeOfTest. Note that sending the query parameter will also return the test types without a tag.
       operationId: getTestTypes
       responses:
         "200":
@@ -226,6 +218,10 @@ components:
           description: >-
             Order in which this test type is displayed in the mobile app suggested next test type popup
           nullable: true
+        typeOfTest:
+          type: string
+          description: >-
+            Used to filter in test types with a specific typeOfTest, send as a query param in the request
         forVehicleType:
           type: array
           items:
@@ -241,10 +237,6 @@ components:
             This category is applying only to these vehicle types. The vehicle
             types should descend from its parent, but should not be necessarily
             the same
-        forVtmOnly:
-          type: boolean
-          description: >-
-            True for test specific to VTM false for tests specific to VTA. null if it is a parent for test types where both VTA and VTM child test type exists.
         forVehicleSize:
           type: array
           items:
@@ -334,9 +326,10 @@ components:
               - lgv
               - motorcycle
           description: This category is applying only to these vehicle types.
-        forVtmOnly:
-          type: boolean
-          description: true for test specific to VTM else false.
+        typeOfTest:
+          type: string
+          description: >-
+            Used to filter in test types with a specific typeOfTest, send as a query param in the request
         forVehicleSize:
           type: array
           items:
