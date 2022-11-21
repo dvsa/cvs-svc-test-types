@@ -27,19 +27,11 @@ paths:
         This endpoint will return all the data for test types based on filters provided. By default it will return all testTypes where forVtmOnly is false.
       parameters:
         - in: query
-          name: applicableTo
+          name: typeOfTest
           schema:
             type: string
-            enum:
-              - vta
-              - vtm
-              - all
           description: >-
-            NOTE: NOT CURRENTLY IMPLEMENTED
-          # It is used to filter testTypes by forVtmOnly attribute.
-          # vta - Returns all testTypes where forVtmOnly = false
-          # vtm - Returns all testTypes where forVtmOnly = true
-          # all - Returns all testTypes without any filter
+            It is used to filter test types based on the given typeOfTest. Note that sending the query parameter will also return the test types without a tag.
       operationId: getTestTypes
       responses:
         "200":
