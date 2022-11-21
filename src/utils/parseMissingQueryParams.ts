@@ -9,7 +9,7 @@
  */
 export const parseAndCastQueryParams = (
   queryStringParameters: any,
-  numericParameters: string[]
+  numericParameters?: string[]
 ) => {
   const queryParams = Object.assign({}, queryStringParameters);
 
@@ -20,7 +20,7 @@ export const parseAndCastQueryParams = (
     ) {
       queryParams[parameterName] = null;
     }
-    if (numericParameters.includes(parameterName)) {
+    if (numericParameters?.includes(parameterName)) {
       queryParams[parameterName] = castToNumber(queryParams[parameterName]);
     }
   });

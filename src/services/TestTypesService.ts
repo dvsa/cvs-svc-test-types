@@ -1,6 +1,10 @@
 import { HTTPError } from "../models/HTTPError";
 import TestTypesDAO from "../models/TestTypesDAO";
-import { ITestType, TestCode } from "../models/ITestType";
+import {
+  ITestType,
+  NextTestTypesOrCategory,
+  TestCode,
+} from "../models/ITestType";
 import { ERRORS, HTTPRESPONSE } from "../assets/Enums";
 
 export class TestTypesService {
@@ -10,15 +14,18 @@ export class TestTypesService {
     this.testTypesDAO = testTypesDAO;
   }
 
-  public async getTestTypesList() {
+  public async getTestTypesList(typeOfTest?: string) {
     try {
       const data = await this.testTypesDAO.getAll();
       if (data.Count === 0) {
         throwResourceNotFound();
       }
-
       this.purgeTestTypes(data.Items);
-      return this.sort(data.Items);
+      const filteredArray = this.filterTaxonomyTypes(
+        data.Items as ITestType[],
+        typeOfTest
+      );
+      return this.sort(filteredArray);
     } catch (error) {
       if (!(error instanceof HTTPError)) {
         console.error(error);
@@ -167,6 +174,26 @@ export class TestTypesService {
         response[field] = testType[field as keyof ITestType];
       }
     });
+  }
+
+  public filterTaxonomyTypes(
+    testTypesTaxonomy: ITestType[] | NextTestTypesOrCategory[],
+    typeOfTest?: string
+  ): ITestType[] | NextTestTypesOrCategory[] {
+    return testTypesTaxonomy
+      .filter(
+        (testTypes) =>
+          testTypes.typeOfTest === typeOfTest || !testTypes.typeOfTest
+      )
+      .map((testType) => {
+        if (testType.nextTestTypesOrCategories) {
+          testType.nextTestTypesOrCategories = this.filterTaxonomyTypes(
+            testType.nextTestTypesOrCategories,
+            typeOfTest
+          );
+        }
+        return testType;
+      });
   }
 
   /**

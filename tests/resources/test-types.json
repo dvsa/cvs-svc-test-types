@@ -8507,7 +8507,7 @@
   {
     "id": "400",
     "sortId": "400",
-    "tag": "desk-based",
+    "typeOfTest": "desk-based",
     "linkedIds": null,
     "name": "DBA",
     "forVehicleType": ["psv", "hgv", "trl"],
@@ -8522,7 +8522,7 @@
       {
         "id": "401",
         "sortId": "401",
-        "tag": "desk-based",
+        "typeOfTest": "desk-based",
         "linkedIds": null,
         "name": "LEC",
         "forVehicleType": ["psv", "hgv"],
@@ -8537,7 +8537,7 @@
           {
             "id": "402",
             "sortId": "402",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "LEC without inspection",
             "forVehicleType": ["psv", "hgv"],
@@ -8552,7 +8552,7 @@
               {
                 "id": "403",
                 "sortId": "403",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "Declaration of Conformity for fitment of approved exhaust abatement device",
                 "forVehicleType": ["psv", "hgv"],
@@ -8594,7 +8594,7 @@
               {
                 "id": "404",
                 "sortId": "404",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "Declaration of testing of approved exhaust abatement device",
                 "forVehicleType": ["psv", "hgv"],
@@ -8640,7 +8640,7 @@
       {
         "id": "405",
         "sortId": "405",
-        "tag": "desk-based",
+        "typeOfTest": "desk-based",
         "linkedIds": null,
         "name": "DDA",
         "forVehicleType": "psv",
@@ -8655,7 +8655,7 @@
           {
             "id": "406",
             "sortId": "406",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "DDA Schedule 1, 2 or 3 without inspection",
             "forVehicleType": "psv",
@@ -8670,7 +8670,7 @@
               {
                 "id": "407",
                 "sortId": "407",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "PSV400B COIF Approval Change Notification",
                 "forVehicleType": "psv",
@@ -8700,7 +8700,7 @@
               {
                 "id": "408",
                 "sortId": "408",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "PSVA6 Application for Accessibility - Approved",
                 "forVehicleType": "psv",
@@ -8734,7 +8734,7 @@
       {
         "id": "409",
         "sortId": "409",
-        "tag": "desk-based",
+        "typeOfTest": "desk-based",
         "linkedIds": null,
         "name": "Tempo 100",
         "forVehicleType": "psv",
@@ -8749,7 +8749,7 @@
           {
             "id": "410",
             "sortId": "410",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "PSVC1 Tempo 100",
             "forVehicleType": "psv",
@@ -8793,7 +8793,7 @@
       {
         "id": "411",
         "sortId": "411",
-        "tag": "desk-based",
+        "typeOfTest": "desk-based",
         "linkedIds": null,
         "name": "COIF",
         "forVehicleType": "psv",
@@ -8808,7 +8808,7 @@
           {
             "id": "412",
             "sortId": "412",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "Vitesse 100",
             "forVehicleType": "psv",
@@ -8823,7 +8823,7 @@
               {
                 "id": "413",
                 "sortId": "413",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "PSVV1 Vitesse 100",
                 "forVehicleType": "psv",
@@ -8855,7 +8855,7 @@
           {
             "id": "414",
             "sortId": "414",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "VPT5",
             "forVehicleType": "psv",
@@ -8870,7 +8870,7 @@
               {
                 "id": "415",
                 "sortId": "415",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "VPT5 Notifiable Alteration",
                 "forVehicleType": "psv",
@@ -8916,7 +8916,7 @@
       {
         "id": "416",
         "sortId": "416",
-        "tag": "desk-based",
+        "typeOfTest": "desk-based",
         "linkedIds": null,
         "name": "Appeal",
         "forVehicleType": ["psv", "hgv", "trl"],
@@ -8931,7 +8931,7 @@
           {
             "id": "417",
             "sortId": "417",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "IVA",
             "forVehicleType": ["psv", "hgv", "trl"],
@@ -8946,7 +8946,7 @@
               {
                 "id": "418",
                 "sortId": "418",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "IVA17 Appeal for IVA",
                 "forVehicleType": ["psv", "hgv", "trl"],
@@ -9050,7 +9050,7 @@
           {
             "id": "419",
             "sortId": "419",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "LEC without inspection",
             "forVehicleType": "hgv",
@@ -9065,7 +9065,7 @@
               {
                 "id": "420",
                 "sortId": "420",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "RPC/LEC3 Appeal",
                 "forVehicleType": "hgv",
@@ -9097,7 +9097,7 @@
           {
             "id": "421",
             "sortId": "421",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "Annual",
             "forVehicleType": ["psv", "hgv", "trl"],
@@ -9112,7 +9112,7 @@
               {
                 "id": "422",
                 "sortId": "422",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "VTG17 Appeal",
                 "forVehicleType": ["hgv", "trl"],
@@ -9154,7 +9154,7 @@
               {
                 "id": "423",
                 "sortId": "423",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "VTP17 Appeal annual test ",
                 "forVehicleType": "psv",
@@ -9200,7 +9200,7 @@
       {
         "id": "424",
         "sortId": "424",
-        "tag": "desk-based",
+        "typeOfTest": "desk-based",
         "linkedIds": null,
         "name": "IVA",
         "forVehicleType": "hgv",
@@ -9215,7 +9215,7 @@
           {
             "id": "425",
             "sortId": "425",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "Mutual Recognition/End series/etc without inspection",
             "forVehicleType": "hgv",
@@ -9230,7 +9230,7 @@
               {
                 "id": "426",
                 "sortId": "426",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "Mutual Recognition Cat E statutory",
                 "forVehicleType": "hgv",
@@ -9264,7 +9264,7 @@
       {
         "id": "427",
         "sortId": "427",
-        "tag": "desk-based",
+        "typeOfTest": "desk-based",
         "linkedIds": null,
         "name": "Notifiable Alteration",
         "forVehicleType": ["hgv", "trl"],
@@ -9279,7 +9279,7 @@
           {
             "id": "428",
             "sortId": "428",
-            "tag": "desk-based",
+            "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "Paid notifiable alteration without inspection",
             "forVehicleType": ["hgv", "trl"],
@@ -9294,7 +9294,7 @@
               {
                 "id": "429",
                 "sortId": "429",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "VTG790 Notifiable Alteration C/T only",
                 "forVehicleType": "hgv",
@@ -9324,7 +9324,7 @@
               {
                 "id": "430",
                 "sortId": "430",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "VTG10 Notifiable Alteration",
                 "forVehicleType": ["hgv", "trl"],
@@ -9366,7 +9366,7 @@
               {
                 "id": "431",
                 "sortId": "431",
-                "tag": "desk-based",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "VTG10 Notifiable Alteration with MR only",
                 "forVehicleType": "hgv",
