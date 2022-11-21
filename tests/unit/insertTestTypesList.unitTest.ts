@@ -39,7 +39,7 @@ describe("insertTestTypesList", () => {
         return testTypesService
           .insertTestTypesList(expectedUnprocessedTestTypesRecords)
           .then((result: any) => {
-            expect(result.length).toEqual(16);
+            expect(result.length).toEqual(TestTypes.length);
           });
       });
     }

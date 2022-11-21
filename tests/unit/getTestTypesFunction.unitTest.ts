@@ -72,6 +72,23 @@ describe("getTestTypes function", () => {
     }
   );
 
+  describe("with query parameters", () => {
+    it("should throw validation errors if an invalid query parameter is passed in", async () => {
+      TestTypesService.prototype.getTestTypesList = jest
+        .fn()
+        .mockRejectedValue("Success");
+      const result = await getTestTypes(
+        { queryStringParameters: { foo: "foo" } },
+        ctx,
+        () => {
+          return;
+        }
+      );
+      expect(result.statusCode).toBe(400);
+      expect(result.body).toEqual('"Query parameter \\"foo\\" is not allowed"');
+    });
+  });
+
   context("gets error from Service", () => {
     it("Returns the error as an HTTPResponse", async () => {
       const myError = new HTTPError(418, "It Broke!");
