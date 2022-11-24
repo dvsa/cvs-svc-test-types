@@ -8799,8 +8799,8 @@
         "forVehicleWheels": null,
         "nextTestTypesOrCategories": [
           {
-            "id": "412",
-            "sortId": "412",
+            "id": "411",
+            "sortId": "411",
             "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "Vitesse 100",
