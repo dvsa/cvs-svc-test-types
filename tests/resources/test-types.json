@@ -8567,7 +8567,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
@@ -8610,7 +8610,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
@@ -8689,7 +8689,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
@@ -8720,7 +8720,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
@@ -9015,7 +9015,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "defaultTestCode": "??",
+                "defaultTestCode": "lnv",
                 "linkedTestCode": null
               }  
             ]
@@ -9051,7 +9051,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
@@ -9094,7 +9094,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
@@ -9221,7 +9221,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
@@ -9252,7 +9252,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
@@ -9295,7 +9295,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "??",
+                "testTypeClassification": "NON ANNUAL",
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
