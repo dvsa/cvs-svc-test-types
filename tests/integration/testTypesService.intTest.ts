@@ -64,20 +64,6 @@ describe("test types", () => {
         });
       });
 
-      it("should return 400", () => {
-        return LambdaTester(getTestTypes)
-          .event({
-            queryStringParameters: {
-              foo: "foo",
-            },
-          })
-          .expectResolve((result: { statusCode: any; body: any }) => {
-            expect(result.statusCode).toEqual(400);
-            expect(result.body).toEqual(
-              '"Query parameter \\"foo\\" is not allowed"'
-            );
-          });
-      });
 
       it("should provide CORS headers", async () => {
         const expectedHeaders = {
