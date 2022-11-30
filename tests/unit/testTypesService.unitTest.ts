@@ -8,10 +8,11 @@ import {
   ITestType,
   TestCode,
 } from "../../src/models/ITestType";
+import recursiveFind from "../util/recursiveFind";
 
 describe("when database is on", () => {
   let mockTestTypesRecords: any;
-  let testTypesService: TestTypesService | any;
+  let testTypesService: TestTypesService;
   let MockTestTypesDAO: jest.Mock;
 
   beforeEach(() => {
@@ -31,7 +32,7 @@ describe("when database is on", () => {
 
   afterEach(() => {
     mockTestTypesRecords = null;
-    testTypesService = null;
+    testTypesService = null as any;
     MockTestTypesDAO.mockReset();
   });
 
@@ -39,21 +40,11 @@ describe("when database is on", () => {
     context("getTestTypesList", () => {
       it("should return the purged, sorted data", () => {
         const expectedTestTypesRecords = cloneDeep(mockTestTypesRecords);
-        MockTestTypesDAO = jest.fn().mockImplementation(() => {
-          return {
-            getAll: () => {
-              return Promise.resolve({
-                Items: mockTestTypesRecords,
-                Count: mockTestTypesRecords.length,
-              });
-            },
-          };
-        });
         testTypesService = new TestTypesService(new MockTestTypesDAO());
         testTypesService.purgeTestTypes(expectedTestTypesRecords);
         testTypesService.sort(expectedTestTypesRecords);
         return testTypesService
-          .getTestTypesList()
+          .getTestTypesList("desk-based")
           .then((returnedRecords: any) => {
             expect(expectedTestTypesRecords).toEqual(returnedRecords);
           });
@@ -209,6 +200,38 @@ describe("when database is on", () => {
             response
           );
           expect(response).toEqual({ foobar: "foobar", bar: "bar" });
+        });
+      });
+
+      context("filterTaxonomyTypes", () => {
+        it("should return testTypes that don't have a typeOfTest", () => {
+          const filteredTestTypes = testTypesService.filterTaxonomyTypes(
+            TestTypes as ITestType[]
+          );
+          expect(
+            recursiveFind((testType) => !testType.typeOfTest, filteredTestTypes)
+          ).toBeDefined();
+          expect(
+            recursiveFind(
+              (testType) => testType.typeOfTest === "desk-based",
+              filteredTestTypes
+            )
+          ).toBeUndefined();
+        });
+        it("should return testTypes that don't have a typeOfTest and desk-based test types", () => {
+          const filteredTestTypes = testTypesService.filterTaxonomyTypes(
+            TestTypes as ITestType[],
+            "desk-based"
+          );
+          expect(
+            recursiveFind((testType) => !testType.typeOfTest, filteredTestTypes)
+          ).toBeDefined();
+          expect(
+            recursiveFind(
+              (testType) => testType.typeOfTest === "desk-based",
+              filteredTestTypes
+            )
+          ).toBeDefined();
         });
       });
 

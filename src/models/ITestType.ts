@@ -1,4 +1,5 @@
 export interface ITestType {
+  typeOfTest?: string;
   id: string;
   sortId: string;
   linkedIds: string[] | null;
@@ -71,6 +72,7 @@ export enum ForVehicleSubclass {
 }
 
 export interface NextTestTypesOrCategory {
+  typeOfTest?: string;
   id: string;
   linkedIds: string[] | null;
   name: string;

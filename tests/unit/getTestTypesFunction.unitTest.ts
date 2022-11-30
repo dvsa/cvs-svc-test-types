@@ -72,6 +72,7 @@ describe("getTestTypes function", () => {
     }
   );
 
+
   context("gets error from Service", () => {
     it("Returns the error as an HTTPResponse", async () => {
       const myError = new HTTPError(418, "It Broke!");
