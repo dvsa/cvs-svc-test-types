@@ -8966,19 +8966,7 @@
               },
               {
                 "forVehicleType": "trl",
-                "forVehicleSize": "small",
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
-                "forEuVehicleCategory": null,
-                "forVehicleClass": null,
-                "forVehicleSubclass": null,
-                "forVehicleWheels": null,
-                "defaultTestCode": "ymt",
-                "linkedTestCode": null
-              },
-              {
-                "forVehicleType": "trl",
-                "forVehicleSize": "large",
+                "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
