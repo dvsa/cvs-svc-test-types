@@ -9294,7 +9294,7 @@
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
-                    "defaultTestCode": "10r",
+                    "defaultTestCode": "nfv",
                     "linkedTestCode": null
                   }
                 ]
