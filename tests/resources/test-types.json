@@ -8895,51 +8895,15 @@
             "linkedIds": null,
             "name": "IVA",
             "testTypeName": "IVA",
-            "forVehicleType": ["psv", "hgv", "trl"],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "forEuVehicleCategory": null,
+            "forEuVehicleCategory": ["n2", "n3", "o1", "o2", "o3", "o4"],
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "testCodes": [
-              {
-                "forVehicleType": "psv",
-                "forVehicleSize": "small",
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
-                "forEuVehicleCategory": null,
-                "forVehicleClass": null,
-                "forVehicleSubclass": null,
-                "forVehicleWheels": null,
-                "defaultTestCode": "yds",
-                "linkedTestCode": null
-              },
-              {
-                "forVehicleType": "psv",
-                "forVehicleSize": "large",
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": 2,
-                "forEuVehicleCategory": null,
-                "forVehicleClass": null,
-                "forVehicleSubclass": null,
-                "forVehicleWheels": null,
-                "defaultTestCode": "yhl",
-                "linkedTestCode": null
-              },
-              {
-                "forVehicleType": "psv",
-                "forVehicleSize": "large",
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": 3,
-                "forEuVehicleCategory": null,
-                "forVehicleClass": null,
-                "forVehicleSubclass": null,
-                "forVehicleWheels": null,
-                "defaultTestCode": "yml",
-                "linkedTestCode": null
-              },
               {
                 "forVehicleType": "hgv",
                 "forVehicleSize": null,
@@ -9010,6 +8974,60 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yrt",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "426",
+            "sortId": "426",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "IVA",
+            "testTypeName": "IVA",
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null, 
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "yds",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": 2,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "yhl",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": 3,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "yml",
                 "linkedTestCode": null
               }
             ]
