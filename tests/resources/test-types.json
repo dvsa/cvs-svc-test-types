@@ -8551,20 +8551,6 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testCodes": [
-              {
-                "forVehicleType": "lgv",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
-                "forEuVehicleCategory": null,
-                "forVehicleClass": null,
-                "forVehicleSubclass": null,
-                "forVehicleWheels": null,
-                "defaultTestCode": "lnz",
-                "linkedTestCode": null
-              }
-            ],
             "nextTestTypesOrCategories": [
               {
                 "id": "403",
