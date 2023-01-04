@@ -8551,18 +8551,20 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testCodes": [{
-              "forVehicleType": "lgv",
-              "forVehicleSize": null,
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "lnz",
-              "linkedTestCode": null
-            }],
+            "testCodes": [
+              {
+                "forVehicleType": "lgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lnz",
+                "linkedTestCode": null
+              }
+            ],
             "nextTestTypesOrCategories": [
               {
                 "id": "403",
@@ -8667,18 +8669,20 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testCodes": [{
-              "forVehicleType": "lgv",
-              "forVehicleSize": null,
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "lnz",
-              "linkedTestCode": null
-            }]
+            "testCodes": [
+              {
+                "forVehicleType": "lgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lnz",
+                "linkedTestCode": null
+              }
+            ]
           }
         ]
       },
@@ -8795,32 +8799,32 @@
         "forVehicleClass": null,
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
-          "testCodes": [
-            {
-              "forVehicleType": "psv",
-              "forVehicleSize": "small",
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "tes",
-              "linkedTestCode": null
-            },
-            {
-              "forVehicleType": "psv",
-              "forVehicleSize": "large",
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "tel",
-              "linkedTestCode": null
-            }
-          ]
+        "testCodes": [
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "small",
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "defaultTestCode": "tes",
+            "linkedTestCode": null
+          },
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "large",
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "defaultTestCode": "tel",
+            "linkedTestCode": null
+          }
+        ]
       },
       {
         "id": "410",
@@ -8908,7 +8912,7 @@
                 "defaultTestCode": "nfl",
                 "linkedTestCode": null
               }
-            ] 
+            ]
           }
         ]
       },
@@ -9029,7 +9033,7 @@
             "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "forEuVehicleCategory": null, 
+            "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
@@ -9099,7 +9103,7 @@
                 "forVehicleWheels": null,
                 "defaultTestCode": "lnv",
                 "linkedTestCode": null
-              }  
+              }
             ]
           },
           {
