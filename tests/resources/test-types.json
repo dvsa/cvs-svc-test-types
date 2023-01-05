@@ -8511,7 +8511,7 @@
     "linkedIds": null,
     "name": "DBA",
     "testTypeName": "Desk based assessment",
-    "forVehicleType": ["psv", "hgv", "trl"],
+    "forVehicleType": ["psv", "hgv", "trl", "lgv"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -8527,7 +8527,7 @@
         "linkedIds": null,
         "name": "LEC",
         "testTypeName": "LEC",
-        "forVehicleType": ["psv", "hgv"],
+        "forVehicleType": ["psv", "hgv", "lgv"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -8637,6 +8637,36 @@
                     "linkedTestCode": null
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "id": "430",
+            "sortId": "430",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "LEC without inspection",
+            "testTypeName": "Without inspection",
+            "forVehicleType": ["lgv"],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": "lgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "lnz",
+                "linkedTestCode": null
               }
             ]
           }
@@ -8755,32 +8785,32 @@
         "forVehicleClass": null,
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
-          "testCodes": [
-            {
-              "forVehicleType": "psv",
-              "forVehicleSize": "small",
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "tes",
-              "linkedTestCode": null
-            },
-            {
-              "forVehicleType": "psv",
-              "forVehicleSize": "large",
-              "forVehicleConfiguration": null,
-              "forVehicleAxles": null,
-              "forEuVehicleCategory": null,
-              "forVehicleClass": null,
-              "forVehicleSubclass": null,
-              "forVehicleWheels": null,
-              "defaultTestCode": "tel",
-              "linkedTestCode": null
-            }
-          ]
+        "testCodes": [
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "small",
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "defaultTestCode": "tes",
+            "linkedTestCode": null
+          },
+          {
+            "forVehicleType": "psv",
+            "forVehicleSize": "large",
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "defaultTestCode": "tel",
+            "linkedTestCode": null
+          }
+        ]
       },
       {
         "id": "410",
@@ -8868,7 +8898,7 @@
                 "defaultTestCode": "nfl",
                 "linkedTestCode": null
               }
-            ] 
+            ]
           }
         ]
       },
@@ -8989,7 +9019,7 @@
             "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "forEuVehicleCategory": null, 
+            "forEuVehicleCategory": null,
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
@@ -9059,7 +9089,7 @@
                 "forVehicleWheels": null,
                 "defaultTestCode": "lnv",
                 "linkedTestCode": null
-              }  
+              }
             ]
           },
           {
@@ -9349,6 +9379,73 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "nfv",
+                    "linkedTestCode": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "427",
+        "sortId": "427",
+        "typeOfTest": "desk-based",
+        "linkedIds": null,
+        "name": "ADR",
+        "testTypeName": "ADR",
+        "forVehicleType": "lgv",
+        "forVehicleSize": null,
+        "forVehicleConfiguration": null,
+        "forVehicleAxles": null,
+        "forEuVehicleCategory": null,
+        "forVehicleClass": null,
+        "forVehicleSubclass": null,
+        "forVehicleWheels": null,
+        "nextTestTypesOrCategories": [
+          {
+            "id": "428",
+            "sortId": "428",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "ADR without inspection",
+            "testTypeName": "Without inspection",
+            "forVehicleType": "lgv",
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "nextTestTypesOrCategories": [
+              {
+                "id": "429",
+                "sortId": "429",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "Type approved tractor unit - Northern Ireland ",
+                "testTypeName": "Type approved tractor unit - Northern Ireland ",
+                "forVehicleType": "lgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "NON ANNUAL",
+                "testCodes": [
+                  {
+                    "forVehicleType": "lgv",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "cnv",
                     "linkedTestCode": null
                   }
                 ]
