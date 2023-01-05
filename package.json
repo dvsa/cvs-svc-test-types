@@ -51,7 +51,7 @@
     "babel-jest": "^25.1.0",
     "husky": "^3.0.8",
     "jest": "^26.6.3",
-    "jest-cucumber": "^2.0.11",
+    "jest-cucumber": "^3.0.1",
     "jest-plugin-context": "^2.9.0",
     "jest-sonar-reporter": "^2.0.0",
     "lambda-tester": "^4.0.1",
