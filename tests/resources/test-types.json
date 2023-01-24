@@ -8929,6 +8929,7 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
+            "testTypeClassification": "NON ANNUAL",
             "forEuVehicleCategory": ["n2", "n3", "o1", "o2", "o3", "o4"],
             "forVehicleClass": null,
             "forVehicleSubclass": null,
@@ -9021,6 +9022,7 @@
             "forVehicleAxles": null,
             "forEuVehicleCategory": null,
             "forVehicleClass": null,
+            "testTypeClassification": "NON ANNUAL",
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "testCodes": [
@@ -9077,6 +9079,7 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
+            "testTypeClassification": "NON ANNUAL",
             "testCodes": [
               {
                 "forVehicleType": "hgv",
