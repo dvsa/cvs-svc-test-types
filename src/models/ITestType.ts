@@ -47,7 +47,7 @@ export enum ForVehicleType {
   Trl = "trl",
   Lgv = "lgv",
   Car = "car",
-  SmallTrl = "small trailer",
+  SmallTrl = "small trl",
   Motorcycle = "motorcycle",
 }
 
