@@ -9428,7 +9428,7 @@
         "linkedIds": null,
         "name": "ADR",
         "testTypeName": "ADR",
-        "forVehicleType": "lgv",
+        "forVehicleType": ["hgv", "lgv"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -9485,9 +9485,89 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "440",
+            "sortId": "440",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "ADRIIIa",
+            "testTypeName": "Without inspection",
+            "forVehicleType": "hgv",
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "nextTestTypesOrCategories": [
+              {
+                "id": "441",
+                "sortId": "441",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "Type approved tractor unit - Great Britain",
+                "testTypeName": "Type approved tractor unit - Great Britain",
+                "forVehicleType": "hgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "NON ANNUAL",
+                "testCodes": [
+                  {
+                    "forVehicleType": "hgv",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "cdv",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "442",
+                "sortId": "442",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "Type approved tractor unit - Northern Ireland ",
+                "testTypeName": "Type approved tractor unit - Northern Ireland ",
+                "forVehicleType": "hgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "NON ANNUAL",
+                "testCodes": [
+                  {
+                    "forVehicleType": "hgv",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "cnv",
+                    "linkedTestCode": null
+                  }
+                ]
+              }
+            ]
           }
         ]
-      }
+      }     
     ]
   }
 ]
