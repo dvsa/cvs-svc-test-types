@@ -8899,6 +8899,36 @@
                 "linkedTestCode": null
               }
             ]
+          },
+          {
+            "id": "432",
+            "sortId": "432",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "IVA Appeal",
+            "testTypeName": "IVA Appeal",
+            "forVehicleType": "psv",
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "???",
+                "linkedTestCode": null
+              }
+            ]
           }
         ]
       },
