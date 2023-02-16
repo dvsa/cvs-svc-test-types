@@ -9492,7 +9492,7 @@
             "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "ADRIIIa",
-            "testTypeName": "Without inspection",
+            "testTypeName": "ADRIIIa",
             "forVehicleType": "hgv",
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
