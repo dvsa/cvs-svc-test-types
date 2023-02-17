@@ -8918,14 +8918,26 @@
             "testCodes": [
               {
                 "forVehicleType": "psv",
-                "forVehicleSize": null,
+                "forVehicleSize": "large",
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "defaultTestCode": "???",
+                "defaultTestCode": "cel",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "ces",
                 "linkedTestCode": null
               }
             ]
