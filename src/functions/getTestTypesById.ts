@@ -8,6 +8,7 @@ import {
   ForVehicleConfiguration,
   ForVehicleSize,
   ForVehicleType,
+  GetTestTypeByIdQueryParams,
 } from "../models/ITestType";
 import { HTTPRESPONSE, NUM_PARAMETERS } from "../assets/Enums";
 import { Validator } from "../utils/Validator";
@@ -72,7 +73,10 @@ export const getTestTypesById: Handler = (event, context, callback) => {
   });
 
   return testTypesService
-    .getTestTypesById(event.pathParameters.id, queryParams)
+    .getTestTypesById(
+      event.pathParameters.id,
+      queryParams as GetTestTypeByIdQueryParams
+    )
     .then((data) => {
       return new HTTPResponse(200, data);
     })

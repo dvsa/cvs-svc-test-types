@@ -4,7 +4,10 @@ import { cloneDeep } from "lodash";
 import { ERRORS, HTTPRESPONSE } from "../../src/assets/Enums";
 import {
   ForEuVehicleCategory,
+  ForVehicleConfiguration,
+  ForVehicleSize,
   ForVehicleSubclass,
+  ForVehicleType,
   ITestType,
   TestCode,
 } from "../../src/models/ITestType";
@@ -62,9 +65,9 @@ describe("when database is on", () => {
                 "defaultTestCode",
                 "linkedTestCode",
               ],
-              vehicleType: "psv",
-              vehicleSize: "small",
-              vehicleConfiguration: "rigid",
+              vehicleType: ForVehicleType.Hgv,
+              vehicleSize: ForVehicleSize.Small,
+              vehicleConfiguration: ForVehicleConfiguration.Rigid,
             });
           } catch (e) {
             expect(e.statusCode).toEqual(404);
@@ -84,9 +87,9 @@ describe("when database is on", () => {
                 "defaultTestCode",
                 "linkedTestCode",
               ],
-              vehicleType: "hgv",
-              vehicleSize: "small",
-              vehicleConfiguration: "rigid",
+              vehicleType: ForVehicleType.Hgv,
+              vehicleSize: ForVehicleSize.Small,
+              vehicleConfiguration: ForVehicleConfiguration.Rigid,
             });
           } catch (e) {
             expect(e.statusCode).toEqual(404);
@@ -127,9 +130,9 @@ describe("when database is on", () => {
               "name",
               "testTypeName",
             ],
-            vehicleType: "psv",
-            vehicleSize: "small",
-            vehicleConfiguration: "rigid",
+            vehicleType: ForVehicleType.Psv,
+            vehicleSize: ForVehicleSize.Small,
+            vehicleConfiguration: ForVehicleConfiguration.Rigid,
           });
           const outputKeys = Object.keys(output);
           expect(output.id).toEqual("1");
@@ -244,9 +247,9 @@ describe("when database is on", () => {
                 "defaultTestCode",
                 "linkedTestCode",
               ],
-              vehicleType: "psv",
-              vehicleSize: "small",
-              vehicleConfiguration: "rigid",
+              vehicleType: ForVehicleType.Psv,
+              vehicleSize: ForVehicleSize.Small,
+              vehicleConfiguration: ForVehicleConfiguration.Rigid,
             })
             .then((returnedRecords: any) => {
               expect(returnedRecords).toEqual({
@@ -270,8 +273,8 @@ describe("when database is on", () => {
                   "defaultTestCode",
                   "linkedTestCode",
                 ],
-                vehicleType: "psv",
-                vehicleConfiguration: "articulated",
+                vehicleType: ForVehicleType.Psv,
+                vehicleConfiguration: ForVehicleConfiguration.Articulated,
               })
               .then((returnedRecords: any) => {
                 expect(returnedRecords).toEqual({
@@ -296,7 +299,7 @@ describe("when database is on", () => {
                   "defaultTestCode",
                   "linkedTestCode",
                 ],
-                vehicleType: "hgv",
+                vehicleType: ForVehicleType.Hgv,
               })
               .then((returnedRecords: any) => {
                 expect(returnedRecords).toEqual({
@@ -321,7 +324,7 @@ describe("when database is on", () => {
                   "defaultTestCode",
                   "linkedTestCode",
                 ],
-                vehicleType: "hgv",
+                vehicleType: ForVehicleType.Hgv,
               })
               .then((returnedRecords: any) => {
                 expect(returnedRecords).toEqual({
@@ -347,7 +350,7 @@ describe("when database is on", () => {
                 "defaultTestCode",
                 "linkedTestCode",
               ],
-              vehicleType: "hgv",
+              vehicleType: ForVehicleType.Hgv,
               vehicleAxles: 5,
             })
             .then((returnedRecords: any) => {
@@ -373,7 +376,7 @@ describe("when database is on", () => {
                 "defaultTestCode",
                 "linkedTestCode",
               ],
-              vehicleType: "hgv",
+              vehicleType: ForVehicleType.Hgv,
             })
             .then((returnedRecords: any) => {
               expect(returnedRecords).toEqual({
@@ -398,7 +401,7 @@ describe("when database is on", () => {
                 "defaultTestCode",
                 "linkedTestCode",
               ],
-              vehicleType: "hgv",
+              vehicleType: ForVehicleType.Hgv,
               vehicleAxles: 5,
             })
             .then((returnedRecords: any) => {
@@ -424,7 +427,7 @@ describe("when database is on", () => {
                 "defaultTestCode",
                 "linkedTestCode",
               ],
-              vehicleType: "hgv",
+              vehicleType: ForVehicleType.Hgv,
               vehicleAxles: 5,
             })
             .then((returnedRecords: any) => {
@@ -489,9 +492,9 @@ context("database call returns empty data", () => {
               "defaultTestCode",
               "linkedTestCode",
             ],
-            vehicleType: "psv",
-            vehicleSize: "small",
-            vehicleConfiguration: "rigid",
+            vehicleType: ForVehicleType.Psv,
+            vehicleSize: ForVehicleSize.Small,
+            vehicleConfiguration: ForVehicleConfiguration.Rigid,
           });
         } catch (errorResponse) {
           expect(errorResponse.statusCode).toEqual(404);
@@ -550,7 +553,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
             "              }"
         );
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleAxles: 5,
         };
         // tslint:disable-next-line:no-empty
@@ -584,7 +587,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
             "              }"
         );
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleAxles: 5,
         };
         // tslint:disable-next-line:no-empty
@@ -650,7 +653,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
             "              }"
         );
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleAxles: 5,
         };
         // tslint:disable-next-line:no-empty
@@ -684,7 +687,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
             "              }"
         );
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleAxles: 5,
         };
         // tslint:disable-next-line:no-empty
@@ -707,7 +710,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
     it("should throw a 500 error", () => {
       const testCode = {} as TestCode;
 
-      const filterExpression = {
+      const filterExpression: any = {
         nonexistentFilter: null,
       };
       // tslint:disable-next-line:no-empty
@@ -740,7 +743,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           ],
         } as TestCode;
 
-        const filterExpression = {
+        const filterExpression: any = {
           euVehicleCategory: ForEuVehicleCategory.N2,
         };
         // tslint:disable-next-line:no-empty
@@ -767,7 +770,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           forEuVehicleCategory: ForEuVehicleCategory.N2,
         } as TestCode;
 
-        const filterExpression = {
+        const filterExpression: any = {
           euVehicleCategory: ForEuVehicleCategory.N2,
         };
         // tslint:disable-next-line:no-empty
@@ -792,7 +795,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
         forVehicleClass: ["a", "b"],
       } as TestCode;
 
-      const filterExpression = {
+      const filterExpression: any = {
         vehicleClass: "a",
       };
       // tslint:disable-next-line:no-empty
@@ -818,7 +821,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           forVehicleClass: "a",
         } as TestCode;
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleClass: "a",
         };
         // tslint:disable-next-line:no-empty
@@ -845,7 +848,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           forVehicleSubclass: [ForVehicleSubclass.A, ForVehicleSubclass.C],
         } as TestCode;
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleSubclass: ForVehicleSubclass.A,
         };
         // tslint:disable-next-line:no-empty
@@ -872,7 +875,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           forVehicleSubclass: ForVehicleSubclass.A,
         } as TestCode;
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleSubclass: ForVehicleSubclass.A,
         };
         // tslint:disable-next-line:no-empty
@@ -899,7 +902,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           forVehicleWheels: [1, 2, 3],
         } as TestCode;
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleWheels: 3,
         };
         // tslint:disable-next-line:no-empty
@@ -926,7 +929,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           forVehicleWheels: 1,
         } as TestCode;
 
-        const filterExpression = {
+        const filterExpression: any = {
           vehicleWheels: 1,
         };
         // tslint:disable-next-line:no-empty
