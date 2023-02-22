@@ -295,19 +295,21 @@ export class TestTypesService {
   ) {
     const filterOnField = (filterVal: keyof TestCode) => {
       const filterField = testCode[filterVal];
+      const requestedValue =
+        filterExpression[getFilterFieldWithoutFor(filterVal)];
       if (Array.isArray(filterField)) {
-        return filterField.some(
-          (arrayElement: string | number) =>
-            arrayElement ===
-            filterExpression[getFilterFieldWithoutFor(filterVal)]
+        return filterField.some((arrayElement: string | number) =>
+          includesOrEquals(arrayElement, requestedValue)
         );
       } else {
-        const requestedValue =
-          filterExpression[getFilterFieldWithoutFor(filterVal)];
-        return Array.isArray(requestedValue)
-          ? requestedValue.includes(filterField as string)
-          : requestedValue === filterField;
+        return includesOrEquals(filterField, requestedValue);
       }
+    };
+
+    const includesOrEquals = (filterField: any, requestedValue: any) => {
+      return Array.isArray(requestedValue)
+        ? requestedValue.includes(filterField)
+        : requestedValue === filterField;
     };
 
     const getFilterFieldWithoutFor = (
