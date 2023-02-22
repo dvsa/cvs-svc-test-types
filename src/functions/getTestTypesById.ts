@@ -33,7 +33,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     .keys({
       fields: Joi.string()
         .regex(
-          /^((testTypeClassification|defaultTestCode|linkedTestCode|name|testTypeName),?\s*)*$/
+          /^((testTypeClassification|defaultTestCode|linkedTestCode|name|testTypeName),?\s*){0,5}$/
         )
         .required(),
       vehicleType: Joi.string().only(Object.values(ForVehicleType)).required(),
@@ -65,9 +65,10 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     );
   }
 
-  // Splitting fields into an array and cleaning up unwanted whitespace
+  // Splitting fields and subclass into an array and cleaning up unwanted whitespace
   Object.assign(queryParams, {
     fields: queryParams.fields.replace(/\s/g, "").split(","),
+    vehicleSubclass: queryParams.vehicleSubclass?.replace(/\s/g, "").split(","),
   });
 
   return testTypesService

@@ -291,21 +291,18 @@ export class TestTypesService {
     filterExpression: any,
     field: string
   ) {
-    let bool = false;
     const filterOnField = (filterVal: string) => {
-      const filterField = (testCode as any)[filterVal];
+      const filterField = testCode[filterVal as keyof TestCode];
       if (Array.isArray(filterField)) {
-        filterField.map((arrayElement: any) => {
-          if (
+        return filterField.some(
+          (arrayElement: any) =>
             arrayElement ===
             filterExpression[getFilterFieldWithoutFor(filterVal)]
-          ) {
-            bool = true;
-          }
-        });
+        );
       } else {
-        bool =
-          filterField === filterExpression[getFilterFieldWithoutFor(filterVal)];
+        return (
+          filterField === filterExpression[getFilterFieldWithoutFor(filterVal)]
+        );
       }
     };
 
@@ -323,14 +320,11 @@ export class TestTypesService {
       case "forVehicleClass":
       case "forVehicleSubclass":
       case "forVehicleWheels":
-        filterOnField(field);
-        break;
+        return filterOnField(field);
       default:
         console.error("Field you filtered by does not exist");
         throwInternalServerError();
     }
-
-    return bool;
   }
 }
 
