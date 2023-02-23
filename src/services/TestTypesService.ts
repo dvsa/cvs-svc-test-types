@@ -1,6 +1,7 @@
 import { HTTPError } from "../models/HTTPError";
 import TestTypesDAO from "../models/TestTypesDAO";
 import {
+  GetTestTypeByIdQueryParams,
   ITestType,
   NextTestTypesOrCategory,
   TestCode,
@@ -37,7 +38,10 @@ export class TestTypesService {
     }
   }
 
-  public getTestTypesById(id: string, filterExpression: any) {
+  public async getTestTypesById(
+    id: string,
+    filterExpression: GetTestTypeByIdQueryParams
+  ) {
     return this.testTypesDAO
       .getAll()
       .then((data) => {
@@ -150,13 +154,11 @@ export class TestTypesService {
           id: testType.id,
         };
 
-        // Populating testTypeClassification that is found in testType, not testCode
-        this.addFieldsToResponse(
-          testType,
-          testCodes[0],
-          filterExpression.fields,
-          response
-        );
+        const fields = Array.isArray(filterExpression.fields)
+          ? filterExpression.fields
+          : [filterExpression.fields];
+
+        this.addFieldsToResponse(testType, testCodes[0], fields, response);
         return response;
       });
   }
@@ -254,7 +256,7 @@ export class TestTypesService {
     }
   }
 
-  public insertTestTypesList(testTypesItems: ITestType[]) {
+  public async insertTestTypesList(testTypesItems: ITestType[]) {
     return this.testTypesDAO
       .createMultiple(testTypesItems)
       .then((data) => {
@@ -270,7 +272,7 @@ export class TestTypesService {
       });
   }
 
-  public deleteTestTypesList(testTypesItemKeys: any) {
+  public async deleteTestTypesList(testTypesItemKeys: any) {
     return this.testTypesDAO
       .deleteMultiple(testTypesItemKeys)
       .then((data) => {
@@ -288,30 +290,34 @@ export class TestTypesService {
 
   public fieldInFilterExpressionMatchesTheOneInTestCode(
     testCode: TestCode,
-    filterExpression: any,
+    filterExpression: GetTestTypeByIdQueryParams,
     field: string
   ) {
-    let bool = false;
-    const filterOnField = (filterVal: string) => {
-      const filterField = (testCode as any)[filterVal];
+    const filterOnField = (filterVal: keyof TestCode) => {
+      const filterField = testCode[filterVal];
+      const requestedValue =
+        filterExpression[getFilterFieldWithoutFor(filterVal)];
       if (Array.isArray(filterField)) {
-        filterField.map((arrayElement: any) => {
-          if (
-            arrayElement ===
-            filterExpression[getFilterFieldWithoutFor(filterVal)]
-          ) {
-            bool = true;
-          }
-        });
+        return filterField.some((arrayElement: string | number) =>
+          includesOrEquals(arrayElement, requestedValue)
+        );
       } else {
-        bool =
-          filterField === filterExpression[getFilterFieldWithoutFor(filterVal)];
+        return includesOrEquals(filterField, requestedValue);
       }
     };
 
-    const getFilterFieldWithoutFor = (filterVal: any) => {
+    const includesOrEquals = (filterField: any, requestedValue: any) => {
+      return Array.isArray(requestedValue)
+        ? requestedValue.includes(filterField)
+        : requestedValue === filterField;
+    };
+
+    const getFilterFieldWithoutFor = (
+      filterVal: keyof TestCode
+    ): keyof GetTestTypeByIdQueryParams => {
       const rightLetters = filterVal.slice(3); // cut off the leading "for", but still got a capital letter leading
-      return rightLetters[0].toLowerCase() + rightLetters.slice(1); // switch first letter to lower case, and rejoin with rest of string
+      return (rightLetters[0].toLowerCase() +
+        rightLetters.slice(1)) as keyof GetTestTypeByIdQueryParams; // switch first letter to lower case, and rejoin with rest of string
     };
 
     switch (field) {
@@ -323,14 +329,11 @@ export class TestTypesService {
       case "forVehicleClass":
       case "forVehicleSubclass":
       case "forVehicleWheels":
-        filterOnField(field);
-        break;
+        return filterOnField(field);
       default:
         console.error("Field you filtered by does not exist");
         throwInternalServerError();
     }
-
-    return bool;
   }
 }
 

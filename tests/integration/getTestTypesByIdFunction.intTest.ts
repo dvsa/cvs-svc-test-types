@@ -119,6 +119,88 @@ describe("getTestTypesById", () => {
     });
   });
 
+  context("when the queryStringParameter vehicleSubclass is a string", () => {
+    it("should return 200 and find matching subclass", () => {
+      const expectedResult = {
+        id: "191",
+        testTypeClassification: "Annual NO CERTIFICATE",
+        defaultTestCode: "yd4",
+        linkedTestCode: null,
+      };
+      return LambdaTester(getTestTypesById)
+        .event({
+          queryStringParameters: {
+            fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+            vehicleType: "car",
+            vehicleSubclass: "r",
+          },
+          pathParameters: {
+            id: "191",
+          },
+        })
+        .expectResolve((result: { statusCode: any; body: string }) => {
+          expect(result.statusCode).toEqual(200);
+          expect(JSON.parse(result.body)).toEqual(expectedResult);
+        });
+    });
+  });
+  context(
+    "when the queryStringParameter vehicleSubclass is a string and the subclass is stored as an array in the taxonomy",
+    () => {
+      it("should return 200 and find matching subclass", () => {
+        const expectedResult = {
+          id: "125",
+          testTypeClassification: "Annual NO CERTIFICATE",
+          defaultTestCode: "yf4",
+          linkedTestCode: null,
+        };
+        return LambdaTester(getTestTypesById)
+          .event({
+            queryStringParameters: {
+              fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+              vehicleType: "car",
+              vehicleSubclass: "a",
+            },
+            pathParameters: {
+              id: "125",
+            },
+          })
+          .expectResolve((result: { statusCode: any; body: string }) => {
+            expect(result.statusCode).toEqual(200);
+            expect(JSON.parse(result.body)).toEqual(expectedResult);
+          });
+      });
+    }
+  );
+  context(
+    "when the queryStringParameter vehicleSubclass is a comma-delimited string",
+    () => {
+      it("should return 200 if one of the subclasses is in the data", () => {
+        const expectedResult = {
+          id: "191",
+          testTypeClassification: "Annual NO CERTIFICATE",
+          defaultTestCode: "yd4",
+          linkedTestCode: null,
+        };
+        return LambdaTester(getTestTypesById)
+          .event({
+            queryStringParameters: {
+              fields: "testTypeClassification, defaultTestCode, linkedTestCode",
+              vehicleType: "car",
+              vehicleSubclass: "a,r",
+            },
+            pathParameters: {
+              id: "191",
+            },
+          })
+          .expectResolve((result: { statusCode: any; body: string }) => {
+            expect(result.statusCode).toEqual(200);
+            expect(JSON.parse(result.body)).toEqual(expectedResult);
+          });
+      });
+    }
+  );
+
   context("when the queryStringParameter vehicleAxles is null", () => {
     it("should return 200", () => {
       const expectedResult = {
