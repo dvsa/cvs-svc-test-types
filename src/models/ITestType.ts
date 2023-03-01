@@ -109,3 +109,15 @@ export enum TestTypeClassification {
   AnnualWithCertificate = "Annual With Certificate",
   NonAnnual = "NON ANNUAL",
 }
+
+export interface GetTestTypeByIdQueryParams {
+  fields: string | string[];
+  vehicleSubclass?: string | string[] | null;
+  vehicleWheels?: number | null;
+  vehicleAxles?: number | null;
+  euVehicleCategory?: string | null;
+  vehicleType: ForVehicleType;
+  vehicleSize?: ForVehicleSize;
+  vehicleConfiguration?: ForVehicleConfiguration | null;
+  vehicleClass?: string | null;
+}
