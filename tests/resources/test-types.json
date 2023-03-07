@@ -8511,7 +8511,7 @@
     "linkedIds": null,
     "name": "DBA",
     "testTypeName": "Desk based assessment",
-    "forVehicleType": ["psv", "hgv", "trl", "lgv"],
+    "forVehicleType": ["psv", "hgv", "trl", "lgv", "small trl", "car", "motorcycle"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
@@ -8909,7 +8909,7 @@
         "linkedIds": null,
         "name": "Appeal",
         "testTypeName": "Appeal",
-        "forVehicleType": ["psv", "hgv", "trl"],
+        "forVehicleType": ["psv", "hgv", "trl", "small trl", "car", "lgv", "motorcycle"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -9198,6 +9198,205 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "426",
+            "sortId": "426",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "IVA17 Appeal",
+            "testTypeName": "IVA17 Appeal",
+            "forVehicleType": ["psv"],
+            "forVehicleSize": ["small", "large"],
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "testTypeClassification": "NON ANNUAL",
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "small",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "yds",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": 2,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "yhl",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "psv",
+                "forVehicleSize": "large",
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": 3,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "yml",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "431",
+            "sortId": "431",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "IVA17 Appeal",
+            "testTypeName": "IVA17 Appeal",
+            "forVehicleType": ["small trl"],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "testTypeClassification": "NON ANNUAL",
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": "small trl",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "ydt",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "433",
+            "sortId": "433",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "IVA17 Appeal for IVA",
+            "testTypeName": "IVA17 Appeal for IVA",
+            "forVehicleType": ["car", "lgv"],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "testTypeClassification": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": ["a","c","s","p","l","n","m","r"],
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": "car",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": ["a","c","s"],
+                "forVehicleWheels": null,
+                "defaultTestCode": "yk4",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "car",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": ["p","l","n","m"],
+                "forVehicleWheels": null,
+                "defaultTestCode": "yq4",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "car",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": "r",
+                "forVehicleWheels": null,
+                "defaultTestCode": "ye4",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "lgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": ["a","c","s"],
+                "forVehicleWheels": null,
+                "defaultTestCode": "yk7",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "lgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": ["p","l","n","m"],
+                "forVehicleWheels": null,
+                "defaultTestCode": "yq7",
+                "linkedTestCode": null
+              },
+              {
+                "forVehicleType": "lgv",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": "r",
+                "forVehicleWheels": null,
+                "defaultTestCode": "ye7",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "434",
+            "sortId": "434",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "MSVA17 Appeal",
+            "testTypeName": "MSVA17 Appeal",
+            "forVehicleType": ["motorcycle"],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "testTypeClassification": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": "TODO",
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": "motorcycle",
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": "TODO",
+                "forVehicleWheels": null,
+                "defaultTestCode": "eaa",
+                "linkedTestCode": null
+              }
+            ]
           }
         ]
       },
@@ -9224,7 +9423,7 @@
             "linkedIds": null,
             "name": "Mutual Recognition Cat E Statutory",
             "testTypeName": "Mutual Recognition Cat E Statutory",
-            "forVehicleType": "hgv",
+            "forVehicleType": ["hgv", "car", "lgv"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -9234,7 +9433,7 @@
             "forVehicleWheels": null,
             "testCodes": [
               {
-                "forVehicleType": "hgv",
+                "forVehicleType": ["hgv", "car", "lgv"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
