@@ -8,6 +8,7 @@ import {
   ForVehicleConfiguration,
   ForVehicleSize,
   ForVehicleType,
+  GetTestTypeByIdQueryParams,
 } from "../models/ITestType";
 import { HTTPRESPONSE, NUM_PARAMETERS } from "../assets/Enums";
 import { Validator } from "../utils/Validator";
@@ -33,7 +34,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     .keys({
       fields: Joi.string()
         .regex(
-          /^((testTypeClassification|defaultTestCode|linkedTestCode|name|testTypeName),?\s*)*$/
+          /^((testTypeClassification|defaultTestCode|linkedTestCode|name|testTypeName),?\s*){0,5}$/
         )
         .required(),
       vehicleType: Joi.string().only(Object.values(ForVehicleType)).required(),
@@ -65,13 +66,17 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     );
   }
 
-  // Splitting fields into an array and cleaning up unwanted whitespace
+  // Splitting fields and subclass into an array and cleaning up unwanted whitespace
   Object.assign(queryParams, {
     fields: queryParams.fields.replace(/\s/g, "").split(","),
+    vehicleSubclass: queryParams.vehicleSubclass?.replace(/\s/g, "").split(","),
   });
 
   return testTypesService
-    .getTestTypesById(event.pathParameters.id, queryParams)
+    .getTestTypesById(
+      event.pathParameters.id,
+      queryParams as GetTestTypeByIdQueryParams
+    )
     .then((data) => {
       return new HTTPResponse(200, data);
     })

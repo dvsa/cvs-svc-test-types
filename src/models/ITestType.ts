@@ -45,8 +45,9 @@ export enum ForVehicleType {
   Hgv = "hgv",
   Psv = "psv",
   Trl = "trl",
-  Car = "car",
   Lgv = "lgv",
+  Car = "car",
+  SmallTrl = "small trl",
   Motorcycle = "motorcycle",
 }
 
@@ -107,4 +108,16 @@ export enum TestTypeClassification {
   AnnualNOCERTIFICATE = "Annual NO CERTIFICATE",
   AnnualWithCertificate = "Annual With Certificate",
   NonAnnual = "NON ANNUAL",
+}
+
+export interface GetTestTypeByIdQueryParams {
+  fields: string | string[];
+  vehicleSubclass?: string | string[] | null;
+  vehicleWheels?: number | null;
+  vehicleAxles?: number | null;
+  euVehicleCategory?: string | null;
+  vehicleType: ForVehicleType;
+  vehicleSize?: ForVehicleSize;
+  vehicleConfiguration?: ForVehicleConfiguration | null;
+  vehicleClass?: string | null;
 }
