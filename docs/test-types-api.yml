@@ -326,7 +326,6 @@ components:
               - trl
               - lgv
               - car
-              - small trl
               - motorcycle
           description: This category is applying only to these vehicle types.
         typeOfTest:
