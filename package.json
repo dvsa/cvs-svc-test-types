@@ -28,7 +28,8 @@
     "sonar-scanner": "sonar-scanner",
     "audit": "npm audit --prod",
     "package": "mkdir ${ZIP_NAME} && cp package.json package-lock.json ${ZIP_NAME}/ && cp -r .build/src/* ${ZIP_NAME}/ && cd ${ZIP_NAME} && npm ci --production && rm package.json package-lock.json && zip -qr ../${ZIP_NAME}.zip .",
-    "tools-setup": "sls dynamodb install"
+    "tools-setup": "sls dynamodb install",
+    "postinstall": "patch-package"
   },
   "author": "",
   "license": "MIT",
@@ -76,6 +77,7 @@
     "joi": "^14.3.1",
     "js-yaml": "^4.1.0",
     "node-yaml": "^4.0.1",
+    "patch-package": "^6.5.1",
     "path-parser": "^4.2.0",
     "reflect-metadata": "^0.1.13"
   },
