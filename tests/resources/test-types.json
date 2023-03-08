@@ -9374,6 +9374,7 @@
               {
                 "id": "435",
                 "sortId": "435",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "Moped vehicle",
                 "testTypeName": "MSVA17 Appeal",
@@ -9403,6 +9404,7 @@
               {
                 "id": "436",
                 "sortId": "436",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "Unbodied vehicle",
                 "testTypeName": "MSVA17 Appeal",
@@ -9480,6 +9482,7 @@
               {
                 "id": "437",
                 "sortId": "437",
+                "typeOfTest": "desk-based",
                 "linkedIds": null,
                 "name": "Bodied vehicle",
                 "testTypeName": "MSVA17 Appeal",
