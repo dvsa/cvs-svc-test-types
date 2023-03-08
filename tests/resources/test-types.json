@@ -9283,7 +9283,6 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": null,
             "forVehicleClass": null,
             "forVehicleSubclass": ["a","c","s","p","l","n","m","r"],
             "forVehicleWheels": null,
@@ -9367,21 +9366,169 @@
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
-            "testTypeClassification": null,
-            "forVehicleClass": null,
-            "forVehicleSubclass": "TODO",
+            "forEuVehicleCategory": null,
+            "forVehicleClass": ["1", "2", "3", "4"],
+            "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testCodes": [
+            "nextTestTypesOrCategories": [
               {
-                "forVehicleType": "motorcycle",
+                "id": "435",
+                "sortId": "435",
+                "linkedIds": null,
+                "name": "Moped vehicle",
+                "testTypeName": "MSVA17 Appeal",
+                "forVehicleType": ["motorcycle"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
-                "forVehicleClass": null,
-                "forVehicleSubclass": "TODO",
+                "forEuVehicleCategory": null,
+                "forVehicleClass": ["1"],
+                "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "defaultTestCode": "eaa",
-                "linkedTestCode": null
+                "testCodes": [
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "1",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "eaa",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "436",
+                "sortId": "436",
+                "linkedIds": null,
+                "name": "Unbodied vehicle",
+                "testTypeName": "MSVA17 Appeal",
+                "forVehicleType": ["motorcycle"],
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": ["1", "2", "3", "4"],
+                "forVehicleSubclass": null,
+                "forVehicleWheels": [2, 3, 4],
+                "testCodes": [
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "1",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 2,
+                    "defaultTestCode": "eab",
+                    "linkedTestCode": null
+                  },
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "2",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 2,
+                    "defaultTestCode": "eac",
+                    "linkedTestCode": null
+                  },
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "3",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 3,
+                    "defaultTestCode": "ead",
+                    "linkedTestCode": null
+                  },
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "4",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 3,
+                    "defaultTestCode": "eaf",
+                    "linkedTestCode": null
+                  },
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "4",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 4,
+                    "defaultTestCode": "eah",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "437",
+                "sortId": "437",
+                "linkedIds": null,
+                "name": "Bodied vehicle",
+                "testTypeName": "MSVA17 Appeal",
+                "forVehicleType": ["motorcycle"],
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": ["3", "4"],
+                "forVehicleSubclass": null,
+                "forVehicleWheels": [3, 4],
+                "testCodes": [
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "3",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 3,
+                    "defaultTestCode": "eae",
+                    "linkedTestCode": null
+                  },
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "4",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 3,
+                    "defaultTestCode": "eag",
+                    "linkedTestCode": null
+                  },
+                  {
+                    "forVehicleType": "motorcycle",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": "4",
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": 4,
+                    "defaultTestCode": "eai",
+                    "linkedTestCode": null
+                  }
+                ]
               }
             ]
           }
