@@ -9560,7 +9560,7 @@
             "linkedIds": null,
             "name": "Mutual Recognition Cat E Statutory",
             "testTypeName": "Mutual Recognition Cat E Statutory",
-            "forVehicleType": ["hgv", "car", "lgv"],
+            "forVehicleType": ["hgv"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -9570,7 +9570,37 @@
             "forVehicleWheels": null,
             "testCodes": [
               {
-                "forVehicleType": ["hgv", "car", "lgv"],
+                "forVehicleType": ["hgv"],
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "ysz",
+                "linkedTestCode": null
+              }
+            ]
+          },
+          {
+            "id": "438",
+            "sortId": "438",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "Mutual Recognition Cat E Statutory",
+            "testTypeName": "Mutual Recognition Cat E Statutory",
+            "forVehicleType": ["car", "lgv"],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "testCodes": [
+              {
+                "forVehicleType": ["car", "lgv"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
