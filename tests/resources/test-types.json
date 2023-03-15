@@ -10682,37 +10682,6 @@
             ]
           },
           {
-            "id": "431",
-            "sortId": "431",
-            "typeOfTest": "desk-based",
-            "linkedIds": null,
-            "name": "IVA17 Appeal",
-            "testTypeName": "IVA17 Appeal",
-            "forVehicleType": ["trl"],
-            "forVehicleSize": null,
-            "forVehicleConfiguration": null,
-            "forVehicleAxles": null,
-            "testTypeClassification": "NON ANNUAL",
-            "forEuVehicleCategory": "o1",
-            "forVehicleClass": null,
-            "forVehicleSubclass": null,
-            "forVehicleWheels": null,
-            "testCodes": [
-              {
-                "forVehicleType": "trl",
-                "forVehicleSize": null,
-                "forVehicleConfiguration": null,
-                "forVehicleAxles": null,
-                "forEuVehicleCategory": "o1",
-                "forVehicleClass": null,
-                "forVehicleSubclass": null,
-                "forVehicleWheels": null,
-                "defaultTestCode": "ydt",
-                "linkedTestCode": null
-              }
-            ]
-          },
-          {
             "id": "433",
             "sortId": "433",
             "typeOfTest": "desk-based",
