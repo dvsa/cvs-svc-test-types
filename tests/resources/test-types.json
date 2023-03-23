@@ -10059,9 +10059,15 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testCodes": [
+            "nextTestTypesOrCategories": [
               {
-                "forVehicleType": "lgv",
+                "id": "439",
+                "sortId": "439",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "Declaration of Conformity for fitment of approved exhaust abatement device",
+                "testTypeName": "Declaration of Conformity for fitment of approved exhaust abatement device",
+                "forVehicleType": ["lgv"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -10069,8 +10075,50 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "defaultTestCode": "lnz",
-                "linkedTestCode": null
+                "testCodes": [
+                  {
+                    "forVehicleType": "lgv",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "lnz",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "449",
+                "sortId": "449",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "Declaration of testing of approved exhaust abatement device",
+                "testTypeName": "Declaration of testing of approved exhaust abatement device",
+                "forVehicleType": ["lgv"],
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testCodes": [
+                  {
+                    "forVehicleType": "lgv",
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "lnz",
+                    "linkedTestCode": null
+                  }
+                ]
               }
             ]
           }
