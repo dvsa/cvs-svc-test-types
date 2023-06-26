@@ -9,6 +9,7 @@ export interface ITestType {
   suggestedTestTypeDisplayName?: string;
   suggestedTestTypeDisplayOrder?: string;
   forVehicleType: ForVehicleType[];
+  forProvisionalStatus?: boolean;
   forVehicleSize: ForVehicleSize[] | null;
   forVehicleConfiguration: ForVehicleConfiguration[] | null;
   forVehicleAxles: number[] | null;
@@ -90,6 +91,7 @@ export interface NextTestTypesOrCategory {
   name: string;
   testTypeName?: string;
   forVehicleType: ForVehicleType | ForVehicleType[];
+  forProvisionalStatus?: boolean;
   forVehicleSize: ForVehicleSize[] | null;
   forVehicleConfiguration: ForVehicleConfiguration[] | null;
   forVehicleAxles: number[] | null;
@@ -113,6 +115,7 @@ export interface TestCode {
   forVehicleWheels: number | number[] | null;
   defaultTestCode: string;
   linkedTestCode: null | string;
+  forProvisionalStatus?: boolean;
 }
 
 export enum TestTypeClassification {

@@ -239,6 +239,11 @@ components:
             This category is applying only to these vehicle types. The vehicle
             types should descend from its parent, but should not be necessarily
             the same
+        forProvisionalStatus:
+          type: boolean
+          description: >-
+            Used to filter test types that allow creating tests on Provisional Records
+          nullable: true
         forVehicleSize:
           type: array
           items:
@@ -328,6 +333,11 @@ components:
               - car
               - motorcycle
           description: This category is applying only to these vehicle types.
+        forProvisionalStatus:
+          type: boolean
+          description: >-
+            Used to filter test types that allow creating tests on Provisional Records
+          nullable: true
         typeOfTest:
           type: string
           description: >-
