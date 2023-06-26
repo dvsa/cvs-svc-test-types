@@ -1803,7 +1803,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "ffv2",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       },
       {
         "forVehicleType": "hgv",
@@ -1815,7 +1816,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "ffv3",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       },
       {
         "forVehicleType": "hgv",
@@ -1827,7 +1829,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "ffv4",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       },
       {
         "forVehicleType": "hgv",
@@ -1839,7 +1842,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "ffv5",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       },
       {
         "forVehicleType": "trl",
@@ -1868,7 +1872,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "fft2",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       },
       {
         "forVehicleType": "trl",
@@ -1897,7 +1902,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "fft3",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       },
       {
         "forVehicleType": "trl",
@@ -1926,7 +1932,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "fft4",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       },
       {
         "forVehicleType": "trl",
@@ -1955,7 +1962,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "fft5",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       }
     ]
   },
@@ -2022,7 +2030,8 @@
         "forVehicleSubclass": null,
         "forVehicleWheels": null,
         "defaultTestCode": "fft1",
-        "linkedTestCode": null
+        "linkedTestCode": null,
+        "forProvisionalStatus": true
       }
     ]
   },
@@ -2205,7 +2214,8 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "hgv",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "defaultTestCode": "nft",
@@ -2234,7 +2244,8 @@
                 "forVehicleConfiguration": null,
                 "forVehicleSize": null,
                 "forVehicleType": "trl",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ],
             "testTypeClassification": "Annual NO CERTIFICATE",
@@ -3757,7 +3768,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgt2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -3786,7 +3798,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgt3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -3815,7 +3828,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgt4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -3844,7 +3858,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgt5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -3856,7 +3871,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgv2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -3868,7 +3884,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgv3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -3880,7 +3897,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgv4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -3892,7 +3910,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgv5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           },
@@ -3958,7 +3977,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rit2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -3987,7 +4007,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rit3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -4016,7 +4037,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rit4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -4045,7 +4067,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rit5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -4057,7 +4080,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "riv2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -4069,7 +4093,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "riv3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -4081,7 +4106,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "riv4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -4093,7 +4119,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "riv5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           },
@@ -4159,7 +4186,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rht",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           }
@@ -4423,7 +4451,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rgt1",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           },
@@ -4489,7 +4518,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "rit1",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           }
@@ -6326,7 +6356,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7v2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -6338,7 +6369,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7v3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -6350,7 +6382,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7v4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -6362,7 +6395,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7v5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6391,7 +6425,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7t2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6420,7 +6455,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7t3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6449,7 +6485,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7t4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6478,7 +6515,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7t5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           },
@@ -6525,7 +6563,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4v2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -6537,7 +6576,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4v3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -6549,7 +6589,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4v4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -6561,7 +6602,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4v5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6590,7 +6632,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4t2",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6619,7 +6662,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4t3",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6648,7 +6692,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4t4",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -6677,7 +6722,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4t5",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           }
@@ -7451,7 +7497,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p7t1",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           },
@@ -7515,7 +7562,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "p4t1",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           }
@@ -8429,7 +8477,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yav",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -8441,7 +8490,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yev",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -8465,7 +8515,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yet",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -8477,7 +8528,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yjt",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -8489,7 +8541,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "ynt",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           },
@@ -8665,7 +8718,8 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "yht",
-                    "linkedTestCode": null
+                    "linkedTestCode": null,
+                    "forProvisionalStatus": true
                   },
                   {
                     "forVehicleType": "trl",
@@ -10220,7 +10274,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "ybv",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "hgv",
@@ -10232,7 +10287,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "yfv",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "trl",
@@ -10256,7 +10312,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "yft",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "trl",
@@ -10268,7 +10325,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "ykt",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "trl",
@@ -10280,7 +10338,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "ypt",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       }
                     ]
                   },
@@ -10413,7 +10472,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "ycv",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "hgv",
@@ -10425,7 +10485,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "ygv",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "trl",
@@ -10449,7 +10510,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "ygt",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "trl",
@@ -10461,7 +10523,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "ylt",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       },
                       {
                         "forVehicleType": "trl",
@@ -10473,7 +10536,8 @@
                         "forVehicleSubclass": null,
                         "forVehicleWheels": null,
                         "defaultTestCode": "yqt",
-                        "linkedTestCode": null
+                        "linkedTestCode": null,
+                        "forProvisionalStatus": true
                       }
                     ]
                   },
@@ -12077,7 +12141,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "ydv",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "hgv",
@@ -12089,7 +12154,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yhv",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -12113,7 +12179,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yht",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -12125,7 +12192,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "ymt",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               },
               {
                 "forVehicleType": "trl",
@@ -12137,7 +12205,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yrt",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
               }
             ]
           },
