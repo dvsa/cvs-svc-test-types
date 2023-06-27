@@ -8708,7 +8708,8 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "ydv",
-                    "linkedTestCode": null
+                    "linkedTestCode": null,
+                    "forProvisionalStatus": true
                   },
                   {
                     "forVehicleType": "hgv",
@@ -8720,7 +8721,8 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "yhv",
-                    "linkedTestCode": null
+                    "linkedTestCode": null,
+                    "forProvisionalStatus": true
                   },
                   {
                     "forVehicleType": "trl",
@@ -8757,7 +8759,8 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "ymt",
-                    "linkedTestCode": null
+                    "linkedTestCode": null,
+                    "forProvisionalStatus": true
                   },
                   {
                     "forVehicleType": "trl",
@@ -8769,7 +8772,8 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "yrt",
-                    "linkedTestCode": null
+                    "linkedTestCode": null,
+                    "forProvisionalStatus": true
                   }
                 ]
               },
@@ -12160,7 +12164,6 @@
             "name": "IVA17 Appeal",
             "testTypeName": "IVA17 Appeal",
             "forVehicleType": ["hgv", "trl"],
-            "forProvisionalStatus": true,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -12180,8 +12183,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "ydv",
-                "linkedTestCode": null,
-                "forProvisionalStatus": true
+                "linkedTestCode": null
               },
               {
                 "forVehicleType": "hgv",
@@ -12193,8 +12195,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yhv",
-                "linkedTestCode": null,
-                "forProvisionalStatus": true
+                "linkedTestCode": null
               },
               {
                 "forVehicleType": "trl",
@@ -12218,8 +12219,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yht",
-                "linkedTestCode": null,
-                "forProvisionalStatus": true
+                "linkedTestCode": null
               },
               {
                 "forVehicleType": "trl",
@@ -12231,8 +12231,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "ymt",
-                "linkedTestCode": null,
-                "forProvisionalStatus": true
+                "linkedTestCode": null
               },
               {
                 "forVehicleType": "trl",
@@ -12244,8 +12243,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "yrt",
-                "linkedTestCode": null,
-                "forProvisionalStatus": true
+                "linkedTestCode": null
               }
             ]
           },
