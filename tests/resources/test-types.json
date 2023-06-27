@@ -2063,6 +2063,7 @@
     "forVehicleConfiguration": null,
     "forVehicleSize": null,
     "forVehicleType": ["hgv", "trl"],
+    "forProvisionalStatus":true,
     "id": "42",
     "sortId": "5",
     "linkedIds": null,
@@ -9383,6 +9384,7 @@
         "name": "COIF",
         "forVehicleType": ["psv"],
         "forVehicleSize": ["small", "large"],
+        "forProvisionalStatus":true,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
         "forEuVehicleCategory": null,
@@ -9397,6 +9399,7 @@
             "name": "With annual test",
             "testTypeName": "COIF with annual test",
             "forVehicleType": ["psv"],
+            "forProvisionalStatus":true,
             "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -9416,7 +9419,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "cel",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus":true
               },
               {
                 "forVehicleType": "psv",
@@ -9428,7 +9432,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "ces",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus":true
               }
             ]
           },
@@ -9439,6 +9444,7 @@
             "name": "Without annual test",
             "testTypeName": "COIF without annual test",
             "forVehicleType": ["psv"],
+            "forProvisionalStatus":true,
             "forVehicleSize": ["small", "large"],
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -9458,7 +9464,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "cfl",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus":true
               },
               {
                 "forVehicleType": "psv",
@@ -9470,7 +9477,8 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "defaultTestCode": "cfs",
-                "linkedTestCode": null
+                "linkedTestCode": null,
+                "forProvisionalStatus":true
               }
             ]
           },
