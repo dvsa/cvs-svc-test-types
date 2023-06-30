@@ -12,6 +12,7 @@ on:
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     strategy:
       matrix:
@@ -29,11 +30,10 @@ jobs:
         run: npm ci
       - name: Setup local dynamo
         run: npm run tools-setup
-      - name: Setup mock credentials
-        run: |
-          mkdir ~/.aws
-          echo -e "[default]\naws_access_key_id=foo\naws_secret_acess_key=bar" > ~/.aws/credentials
       - name: Build and test
         run: npm run prepush
+        env:
+          AWS_ACCESS_KEY_ID: foo
+          AWS_SECRET_ACCESS_KEY: bar
       - name: Run linter
         run: npm run lint
