@@ -64,17 +64,16 @@ describe("test types", () => {
         });
       });
 
-
       it("should provide CORS headers", async () => {
         const expectedHeaders = {
           "access-control-allow-credentials": "true",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache",
-          "connection": "close",
+          connection: "close",
           "content-encoding": "gzip",
           "content-type": "application/json; charset=utf-8",
           "transfer-encoding": "chunked",
-          "vary": "Origin,accept-encoding",
+          vary: "Origin,accept-encoding",
           "x-content-type-options": "nosniff",
           "x-xss-protection": "1; mode=block",
         };

@@ -69,7 +69,7 @@ export enum ForEuVehicleCategory {
   L4E = "l4e",
   L5E = "l5e",
   L6E = "l6e",
-  L7E = "l7e"
+  L7E = "l7e",
 }
 
 export enum ForVehicleSubclass {
