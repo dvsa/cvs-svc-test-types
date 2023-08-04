@@ -13217,6 +13217,7 @@
                 "name": "Type approved tractor unit - Northern Ireland ",
                 "testTypeName": "Type approved tractor unit - Northern Ireland ",
                 "forVehicleType": "hgv",
+                "forProvisionalStatus": true,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -13228,6 +13229,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
+                    "forProvisionalStatus": true,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
