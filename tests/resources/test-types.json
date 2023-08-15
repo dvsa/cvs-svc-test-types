@@ -11880,6 +11880,7 @@
         "name": "DDA",
         "testTypeName": "DDA",
         "forVehicleType": "psv",
+        "forProvisionalStatus": true,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -11896,6 +11897,7 @@
             "name": "DDA Schedule 1, 2 or 3 without inspection",
             "testTypeName": "Schedule 1, 2 or 3 without inspection",
             "forVehicleType": "psv",
+            "forProvisionalStatus": true,
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
@@ -11909,9 +11911,10 @@
                 "sortId": "407",
                 "typeOfTest": "desk-based",
                 "linkedIds": null,
-                "name": "PSV400B COIF Approval Change Notification",
-                "testTypeName": "PSV400B COIF Approval Change Notification",
+                "name": "DDA TA SCHEDULE 1, 2 OR 3",
+                "testTypeName": "DDA TA SCHEDULE 1, 2 OR 3",
                 "forVehicleType": "psv",
+                "forProvisionalStatus": true,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -11923,6 +11926,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forProvisionalStatus": true,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -11974,6 +11978,7 @@
                 "name": "DDA TA SCHEDULE 1 + 2 OR 3",
                 "testTypeName": "DDA TA SCHEDULE 1 + 2 OR 3",
                 "forVehicleType": "psv",
+                "forProvisionalStatus": true,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -11985,6 +11990,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forProvisionalStatus": true,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -12005,6 +12011,7 @@
                 "name": "CHANGE TO DDA TYPE APPROVAL/1",
                 "testTypeName": "CHANGE TO DDA TYPE APPROVAL/1",
                 "forVehicleType": "psv",
+                "forProvisionalStatus": true,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -12016,6 +12023,7 @@
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
+                    "forProvisionalStatus": true,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
@@ -12024,6 +12032,137 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "defaultTestCode": "9gp",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "445",
+                "sortId": "445",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "CHANGE TO DDA TYPE APPROVAL/2",
+                "testTypeName": "CHANGE TO DDA TYPE APPROVAL/2",
+                "forVehicleType": "psv",
+                "forProvisionalStatus": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "NON ANNUAL",
+                "testCodes": [
+                  {
+                    "forVehicleType": "psv",
+                    "forProvisionalStatus": true,
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "9hp",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "446",
+                "sortId": "446",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "CHANGE TO DDA TYPE APPROVAL/3",
+                "testTypeName": "CHANGE TO DDA TYPE APPROVAL/3",
+                "forVehicleType": "psv",
+                "forProvisionalStatus": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "NON ANNUAL",
+                "testCodes": [
+                  {
+                    "forVehicleType": "psv",
+                    "forProvisionalStatus": true,
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "9ip",
+                    "linkedTestCode": null
+                  }
+                ]
+              },{
+                "id": "447",
+                "sortId": "447",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "CHANGE TO DDA TYPE APPROVAL/4",
+                "testTypeName": "CHANGE TO DDA TYPE APPROVAL/4",
+                "forVehicleType": "psv",
+                "forProvisionalStatus": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "NON ANNUAL",
+                "testCodes": [
+                  {
+                    "forVehicleType": "psv",
+                    "forProvisionalStatus": true,
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "9jp",
+                    "linkedTestCode": null
+                  }
+                ]
+              },
+              {
+                "id": "448",
+                "sortId": "448",
+                "typeOfTest": "desk-based",
+                "linkedIds": null,
+                "name": "CHANGE TO DDA TYPE APPROVAL/5",
+                "testTypeName": "CHANGE TO DDA TYPE APPROVAL/5",
+                "forVehicleType": "psv",
+                "forProvisionalStatus": true,
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "testTypeClassification": "NON ANNUAL",
+                "testCodes": [
+                  {
+                    "forVehicleType": "psv",
+                    "forProvisionalStatus": true,
+                    "forVehicleSize": null,
+                    "forVehicleConfiguration": null,
+                    "forVehicleAxles": null,
+                    "forEuVehicleCategory": null,
+                    "forVehicleClass": null,
+                    "forVehicleSubclass": null,
+                    "forVehicleWheels": null,
+                    "defaultTestCode": "9kp",
                     "linkedTestCode": null
                   }
                 ]
