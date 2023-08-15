@@ -12101,7 +12101,8 @@
                     "linkedTestCode": null
                   }
                 ]
-              },{
+              },
+              {
                 "id": "447",
                 "sortId": "447",
                 "typeOfTest": "desk-based",
