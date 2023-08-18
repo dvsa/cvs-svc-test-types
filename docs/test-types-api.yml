@@ -244,6 +244,11 @@ components:
           description: >-
             Used to filter test types that allow creating tests on Provisional Records
           nullable: true
+        forProvisionalStatusOnly:
+          type: boolean
+          description: >-
+            Used to filter test types that allow creating tests on Provisional Records not Current
+          nullable: true
         forVehicleSize:
           type: array
           items:
@@ -337,6 +342,11 @@ components:
           type: boolean
           description: >-
             Used to filter test types that allow creating tests on Provisional Records
+          nullable: true
+        forProvisionalStatusOnly:
+          type: boolean
+          description: >-
+            Used to filter test types that allow creating tests on Provisional Records not Current
           nullable: true
         typeOfTest:
           type: string

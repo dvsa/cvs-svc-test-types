@@ -10,6 +10,7 @@ export interface ITestType {
   suggestedTestTypeDisplayOrder?: string;
   forVehicleType: ForVehicleType[];
   forProvisionalStatus?: boolean;
+  forProvisionalStatusOnly?: boolean;
   forVehicleSize: ForVehicleSize[] | null;
   forVehicleConfiguration: ForVehicleConfiguration[] | null;
   forVehicleAxles: number[] | null;
@@ -69,7 +70,7 @@ export enum ForEuVehicleCategory {
   L4E = "l4e",
   L5E = "l5e",
   L6E = "l6e",
-  L7E = "l7e"
+  L7E = "l7e",
 }
 
 export enum ForVehicleSubclass {
@@ -92,6 +93,7 @@ export interface NextTestTypesOrCategory {
   testTypeName?: string;
   forVehicleType: ForVehicleType | ForVehicleType[];
   forProvisionalStatus?: boolean;
+  forProvisionalStatusOnly?: boolean;
   forVehicleSize: ForVehicleSize[] | null;
   forVehicleConfiguration: ForVehicleConfiguration[] | null;
   forVehicleAxles: number[] | null;
@@ -116,6 +118,7 @@ export interface TestCode {
   defaultTestCode: string;
   linkedTestCode: null | string;
   forProvisionalStatus?: boolean;
+  forProvisionalStatusOnly?: boolean;
 }
 
 export enum TestTypeClassification {
