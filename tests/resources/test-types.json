@@ -11981,6 +11981,7 @@
                 "testTypeName": "DDA TA SCHEDULE 1 + 2 OR 3",
                 "forVehicleType": "psv",
                 "forProvisionalStatus": true,
+                "forProvisionalStatusOnly": true,
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
@@ -11993,6 +11994,7 @@
                   {
                     "forVehicleType": "psv",
                     "forProvisionalStatus": true,
+                    "forProvisionalStatusOnly": true,
                     "forVehicleSize": null,
                     "forVehicleConfiguration": null,
                     "forVehicleAxles": null,
