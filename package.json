@@ -8,8 +8,8 @@
     "url": "https://github.com/dvsa/cvs-svc-test-types.git"
   },
   "engines": {
-    "node": "14.*",
-    "npm": "5.6.0"
+    "node": "18.*",
+    "npm": "9.*"
   },
   "scripts": {
     "start": "BRANCH=local serverless offline start",
