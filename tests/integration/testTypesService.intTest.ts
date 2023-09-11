@@ -64,7 +64,6 @@ describe("test types", () => {
         });
       });
 
-
       it("should provide CORS headers", async () => {
         const expectedHeaders = {
           "access-control-allow-credentials": "true",
