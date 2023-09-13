@@ -12,6 +12,7 @@ import {
   TestCode,
 } from "../../src/models/ITestType";
 import recursiveFind from "../util/recursiveFind";
+import { HTTPError } from "../../src/models/HTTPError";
 
 describe("when database is on", () => {
   let mockTestTypesRecords: any;
@@ -70,8 +71,8 @@ describe("when database is on", () => {
               vehicleConfiguration: ForVehicleConfiguration.Rigid,
             });
           } catch (e) {
-            expect(e.statusCode).toEqual(404);
-            expect(e.body).toEqual(HTTPRESPONSE.RESOURCE_NOT_FOUND);
+            expect((e as HTTPError).statusCode).toEqual(404);
+            expect((e as HTTPError).body).toEqual(HTTPRESPONSE.RESOURCE_NOT_FOUND);
           }
         });
       });
@@ -92,8 +93,8 @@ describe("when database is on", () => {
               vehicleConfiguration: ForVehicleConfiguration.Rigid,
             });
           } catch (e) {
-            expect(e.statusCode).toEqual(404);
-            expect(e.body).toEqual(HTTPRESPONSE.RESOURCE_NOT_FOUND);
+            expect((e as HTTPError).statusCode).toEqual(404);
+            expect((e as HTTPError).body).toEqual(HTTPRESPONSE.RESOURCE_NOT_FOUND);
           }
         });
       });
@@ -463,8 +464,8 @@ context("database call returns empty data", () => {
       try {
         await testTypesService.getTestTypesList();
       } catch (errorResponse) {
-        expect(errorResponse.statusCode).toEqual(404);
-        expect(errorResponse.body).toEqual(
+        expect((errorResponse as HTTPError).statusCode).toEqual(404);
+        expect((errorResponse as HTTPError).body).toEqual(
           "No resources match the search criteria."
         );
       }
@@ -497,8 +498,8 @@ context("database call returns empty data", () => {
             vehicleConfiguration: ForVehicleConfiguration.Rigid,
           });
         } catch (errorResponse) {
-          expect(errorResponse.statusCode).toEqual(404);
-          expect(errorResponse.body).toEqual(
+          expect((errorResponse as HTTPError).statusCode).toEqual(404);
+          expect((errorResponse as HTTPError).body).toEqual(
             "No resources match the search criteria."
           );
         }
@@ -726,8 +727,8 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
           "nonexistentFilter"
         );
       } catch (error) {
-        expect(error.statusCode).toBe(500);
-        expect(error.body).toBe(ERRORS.InternalServerError);
+        expect((error as HTTPError).statusCode).toBe(500);
+        expect((error as HTTPError).body).toBe(ERRORS.InternalServerError);
       }
     });
   });

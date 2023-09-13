@@ -48,7 +48,7 @@ describe("TestTypesDAO", () => {
       try {
         await new TestTypesDAO().getAll();
       } catch (e) {
-        expect(e.message).toEqual("It broke");
+        expect((e as Error).message).toEqual("It broke");
       }
     });
   });
@@ -103,7 +103,7 @@ describe("TestTypesDAO", () => {
       try {
         await new TestTypesDAO().createMultiple(testTypes as ITestType[]);
       } catch (e) {
-        expect(e.message).toEqual("It broke");
+        expect((e as Error).message).toEqual("It broke");
       }
     });
   });
@@ -172,7 +172,7 @@ describe("TestTypesDAO", () => {
     try {
       await new TestTypesDAO().deleteMultiple([["", ""]]);
     } catch (e) {
-      expect(e.message).toEqual("It broke");
+      expect((e as Error).message).toEqual("It broke");
     }
   });
 
