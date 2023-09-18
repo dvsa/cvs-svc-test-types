@@ -6,7 +6,7 @@ The test-types microservice contains some reference data to be used for CVS serv
 
 ## Dependencies
 
-The project runs on node >10.x with typescript and serverless framework. For further details about project dependencies, please refer to the `package.json` file.
+The project runs on node >18.x with typescript and serverless framework. For further details about project dependencies, please refer to the `package.json` file.
 [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) is used to managed node versions and configuration explicitly done per project using an `.npmrc` file.
 
 ### Prerequisites
