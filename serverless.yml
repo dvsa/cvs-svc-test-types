@@ -3,7 +3,7 @@ service: cvs-svc-test-types
 provider:
   lambdaHashingVersion: 20201221
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs18.x
   stage: dev
   tracing:
     lambda: true
@@ -74,6 +74,7 @@ custom:
       migrate: true
       seed: true
       noStart: false
+      host: 127.0.0.1
     seed:
       test-types:
         sources:

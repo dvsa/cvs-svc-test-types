@@ -55,7 +55,7 @@ describe("The configuration service", () => {
       try {
         config.getFunctions();
       } catch (e) {
-        expect(e.message).toEqual(
+        expect((e as Error).message).toEqual(
           "Functions were not defined in the config file."
         );
       }
@@ -66,7 +66,7 @@ describe("The configuration service", () => {
       try {
         config.getDynamoDBConfig();
       } catch (e) {
-        expect(e.message).toEqual(
+        expect((e as Error).message).toEqual(
           "DynamoDB config is not defined in the config file."
         );
       }
@@ -81,7 +81,7 @@ describe("The configuration service", () => {
         const temp = new Configuration("");
       } catch (e) {
         expect(e).toBeDefined();
-        expect(e.message).toEqual("Please define BRANCH environment variable");
+        expect((e as Error).message).toEqual("Please define BRANCH environment variable");
       }
     });
   });

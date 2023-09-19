@@ -30,11 +30,11 @@ export class TestTypesService {
     } catch (error) {
       if (!(error instanceof HTTPError)) {
         console.error(error);
-        error.statusCode = 500;
-        error.body = "Internal Server Error";
+        (error as HTTPError).statusCode = 500;
+        (error as HTTPError).body = "Internal Server Error";
       }
 
-      throw new HTTPError(error.statusCode, error.body);
+      throw new HTTPError((error as HTTPError).statusCode, (error as HTTPError).body);
     }
   }
 
