@@ -1,0 +1,18 @@
+name: OPENAPI-GEN
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  update-services:
+    uses: dvsa/cvs-github-actions/.github/workflows/openapi-gen.yml@develop
+    with:
+      docs_path: docs/test-types-api.yml
+      owner: dvsa
+      pr_repository: cvs-app-vtm
+      pr_repository_path: src/app/api/test-types
+      pr_repository_base_branch: develop
+    secrets:
+      AWS_ROLE: ${{ secrets.AWS_ROLE }}
