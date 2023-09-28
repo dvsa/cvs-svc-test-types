@@ -15,4 +15,4 @@ jobs:
       pr_repository_path: src/app/api/test-types
       pr_repository_base_branch: develop
     secrets:
-      PAT: ${{secrets.PAT}}
+      AWS_ROLE: ${{ secrets.AWS_ROLE }}
