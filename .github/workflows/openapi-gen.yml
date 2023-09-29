@@ -5,6 +5,10 @@ on:
     branches:
       - develop
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   update-services:
     uses: dvsa/cvs-github-actions/.github/workflows/openapi-gen.yml@develop
