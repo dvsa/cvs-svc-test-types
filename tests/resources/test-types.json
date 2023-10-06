@@ -9086,6 +9086,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": 3,
                     "defaultTestCode": "ea3",
+                    "linkedTestCode": null,
                     "forProvisionalStatus": true
                   },
                   {
