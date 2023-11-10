@@ -100,7 +100,7 @@ describe("getTestTypes function", () => {
           forVehicleSubclass,
           forVehicleWheels,
           testTypeClassification,
-          forProvisionalStatus,
+          forProvisionalStatusOnly,
           testCodes,
         } = JSON.parse(output.body);
         expect(output.statusCode).toEqual(200);
@@ -119,7 +119,7 @@ describe("getTestTypes function", () => {
         expect(forVehicleSubclass).toEqual(null);
         expect(forVehicleWheels).toEqual(null);
         expect(testTypeClassification).toEqual("Annual With Certificate");
-        expect(forProvisionalStatus).toEqual(true);
+        expect(forProvisionalStatusOnly).toEqual(true);
         expect(testCodes[0].forProvisionalStatus).toEqual(true);
       });
     }
