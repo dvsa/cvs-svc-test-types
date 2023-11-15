@@ -12112,7 +12112,6 @@
                 "testTypeName": "DDA COC",
                 "forVehicleType": "psv",
                 "forVehicleSize": null,
-                "forProvisionalStatusOnly": true,
                 "forProvisionalStatus": true,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
