@@ -2502,6 +2502,7 @@
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
     "forVehicleAxles": null,
+    "forProvisionalStatus": true,
     "forEuVehicleCategory": [
       "m1",
       "m2",
@@ -3692,6 +3693,7 @@
         "name": "First test retest",
         "forVehicleType": ["hgv", "trl"],
         "forProvisionalStatus": true,
+        "forProvisionalStatusOnly": true,
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
