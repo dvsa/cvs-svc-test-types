@@ -72,7 +72,9 @@ describe("when database is on", () => {
             });
           } catch (e) {
             expect((e as HTTPError).statusCode).toEqual(404);
-            expect((e as HTTPError).body).toEqual(HTTPRESPONSE.RESOURCE_NOT_FOUND);
+            expect((e as HTTPError).body).toEqual(
+              HTTPRESPONSE.RESOURCE_NOT_FOUND
+            );
           }
         });
       });
@@ -94,7 +96,9 @@ describe("when database is on", () => {
             });
           } catch (e) {
             expect((e as HTTPError).statusCode).toEqual(404);
-            expect((e as HTTPError).body).toEqual(HTTPRESPONSE.RESOURCE_NOT_FOUND);
+            expect((e as HTTPError).body).toEqual(
+              HTTPRESPONSE.RESOURCE_NOT_FOUND
+            );
           }
         });
       });
