@@ -34,7 +34,10 @@ export class TestTypesService {
         (error as HTTPError).body = "Internal Server Error";
       }
 
-      throw new HTTPError((error as HTTPError).statusCode, (error as HTTPError).body);
+      throw new HTTPError(
+        (error as HTTPError).statusCode,
+        (error as HTTPError).body
+      );
     }
   }
 

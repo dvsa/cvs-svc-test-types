@@ -81,7 +81,9 @@ describe("The configuration service", () => {
         const temp = new Configuration("");
       } catch (e) {
         expect(e).toBeDefined();
-        expect((e as Error).message).toEqual("Please define BRANCH environment variable");
+        expect((e as Error).message).toEqual(
+          "Please define BRANCH environment variable"
+        );
       }
     });
   });
