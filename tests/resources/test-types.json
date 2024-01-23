@@ -8381,7 +8381,7 @@
             "forVehicleClass": null,
             "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
             "forVehicleWheels": null,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "forProvisionalStatus": true,
             "testCodes": [
               {
@@ -8452,7 +8452,7 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "forProvisionalStatus": true,
             "testCodes": [
               {
@@ -8511,7 +8511,7 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -8607,7 +8607,7 @@
             "forVehicleClass": null,
             "forVehicleSubclass": ["r"],
             "forVehicleWheels": null,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "forProvisionalStatus": true,
             "testCodes": [
               {
@@ -8668,7 +8668,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "forProvisionalStatus": true,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
@@ -8726,7 +8726,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
@@ -8822,7 +8822,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": ["r"],
                 "forVehicleWheels": null,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "forProvisionalStatus": true,
                 "testCodes": [
                   {
@@ -8867,7 +8867,7 @@
                 "forVehicleClass": null,
                 "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "forProvisionalStatus": true,
                 "testCodes": [
                   {
@@ -8957,7 +8957,7 @@
             "forVehicleClass": null,
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "forProvisionalStatus": true,
             "testCodes": [
               {
@@ -9028,7 +9028,7 @@
                 "forVehicleClass": ["1"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "forProvisionalStatus": true,
                 "testCodes": [
                   {
@@ -9060,7 +9060,7 @@
                 "forVehicleClass": ["1", "2", "3", "4"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": [2, 3, 4],
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "forProvisionalStatus": true,
                 "testCodes": [
                   {
@@ -9145,7 +9145,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": [3, 4],
                 "forProvisionalStatus": true,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -9205,7 +9205,7 @@
             "forVehicleSubclass": null,
             "forVehicleWheels": [2, 3, 4],
             "forProvisionalStatus": true,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "testCodes": [
               {
                 "forVehicleType": "motorcycle",
@@ -9291,7 +9291,7 @@
                 "forVehicleClass": ["1"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -9323,7 +9323,7 @@
                 "forVehicleSubclass": null,
                 "forProvisionalStatus": true,
                 "forVehicleWheels": [2, 3, 4],
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -9407,7 +9407,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": [3, 4],
                 "forProvisionalStatus": true,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -9851,7 +9851,7 @@
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "forProvisionalStatus": true,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "testCodes": [
               {
                 "forVehicleType": "psv",
@@ -9909,7 +9909,7 @@
             "forVehicleSubclass": null,
             "forVehicleWheels": null,
             "forProvisionalStatus": true,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "testCodes": [
               {
                 "forVehicleType": "hgv",
@@ -10006,7 +10006,7 @@
             "forVehicleSubclass": ["r"],
             "forVehicleWheels": null,
             "forProvisionalStatus": true,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "testCodes": [
               {
                 "forVehicleType": "car",
@@ -10051,7 +10051,7 @@
             "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
             "forVehicleWheels": null,
             "forProvisionalStatus": true,
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "IVA With Certificate",
             "testCodes": [
               {
                 "forVehicleType": "car",
@@ -10178,7 +10178,7 @@
                       "t"
                     ],
                     "forVehicleWheels": null,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "car",
@@ -10258,7 +10258,7 @@
                       "t"
                     ],
                     "forVehicleWheels": null,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "car",
@@ -10411,7 +10411,7 @@
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "hgv",
@@ -10508,7 +10508,7 @@
                     "forVehicleSubclass": ["r"],
                     "forVehicleWheels": null,
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "car",
@@ -10553,7 +10553,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "psv",
@@ -10618,7 +10618,7 @@
                     "forVehicleClass": null,
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "hgv",
@@ -10715,7 +10715,7 @@
                     "forVehicleSubclass": ["r"],
                     "forVehicleWheels": null,
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "car",
@@ -10786,7 +10786,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "forProvisionalStatus": true,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": [
@@ -10857,7 +10857,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -10889,7 +10889,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -10938,7 +10938,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [2, 3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -11022,7 +11022,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [2, 3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -11123,7 +11123,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -11181,7 +11181,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "Annual NO CERTIFICATE",
+                    "testTypeClassification": "IVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -11563,7 +11563,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "forProvisionalStatus": true,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "psv",
@@ -11621,7 +11621,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
                 "forProvisionalStatus": true,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "hgv",
@@ -11718,7 +11718,7 @@
                 "forVehicleSubclass": ["r"],
                 "forVehicleWheels": null,
                 "forProvisionalStatus": true,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "car",
@@ -11763,7 +11763,7 @@
                 "forProvisionalStatus": true,
                 "forVehicleSubclass": ["a", "c", "s", "l", "m", "n", "p", "t"],
                 "forVehicleWheels": null,
-                "testTypeClassification": "Annual NO CERTIFICATE",
+                "testTypeClassification": "IVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "car",
