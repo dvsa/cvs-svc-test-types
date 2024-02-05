@@ -123,7 +123,7 @@ describe("getTestTypesById", () => {
     it("should return 200 and find matching subclass", () => {
       const expectedResult = {
         id: "191",
-        testTypeClassification: "Annual NO CERTIFICATE",
+        testTypeClassification: "IVA With Certificate",
         defaultTestCode: "yd4",
         linkedTestCode: null,
       };
@@ -150,7 +150,7 @@ describe("getTestTypesById", () => {
       it("should return 200 and find matching subclass", () => {
         const expectedResult = {
           id: "125",
-          testTypeClassification: "Annual NO CERTIFICATE",
+          testTypeClassification: "IVA With Certificate",
           defaultTestCode: "yf4",
           linkedTestCode: null,
         };
@@ -178,7 +178,7 @@ describe("getTestTypesById", () => {
       it("should return 200 if one of the subclasses is in the data", () => {
         const expectedResult = {
           id: "191",
-          testTypeClassification: "Annual NO CERTIFICATE",
+          testTypeClassification: "IVA With Certificate",
           defaultTestCode: "yd4",
           linkedTestCode: null,
         };
