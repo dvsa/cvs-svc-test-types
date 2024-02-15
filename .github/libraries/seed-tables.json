@@ -1,0 +1,6 @@
+[
+  {
+    "table-name": "test-types",
+    "seed-file": "test-types.json"
+  }
+]
