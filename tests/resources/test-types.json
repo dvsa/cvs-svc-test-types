@@ -4559,6 +4559,7 @@
     "forVehicleType": ["hgv", "trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
+    "forProvisionalStatus": true,
     "forVehicleAxles": [2, 3, 4, 5, 6, 7, 8, 9, 10],
     "forEuVehicleCategory": [
       "m1",
@@ -6768,6 +6769,7 @@
     "forVehicleType": ["trl"],
     "forVehicleSize": null,
     "forVehicleConfiguration": null,
+    "forProvisionalStatus": true,
     "forVehicleAxles": [1],
     "forEuVehicleCategory": [
       "m1",
