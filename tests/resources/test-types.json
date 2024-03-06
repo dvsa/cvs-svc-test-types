@@ -9028,7 +9028,7 @@
                 "forVehicleClass": ["1"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "IVA With Certificate",
+                "testTypeClassification": "MSVA With Certificate",
                 "forProvisionalStatus": true,
                 "testCodes": [
                   {
@@ -9060,7 +9060,7 @@
                 "forVehicleClass": ["1", "2", "3", "4"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": [2, 3, 4],
-                "testTypeClassification": "IVA With Certificate",
+                "testTypeClassification": "MSVA With Certificate",
                 "forProvisionalStatus": true,
                 "testCodes": [
                   {
@@ -9145,7 +9145,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": [3, 4],
                 "forProvisionalStatus": true,
-                "testTypeClassification": "IVA With Certificate",
+                "testTypeClassification": "MSVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -9205,7 +9205,7 @@
             "forVehicleSubclass": null,
             "forVehicleWheels": [2, 3, 4],
             "forProvisionalStatus": true,
-            "testTypeClassification": "IVA With Certificate",
+            "testTypeClassification": "MSVA With Certificate",
             "testCodes": [
               {
                 "forVehicleType": "motorcycle",
@@ -9291,7 +9291,7 @@
                 "forVehicleClass": ["1"],
                 "forVehicleSubclass": null,
                 "forVehicleWheels": null,
-                "testTypeClassification": "IVA With Certificate",
+                "testTypeClassification": "MSVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -9323,7 +9323,7 @@
                 "forVehicleSubclass": null,
                 "forProvisionalStatus": true,
                 "forVehicleWheels": [2, 3, 4],
-                "testTypeClassification": "IVA With Certificate",
+                "testTypeClassification": "MSVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -9407,7 +9407,7 @@
                 "forVehicleSubclass": null,
                 "forVehicleWheels": [3, 4],
                 "forProvisionalStatus": true,
-                "testTypeClassification": "IVA With Certificate",
+                "testTypeClassification": "MSVA With Certificate",
                 "testCodes": [
                   {
                     "forVehicleType": "motorcycle",
@@ -10857,7 +10857,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "IVA With Certificate",
+                    "testTypeClassification": "MSVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -10889,7 +10889,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": null,
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "IVA With Certificate",
+                    "testTypeClassification": "MSVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -10938,7 +10938,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [2, 3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "IVA With Certificate",
+                    "testTypeClassification": "MSVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -11022,7 +11022,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [2, 3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "IVA With Certificate",
+                    "testTypeClassification": "MSVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -11123,7 +11123,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "IVA With Certificate",
+                    "testTypeClassification": "MSVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
@@ -11181,7 +11181,7 @@
                     "forVehicleSubclass": null,
                     "forVehicleWheels": [3, 4],
                     "forProvisionalStatus": true,
-                    "testTypeClassification": "IVA With Certificate",
+                    "testTypeClassification": "MSVA With Certificate",
                     "testCodes": [
                       {
                         "forVehicleType": "motorcycle",
