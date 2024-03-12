@@ -84,3 +84,4 @@ custom:
             sources: [./tests/resources/test-types.json]
     stages:
       - dev
+      - test
