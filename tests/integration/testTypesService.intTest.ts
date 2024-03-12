@@ -7,7 +7,7 @@ import { emptyDatabase, populateDatabase } from "../util/dbOperations";
 import LambdaTester from "lambda-tester";
 import { getTestTypes } from "../../src/functions/getTestTypes";
 import recursiveFind from "../util/recursiveFind";
-const url = "http://localhost:3002/";
+const url = "http://localhost:3010/";
 
 describe("test types", () => {
   const request = supertest(url);

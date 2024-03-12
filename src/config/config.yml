@@ -27,4 +27,4 @@ dynamodb:
     table: cvs-${BRANCH}-test-types
 serverless:
   basePath: /${BRANCH}
-  port: 3002
+  port: 3010

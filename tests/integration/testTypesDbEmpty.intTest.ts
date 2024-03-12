@@ -2,7 +2,7 @@ import supertest from "supertest";
 import { ITestType } from "../../src/models/ITestType";
 import { HTTPRESPONSE } from "../../src/assets/Enums";
 import { emptyDatabase, populateDatabase } from "../util/dbOperations";
-const url = "http://localhost:3002/";
+const url = "http://localhost:3010/";
 
 describe("get testTypes", () => {
   const request = supertest(url);
