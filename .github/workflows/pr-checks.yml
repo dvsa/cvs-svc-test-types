@@ -34,8 +34,6 @@ jobs:
         run: npm run tools-setup
       - name: Build
         run: npm run build
-      - name: start lambdas
-        run: npm run start
       - name: npm run test:integration
         run: npm run test:integration:github
         env:
