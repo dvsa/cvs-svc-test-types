@@ -34,11 +34,14 @@ jobs:
         run: npm run tools-setup
       - name: Build
         run: npm run build
-      - name: Integration tests
+      - name: start lambdas
+        run: npm run start
+      - name: npm run test:integration
         run: npm run test:integration:github
         env:
           AWS_ACCESS_KEY_ID: foo
           AWS_SECRET_ACCESS_KEY: bar
+          BRANCH: local
       - name: Run linter
         run: npm run lint
 
