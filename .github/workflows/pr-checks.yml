@@ -28,10 +28,12 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
+      - name: Unit tests
+        run: npm run test
+      - name: Build
+        run: npm run build
       - name: Setup local dynamo
         run: npm run tools-setup
-      - name: Build and test
-        run: npm run prepush
         env:
           AWS_ACCESS_KEY_ID: foo
           AWS_SECRET_ACCESS_KEY: bar
