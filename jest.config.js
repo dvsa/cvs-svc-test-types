@@ -5,5 +5,5 @@ module.exports = {
   setupFiles: ["jest-plugin-context/setup"],
   moduleFileExtensions: ["js", "ts"],
   testResultsProcessor: "jest-sonar-reporter",
-  testMatch: ["**/*.*Test.ts"],
+  testMatch: ["**/*.test.ts"],
 };

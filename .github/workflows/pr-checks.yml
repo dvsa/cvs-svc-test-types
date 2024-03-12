@@ -34,8 +34,8 @@ jobs:
         run: npm run tools-setup
       - name: Build
         run: npm run build
-      - name: npm run test:integration
-        run: npm run test:integration:github
+      - name: Integration tests
+        run: npm run test-i
         env:
           AWS_ACCESS_KEY_ID: foo
           AWS_SECRET_ACCESS_KEY: bar
