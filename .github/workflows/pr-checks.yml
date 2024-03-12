@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Integration tests
-        run: npm run test-i
+        run: npm run test:integration:github
         env:
           AWS_ACCESS_KEY_ID: foo
           AWS_SECRET_ACCESS_KEY: bar
