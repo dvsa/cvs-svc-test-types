@@ -20,7 +20,7 @@
     "test": "npm run test:unit -- --coverage",
     "test:unit": "BRANCH=local SLS_DEBUG=* AWS_XRAY_CONTEXT_MISSING=LOG_ERROR jest --testMatch=\"**/*.unitTest.ts\" --runInBand",
     "test:integration": "BRANCH=local jest --testMatch=\"**/*.intTest.ts\" --runInBand",
-    "test-i": "npm run test:integration -- --runInBand --detectOpenHandles --forceExit --globalSetup='./scripts/setup.ts' --globalTeardown='./scripts/teardown.ts'",
+    "test-i": "npm run test:integration -- --runInBand --detectOpenHandles --forceExit --globalSetup='./scripts/setup.ts' --globalTeardown='./scripts/destroyServices.ts'",
     "prepush": "npm run test && npm run build && npm run test-i",
     "security-checks": "git secrets --scan",
     "lint": "tslint src/**/*.ts tests/**/*.ts -q",

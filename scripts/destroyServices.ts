@@ -1,5 +1,5 @@
 import util from "util";
-import { exec } from "child_process";
+import { execSync, exec } from "child_process";
 const shell = util.promisify(exec);
 
 let PID_SERVER_IN_CONTAINER;
@@ -16,12 +16,14 @@ export const killTestSetup = async () => {
     );
     PID_SERVER_IN_CONTAINER = serverStream.trim();
     PID_DB_IN_CONTAINER = DBStream.trim();
-    await exec(`kill -9 ${PID_SERVER_IN_CONTAINER}`);
+    execSync(`kill -9 ${PID_SERVER_IN_CONTAINER}`);
     console.info(`Server pid:${PID_SERVER_IN_CONTAINER} is now killed!`);
-    await exec(`kill -9 ${PID_DB_IN_CONTAINER}`);
+    execSync(`kill -9 ${PID_DB_IN_CONTAINER}`);
     console.info(`DB pid: ${PID_DB_IN_CONTAINER} is now killed!`);
   } catch (e) {
     console.error(`Error: \n ${e}`);
     process.exit(1);
   }
 };
+
+export default killTestSetup
