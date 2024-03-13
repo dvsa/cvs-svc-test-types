@@ -3,6 +3,7 @@ service: cvs-svc-test-types
 provider:
   name: aws
   runtime: nodejs18.x
+  timeout: 30
   stage: dev
   tracing:
     lambda: true
@@ -26,8 +27,6 @@ plugins:
 
 functions:
   getTestTypes:
-    environment:
-      BRANCH: local
     handler: src/handler.handler
     events:
       - http:
@@ -84,3 +83,4 @@ custom:
             sources: [./tests/resources/test-types.json]
     stages:
       - dev
+      - test
