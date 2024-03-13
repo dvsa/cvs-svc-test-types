@@ -39,13 +39,14 @@ const server = spawn("npm", ["run", "start"], {});
 module.exports = async () => {
   console.log(`\nSetting up Integration tests...\n\n`);
   try {
-    const instance = await setupServer(server);
-    // @ts-ignore
-    const { pid } = instance;
-    console.info(`
-    start script running ✅ ...
-    on pid: ${pid}
-    `);
+    // const instance = await setupServer(server);
+    // // @ts-ignore
+    // const { pid } = instance;
+    // console.info(`
+    // start script running ✅ ...
+    // on pid: ${pid}
+    // `);
+    await setupServer(server);
   } catch (e) {
     console.error("Something wrong happened:\n");
     console.error(e);
