@@ -6,8 +6,10 @@ The test-types microservice contains some reference data to be used for CVS serv
 
 ## Dependencies
 
-The project runs on node >18.x with typescript and serverless framework. For further details about project dependencies, please refer to the `package.json` file.
+- The project runs on node >18.x with typescript and serverless framework. For further details about project dependencies, please refer to the `package.json` file.
 [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) is used to managed node versions and configuration explicitly done per project using an `.npmrc` file.
+
+- [Java Development Kit (JDK)](https://docs.oracle.com/en/java/javase/11/) (version 11 or higher)
 
 ### Prerequisites
 
@@ -19,6 +21,9 @@ Please install and run the following securiy programs as part of your developmen
 - [repo-security-scanner](https://github.com/UKHomeOffice/repo-security-scanner)
 
 These will be run as part of your projects hooks so you don't accidentally introduce any new security vulnerabilities.
+
+- [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-methods)
+Run `aws configure` and set random credentials 
 
 ## Architecture
 
