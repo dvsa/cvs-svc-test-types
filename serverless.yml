@@ -1,9 +1,9 @@
 service: cvs-svc-test-types
 
 provider:
-  lambdaHashingVersion: 20201221
   name: aws
   runtime: nodejs18.x
+  region: eu-west-1
   stage: dev
   tracing:
     lambda: true
@@ -20,12 +20,14 @@ provider:
 
 plugins:
   - serverless-offline
-  - serverless-dynamodb-local
+  - serverless-dynamodb
   - serverless-plugin-tracing
   - serverless-plugin-typescript
 
 functions:
   getTestTypes:
+    environment: 
+      BRANCH: local
     handler: src/handler.handler
     events:
       - http:
@@ -66,8 +68,8 @@ resources:
           WriteCapacityUnits: 1
 custom:
   serverless-offline:
-    port: 3002
-  dynamodb:
+    httpPort: 3002
+  serverless-dynamodb:
     start:
       port: 8002
       inMemory: true
