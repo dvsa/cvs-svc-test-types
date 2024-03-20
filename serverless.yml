@@ -68,7 +68,7 @@ resources:
           WriteCapacityUnits: 1
 custom:
   serverless-offline:
-    httpPort: 3002
+    httpPort: 3005
   serverless-dynamodb:
     start:
       port: 8002
