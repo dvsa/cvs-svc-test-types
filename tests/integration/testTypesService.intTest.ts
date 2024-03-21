@@ -1,13 +1,11 @@
 /* global describe it context before after beforeEach afterEach */
 import supertest from "supertest";
-import { TestTypesService } from "../../src/services/TestTypesService";
 import TestTypesDAO from "../../src/models/TestTypesDAO";
+import { TestTypesService } from "../../src/services/TestTypesService";
 import TestTypes from "../resources/test-types.json";
 import { emptyDatabase, populateDatabase } from "../util/dbOperations";
-import LambdaTester from "lambda-tester";
-import { getTestTypes } from "../../src/functions/getTestTypes";
 import recursiveFind from "../util/recursiveFind";
-const url = "http://localhost:3002/";
+const url = "http://localhost:3005/";
 
 describe("test types", () => {
   const request = supertest(url);
