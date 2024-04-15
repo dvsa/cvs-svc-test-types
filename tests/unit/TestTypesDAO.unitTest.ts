@@ -57,7 +57,6 @@ describe("TestTypesDAO", () => {
     });
 
     it("generates the correct query", async () => {
-      let params: any = {};
       const mockDynamoClient = mockClient(DynamoDBDocumentClient);
       mockDynamoClient
         .on(BatchWriteCommand)
@@ -66,7 +65,7 @@ describe("TestTypesDAO", () => {
       expect.assertions(2);
       await new TestTypesDAO().createMultiple(testTypes as ITestType[]);
       const stub = mockDynamoClient.commandCalls(BatchWriteCommand);
-      let testTypesStub = stub[0].args[0].input.RequestItems!["cvs-local-test-types"];
+      const testTypesStub = stub[0].args[0].input.RequestItems!["cvs-local-test-types"];
       // One PutRequest per entry
       expect(testTypesStub.length).toEqual(
         testTypes.length
@@ -106,7 +105,6 @@ describe("TestTypesDAO", () => {
     });
 
     it("generates the correct query", async () => {
-      let params: any = {};
       const mockDynamoClient = mockClient(DynamoDBDocumentClient);
       mockDynamoClient
         .on(BatchWriteCommand)
@@ -120,7 +118,7 @@ describe("TestTypesDAO", () => {
       expect.assertions(4);
       await new TestTypesDAO().deleteMultiple(testTypeIDs);
       const stub = mockDynamoClient.commandCalls(BatchWriteCommand);
-      let testTypesStub = stub[0].args[0].input.RequestItems!["cvs-local-test-types"];
+      const testTypesStub = stub[0].args[0].input.RequestItems!["cvs-local-test-types"];
       // One PutRequest per entry
       expect(testTypesStub.length).toEqual(
         testTypes.length
@@ -139,9 +137,9 @@ describe("TestTypesDAO", () => {
   it("Throws an error if AWS returns error", async () => {
     const myError = new Error("It broke");
     const mockDynamoClient = mockClient(DynamoDBDocumentClient);
-      mockDynamoClient
-        .on(BatchWriteCommand)
-        .rejects(myError as unknown as BatchWriteCommandOutput);
+    mockDynamoClient
+      .on(BatchWriteCommand)
+      .rejects(myError as unknown as BatchWriteCommandOutput);
     try {
       await new TestTypesDAO().deleteMultiple([["", ""]]);
     } catch (e) {
