@@ -13177,7 +13177,7 @@
             "linkedIds": null,
             "name": "Mutual Recognition Cat E Statutory",
             "testTypeName": "Mutual Recognition Cat E Statutory",
-            "forVehicleType": ["hgv"],
+            "forVehicleType": ["hgv", "trl"],
             "forVehicleSize": null,
             "forVehicleConfiguration": null,
             "forVehicleAxles": null,
