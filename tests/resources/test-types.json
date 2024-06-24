@@ -13160,7 +13160,7 @@
         "linkedIds": null,
         "name": "IVA",
         "testTypeName": "IVA",
-        "forVehicleType": ["hgv", "car", "lgv"],
+        "forVehicleType": ["hgv", "trl", "car", "lgv"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -13188,7 +13188,7 @@
             "forProvisionalStatus": true,
             "testCodes": [
               {
-                "forVehicleType": ["hgv"],
+                "forVehicleType": ["hgv", "trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
