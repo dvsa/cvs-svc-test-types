@@ -48,6 +48,7 @@
     "@types/supertest": "^2.0.8",
     "audit-filter": "^0.5.0",
     "aws-lambda-mock-context": "^3.2.1",
+    "aws-sdk-client-mock": "^4.0.0",
     "babel-jest": "^25.1.0",
     "husky": "^3.0.8",
     "jest": "^26.6.3",
@@ -71,13 +72,14 @@
     "typescript": "^4.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.553.0",
+    "@aws-sdk/lib-dynamodb": "^3.549.0",
     "aws-xray-sdk": "^3.3.4",
-    "joi": "^14.3.1",
+    "joi": "^17.12.1",
     "node-yaml": "^4.0.1",
     "path-parser": "^4.2.0",
     "reflect-metadata": "^0.1.13",
-    "serverless-dynamodb": "^0.2.50"
+    "serverless-dynamodb": "^0.2.50",
+    "tar": "^7.0.1"
   },
   "jestSonar": {
     "reportPath": ".reports",

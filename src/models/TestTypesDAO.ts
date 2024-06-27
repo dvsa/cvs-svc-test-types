@@ -1,29 +1,35 @@
+import {
+  BatchWriteItemOutput,
+  DynamoDBClient,
+  ScanOutput
+} from "@aws-sdk/client-dynamodb";
+import {
+  BatchWriteCommand,
+  DynamoDBDocumentClient,
+  ScanCommand
+} from "@aws-sdk/lib-dynamodb";
+import AWSXRay from "aws-xray-sdk";
 import { Configuration } from "../utils/Configuration";
-import { PromiseResult } from "aws-sdk/lib/request";
-import { DocumentClient } from "aws-sdk/lib/dynamodb/document_client";
-import { ITestType } from "./ITestType";
 import { IDBConfig } from "./IDBConfig";
-import { AWSError } from "aws-sdk/lib/error";
-
-/* tslint:disable */
-let AWS: { DynamoDB: { DocumentClient: new (arg0: any) => DocumentClient } };
-if (process.env._X_AMZN_TRACE_ID) {
-  AWS = require("aws-xray-sdk").captureAWS(require("aws-sdk"));
-} else {
-  console.log("Serverless Offline detected; skipping AWS X-Ray setup");
-  AWS = require("aws-sdk");
-}
+import { ITestType } from "./ITestType";
 /* tslint:enable */
 
 export default class TestTypesDAO {
   private readonly tableName: string;
-  private static dbClient: DocumentClient;
+  private static dbClient: DynamoDBDocumentClient;
 
   constructor() {
     const config: IDBConfig = Configuration.getInstance().getDynamoDBConfig();
     this.tableName = config.table;
     if (!TestTypesDAO.dbClient) {
-      TestTypesDAO.dbClient = new AWS.DynamoDB.DocumentClient(config.params);
+      let client;
+      if (process.env._X_AMZN_TRACE_ID) {
+        client = AWSXRay.captureAWSv3Client(new DynamoDBClient(config.params));
+      } else {
+        console.log("Serverless Offline detected; skipping AWS X-Ray setup");
+        client = new DynamoDBClient(config.params);
+      }
+      TestTypesDAO.dbClient = DynamoDBDocumentClient.from(client);
     }
   }
 
@@ -31,8 +37,9 @@ export default class TestTypesDAO {
    * Get All test Types  in the DB
    * @returns ultimately, an array of TestTypes objects, wrapped in a PromiseResult, wrapped in a Promise
    */
-  public getAll(): Promise<PromiseResult<DocumentClient.ScanOutput, AWSError>> {
-    return TestTypesDAO.dbClient.scan({ TableName: this.tableName }).promise();
+  public async getAll(): Promise<ScanOutput> {
+    const command = new ScanCommand({ TableName: this.tableName });
+    return await TestTypesDAO.dbClient.send(command);
   }
 
   /**
@@ -40,9 +47,9 @@ export default class TestTypesDAO {
    * @param testTypesItems: ITestType[]
    * @returns DynamoDB BatchWriteItemOutput, wrapped in promises
    */
-  public createMultiple(
+  public async createMultiple(
     testTypesItems: ITestType[]
-  ): Promise<PromiseResult<DocumentClient.BatchWriteItemOutput, AWSError>> {
+  ): Promise<BatchWriteItemOutput> {
     const params = this.generatePartialParams();
     testTypesItems.forEach((testTypesItem: ITestType) => {
       params.RequestItems[this.tableName].push({
@@ -51,17 +58,17 @@ export default class TestTypesDAO {
         },
       });
     });
-
-    return TestTypesDAO.dbClient.batchWrite(params).promise();
+    const command = new BatchWriteCommand(params);
+    return await TestTypesDAO.dbClient.send(command);
   }
 
   /**
    * Removes multiple Test Types from the DB
    * @param primaryKeysToBeDeleted
    */
-  public deleteMultiple(
+  public async deleteMultiple(
     primaryKeysToBeDeleted: string[][]
-  ): Promise<PromiseResult<DocumentClient.BatchWriteItemOutput, AWSError>> {
+  ): Promise<BatchWriteItemOutput> {
     const params = this.generatePartialParams();
 
     primaryKeysToBeDeleted.forEach((compositeKey) => {
@@ -74,8 +81,8 @@ export default class TestTypesDAO {
         },
       });
     });
-
-    return TestTypesDAO.dbClient.batchWrite(params).promise();
+    const command = new BatchWriteCommand(params);
+    return await TestTypesDAO.dbClient.send(command);
   }
 
   /**

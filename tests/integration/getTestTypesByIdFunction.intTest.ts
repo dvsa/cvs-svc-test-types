@@ -84,7 +84,7 @@ describe("getTestTypesById", () => {
           .expectResolve((result: { statusCode: any; body: any }) => {
             expect(result.statusCode).toEqual(400);
             expect(result.body).toEqual(
-              '"Query parameter \\"vehicleAxles\\" must be larger than or equal to 0"'
+              '"Query parameter \\"vehicleAxles\\" must be greater than or equal to 0"'
             );
           });
       });
