@@ -11851,7 +11851,7 @@
         "linkedIds": null,
         "name": "LEC",
         "testTypeName": "LEC",
-        "forVehicleType": ["psv", "hgv", "lgv"],
+        "forVehicleType": ["psv", "hgv", "lgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -13160,7 +13160,7 @@
         "linkedIds": null,
         "name": "IVA",
         "testTypeName": "IVA",
-        "forVehicleType": ["hgv", "car", "lgv"],
+        "forVehicleType": ["hgv", "car", "lgv", "trl"],
         "forVehicleSize": null,
         "forVehicleConfiguration": null,
         "forVehicleAxles": null,
@@ -13189,6 +13189,38 @@
             "testCodes": [
               {
                 "forVehicleType": ["hgv"],
+                "forVehicleSize": null,
+                "forVehicleConfiguration": null,
+                "forVehicleAxles": null,
+                "forEuVehicleCategory": null,
+                "forVehicleClass": null,
+                "forVehicleSubclass": null,
+                "forVehicleWheels": null,
+                "defaultTestCode": "ysz",
+                "linkedTestCode": null,
+                "forProvisionalStatus": true
+              }
+            ]
+          },
+          {
+            "id": "420",
+            "sortId": "420",
+            "typeOfTest": "desk-based",
+            "linkedIds": null,
+            "name": "Mutual Recognition Cat E Statutory",
+            "testTypeName": "Mutual Recognition Cat E Statutory",
+            "forVehicleType": ["trl"],
+            "forVehicleSize": null,
+            "forVehicleConfiguration": null,
+            "forVehicleAxles": null,
+            "forEuVehicleCategory": null,
+            "forVehicleClass": null,
+            "forVehicleSubclass": null,
+            "forVehicleWheels": null,
+            "forProvisionalStatus": true,
+            "testCodes": [
+              {
+                "forVehicleType": ["trl"],
                 "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
