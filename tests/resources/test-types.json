@@ -13203,8 +13203,8 @@
             ]
           },
           {
-            "id": "420",
-            "sortId": "420",
+            "id": "450",
+            "sortId": "450",
             "typeOfTest": "desk-based",
             "linkedIds": null,
             "name": "Mutual Recognition Cat E Statutory",
@@ -13221,7 +13221,7 @@
             "testCodes": [
               {
                 "forVehicleType": ["trl"],
-                "forVehicleSize": null,
+                "forVehicleSize": ["small", "large"],
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
