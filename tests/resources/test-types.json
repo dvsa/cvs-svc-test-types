@@ -13221,7 +13221,7 @@
             "testCodes": [
               {
                 "forVehicleType": ["trl"],
-                "forVehicleSize": ["small", "large"],
+                "forVehicleSize": null,
                 "forVehicleConfiguration": null,
                 "forVehicleAxles": null,
                 "forEuVehicleCategory": null,
