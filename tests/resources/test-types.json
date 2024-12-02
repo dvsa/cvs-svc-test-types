@@ -9086,7 +9086,7 @@
                     "forEuVehicleCategory": null,
                     "forVehicleClass": "2",
                     "forVehicleSubclass": null,
-                    "forVehicleWheels": [2, 3],
+                    "forVehicleWheels": [2, 3, 4],
                     "defaultTestCode": "ea2",
                     "linkedTestCode": null,
                     "forProvisionalStatus": true
