@@ -37,10 +37,10 @@ export const getTestTypesById: Handler = (event, context, callback) => {
           /^((testTypeClassification|defaultTestCode|linkedTestCode|name|testTypeName),?\s*){0,5}$/
         )
         .required(),
-      vehicleType: Joi.string().only(Object.values(ForVehicleType)).required(),
-      vehicleSize: Joi.string().only(Object.values(ForVehicleSize)),
+      vehicleType: Joi.string().valid(...Object.values(ForVehicleType)).required(),
+      vehicleSize: Joi.string().valid(...Object.values(ForVehicleSize)),
       vehicleConfiguration: Joi.string()
-        .only(Object.values(ForVehicleConfiguration))
+        .valid(...Object.values(ForVehicleConfiguration))
         .allow(null),
       euVehicleCategory: Joi.string().allow(null),
       vehicleClass: Joi.string().allow(null),
@@ -55,7 +55,7 @@ export const getTestTypesById: Handler = (event, context, callback) => {
     Object.values(NUM_PARAMETERS)
   );
 
-  const validation = Joi.validate(queryParams, queryParamSchema);
+  const validation = queryParamSchema.validate(queryParams);
 
   if (validation.error) {
     return Promise.resolve(
