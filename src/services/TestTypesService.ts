@@ -1,12 +1,12 @@
+import { ERRORS, HTTPRESPONSE } from "../assets/Enums";
 import { HTTPError } from "../models/HTTPError";
-import TestTypesDAO from "../models/TestTypesDAO";
 import {
   GetTestTypeByIdQueryParams,
   ITestType,
   NextTestTypesOrCategory,
   TestCode,
 } from "../models/ITestType";
-import { ERRORS, HTTPRESPONSE } from "../assets/Enums";
+import TestTypesDAO from "../models/TestTypesDAO";
 
 export class TestTypesService {
   public readonly testTypesDAO: TestTypesDAO;
@@ -23,7 +23,7 @@ export class TestTypesService {
       }
       this.purgeTestTypes(data.Items);
       const filteredArray = this.filterTaxonomyTypes(
-        data.Items as ITestType[],
+        data.Items as unknown as ITestType[],
         typeOfTest
       );
       return this.sort(filteredArray);
