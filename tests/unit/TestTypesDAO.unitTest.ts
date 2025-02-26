@@ -1,8 +1,9 @@
-import AWS from "aws-sdk";
-import TestTypesDAO from "../../src/models/TestTypesDAO";
+import { BatchWriteCommand, BatchWriteCommandOutput, DynamoDBDocumentClient, ScanCommand, ScanCommandOutput } from "@aws-sdk/lib-dynamodb";
+import { mockClient } from "aws-sdk-client-mock";
 import { cloneDeep } from "lodash";
-import testTypes from "../resources/test-types.json";
 import { ITestType } from "../../src/models/ITestType";
+import TestTypesDAO from "../../src/models/TestTypesDAO";
+import testTypes from "../resources/test-types.json";
 
 describe("TestTypesDAO", () => {
   let branch: string | undefined = "";
@@ -25,25 +26,15 @@ describe("TestTypesDAO", () => {
 
   context("getAll", () => {
     it("returns data directly from DynamoDB", async () => {
-      AWS.DynamoDB.DocumentClient.prototype.scan = jest
-        .fn()
-        .mockImplementation(() => {
-          return {
-            promise: () => Promise.resolve("Success"),
-          };
-        });
+      const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+      mockDynamoClient.on(ScanCommand).resolves("Success" as unknown as ScanCommandOutput);
       const dao = new TestTypesDAO();
       expect(await dao.getAll()).toEqual("Success");
     });
     it("returns error on failed query", async () => {
       const myError = new Error("It broke");
-      AWS.DynamoDB.DocumentClient.prototype.scan = jest
-        .fn()
-        .mockImplementation(() => {
-          return {
-            promise: () => Promise.reject(myError),
-          };
-        });
+      const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+      mockDynamoClient.on(ScanCommand).rejects(myError);
       expect.assertions(1);
       try {
         await new TestTypesDAO().getAll();
@@ -55,51 +46,41 @@ describe("TestTypesDAO", () => {
 
   context("createMultiple", () => {
     it("returns data on Successful Query", async () => {
-      const getMock = jest.fn().mockImplementation(() => {
-        return {
-          promise: () => Promise.resolve("Success"),
-        };
-      });
-      AWS.DynamoDB.DocumentClient.prototype.batchWrite = getMock;
+      const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+      mockDynamoClient.on(BatchWriteCommand).resolves("Success" as unknown as BatchWriteCommandOutput);
 
       const output = await new TestTypesDAO().createMultiple(
         testTypes as ITestType[]
       );
       expect(output).toEqual("Success");
-      expect(getMock.mock.calls).toHaveLength(1);
+      expect(mockDynamoClient.commandCalls(BatchWriteCommand)).toHaveLength(1);
     });
 
     it("generates the correct query", async () => {
-      let params: any = {};
-      AWS.DynamoDB.DocumentClient.prototype.batchWrite = jest
-        .fn()
-        .mockImplementation((args: any) => {
-          params = args;
-          return {
-            promise: () => Promise.resolve("Good"),
-          };
-        });
+      const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+      mockDynamoClient
+        .on(BatchWriteCommand)
+        .resolves("Good" as unknown as BatchWriteCommandOutput);
 
       expect.assertions(2);
       await new TestTypesDAO().createMultiple(testTypes as ITestType[]);
+      const stub = mockDynamoClient.commandCalls(BatchWriteCommand);
+      const testTypesStub = stub[0].args[0].input.RequestItems!["cvs-local-test-types"];
       // One PutRequest per entry
-      expect(params.RequestItems["cvs-local-test-types"].length).toEqual(
+      expect(testTypesStub.length).toEqual(
         testTypes.length
       );
       expect(
-        Object.keys(params.RequestItems["cvs-local-test-types"][0])[0]
+        Object.keys(testTypesStub[0])[0]
       ).toEqual("PutRequest");
     });
 
     it("Throws an error if AWS returns error", async () => {
       const myError = new Error("It broke");
-      AWS.DynamoDB.DocumentClient.prototype.batchWrite = jest
-        .fn()
-        .mockImplementation(() => {
-          return {
-            promise: () => Promise.reject(myError),
-          };
-        });
+      const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+      mockDynamoClient
+        .on(BatchWriteCommand)
+        .rejects(myError as unknown as BatchWriteCommandOutput);
       try {
         await new TestTypesDAO().createMultiple(testTypes as ITestType[]);
       } catch (e) {
@@ -110,12 +91,8 @@ describe("TestTypesDAO", () => {
 
   context("deleteMultiple", () => {
     it("returns data on Successful Query", async () => {
-      const getMock = jest.fn().mockImplementation(() => {
-        return {
-          promise: () => Promise.resolve("Success"),
-        };
-      });
-      AWS.DynamoDB.DocumentClient.prototype.batchWrite = getMock;
+      const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+      mockDynamoClient.on(BatchWriteCommand).resolves("Success" as unknown as BatchWriteCommandOutput);
 
       const testTypeIDs = cloneDeep(testTypes).map((testType) => [
         testType.id,
@@ -124,19 +101,14 @@ describe("TestTypesDAO", () => {
 
       const output = await new TestTypesDAO().deleteMultiple(testTypeIDs);
       expect(output).toEqual("Success");
-      expect(getMock.mock.calls).toHaveLength(1);
+      expect(mockDynamoClient.commandCalls(BatchWriteCommand)).toHaveLength(1);
     });
 
     it("generates the correct query", async () => {
-      let params: any = {};
-      AWS.DynamoDB.DocumentClient.prototype.batchWrite = jest
-        .fn()
-        .mockImplementation((args: any) => {
-          params = args;
-          return {
-            promise: () => Promise.resolve("Good"),
-          };
-        });
+      const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+      mockDynamoClient
+        .on(BatchWriteCommand)
+        .resolves("Good" as unknown as BatchWriteCommandOutput);
 
       const testTypeIDs = cloneDeep(testTypes).map((testType) => [
         testType.id,
@@ -145,30 +117,29 @@ describe("TestTypesDAO", () => {
 
       expect.assertions(4);
       await new TestTypesDAO().deleteMultiple(testTypeIDs);
+      const stub = mockDynamoClient.commandCalls(BatchWriteCommand);
+      const testTypesStub = stub[0].args[0].input.RequestItems!["cvs-local-test-types"];
       // One PutRequest per entry
-      expect(params.RequestItems["cvs-local-test-types"].length).toEqual(
+      expect(testTypesStub.length).toEqual(
         testTypes.length
       );
       expect(
-        Object.keys(params.RequestItems["cvs-local-test-types"][0])[0]
+        Object.keys(testTypesStub[0])[0]
       ).toEqual("DeleteRequest");
       expect(
-        params.RequestItems["cvs-local-test-types"][0].DeleteRequest.Key.id
+        testTypesStub[0].DeleteRequest!.Key!.id
       ).toEqual(testTypes[0].id);
       expect(
-        params.RequestItems["cvs-local-test-types"][0].DeleteRequest.Key.name
+        testTypesStub[0].DeleteRequest!.Key!.name
       ).toEqual(testTypes[0].name);
     });
   });
   it("Throws an error if AWS returns error", async () => {
     const myError = new Error("It broke");
-    AWS.DynamoDB.DocumentClient.prototype.batchWrite = jest
-      .fn()
-      .mockImplementation(() => {
-        return {
-          promise: () => Promise.reject(myError),
-        };
-      });
+    const mockDynamoClient = mockClient(DynamoDBDocumentClient);
+    mockDynamoClient
+      .on(BatchWriteCommand)
+      .rejects(myError as unknown as BatchWriteCommandOutput);
     try {
       await new TestTypesDAO().deleteMultiple([["", ""]]);
     } catch (e) {
